@@ -1,0 +1,38 @@
+// Font Face
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../font/Spartan-Regular.woff2') format('woff2'),
+        url('../font/Spartan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../font/Spartan-Bold.woff2') format('woff2'),
+        url('../font/Spartan-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../font/Spartan-Medium.woff2') format('woff2'),
+        url('../font/Spartan-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../font/Spartan-SemiBold.woff2') format('woff2'),
+        url('../font/Spartan-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

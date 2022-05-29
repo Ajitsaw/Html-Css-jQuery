@@ -1,0 +1,160 @@
+.news-page {
+    &-details {
+        padding: 105px 0 175px;
+        @include media-breakpoint-down(lg) {
+            padding: $section-padding-medium;
+        }
+        @include media-breakpoint-down(md) {
+            padding: $section-padding-small;
+        }
+        .circle-box {
+            bottom: 20px;
+        }
+        &-left {
+            &-image {
+                margin-top: 40px;
+                display: flex;
+                flex-flow: column;
+                @include media-breakpoint-down(md) {
+                    margin-top: 20px;
+                }
+                .image-page {
+                    margin-top: 30px;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 20px;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin-top: 20px;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+        &-right {
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+            h5 {
+                color: $primary;
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 700;
+                text-align: center;
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+            &-user {
+                background: $primary;
+                padding: 45px 30px 55px;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                @include media-breakpoint-down(md) {
+                    padding: 30px;
+                }
+                h5 {
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    @include media-breakpoint-down(sm) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+                }
+                p {
+                    color: $white;
+                    text-align: center;
+                    margin-bottom: 0;
+                    font-size: 16px;
+                    line-height: 30px;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 15px;
+                    }
+                }
+                .f-button {
+                    margin: 30px 0 40px;
+                    @include media-breakpoint-down(md) {
+                        margin: 20px 0 30px;
+                    }
+                }
+                .user-image {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 100%;
+                    border: 3px solid $white;
+                    margin-bottom: 40px;
+                    overflow: hidden;
+                    @include media-breakpoint-down(md) {
+                        width: 140px;
+                        height: 140px;
+                        margin-bottom: 30px;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+            .social-buttons {
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                @include media-breakpoint-down(md) {
+                    margin-top: 20px;
+                }
+                a {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 6px;
+                    transition: all .3s ease;
+                    &:hover {
+                        opacity: .9;
+                        transition: all .3s ease;
+                    }
+                    img {
+                        width: 30px;
+                        @include media-breakpoint-down(md) {
+                            width: 20px
+                        }
+                    }
+                    &.xing {
+                        background: #1A7576;
+                    }
+                    &.linkedin {
+                        background: #0077B5;
+                    }
+                    &.facebook {
+                        background: #3B5998;
+                    }
+                    &.twitter {
+                        background: #1DA1F2;
+                    }
+                    &.whatsapp {
+                        background: #4DC247;
+                    }
+                    &.mail {
+                        background: #848484;
+                    }
+                    @include media-breakpoint-down(md) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.location-details-box {
+    padding: 22px 330px;
+    @media screen and (max-width: 1650px) {
+        padding: 22px 200px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 20px 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 20px 50px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 10px 30px;
+    }
+    background: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 991px) {
+        flex-flow: column;
+    }
+    &-single {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 991px) {
+            width: 100%;
+            margin: 15px 0;
+        }
+        i {
+            margin-right: 30px;
+            color: $secondary;
+            font-size: 20px;
+            @include media-breakpoint-down(md) {
+                margin-right: 15px;
+            }
+            &.ti-location-pin, &.ti-mobile {
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,265 @@
+.kontakt-map {
+    overflow: visible;
+    h2 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    &-holder {
+        padding: 150px 0 150px;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            padding: 80px 0px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 30px 0px;
+        }
+        .map {
+            width: 100%;
+            height: 558px;
+            @include media-breakpoint-down(lg) {
+                height: 500px;
+            }
+            @include media-breakpoint-down(md) {
+                height: 450px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 350px;
+                margin-bottom: 30px;
+            }
+            iframe {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-text {
+            position: absolute;
+            top: 0px;
+            right: 129px;
+            max-width: 425px;
+            padding: 54px 50px 50px;
+            background-color: $white;
+            //box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+            border-radius: 5px;
+            margin-bottom: 0;
+            z-index: 99;
+            @include media-breakpoint-down(lg) {
+                padding: 30px;
+                max-width: 330px;
+                right: 80px;
+            }
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                max-width: 100%;
+                right: 0;
+                top: 0;
+                padding: 30px 15px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+            h4 {
+                margin-bottom: 30px;
+                color: $secondary;
+            }
+            address {
+                margin: 30px 0;
+                @include media-breakpoint-down(sm) {
+                    margin: 20px 0;
+                }
+            }
+            .kontakt-listing {
+                margin: 30px 0 30px;
+                a {
+                    width: 100%;
+                    display: flex;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+    .text-block {
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    .form-elements {
+        padding-bottom: 10px;
+        @include media-breakpoint-down(md) {
+            padding-bottom: 0px;
+            margin-top: 20px;
+            .select-box {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-holder {
+        padding-top: 110px;
+        @include media-breakpoint-down(lg) {
+            padding: 80px 0px 0;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 50px 0px 0;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 0px 0px 0;
+        }
+        &-single {
+            height: 380px;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            z-index: 4;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            flex-flow: column;
+            padding: 30px;
+            margin: 15px 0;
+            @include media-breakpoint-down(lg) {
+                height: 330px;
+            }
+            @include media-breakpoint-down(md) {
+                height: 450px;
+                margin: 15px 0;
+                background-position: center top;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 300px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Sales */
+
+.sales {
+    .text-block {
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+/* Contact */
+
+.contact {
+    .text-block {
+        h2,
+        .h2 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .image-text {
+        margin-top: -40px;
+        @include media-breakpoint-down(md) {
+            margin-top: 0px;
+        }
+        .image {
+            margin-bottom: 270px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 200px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    form {
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            margin-bottom: 30px;
+            height: 58px;
+            border: 1px solid $primary;
+            border-radius: 5px;
+            padding-left: 20px;
+            box-shadow: none;
+            outline: none;
+            @include media-breakpoint-down(md) {
+                height: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 45px;
+                margin-bottom: 15px;
+            }
+            &::placeholder {
+                color: $primary;
+            }
+        }
+        textarea {
+            height: 230px;
+            width: 100%;
+            margin-bottom: 30px;
+            border: 1px solid $primary;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-top: 15px;
+            box-shadow: none;
+            outline: none;
+        }
+        .checkbox {
+            margin-top: 0;
+            margin-bottom: 0px;
+        }
+        .submit {
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background-color: $secondary;
+            color: $white;
+            transition: all .3s ease;
+            border: none;
+            font-size: 30px;
+            position: absolute;
+            right: -20px;
+            bottom: 5px;
+            z-index: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include media-breakpoint-down(md) {
+                width: 60px;
+                height: 60px;
+                font-size: 24px;
+                right: -10px;
+                bottom: 5px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                right: 10px;
+                bottom: 20px;
+            }
+            i {
+               transition: all .3s ease; 
+            }
+            &:hover {
+                background-color: $light-gray;
+                transition: all .3s ease;
+                i {
+                    margin-left: 15px;
+                    color: $secondary;
+                    transition: all .3s ease;
+                    @include media-breakpoint-down(md) {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

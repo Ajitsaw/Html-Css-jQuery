@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IAT</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+    <div class="loader">
+        <span class="loader-inner"></span>
+    </div>
+
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                        <a href="index.html" class="logo">
+                            <img src="img/site-logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                        <nav class="main-nav d-none d-lg-block">
+                            <ul>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="erfolgsfeschichtem.html">ERFOLGSGESCHICHTEN <i class="fal fa-angle-down"></i></a>
+
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Logistik</a></li>
+                                        <li><a href="#">Pflege</a></li>
+                                        <li><a href="#">Produktion</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="themen.html">Themen</a>
+                                </li>
+                                <li>
+                                    <a href="uber-uns.html">ÜBER UNS</a>
+                                </li>
+                                <li>
+                                    <a href="kontak.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav-search">
+                            <a>
+                                <svg id="Component_335_2" data-name="Component 335 – 2" xmlns="http://www.w3.org/2000/svg" width="34.01" height="34" viewBox="0 0 34.01 34">
+                                    <path id="Path_118265" data-name="Path 118265" d="M32.871,46.759a13.806,13.806,0,0,0,8.561-2.965l9.2,9.2,2.354-2.354-9.2-9.2a13.88,13.88,0,1,0-10.915,5.319Zm0-24.428A10.549,10.549,0,1,1,22.323,32.879,10.549,10.549,0,0,1,32.871,22.331Z" transform="translate(-18.981 -18.999)" fill="#f8f8f8"/>
+                                </svg>                                                                   
+                            </a>
+                        </div>
+                        <div class="nav-toggle">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="container">
+                <div class="header-search__form">
+                    <input placeholder="SUCHEN..." type="text" name="" id="">
+                    <button type="button" class="noborder denim solid button search_btn">
+                        <span>JETZT SUCHEN</span>
+                        <svg id="Component_335_2" data-name="Component 335 – 2" xmlns="http://www.w3.org/2000/svg" width="34.01" height="34" viewBox="0 0 34.01 34">
+                            <path id="Path_118265" data-name="Path 118265" d="M32.871,46.759a13.806,13.806,0,0,0,8.561-2.965l9.2,9.2,2.354-2.354-9.2-9.2a13.88,13.88,0,1,0-10.915,5.319Zm0-24.428A10.549,10.549,0,1,1,22.323,32.879,10.549,10.549,0,0,1,32.871,22.331Z" transform="translate(-18.981 -18.999)" fill="#f8f8f8"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="search__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <path id="Icon_material-close" data-name="Icon material-close" d="M28.5,9.615,26.385,7.5,18,15.885,9.615,7.5,7.5,9.615,15.885,18,7.5,26.385,9.615,28.5,18,20.115,26.385,28.5,28.5,26.385,20.115,18Z" transform="translate(-7.5 -7.5)" fill="#f8f8f8"/>
+                </svg>                  
+            </a>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__logo">
+            <a href="index.html">
+                <img src="img/site-logo.png">
+            </a>
+        </div>
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="erfolgsfeschichtem.html">ERFOLGSGESCHICHTEN</a>
+                </li>
+                <li>
+                    <a href="themen.html">Themen</a>
+                </li>
+                <li>
+                    <a href="uber-uns.html">ÜBER UNS</a>
+                </li>
+                <li>
+                    <a href="kontak.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="#scroll-up" class="scroll-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25.243" height="24" viewBox="0 0 25.243 24">
+            <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(23.121 22.5) rotate(180)">
+              <path id="Path_118268" data-name="Path 118268" d="M18,7.5v21" transform="translate(-7.5 -7.5)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              <path id="Path_118269" data-name="Path 118269" d="M28.5,18,18,28.5,7.5,18" transform="translate(-7.5 -7.5)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            </g>
+        </svg>          
+    </a>
+
+    <main id="scroll-up">
+        <section class="common-banner uberuns-banner">
+            <div class="image">
+                <img src="img/uberuns-banner.png" alt="kontakt">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-block text-white">
+                            <div class="heading">
+                                <h1>DAS SIND WIR:<br> IHRE UNTERSTÜTZER.</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="scroll" href="#scroll">
+                <i class="fal fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <section id="scroll" class="uberuns-dreweg pb-0">
+            <div class="container">
+                <h2 class="text-uppercase text-center">DER WEG — UNSERE MODULE:</h2>
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="uberuns-dreweg__single">
+                            <div class="uberuns-dreweg__single__img">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="50" viewBox="0 0 55 50">
+                                    <defs>
+                                      <clipPath id="clip-path">
+                                        <rect id="Rectangle_150257" data-name="Rectangle 150257" width="55" height="50" fill="#93c01f" stroke="#93c01f" stroke-width="1"/>
+                                      </clipPath>
+                                    </defs>
+                                    <g id="Group_178477" data-name="Group 178477" transform="translate(0 0)">
+                                      <g id="Group_178476" data-name="Group 178476" transform="translate(0 0)" clip-path="url(#clip-path)">
+                                        <path id="Path_118279" data-name="Path 118279" d="M10.493,5.858H2.087A1.088,1.088,0,0,0,1,6.947V40a1.1,1.1,0,0,0,.132.52l4.2,7.738a1.086,1.086,0,0,0,1.91,0l4.2-7.738a1.089,1.089,0,0,0,.133-.52V6.947a1.088,1.088,0,0,0-1.087-1.089ZM9.407,12.246H3.174V8.035H9.407ZM6.289,45.456,3.174,39.719v-25.3H9.408v25.3ZM53.745,15.4l-.165-.288L42.317,1.4c-.011-.013-.029-.019-.04-.032a1.155,1.155,0,0,0-.245-.19,1.071,1.071,0,0,0-.109-.075,1.092,1.092,0,0,0-.435-.1H17.421a1.088,1.088,0,0,0-1.087,1.089V47.734a1.088,1.088,0,0,0,1.087,1.089H52.739a1.088,1.088,0,0,0,1.087-1.089V15.8a1.071,1.071,0,0,0-.082-.4M42.563,5.118l7.874,9.59H42.563ZM18.508,46.646V3.169H40.389V15.8a1.088,1.088,0,0,0,1.087,1.089H51.652V46.646Z" transform="translate(0.087 0.088)" fill="#93c01f" stroke="#93c01f" stroke-width="1"/>
+                                        <path id="Path_118280" data-name="Path 118280" d="M10.493,5.858H2.087A1.088,1.088,0,0,0,1,6.947V40a1.1,1.1,0,0,0,.132.52l4.2,7.738a1.086,1.086,0,0,0,1.91,0l4.2-7.738a1.089,1.089,0,0,0,.133-.52V6.947a1.088,1.088,0,0,0-1.087-1.089ZM9.407,12.246H3.174V8.035H9.407ZM6.289,45.456,3.174,39.719v-25.3H9.408v25.3ZM53.745,15.4l-.165-.288L42.317,1.4c-.011-.013-.029-.019-.04-.032a1.155,1.155,0,0,0-.245-.19,1.071,1.071,0,0,0-.109-.075,1.092,1.092,0,0,0-.435-.1H17.421a1.088,1.088,0,0,0-1.087,1.089V47.734a1.088,1.088,0,0,0,1.087,1.089H52.739a1.088,1.088,0,0,0,1.087-1.089V15.8A1.071,1.071,0,0,0,53.745,15.4ZM42.563,5.118l7.874,9.59H42.563ZM18.508,46.646V3.169H40.389V15.8a1.088,1.088,0,0,0,1.087,1.089H51.652V46.646Z" transform="translate(0.087 0.088)" fill="#93c01f" stroke="#93c01f" stroke-miterlimit="10" stroke-width="2"/>
+                                      </g>
+                                    </g>
+                                  </svg>                                  
+                            </div>
+                            <div class="uberuns-dreweg__single__content">
+                                <h3 class="text-uppercase">PRAXISPROJEKTE</h3>
+                                <p>Identifizierung und Aufbereitung betrieblicher Umsetzungs-, Beteiligungs- und Transferkonzepte entlang arbeitswissenschaftlicher Gütekriterien.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="uberuns-dreweg__single">
+                            <div class="uberuns-dreweg__single__img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" viewBox="0 0 80 50">
+                                    <g id="Group_178471" data-name="Group 178471" transform="translate(-2.303)">
+                                        <path id="Path_118274" data-name="Path 118274" d="M50.2,9.49V1.913A1.96,1.96,0,0,0,48.262,0H4.24A1.96,1.96,0,0,0,2.3,1.913V38.548A1.975,1.975,0,0,0,4.24,40.534a2.039,2.039,0,0,0,1.266-.441l12.886-10.3h15.94v7.5a1.977,1.977,0,0,0,2.011,1.913h29.87L79.1,49.583a2.009,2.009,0,0,0,2.756-.294,1.982,1.982,0,0,0,.447-1.251V11.4A1.977,1.977,0,0,0,80.292,9.49M34.333,11.4V25.895H17.648a2.079,2.079,0,0,0-1.192.368L6.251,34.5V3.9h40V9.49H36.344A1.977,1.977,0,0,0,34.333,11.4M78.355,43.992l-10.2-8.239a2.617,2.617,0,0,0-1.266-.441h-28.6V13.389H78.355Z" transform="translate(0)" fill="#93c01f"/>
+                                    </g>
+                                </svg>                                                                 
+                            </div>
+                            <div class="uberuns-dreweg__single__content">
+                                <h3 class="text-uppercase">CHANGE: BERATUNG</h3>
+                                <p>Erfahrungsaustausch und Wissenstransfer Handlungsorientierungen für gute Beratungspraxis (»Beratungskompass«).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="uberuns-dreweg__single">
+                            <div class="uberuns-dreweg__single__img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="53.002" height="67.007" viewBox="0 0 53.002 67.007">
+                                    <g id="Group_178479" data-name="Group 178479" transform="translate(-18.468 0.507)">
+                                        <path id="Path_118281" data-name="Path 118281" d="M62.775,7.056A25.537,25.537,0,0,0,43.286.063,26.492,26.492,0,0,0,19,24.739,26.1,26.1,0,0,0,33.791,49.516a2.088,2.088,0,0,1,1.2,1.8v8.692a6.013,6.013,0,0,0,6,5.994h8a6.013,6.013,0,0,0,6-5.994V51.214a1.846,1.846,0,0,1,1.1-1.7A26.024,26.024,0,0,0,70.97,26.038a26.311,26.311,0,0,0-8.2-18.982M50.982,60.006a2,2,0,0,1-2,2h-8a2,2,0,0,1-2-2V53.013H50.982Zm3.4-14.087a6.431,6.431,0,0,0-3,3.1h-4.4V38.027l9.095-6.394.1-.1.2-.2.1-.1c0-.1.1-.1.1-.2s.1-.1.1-.2.1-.1.1-.2,0-.1.1-.2c0-.1,0-.1.1-.2V21.942a2,2,0,0,0-4,0v6.993l-8,5.595-8-5.495V22.042a2,2,0,0,0-4,0v8.292c0,.1,0,.1.1.2,0,.1,0,.1.1.2,0,.1.1.1.1.2s.1.1.1.2.1.1.1.2.1.1.1.2l.2.2.1.1,9.095,6.194v10.99h-4.5a6.037,6.037,0,0,0-3-3.1,21.968,21.968,0,0,1,8.1-41.76A21.951,21.951,0,0,1,54.38,45.919" transform="translate(0 0)" fill="#93c01f" stroke="#93c01f" stroke-width="1"/>
+                                    </g>
+                                </svg>                                   
+                            </div>
+                            <div class="uberuns-dreweg__single__content">
+                                <h3 class="text-uppercase">CHANGE: WISSEN</h3>
+                                <p>Lernreisen/Work Labs zur Vermittlung arbeits­orientierter Digitalisierungs­strategien und -Instrumente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1">
+                        <div class="uberuns-dreweg__single">
+                            <div class="uberuns-dreweg__single__img">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="49" viewBox="0 0 64 49">
+                                    <path id="Path_118275" data-name="Path 118275" d="M57.6,0,21.333,36.221,6.4,21.3,0,27.7,21.333,49,64,6.391Z" transform="translate(0 0)" fill="#93c01f"/>
+                                </svg>                                                                                                 
+                            </div>
+                            <div class="uberuns-dreweg__single__content">
+                                <h3 class="text-uppercase">CHANGE: ERFOLG</h3>
+                                <p>Aufbereitung, Bündelung und Kommunikation betrieblicher ERFOLGSGESCHICHTEN.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="uberuns-dasziel">
+            <div class="container-fluid">
+                <div class="row no-gutters">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="image-block uberuns-dasziel-image">
+                            <img src="img/das-ziel.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 align-self-center">
+                        <div class="text-block uberuns-dasziel-textblock">
+                            <h5 class="mb-4">Digitale Lösungen erarbeiten.</h5>
+                            <h2 class="text-uppercase">DAS ZIEL.</h2>
+                            <p>Digitalisierung eröffnet Chancen für neue Geschäftsmodelle, Wege der Arbeitsorganisation und Kompetenzentwicklung. Gerade in der aktuellen Situation vermittelt sie wichtige Perspektiven einer schnellen Anpassung und langfristigen Sicherung wirtschaftlicher Aktivität. Eine zentrale Herausforderung ist es dabei, digitale Innovationen für mehr Wettbewerbsfähigkeit und Beschäftigung auch sozial innovativ und nachhaltig zu gestalten.</p>
+                            <a href="#" class="button outline denim">DIGITAL WERDEN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End home-unser -->
+
+        <section class="uberuns-about pb-0">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-10 offset-lg-2">
+                        <div class="text-block">
+                            <h5 class="mb-4">Digitale Lösungen erarbeiten.</h5>
+                            <h2 class="text-uppercase">CHANGE RUHR - AND YOU.</h2>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="text-block-left">
+                                        <p>Die Lösung des Projekts „Ch@nge Ruhr“ besteht darin, vorhandene Expertise und Kompetenzen der Region in Kooperation mit regional aktiven Multiplikatoren in einem Zukunfts-Hub zu vernetzen, zu bündeln und sie für die KMU (u.a. in den Branchen Industrie, Logistik und Gesundheit) durch die Weiterentwicklung praxisorientierter Beratungs- und Transferkonzepte zugänglicher zu machen: Die Aktivierungs- und Konkretisierungsphase zu Beginn des Projektes dient der Identifizierung betrieblicher Unterstützungsbedarfe und der Gewinnung branchenspezifischer Multiplikatoren im Ruhrgebiet. In der Durchführungs- und Auswertungsphase werden Dialogforen initiiert, in denen erfolgreiche Anwendungsmöglichkeiten digitaler Technologien über Lernreisen erfahrbar gemacht und für die Prozessberatung aufbereitet werden. </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-block-right">
+                                        <p>In Verbindung der wissenschaftlichen Expertise der Projektpartner, der praktischen Arbeit der Multiplikator- und Berater*innen und der Fördererfahrungen werden Hinweise für gute und sozialpartnerschaftliche Beratungskonzepte erarbeitet. Durch die Vermittlung beispielhafter betrieblicher »Transfergeschichten« wird dazu beigetragen, den KMU der Region neue Perspektiven durch digitalen Wandel zu eröffnen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //uberuns-about -->
+
+        <section class="uberuns-die">
+            <div class="container">
+                <h2 class="text-uppercase text-center">die förderer.</h2>
+                <div class="uberuns-die__holder">
+                    <div class="uberuns-die__slider swiper-container">
+                        <div class="slider swiper-wrapper">
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-1.png" alt="">
+                            </div>
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-2.png" alt="">
+                            </div>
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-3.png" alt="">
+                            </div>
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-4.png" alt="">
+                            </div>
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-4.png" alt="">
+                            </div>
+                            <div class="uberuns-die__slider__single swiper-slide">
+                                <img src="img/partner-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uberuns-die__holder__button">
+                        <a class="ubernus-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25.243" viewBox="0 0 24 25.243">
+                                <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(22.5 2.121) rotate(90)">
+                                    <path id="Path_118268" data-name="Path 118268" d="M18,7.5v21" transform="translate(-7.5 -7.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    <path id="Path_118269" data-name="Path 118269" d="M28.5,18,18,28.5,7.5,18" transform="translate(-7.5 -7.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                        <a class="ubernus-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25.243" viewBox="0 0 24 25.243">
+                                <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(1.5 23.121) rotate(-90)">
+                                    <path id="Path_118268" data-name="Path 118268" d="M18,7.5v21" transform="translate(-7.5 -7.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                    <path id="Path_118269" data-name="Path 118269" d="M28.5,18,18,28.5,7.5,18" transform="translate(-7.5 -7.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                                </g>
+                            </svg>                              
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" style="background-image: url(img/cta-image.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 offset-lg-1">
+                        <div class="text-block">
+                            <h5>Jetzt Chancen nutzen.</h5>
+                            <h2 class="text-uppercase">DIGITAL WERDEN. MIT CHANGE RUHR.</h2>
+                            <p>Das Projekt Ch@nge Ruhr unterstützt KMU bei der Gestaltung des digitalen Wandels. Mit dem Format der #Lernreisen bieten wir Praktiker:innen aus KMU die Möglichkeit, Anregungen für die eigene betriebliche Praxis zu sammeln.</p>
+                            <p>Melden Sie sich jetzt an, damit auch Sie digital erfolgreich durchstarten.</p>
+                        </div>
+                        <div class="newsletter__box">
+                            <input type="text" name="" placeholder="Ihre E-Mail">
+                            <button class="button white denim noboder">Newsletter Abonnieren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-block-address">
+                                Institut Arbeit und Technik Munscheidstraße 14 45886 Gelsenkirchen
+                            </div>
+                            <ul class="footer-block-contact-form">
+                                <li><a href="tel:+49 (02 09) 17 07 – 0">Tel: +49 (02 09) 17 07 – 0</a></li>
+                                <li><a href="fax:(02 09) 17 07 – 110">Fax: (02 09) 17 07 – 110</a></li>
+                                <li><a href="mailto:kontakt@change-ruhr.com">Mail: kontakt@change-ruhr.com</a></li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Sitemap
+                            </div>
+                            <ul>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Erfolgsgeschichten</a></li>
+                                <li><a href="#">Themen</a></li>
+                                <li><a href="#">Über Uns</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Förderer
+                            </div>
+                            <ul>
+                                <li><a href="#">Institut Arbeit und Technik</a></li>
+                                <li><a href="#">Institut Arbeit und Qualifikation</a></li>
+                                <li><a href="#">Ruhr-Universität Bochum</a></li>
+                                <li><a href="#">Sozialforschungsstelle</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <ul>
+                                <li><a href="datenschutz.html">Datenschutz</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                            </ul>                                    
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-md-left">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <p class="mb-0">
+                                2021 Institut Arbeit und Technik  | realisiert durch Pechschwarz Media
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <div class="footer-bottom-rightimg">
+                            <img src="img/AK_MAGS_Frder_Farbig_RGB-neu.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src='node_modules/lightbox2/dist/js/lightbox.min.js'></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.common-banner {
+    &.login-banner {
+        .h4 {
+            font-weight: $font-weight-normal;
+            &:last-child {
+                margin-bottom: 145px;
+            }
+
+            a {
+                color: $secondary;
+            }
+        }
+    }
+}

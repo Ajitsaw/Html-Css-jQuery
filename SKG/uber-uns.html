@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SKG</title>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                        <nav class="main-nav d-none d-lg-block">
+                            <ul>
+                                <li>
+                                    <a href="#">Anwendungsbereiche <i class="far fa-angle-down"></i></a>                                    
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Anwendungsbereiche- <br>Übersicht</a></li>
+                                        <li><a href="#">Mineralölwirtschaft & Tankstellentechnik</a></li>
+                                        <li><a href="#">Energieversorger & Tiefbau</a></li>
+                                        <li><a href="#">Brenngasversorger</a></li>
+                                        <li><a href="#">Behälter- & Bunkerabdeckungen</a></li>
+                                        <li><a href="#">Regenwasserspeicher</a></li>
+                                        <li><a href="#">Sonderbauwerke</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Produkte<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Produktübersicht</a></li>
+                                        <li><a href="#">Schachtabdeckungen mit Betonkranz</a></li>
+                                        <li><a href="#">Schachtabdeckungen ohne Betonkranz</a></li>
+                                        <li><a href="#">Fernfüllschränke</a></li>
+                                        <li><a href="#">Sonstige Stahlkonstruktionen</a></li>
+                                        <li><a href="#">Individuelle Anfertigungen</a></li>
+                                        <li><a href="#">Auftriebssicherungen</a></li>
+                                        <li><a href="#">Ersatzteile</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Leistungen<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Leistungsübersicht</a></li>
+                                        <li><a href="#">Sanierung von Schacht- abdeckungen</a></li>
+                                        <li><a href="#">Bauleistungen</a></li>
+                                        <li><a href="#">Projektberatung</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Unternehmen<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Über Uns</a></li>
+                                        <li><a href="#">Downloads</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Referenzen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="lang-menu">
+                            <div class="current-lang">
+                                <img src="img/lang-german.png">
+                                <span><i class="fal fa-angle-down"></i></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/lang-german.png">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/lang-english.png">English
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav-toggle">
+                            <span></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <div class="overlay">
+        <div class="overlay__logo">
+            <a href="index.html">
+                <img src="img/logo.png">
+            </a>
+        </div>
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#">Anwendungsbereiche <i class="far fa-angle-down"></i></a>                                    
+                    <ul class="sub-menu">
+                        <li><a href="#">Anwendungsbereiche- <br>Übersicht</a></li>
+                        <li><a href="#">Mineralölwirtschaft & Tankstellentechnik</a></li>
+                        <li><a href="#">Energieversorger & Tiefbau</a></li>
+                        <li><a href="#">Brenngasversorger</a></li>
+                        <li><a href="#">Behälter- & Bunkerabdeckungen</a></li>
+                        <li><a href="#">Regenwasserspeicher</a></li>
+                        <li><a href="#">Sonderbauwerke</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Produkte<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Produktübersicht</a></li>
+                        <li><a href="#">Schachtabdeckungen mit Betonkranz</a></li>
+                        <li><a href="#">Schachtabdeckungen ohne Betonkranz</a></li>
+                        <li><a href="#">Fernfüllschränke</a></li>
+                        <li><a href="#">Sonstige Stahlkonstruktionen</a></li>
+                        <li><a href="#">Individuelle Anfertigungen</a></li>
+                        <li><a href="#">Auftriebssicherungen</a></li>
+                        <li><a href="#">Ersatzteile</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Leistungen<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Leistungsübersicht</a></li>
+                        <li><a href="#">Sanierung von Schacht- abdeckungen</a></li>
+                        <li><a href="#">Bauleistungen</a></li>
+                        <li><a href="#">Projektberatung</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Unternehmen<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Über Uns</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Referenzen</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- overlay -->
+
+    <section class="banner-fullscreen banner-middle banner-overlay" style="background-image: url(img/banner-bg.jpg);">
+       <div class="container">
+           <div class="text-block banner-text">
+               <h1>SKG Umwelttechnik GmbH<br> - Ihr kompetenter Partner <br>seit über 25 Jahren</h1>
+               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</p>
+           </div>
+       </div> 
+    </section>
+    <!-- home-banner -->
+
+    <section class="fullwidth-text-image">
+        <div class="container-fluid">
+            <div class="row flex-lg-row flex-column-reverse">                
+                <div class="col-lg-6 align-self-center">
+                    <div class="text-block">
+                        <div class="site-heading">
+                            <h4>Das sind wir.</h4>
+                            <h2>SKG Umwelttechnik - Qualität seit über 25 Jahren</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="image-block">
+                        <img src="img/service.jpg" alt="">
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <!-- about-umwelttechnik -->
+
+    <section class="doubleimage-text doubleimage-text--gray" id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="doubleimage-text-images">
+                        <div class="doubleimage-text-images__one">
+                            <img src="img/Bild-Daimlerweg.jpg" alt="">  
+                        </div>
+                        <div class="doubleimage-text-images__two">
+                            <img src="img/Bild-Daimlerweg.jpg" alt="">  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-5 col-lg-6 offset-xl-1">
+                    <div class="text-block">
+                        <div class="doubleimage-text__wrap">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-4 col-md-4 col-lg-auto">
+                                    <div class="fact">
+                                        <div class="fact-inner">
+                                            Standorte
+                                            <div class="countup">
+                                                <span class="counter-value" data-count="2">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-auto">
+                                    <div class="fact">
+                                        <div class="fact-inner">
+                                            Gegründet
+                                            <div class="countup">
+                                                <span class="counter-value" data-count="1995">0</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4 col-lg-auto">
+                                    <div class="fact">
+                                        <div class="fact-inner">
+                                            Mitarbeiter
+                                            <div class="countup">
+                                                <span class="counter-value" data-count="130">0</span>+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="site-heading">
+                            <h4>Lorem ipsum.</h4>
+                            <h2>Lorem ipsum dolor sit amet, consetetur sadipscing</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- doubleimage-text -->
+
+    <section class="image-grid">
+        <div class="image-grid__grid">
+            <div class="bottom_left">
+                <div class="image">
+                    <img src="img/losungen-img1.jpg" alt="grid1">
+                </div>
+            </div>
+            <div class="bottom_center">
+                <div class="image">
+                    <img src="img/banner-bg.jpg" alt="grid2">
+                </div>
+            </div>
+            <div class="bottom_right_top">
+                <div class="image">
+                    <img src="img/losungen-img3.jpg" alt="grid3">
+                </div>
+            </div>
+            <div class="bottom_right_bottom">
+                <div class="image">
+                    <img src="img/losungen-img5.jpg" alt="grid4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- image-grid -->
+
+    <section class="content-grid pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text-block">
+                        <div class="site-heading">
+                            <h4>Leitlinien & Grundsätze.</h4>
+                            <h2>Lorem ipsum dolor sit amet, conse sadipscing elitr, sed diam nonu.</h2>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-xl-5 offset-xl-1 content-grid__right">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="content-grid__right__item">
+                                <h4>Gesunde Work-<br>Life-Balance.</h4>
+                                <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content-grid__right__item">
+                                <h4>Qualitativ hochwertige <br>Produkte.</h4>
+                                <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content-grid__right__item">
+                                <h4>Kompetente Beratung & <br>Individueller Support.</h4>
+                                <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="content-grid__right__item">
+                                <h4>Qualitativ hochwertige <br>Produkte.</h4>
+                                <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- content-grid -->
+
+    <section class="about-historie">
+        <div class="site-heading text-center">
+            <h4>Unsere Geschichte.</h4>
+            <h2>Firmen-Historie</h2>
+        </div>
+        <div class="about-historie__wrap pad-left">
+            <div class="about-historie__slide swiper">
+                <div class="slider swiper-wrapper">
+                    <div class="swiper-slide about-historie__slide__single jQueryEqualHeight">
+                        <div class="h2">1992</div>
+                        <div class="about-historie__slide__single__content">
+                            <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                        </div>
+                    </div>                    
+                    <div class="swiper-slide about-historie__slide__single jQueryEqualHeight">
+                        <div class="h2">1996</div>
+                        <div class="about-historie__slide__single__content">
+                            <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide about-historie__slide__single jQueryEqualHeight">
+                        <div class="h2">2000</div>
+                        <div class="about-historie__slide__single__content">
+                            <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide about-historie__slide__single jQueryEqualHeight">
+                        <div class="h2">2004</div>
+                        <div class="about-historie__slide__single__content">
+                            <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide about-historie__slide__single jQueryEqualHeight">
+                        <div class="h2">2004</div>
+                        <div class="about-historie__slide__single__content">
+                            <p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="historie-button-next"><i class="fas fa-angle-left"></i></a>
+        </div>
+    </section>
+
+    <section class="about-standorte">
+        <div class="container">
+            <div class="site-heading">
+                <h4>Standorte</h4>
+                <h2>Lorem ipsum dolor sit amet, conse<br>
+                    sadipscing elitr, sed diam nonu.</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="about-standorte__single">
+                        <div class="about-standorte__single__img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="about-standorte__single__text">
+                            <h4>SKG Umwelttechnik</h4>
+                            <p>Hemer</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="about-standorte__single">
+                        <div class="about-standorte__single__img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="about-standorte__single__text">
+                            <h4>SKG Umwelttechnik</h4>
+                            <p>Hemer</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="about-standorte__single">
+                        <div class="about-standorte__single__img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="about-standorte__single__text">
+                            <h4>SKG Umwelttechnik</h4>
+                            <p>Hemer</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="about-standorte__single">
+                        <div class="about-standorte__single__img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="about-standorte__single__text">
+                            <h4>SKG Umwelttechnik</h4>
+                            <p>Hemer</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-standorte -->
+
+    <section class="cta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-8 col-md-10 col-sm-12 text-center">
+                    <div class="text-block">
+                        <div class="h2">Haben Sie Fragen zu unseren Produkten oder Leistungen?</div>
+                        <p>Wir beantworten Ihnen gerne alle Fragen. Schreiben Sie uns eine Mail oder rufen Sie uns direkt an.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="button-group">
+                        <a href="tel:02372 / 55 90 13 -0" class="button t-white">02372 / 55 90 13 -0</a>
+                        <a href="mailto:info@skg-umwelttechnik.de" class="button t-white">info@skg-umwelttechnik.de</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
+
+    
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <div class="h2 mb-0 footer-top-text">Wir bieten Ihnen individuelle Lösungen.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Standort
+                            </div>
+                            <div class="footer-block-address">
+                                SKG Umwelttechnik GmbH & Co. KG<br> Schottlandstraße 6 <br>58675 Heber
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <ul class="footer-block-contact-form">
+                                <li><a href="tel:+49 (0) 2372 / 55 90 13 -0">T +49 (0) 2372 / 55 90 13 -0</a></li>
+                                <li><a href="fax:+49 (0) 2372 / 55 90 13 -9">+49 (0) 2372 / 55 90 13 -9</a></li>
+                                <li><a href="mailto:info@skg-umwelttechnik.de">M info@skg-umwelttechnik.de</a></li>
+                            </ul> 
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Telefon
+                            </div>
+                            <div class="footer-block-big">
+                                <a href="tel:T +49 (0) 2372 / 55 90 13 -0">T +49 (0) 2372 / 55 90 13 -0</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontaktformular
+                            </div>
+                            <div class="footer-block-big">
+                                <a href="#">Schreiben Sie uns</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-md-left">
+                            <p class="mb-0 copy_right_text">
+                                2021 SKG Umwelttechnik GmbH | realisiert durch <a href="#">Pechschwarz Media</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <p class="footer_parivacy_policy mb-0"><a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer //End -->
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/jquery-equal-height/js/jquery-equal-height.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

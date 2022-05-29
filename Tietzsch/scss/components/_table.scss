@@ -1,0 +1,96 @@
+.table {
+    &-row {
+        display: flex;
+        @include media-breakpoint-down(xl) {
+            flex-flow: column;
+        }
+        @include media-breakpoint-down(lg) {
+           border: 1px solid $white;
+           margin-top: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 20px;
+        }
+        &.heading {
+            .table-column {
+                border-top: none;
+                padding-top: 0;
+            }
+        }
+        &:first-child {
+            .table-column { 
+                padding-top: 0;
+            }
+        }
+        &:last-child {
+            .table-column {
+                padding-bottom: 0;
+                @include media-breakpoint-down(lg) {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+    &-column {
+        color: $white;
+        font-size: 16px;
+        padding: 15px 70px;
+        border: 1px solid $white;
+        border-left: none;
+        border-bottom: none;
+        @media (max-width: 1800px) {
+            padding: 15px 40px;
+        }
+        @media (max-width: 1600px) {
+            padding: 15px 30px;
+            font-size: 14px;
+        }
+        @include media-breakpoint-down(xl) {
+            padding: 10px 20px;
+        }
+        @include media-breakpoint-down(lg) {
+            border: none;
+            padding: 30px 20px;
+            border-bottom: 1px solid #373438;
+            font-weight: 500;
+            span {
+                margin-bottom: 15px;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 20px 20px;
+        }
+
+        &:first-child {
+            padding-left: 0;
+            flex: 0 0 21%;
+            border-left: none;
+            @include media-breakpoint-down(lg) {
+                padding-left: 20px;
+                font-weight: bold;
+            }
+        }
+        &:nth-child(2) {
+            flex: 0 0 26%;
+            @media (max-width: 1600px) {
+                flex: 0 0 20%;
+            }
+        }
+        &:nth-child(3) {
+            flex: 0 0 26%;
+        }
+        &:last-child {
+            flex: 0 0 27%;
+            padding-right: 0;
+            border-right: none;
+            @media (max-width: 1600px) {
+                flex: 0 0 30%;
+            }
+            @include media-breakpoint-down(lg) {
+                border-bottom: none;
+            }
+        }
+    }
+}

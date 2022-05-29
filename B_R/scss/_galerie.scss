@@ -1,0 +1,85 @@
+.galerie {
+    padding: 150px 0 200px;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .row {
+        margin: 0 -8px;
+        [class^='col-'] {
+            padding: 0 8px;
+        }
+    }
+    &-block {
+        margin-top: 20px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 0px;
+        }
+        &-single {
+            margin-bottom: 60px;
+            display: flex;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 15px;
+            }
+            &__image {
+                height: 308px;
+                width: 100%;
+                position: relative;
+                @include media-breakpoint-down(lg) {
+                    height: 300px;
+                }
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    &-video {
+        background: $back-gray;
+        padding: 160px 0 125px;
+        @include media-breakpoint-down(lg) {
+            padding: $section-padding-medium;
+        }
+        @include media-breakpoint-down(md) {
+            padding: $section-padding-small;
+        }
+        .galerie-block-button {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            .video-btn {
+                display:flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+                color: $white;
+                span {
+                    background: $red;
+                    width: 57px;
+                    height: 57px;
+                    border-radius: 100%;
+                    margin-right: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: auto;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

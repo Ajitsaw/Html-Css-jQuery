@@ -1,0 +1,506 @@
+
+
+
+/* Branchen Slider */
+
+.branchen-section {
+    padding: 0;
+    background-color: $black_bg;
+    .branchen-holder {
+        .branchen-holder__single {
+            background-color: $black_bg;
+            padding: 130px 0 130px;
+            display: flex;
+            align-items: flex-end;
+            min-height: 850px;
+            position: relative;
+            @include media-breakpoint-down(lg) {
+                padding: 120px 0px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 70px 0;
+                min-height: 700px;
+            }
+            @include media-breakpoint-down(sm) {
+                min-height: auto;
+                align-items: center;
+            }
+            .image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    opacity: .4;
+                }
+            }
+            .text-block {
+                .marg {
+                    margin-bottom: 130px;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 50px !important;
+                    }
+                }
+                h2,
+                .h2 {
+                    position: relative;
+                    margin-bottom: 50px;
+                    img {
+                        filter: brightness(0) invert(1);
+                        position: absolute;
+                        left: 250px;
+                        top: 50%;
+                        transform: translate(0px, -50%);
+                        @include media-breakpoint-down(md) {
+                            display: none;
+                        }
+                    }
+                }
+                .h5 {
+                    @include media-breakpoint-down(sm) {
+                        margin-bottom: 0;
+                    }
+                }
+                .button {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    .branchen__left {
+        color: $white;
+        margin-bottom: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+    .branchen__right {
+        color: $white;
+        margin-top: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        @include media-breakpoint-down(sm) {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    }
+    .branchen-progress {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        position: fixed;
+        top: 200px;
+        right: 200px;
+        z-index: 99;
+        transform: translate(220px, 0);
+        transition: all .3s ease;
+        &.show {
+            transform: translate(0px, 0);
+            transition: all .3s ease;
+        }
+        @include media-breakpoint-down(xl) {
+            top: 150px;
+            right: 120px;
+        }
+        @include media-breakpoint-down(lg) {
+            top: 150px;
+            right: 80px;
+        }
+        @include media-breakpoint-down(md) {
+            top: 100px;
+            right: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: 100px;
+            right: 15px;
+        }
+    }
+    .branchen-progress-bar {
+        width: 10px;
+        height: 300px;
+        display: flex;
+        justify-content: flex-end;
+        z-index: 1;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            height: 200px;
+        }
+        @include media-breakpoint-down(sm) {
+            height: 130px;
+        }
+        &:before {
+            content: '';
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 2px;
+        }
+        .branchen_progress-bar {
+            position: absolute;
+            height: auto;
+            width: 4px;
+            background: rgba(255, 255, 255, 1);
+            clear: both;
+            opacity: 1;
+            left: 0;
+            display: flex;
+            &:after {
+                position: absolute;
+                top: 0;
+                left: -1px;
+                background: #fff;
+                height: 0;
+                width: 6px;
+                content: "";
+                transition: 0.1s height linear;
+            }
+        }
+    }
+    .current {
+        font-size: 15px;
+        margin-right: 0px;
+        position: relative;
+        display: flex;
+        margin-left: 0px;
+        color: $white;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        &:before {
+            content: "0";
+        }
+    }
+    .total {
+        color: $white;
+        font-size: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        display: flex;
+        margin-top: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        &:before {
+            content: "0";
+        }
+    }
+}
+
+/* Branchen Single About */
+
+.branchen-single-about {
+    padding: 100px 0;
+    background-position: right;
+    background-color: $black_bg;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .text-block {
+        color: $white;
+        position: relative;
+        z-index: 3;
+        .top {
+            position: relative;
+            padding-bottom: 60px;
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md) {
+                padding-bottom: 00px;
+                margin-bottom: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+            }
+            &:after {
+                content: "";
+                width: 430px;
+                height: 5px;
+                background-color: $white;
+                position: absolute;
+                left: -330px;
+                bottom: 0;
+                @include media-breakpoint-down(lg) {
+                    left: -230px;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 330px;
+                    display: none;
+                }
+            }
+            
+        }
+        h2, .h2 {
+            position: relative;
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+            @include media-breakpoint-down(sm) {}
+            position: relative;
+            &:before {
+                content: "";
+                width: 5px;
+                height: 580px;
+                background-color: $white;
+                position: absolute;
+                left: -130px;
+                top: 20px;
+                @include media-breakpoint-down(lg) {
+                    left: -50px;
+                }
+                @include media-breakpoint-down(md) {
+                    height: 430px;
+                    top: 10px;
+                    left: -30px;
+                    display: none;
+                }
+            }
+        }
+        .h5 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+            }
+            span {
+                color: $secondary;
+            }
+        }
+        .text {
+            max-width: 451px;
+        }
+        .image {
+            margin-top: 50px;
+            display: flex;
+            &-single {
+                margin-right: 45px;
+                @include media-breakpoint-down(md) {
+                    margin-right: 30px;
+                }
+                img {
+                    max-height: 90px;
+                    max-width: 90px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Branchen Blocks */
+
+.branchen-block {
+    overflow: visible;
+    .h2, h2 {
+      margin-bottom: 100px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+      }
+    }
+    .text {
+        p {
+            max-width: 489px;
+        }
+       
+    }
+    .image {
+        background-color: $black_bg;
+      img {
+        max-height: 550px;
+        width: 100%;
+        @include media-breakpoint-down(md) {
+          max-height: 100%;
+        }
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 30px;
+      }
+    }
+    .h5 {
+      text-transform: uppercase;
+      span {
+        color: $secondary;
+      }
+    }
+}
+
+/* Branchen Grid */
+
+.branchen-grid {
+    margin: 80px 0;
+    padding: 0;
+    @include media-breakpoint-down(lg) {
+        margin: 50px 0;
+    }
+    @include media-breakpoint-down(md) {
+        margin: 30px 0;
+    }
+}
+
+/* Branchen Others */
+
+.branchen-others {
+    background: $black;
+    overflow: visible;
+    padding: 250px 0 150px;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text-block {
+        img {
+            filter: brightness(0) invert(1);
+            margin-bottom: 30px;
+        }
+    }
+    h2 {
+      margin-bottom: 30px;
+    }
+    .h5 {
+      margin-bottom: 100px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+      }
+      span {
+        color: $secondary;
+      }
+    }
+    &__holder {
+        margin-top: -100px;
+        @include media-breakpoint-down(lg) {
+            margin-top: -50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: -30px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: 0px;
+        }
+        [class^='col-'] {
+            margin-top: 100px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 0px;
+            }
+        }
+    }
+    .branchen {
+      color: $white;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      @include media-breakpoint-down(sm) {
+        margin: 15px 0;
+        height: auto;
+      }
+      
+      &-image {
+        height: 253px;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+          height: 230px;
+        }
+        @include media-breakpoint-down(md) {
+          height: 200px;
+        }
+        @include media-breakpoint-down(sm) {
+          height: auto;
+        }
+        span {
+          background: $primary;
+          width: 129px;
+          height: 43px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 16px;
+          font-weight: 300;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          @include media-breakpoint-down(md) {
+            width: 120px;
+            height: 40px;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .h3 {
+        flex: 1;
+        padding: 40px 40px 95px;
+        font-size: 30px;
+        line-height: 40px;
+        height: 100%;
+        border-style: solid;
+        border-color: transparent $white $white $white;
+        border-width: 2px;
+        text-transform: uppercase;
+        @include media-breakpoint-down(lg) {
+          font-size: 24px;
+          line-height: 35px;
+          padding: 30px 15px 40px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 20px;
+          line-height: 30px;
+          padding: 30px 15px 30px;
+        }
+        span {
+          color: $secondary;
+        }
+      }
+    }
+    .home-news-button {
+      margin-top: 110px;
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        margin-top: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+      }
+    }
+}

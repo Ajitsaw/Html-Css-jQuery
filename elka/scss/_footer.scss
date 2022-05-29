@@ -1,0 +1,29 @@
+/* Footer */
+
+footer {
+    background:#2E2E2E;
+    padding: 50px 0 40px;
+    position: relative;
+    color: $white;
+    text-align: center;
+    .footer-menu {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        li {
+            padding: 0 7px;
+            line-height: 1;
+            &:last-child {
+                margin-right: 0;
+                border-left: 1px solid $white;
+            }
+            a {
+                color: $white;
+                font-weight: 400;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

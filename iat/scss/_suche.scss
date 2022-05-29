@@ -1,0 +1,506 @@
+.suche-banner {
+    &-heading{
+        max-width: 960px;
+        margin:0 auto;
+    }
+}
+
+.suche-filter {
+    .text-block{
+      h5{
+        color: $denim;
+        letter-spacing: 2.16px;
+      }
+    }
+    .button-block {
+        margin-top: 80px;
+
+        @include media-breakpoint-down(xl){
+            margin-top: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-top: 60px;
+        }
+        @include media-breakpoint-down(md){
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-top: 30px;
+        }
+
+        .button {
+            margin: 0 50px 20px 0;
+            @include media-breakpoint-down(xl){
+                margin-right: 40px;
+            }
+            @include media-breakpoint-down(lg){
+                margin-right: 30px;
+            }
+            @include media-breakpoint-down(md){
+                margin-right: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                margin-right: 15px;
+                letter-spacing: 0.5px;
+                font-size: 12px;
+                padding: 15px;
+                height: 38px;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+//suche-event
+.suche-event{
+    &-heading{
+        margin-bottom: 100px;
+        @include media-breakpoint-down(xl){
+            margin-bottom: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 60px;
+        }
+        @include media-breakpoint-down(md){
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 30px;
+        }
+    }
+    &__wrap{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 295px;
+            background: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%);
+            background: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            background: linear-gradient(to bottom, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
+            position:absolute;
+            left:0;
+            bottom: 35px;
+            pointer-events: none;
+            
+            @include media-breakpoint-down(xs){
+                height: 50%;
+            }
+        }
+
+        &.complete {
+            &:before {
+                display: none;
+            }
+        }
+
+        &__single{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            display: none;
+
+            @include media-breakpoint-down(lg){
+                padding-bottom: 90px;
+            }
+            @include media-breakpoint-down(md){
+                padding-bottom: 70px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-bottom: 50px;
+            }
+            &__img{
+                width: 150px;
+                height: 150px;
+                @include media-breakpoint-down(xs){
+                    width:100%;
+                    height: 240px;
+                    margin-bottom: 30px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__content{
+                flex: 1 0 0%;
+                padding-left: 105px;
+                @include media-breakpoint-down(lg){
+                    padding-left: 95px;
+                }
+                @include media-breakpoint-down(md){
+                    padding-left: 75px;
+                }
+                @include media-breakpoint-down(sm){
+                    padding-left: 45px;
+                }
+                @include media-breakpoint-down(xs){
+                    padding-left: 0;
+                }
+                h5{
+                    letter-spacing: 2.16px;
+                    margin-bottom: 45px;
+                    @include media-breakpoint-down(lg){
+                        margin-bottom: 35px;
+                    }
+                    @include media-breakpoint-down(md){
+                        margin-bottom: 30px;
+                        letter-spacing: 1.16px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        margin-bottom: 25px;
+                        letter-spacing: 1px;
+                    }
+                    strong{
+                        color: $primary;
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .button{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+    &__holder{
+        margin-bottom: 85px;
+        position:relative;
+        &::after{
+            content: "";
+            max-width: 745px;
+            width: 100%;
+            height: 2px;
+            background: $midnight;
+            position:absolute;
+            left:0;
+            bottom: -85px;
+        }
+    }
+    &__buttonwrap{
+        position:relative;
+        a{
+            position:absolute;
+            left: 265px;
+            width: 40px;
+            bottom: 0;
+            display: inline-block;
+            z-index: 9;
+
+            @include media-breakpoint-down(xs){
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+
+//erfolgs-event
+.erfolgs-event{
+    &-heading{
+        margin-bottom: 100px;
+        @include media-breakpoint-down(xl){
+            margin-bottom: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 60px;
+        }
+        @include media-breakpoint-down(md){
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 30px;
+        }
+    }
+    &__wrap{
+        position: relative;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 295px;
+            background: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%);
+            background: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            background: linear-gradient(to bottom, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
+            position:absolute;
+            left:0;
+            bottom: 35px;
+            pointer-events: none;
+            @include media-breakpoint-down(xs){
+                height: 50%;
+            }
+        }
+
+        &.complete {
+            &:before {
+                display: none;
+            }
+        }
+
+        &__single{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            display: none;
+
+            @include media-breakpoint-down(lg){
+                padding-bottom: 90px;
+            }
+            @include media-breakpoint-down(md){
+                padding-bottom: 70px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-bottom: 50px;
+            }
+            &__img{
+                width: 150px;
+                height: 150px;
+                @include media-breakpoint-down(xs){
+                    width:100%;
+                    height: 240px;
+                    margin-bottom: 30px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__content{
+                flex: 1 0 0%;
+                padding-left: 105px;
+                @include media-breakpoint-down(lg){
+                    padding-left: 95px;
+                }
+                @include media-breakpoint-down(md){
+                    padding-left: 75px;
+                }
+                @include media-breakpoint-down(sm){
+                    padding-left: 45px;
+                }
+                @include media-breakpoint-down(xs){
+                    padding-left: 0;
+                }
+                h5{
+                    letter-spacing: 2.16px;
+                    margin-bottom: 45px;
+                    @include media-breakpoint-down(lg){
+                        margin-bottom: 35px;
+                    }
+                    @include media-breakpoint-down(md){
+                        margin-bottom: 30px;
+                        letter-spacing: 1.16px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        margin-bottom: 25px;
+                        letter-spacing: 1px;
+                    }
+                    strong{
+                        color: $primary;
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .button{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+    &__holder{
+        margin-bottom: 85px;
+        position:relative;
+        &::after{
+            content: "";
+            max-width: 745px;
+            width: 100%;
+            height: 2px;
+            background: $midnight;
+            position:absolute;
+            left:0;
+            bottom: -85px;
+        }
+    }
+    &__buttonwrap{
+        position:relative;
+        a{
+            position:absolute;
+            left: 265px;
+            width: 40px;
+            bottom: 0;
+            display: inline-block;
+            z-index: 9;
+
+            @include media-breakpoint-down(xs){
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+//projekte-event
+.projekte-event{
+    &-heading{
+        margin-bottom: 100px;
+        @include media-breakpoint-down(xl){
+            margin-bottom: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 60px;
+        }
+        @include media-breakpoint-down(md){
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-bottom: 30px;
+        }
+    }
+    &__wrap{
+        position: relative;
+
+        &::before{
+            content: "";
+            width: 100%;
+            height: 295px;
+            background: -moz-linear-gradient(top, rgba(248,248,248,0) 0%, rgba(248,248,248,0.85) 100%);
+            background: -webkit-linear-gradient(top, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            background: linear-gradient(to bottom, rgba(248,248,248,0) 0%,rgba(248,248,248,0.85) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f8f8', endColorstr='#f8f8f8',GradientType=0 );
+            position:absolute;
+            left:0;
+            bottom: 35px;
+            pointer-events: none;
+            @include media-breakpoint-down(xs){
+                height: 50%;
+            }
+        }
+
+        &.complete {
+            &:before {
+                display: none;
+            }
+        }
+
+        &__single{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 100px;
+            display: none;
+
+            @include media-breakpoint-down(lg){
+                padding-bottom: 90px;
+            }
+            @include media-breakpoint-down(md){
+                padding-bottom: 70px;
+            }
+            @include media-breakpoint-down(sm){
+                padding-bottom: 50px;
+            }
+            &__img{
+                width: 150px;
+                height: 150px;
+                @include media-breakpoint-down(xs){
+                    width:100%;
+                    height: 240px;
+                    margin-bottom: 30px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__content{
+                flex: 1 0 0%;
+                padding-left: 105px;
+                @include media-breakpoint-down(lg){
+                    padding-left: 95px;
+                }
+                @include media-breakpoint-down(md){
+                    padding-left: 75px;
+                }
+                @include media-breakpoint-down(sm){
+                    padding-left: 45px;
+                }
+                @include media-breakpoint-down(xs){
+                    padding-left: 0;
+                }
+                h5{
+                    letter-spacing: 2.16px;
+                    margin-bottom: 45px;
+                    @include media-breakpoint-down(lg){
+                        margin-bottom: 35px;
+                    }
+                    @include media-breakpoint-down(md){
+                        margin-bottom: 30px;
+                        letter-spacing: 1.16px;
+                    }
+                    @include media-breakpoint-down(sm){
+                        margin-bottom: 25px;
+                        letter-spacing: 1px;
+                    }
+                    strong{
+                        color: $primary;
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .button{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+    &__holder{
+        margin-bottom: 85px;
+        position:relative;
+        &::after{
+            content: "";
+            max-width: 745px;
+            width: 100%;
+            height: 2px;
+            background: $midnight;
+            position:absolute;
+            left:0;
+            bottom: -85px;
+            display: none;
+        }
+    }
+    &__buttonwrap{
+        position:relative;
+        a{
+            position:absolute;
+            left: 265px;
+            width: 40px;
+            bottom: 0;
+            display: inline-block;
+            z-index: 9;
+
+            @include media-breakpoint-down(xs){
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+

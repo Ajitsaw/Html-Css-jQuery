@@ -1,0 +1,105 @@
+
+
+
+
+// about-historie
+.about-historie{
+    background: $gray-bg;
+    .site-heading{
+        margin-bottom: 75px;
+    }
+    &__slide{
+        margin-left: 110px;
+        &__single{
+            max-width: 486px;
+            padding: 55px 50px;
+            background: $white;
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+            .h2{
+                color: $secondary;
+                margin-bottom: 20px;
+            }
+            p{
+                max-width: 350px;
+            }
+        }
+    }
+    &__wrap {
+        position: relative;
+    }
+    .historie-button-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 200px;
+        padding: 10px;
+        font-size: 21px;
+        color: $secondary;
+
+        &.swiper-button-disabled{
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+}
+
+//about-standorte
+.about-standorte{
+    background: $white;
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+
+        [class*='col-']{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .site-heading{
+        margin-bottom: 75px;
+    }
+    &__single{
+        margin-bottom: 30px;
+
+        &__img{
+            height: 357px;
+            margin-bottom: 20px;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &__text{
+            h4{
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+            a{
+                font-size: 12px;
+                color: $primary;
+                position: relative;
+                display: inline-block;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: $primary;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

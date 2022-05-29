@@ -1,0 +1,47 @@
+.cta {
+    margin: 100px 0 200px;
+    @include media-breakpoint-down(xl) {
+        margin: 100px 0 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        margin: 50px 0px;
+    }
+    .pattern {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        @include media-breakpoint-down(xl) {
+            img {
+                max-width: 150px;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+    .lines {
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include media-breakpoint-down(xl) {
+            img {
+                max-width: 150px;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+           display: none;
+        }
+    }
+    h2 {
+        margin-bottom: 75px;
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+            br {
+                display: none;
+            }
+        }
+    }
+}

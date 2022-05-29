@@ -1,0 +1,145 @@
+.benefits {
+    &-blocks {
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(lg) {
+            margin: 0 -15px;
+            flex-flow: row wrap;
+        }
+    }
+    &-single {
+        display: flex;
+        max-width: 284px;
+        flex-flow: column;
+        margin-top: 100px;
+        @include media-breakpoint-down(lg) {
+            max-width: 25%;
+            padding: 0 15px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+            max-width: 50%;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+            max-width: 100%;
+        }
+        &-top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        &-icon {
+            margin-right: 15px;
+        }
+        .h5 {
+            line-height: 30px;
+        }
+        p {
+            font-size: 13px;
+            line-height: 24px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.testimonial {
+    &__slider {
+        &-holder {
+            position: relative;
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+        }
+        &-left {
+            color: $secondary;
+            font-size: 36px;
+            left: -30px;
+            position: relative;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+            i {
+                margin-bottom: 80px;
+            }
+        }
+        &-right {
+            font-size: 36px;
+            color: $secondary;
+            right: -30px;
+            position: relative;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+            i {
+                margin-bottom: 80px;
+            }
+        }
+        .bullets {
+            margin-top: 70px;
+            @include media-breakpoint-down(md) {
+                margin-top: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-top: 30px;
+            }
+        }
+        &-single {
+            .text-block {
+                .para {
+                    margin-bottom: 50px;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 30px;
+                    }
+                }
+                .h5 {
+                    margin-bottom: 15px;
+                }
+                span {
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+            &-image {
+                margin: 0 auto;
+                width: 370px;
+                height: 370px;
+                border-radius: 100%;
+                overflow: hidden;
+                box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.16);
+                @include media-breakpoint-down(lg) {
+                    width: 300px;
+                    height: 300px;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 250px;
+                    height: 250px;
+                }
+                @include media-breakpoint-down(sm) {
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 30px;
+                }
+                @include media-breakpoint-down(xs) {
+                    width: 120px;
+                    height: 120px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+}
+
+.content-block {
+    h2 {
+        text-transform: uppercase;
+    }
+}

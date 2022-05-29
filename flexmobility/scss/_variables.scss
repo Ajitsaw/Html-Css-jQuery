@@ -1,0 +1,36 @@
+/* Global */
+
+$section-padding: 125px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: ( sm: 100%, md: 100%, lg: 100%, xl: 100%);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 1200px, xl: 1400px);
+
+/* Color */
+
+$primary: #484848;
+$secondary:#18B4EE;
+$gray: #BABABA;
+$light-gray: #F2F2F2;
+
+/* Background */
+
+$back-gray: #F3F3F3;
+$back-gray-light: #E6E6E6;
+
+/* Font */
+
+$font-family-sans-serif: 'Montserrat';
+$font-size-base: 1rem;
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 50px;
+$h2-font-size: 40px;
+$h3-font-size: 30px;
+$link-hover-decoration: none;

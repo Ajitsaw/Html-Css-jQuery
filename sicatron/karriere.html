@@ -1,0 +1,613 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sicatron</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li>
+                                <a href="leistungen.html">Leistungen<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="leistungen-single.html">
+                                            Kabelkonfektion
+                                            <span>Eine gute Verbindung schaffen</span>
+                                        </a></li>
+                                    <li><a href="leistungen-single.html">
+                                            Montagearbeiten
+                                            <span>Wir montieren schnell & zuverlässig</span>
+                                        </a></li>
+                                    <li><a href="leistungen-single.html">
+                                            Individuelle Fertigung
+                                            <span>Wir planen und entwickeln mit Ihnen</span>
+                                        </a></li>
+                                    <li><a href="leistungen-single.html">
+                                            Schalterkonfektion
+                                            <span>Innovation, Qualität und Flexibilität</span>
+                                        </a></li>
+                                    <li><a href="leistungen-single.html">
+                                            Planung | Musterbau
+                                            <span>Service und Engagement</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="produkte.html">Produkte<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-single.html">
+                                            Schalttechnik
+                                            <span>Mikro- und Schnappschalter</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Folientastaturen
+                                            <span>Folientastaturen und Silikonschaltmatten</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Motoren & Magnete
+                                            <span>Synchronmotoren, Hub-und Drehmagnete</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Steuern & Automatisieren
+                                            <span>Steuerungskomponenten</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Sensoren
+                                            <span>Lichtschranken</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li class="current-menu-item"><a href="unternehmen.html">Unternehmen</a></li>
+                            <li>
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="fal fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay-logo">
+            <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="row justify-content-between flex-lg-row-reverse flex-column">
+                <div class="col-lg-3">
+                    <div class="overlay-menu">
+                        <ul>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="produkte.html" class="overlay-heading">
+                            Produkte
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="product-single.html">Schaltertechnik</a></li>
+                                <li><a href="product-single.html">Folientastaturen</a></li>
+                                <li><a href="product-single.html">Sensoren</a></li>
+                                <li><a href="product-single.html">Magnete & Motoren</a></li>
+                                <li><a href="product-single.html">Steuern & Automatisieren</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="leistungen.html" class="overlay-heading">
+                            Leistungen
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="leistungen-single.html">Kabelkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Schalterkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Montagearbeiten</a></li>
+                                <li><a href="leistungen-single.html">Individuelle Fertigung</a></li>
+                                <li><a href="leistungen-single.html">Planung & Musterbau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="banner banner-center banner-pattern">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="banner-image mask mask-50">
+                            <img src="img/kareer-banner.png" alt="">
+                            <div class="pattern pattern-right pattern-bottom">
+                                <img src="img/pattern.png" alt="pattern">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="text-block text-white">
+                                <div class="h6 line-after text-uppercase">Karriere</div>
+                                <h2 class="text-uppercase">
+                                    Sicatron als<br>
+                                    ihr arbeitgeber
+                                </h2>
+                                <div class="para">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br>
+                                        nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum <br>
+                                        dolor sit amet, consetetur sadipscing elitr.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#scroll" class="scroll-down">
+                <i class="fal fa-long-arrow-down"></i>
+            </a>
+        </section>
+
+        <section class="content" id="scroll">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="image-block pl-lg-4 pl-0">
+                            <img src="img/kareer1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="text-block text-white mt-180 text-right d-flex flex-column align-items-lg-end">
+                            <div class="h6 line-before text-uppercase">das erwartet sie</div>
+                            <h2 class="h2 text-uppercase">
+                                beste Beratung<br>
+                                und flexibilität
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Wir sind Systemlieferant für Bauteile und Ihr kompetenter<br>
+                                    Partner im Bereich Kabelkonfektion. Wir bieten wir Ihnen <br>
+                                    von der Konzeption eines Produktes über den ersten <br>
+                                    Prototyp bis hin zur fertigen Serie die perfekte <br>
+                                    Kombination von Elektronik und Elektromechanik – für <br>
+                                    innovative Ideen, die überzeugen.
+                                </p>
+                                <p>
+                                    Wir planen gemeinsam mit Ihnen Ihr Projekt und <br>
+                                    unterstützen Sie bei der Wahl des richtigen Lieferanten.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Vorteile</div>
+                            <h2 class="text-uppercase">
+                                Deine Benefits<br>
+                                bei sicatron
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Wir legen Wert darauf, dass sich der Einstieg bei uns<br>
+                                    lohnt –  denn wir bieten attraktive Rahmenbedingungen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="benefits-blocks text-white">
+                            <div class="benefits-single">
+                                <div class="benefits-single-top">
+                                    <div class="benefits-single-icon">
+                                        <img src="img/k1.png" alt="">
+                                    </div>
+                                    <h3 class="h5">
+                                        Gesunde Work-<br>
+                                        Life-Balance
+                                    </h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consetetur 
+                                    sadipscing elitr, sed diam nonumy eirmod 
+                                    tempor invidunt ut labore et dolore magna 
+                                    aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <div class="benefits-single">
+                                <div class="benefits-single-top">
+                                    <div class="benefits-single-icon">
+                                        <img src="img/k2.png" alt="">
+                                    </div>
+                                    <h3 class="h5">
+                                        Weiterbildungs-<br>
+                                        möglichkeiten
+                                    </h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consetetur 
+                                    sadipscing elitr, sed diam nonumy eirmod 
+                                    tempor invidunt ut labore et dolore magna 
+                                    aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <div class="benefits-single">
+                                <div class="benefits-single-top">
+                                    <div class="benefits-single-icon">
+                                        <img src="img/k3.png" alt="">
+                                    </div>
+                                    <h3 class="h5">
+                                        Leistungsgerechte 
+                                        & faire Vergütung
+                                    </h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consetetur 
+                                    sadipscing elitr, sed diam nonumy eirmod 
+                                    tempor invidunt ut labore et dolore magna 
+                                    aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <div class="benefits-single">
+                                <div class="benefits-single-top">
+                                    <div class="benefits-single-icon">
+                                        <img src="img/k4.png" alt="">
+                                    </div>
+                                    <h3 class="h5">
+                                        Flexible 
+                                        Arbeitszeiten
+                                    </h3>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consetetur 
+                                    sadipscing elitr, sed diam nonumy eirmod 
+                                    tempor invidunt ut labore et dolore magna 
+                                    aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block text-center center-block text-white">
+                            <div class="h6 line-after text-uppercase">Das sagen unsere Mitarbeiter</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="testimonial__slider-holder">
+                            <div class="testimonial__slider-left">
+                                <i class="fal fa-long-arrow-left"></i>
+                            </div>
+                            <div class="testimonial__slider swiper-container">
+                                <div class="slider swiper-wrapper">
+                                    <div class="testimonial__slider-single swiper-slide">
+                                        <div class="row align-items-center flex-md-row flex-column-reverse">
+                                            <div class="col-lg-5 offset-lg-1 col-md-7">
+                                                <div class="text-block center-block text-center text-white">
+                                                    <div class="para">
+                                                        <p>
+                                                            "Et vim graeco principes dico nullam pri. Duo stet possim quaerendum eu, cum in invenire platonem animal assentior nam, sed qualisque deterruisset melius erroribus intellegebat, sed dico apeirian ei."
+                                                        </p>
+                                                    </div>
+                                                    <div class="h5">
+                                                        Mi-Ta Bei-ther
+                                                    </div>
+                                                    <span>Produktion</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-5">
+                                                <div class="testimonial__slider-single-image">
+                                                    <img src="img/testimonial-img.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__slider-single swiper-slide">
+                                        <div class="row align-items-center flex-md-row flex-column-reverse">
+                                            <div class="col-lg-5 offset-lg-1 col-md-7">
+                                                <div class="text-block center-block text-center text-white">
+                                                    <div class="para">
+                                                        <p>
+                                                            "Et vim graeco principes dico nullam pri. Duo stet possim quaerendum eu, cum in invenire platonem animal assentior nam, sed qualisque deterruisset melius erroribus intellegebat, sed dico apeirian ei."
+                                                        </p>
+                                                    </div>
+                                                    <div class="h5">
+                                                        Mi-Ta Bei-ther
+                                                    </div>
+                                                    <span>Produktion</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-5">
+                                                <div class="testimonial__slider-single-image">
+                                                    <img src="img/testimonial-img.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial__slider-single swiper-slide">
+                                        <div class="row align-items-center flex-md-row flex-column-reverse">
+                                            <div class="col-lg-5 offset-lg-1 col-md-7">
+                                                <div class="text-block center-block text-center text-white">
+                                                    <div class="para">
+                                                        <p>
+                                                            "Et vim graeco principes dico nullam pri. Duo stet possim quaerendum eu, cum in invenire platonem animal assentior nam, sed qualisque deterruisset melius erroribus intellegebat, sed dico apeirian ei."
+                                                        </p>
+                                                    </div>
+                                                    <div class="h5">
+                                                        Mi-Ta Bei-ther
+                                                    </div>
+                                                    <span>Produktion</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-5">
+                                                <div class="testimonial__slider-single-image">
+                                                    <img src="img/testimonial-img.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bullets"></div>
+                            </div>
+                            <div class="testimonial__slider-right">
+                                <i class="fal fa-long-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="leistungen-img">
+            <div class="leistungen-img-single">
+                <img src="img/kar1.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/kar2.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/kar3.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/kar4.png" alt="">
+            </div>
+        </section>
+
+        <section class="sub-products sub-products-karriere">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block text-center center-block text-white">
+                            <div class="h6 line-after text-uppercase">unsere jobangebote</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="karriere-single.html" class="sub-products-single">
+                            <figure>
+                                <img src="img/job1.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    Lorem Ipsum<br>
+                                    Jobangebot
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="karriere-single.html" class="sub-products-single">
+                            <figure>
+                                <img src="img/job2.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    Lorem Ipsum<br>
+                                    Jobangebot
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="karriere-single.html" class="sub-products-single">
+                            <figure>
+                                <img src="img/job3.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    Lorem Ipsum<br>
+                                    Jobangebot
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block center-block text-center text-white">
+                            <div class="h6 line-before text-uppercase">Interesse geweckt?</div>
+                            <h2 class="h2 text-uppercase">
+                                sie haben fragen<br>
+                                oder möchten sich<br>
+                                bewerben?
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Dann zögern Sie nicht uns zu kontaktieren. Gemeinsam<br>
+                                    schauen wir uns Ihr Anliegen an und beraten Sie gerne.
+                                </p>
+                                <div class="buttons">
+                                    <a href="" class="button outline primary">info@sicatron.de</a>
+                                    <a href="" class="button outline primary">+49 (0) 2331 47 33 290</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <a href="">E-Mail: info@sicatron.de</a>
+                            <a href="">Telefon +49 (0) 2331 473329 - 0</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                SICATRON GmbH & Co. KG
+                            </div>
+                            <address>
+                                Pettenkoferstr. 15<br>
+                                58097 Hagen, Germany
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                Follow
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6">
+                        <div class="text-block">
+                            <p>
+                                2021 SICATRON GmbH | realisiert durch <a href="">Pechschwarz Media</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-menu">
+                            <a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

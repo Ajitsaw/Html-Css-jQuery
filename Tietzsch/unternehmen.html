@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tietzsch</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+</head>
+
+<body>
+     <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="image/logo.png"></a>
+                    <a href="index.html" class="logo-dark"><img src="image/logo-dark.png"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li><a href="produkte-overview.html">Produkte<i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-single.html">
+                                        Spannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                        Hochspannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                        Teleskop-Spannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                        Ex-Mess- & Prüfgeräte
+
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                        Isolations- & Widerstandsprüfgeräte
+
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                        Zubehör
+
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="branchen-overview.html">Branchen <i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="branchen-single.html">
+                                        Energieversorger
+
+                                        </a></li>
+                                    <li><a href="branchen-single.html">
+                                        Industrie & Handwerk
+                                        </a></li>
+                                    <li><a href="branchen-single.html">
+                                        Bahn- & Verkehrstechnik
+                                        </a></li>
+                                    <li><a href="branchen-single.html">
+                                        Feuerwehr & THW
+                                        </a></li>
+                                    <li><a href="branchen-single.html">
+                                        Chemie & Bergbau EX
+
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">Service</a></li>
+                            <li>
+                                <a href="sicherheit.html">Sicherheit</a>
+                            </li>
+                            <li>
+                                <a href="unternehmen.html">Unternehmen</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="searchBox">
+                        <i class="far fa-search"></i>
+                    </div>
+                    <div class="kart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="https://via.placeholder.com/100">
+                            <span><i class="far fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="https://via.placeholder.com/100">Deutsch</a></li>
+                            <li><a href="#"><img src="https://via.placeholder.com/100">English</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Overlay -->
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay__logo">
+            <a href="index.html" class="overlay-header">
+                <img src="image/logo-dark.png" alt="logo">
+            </a>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li class="menu-item-has-children"><a href="produkte-overview.html">Produkte<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="produkte-single.html">
+                            Spannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-single.html">
+                            Hochspannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-single.html">
+                            Teleskop-Spannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-single.html">
+                            Ex-Mess- & Prüfgeräte
+
+                            </a></li>
+                        <li><a href="produkte-single.html">
+                            Isolations- & Widerstandsprüfgeräte
+
+                            </a></li>
+                        <li><a href="produkte-single.html">
+                            Zubehör
+
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="branchen-overview.html">Branchen <i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="branchen-single.html">
+                            Energieversorger
+
+                            </a></li>
+                        <li><a href="branchen-single.html">
+                            Industrie & Handwerk
+
+                            </a></li>
+                        <li><a href="branchen-single.html">
+                            Bahn- & Verkehrstechnik
+
+                            </a></li>
+                        <li><a href="branchen-single.html">
+                            Feuerwehr & THW
+
+                            </a></li>
+                        <li><a href="branchen-single.html">
+                            Chemie & Bergbau EX
+
+                            </a></li>
+                    </ul>
+                </li>
+                <li><a href="service.html">Service</a></li>
+                <li>
+                    <a href="sicherheit.html">Sicherheit</a>
+                </li>
+                <li>
+                    <a href="unternehmen.html">Unternehmen</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- Overlay -->
+
+    <main>
+
+        <!-- Banner -->
+        <section class="hero hero--company">
+            <div class="image">
+                <img src="image/unternehmen-bg.jpg" alt="banner">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-7  col-lg-8">
+                        <div class="text">
+                            <div class="heading">
+                                <h1>
+                                    Fertigung made<br>
+                                    In germany
+                                </h1>
+                            </div>
+                            <h5>
+                                Als Familienunternehmen setzen wir außergewöhnliche Maßstäbe an Qualität und Sicherheit unserer Mess- und Prüfgeräte - und das seit mehr als 60 Jahren.
+                            </h5>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xxl-5 col-lg-4">
+                        <div class="video">
+                            <div class="trigger" data-overlay-trigger="video-1"><i class="fas fa-play"></i></div>
+                            <img src="image/unternehmen-video.jpg" alt="unternehmen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
+
+        <!-- Video -->
+        <div class="video-overlay" data-overlay="video-1">
+            <div class="video-overlay__close"><i class="fal fa-times"></i></div>
+            <div class="video-overlay__video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9hhMUT2U2L4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- Video -->
+
+        <!-- Text & Image -->
+        <section class="text-image py-large">
+            <div class="line-bottom"></div>
+            <div class="container-fluid">
+                <div class="row align-items-end flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Unsere<br>Ansprüche
+                                </h2>
+                            </div>
+                            <div class="content">
+                                <p>Mit unseren hochwertigen Produkten schaffen wir für unsere Kunden deutlich mehr Sicherheit an elektrischen Anlagen.</p>
+                                <p>Tradition und Innovation, die vollständige Fertigung und Qualitäts-kontrolle in Deutschland, sowie kundenspezifische Lösungen in unterschiedlichen Anwendungsbereichen sind die Stärken und das Qualitätsversprechen der Firma Tietzsch.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image">
+                            <img src="image/unternehmen-img1.jpg" alt="unternehmen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Text & Image -->
+
+        <!-- Text & Image -->
+        <section class="text-image text-image--reverse pb-large">
+            <div class="container-fluid">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <div class="image">
+                            <img src="image/unternehmen-img2.jpg" alt="unternehmen">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Tradition &<br>
+                                    Innovation
+                                </h2>
+                            </div>
+                            <div class="content">
+                                <p>Bereits 1953 wurde von uns der besonders robuste und sichere „Prüfball“ mit seinem innovativen, staubdichten Gummigehäuse gefertigt. Heute entwickeln und produzieren wir Spannungsprüfer, Hochspannungsprüfer und Ex-Messgeräte unter höchsten Qualitäts- und Sicherheitsansprüchen und bieten Sonderlösungen für spezielle Kundenanwendungen. Die Funktionalität unserer Geräte entspricht mit zuverlässigen Anzeigen und leichter Bedienung den Kundenwünschen von heute.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Text & Image -->
+
+        <!-- Listing text -->
+        <section class="listing-text py-large bg-light-gray">
+            <div class="line"><span></span></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Das macht uns<br>
+                                    So einzigartig
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="listing-text__block">
+                            <div class="single">
+                                Firmensitz und Fertigung in Ennepetal
+                            </div>
+                            <div class="single">
+                                Mechanische Bearbeitung für Zubehör nach Kundenanforderung
+                            </div>
+                            <div class="single">
+                                Sicherung der Qualität durch eigene Elektronik-Fertigung
+                            </div>
+                            <div class="single">
+                                Montage hochkomplexer Messwerke
+                            </div>
+                            <div class="single">
+                                Prüfungen bis 70 kV in unserem Hochspannungslabor
+                            </div>
+                            <div class="single">
+                                Baugruppeninspektion mit Mikroskop
+                            </div>
+                            <div class="single">
+                                100%-Prüfung jedes einzelnen Gerätes
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Listing text -->
+
+        <!-- Text & Image -->
+        <section class="text-image text-image--reverse py-large">
+            <div class="line-top"></div>
+            <div class="container-fluid">
+                <div class="row align-items-start">
+                    <div class="col-lg-6">
+                        <div class="image">
+                            <img src="image/unternehmen-img3.jpg" alt="unternehmen">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Qualität seit<br>
+                                    Über 60 jahren
+                                </h2>
+                            </div>
+                            <div class="content">
+                                <p>Bereits 1953 wurde von uns der besonders robuste und sichere Prüfball mit seinem innovativen, staubdichten Gummigehäuse gefertigt.</p>
+                                <p>
+                                    Heute entwickeln und produzieren wir Spannungsprüfer, Hoch-Spannungsprüfer und Ex-Messgeräte unter höchsten Qualitäts- und Sicherheitsansprüchen und bieten Sonderlösungen für spezielle Kundenanwendungen. Die Funktionalität unserer Geräte entspricht mit zuverlässigen Anzeigen und leichter Bedienung den Kundenwünschen von heute.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Text & Image -->
+
+        <!-- Image Text -->
+        <section class="image-text two-image pb-large">
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-lg-5">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Prüfgeräte für<br>Elektrotechnik
+                                </h2>
+                            </div>
+                            <p>
+                                Alle unsere Produkte sind „Made in Germany“. Durch den voll-ständigen Fertigungsprozess in unserem Hause können wir ein hohes Maß an Qualität sicherstellen und Ihnen maßgeschneiderte Sonderlösungen bieten. Dazu gehört die sorgfältige Auswahl hochwertiger Werkstoffe und die umfassende Prüfung jedes einzelnen Gerätes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="image">
+                            <img src="image/unternehmen-img-1.jpg" alt="unternehmen">
+                            <img src="image/unternehmen-img-2.jpg" alt="unternehmen">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Image Text -->
+
+        <!-- Responsibility -->
+        <section class="responsibility pb-large">
+            <div class="line-bottom"></div>
+            <div class="bg">
+                <img src="image/unternehmen-img4.jpg" alt="unternehmen">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="text text-white">
+                            <div class="heading">
+                                <h2>
+                                    Gesellschaftliche<br>Verantwortung
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text text-white">
+                            <p>
+                                Für Produktionsprozesse in unserem Betrieb haben wir freiwillige Maßnahmen zur Reduzierung von CO2-Emission ergriffen. Wir nutzen ausschließlich regenerative Energien. Strom, der nicht durch eigene Solaranlagen erzeugt werden kann, wird durch regionalen Grünstrom ergänzt. Wärmepumpen, die mit regenerativer Energie betrieben werden, runden unseren Beitrag für die Umwelt ab. Mensch und Natur liegen unserem Familienunternehmen sehr am Herzen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text text-white">
+                            <p>
+                                Die Produktion in unserem Betrieb in Ennepetal sowie die Auswahl regionaler Zulieferer sichert Arbeitsplätze in Deutschland. Teilkomponenten der Produkte werden in einer Behindertenwerkstatt im Inland montiert. Gesellschaftliche Verantwortung zu übernehmen heißt auch mit ökologischen Ressourcen verantwortungs-bewusst umzugehen. In diesem Sinne haben wir völlig wartungsfreie Spannungsprüfer durch innovative und stromsparende Schaltungen entwickelt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Responsibility -->
+
+        <!-- Kunden -->
+        <section class="kunden py-large">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="text">
+                            <div class="heading">
+                                <h2>
+                                    Unsere<br>
+                                    Kunden
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="kunden-holder">
+                <div class="kunden__slider swiper-container">
+                    <div class="slider swiper-wrapper">
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo1.png" class="logo">
+                            <div class="title"><span>ABB</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo2.png" class="logo">
+                            <div class="title"><span>Feuerwehr</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo3.png" class="logo">
+                            <div class="title"><span>Eon</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo4.png" class="logo">
+                            <div class="title"><span>Structon Rail</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo5.png" class="logo">
+                            <div class="title"><span>Siemens</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo1.png" class="logo">
+                            <div class="title"><span>enesco</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo2.png" class="logo">
+                            <div class="title"><span>Bogestra</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo3.png" class="logo">
+                            <div class="title"><span>Vestas Wind</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo4.png" class="logo">
+                            <div class="title"><span>Thyssenkrupp</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo5.png" class="logo">
+                            <div class="title"><span>Infrabel</span>Lorem ipsum</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="kunden__slider reversed swiper-container">
+                    <div class="slider swiper-wrapper">
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo5.png" class="logo">
+                            <div class="title"><span>ABB</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo6.png" class="logo">
+                            <div class="title"><span>Feuerwehr</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo7.png" class="logo">
+                            <div class="title"><span>Eon</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo8.png" class="logo">
+                            <div class="title"><span>Structon Rail</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo9.png" class="logo">
+                            <div class="title"><span>Siemens</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo10.png" class="logo">
+                            <div class="title"><span>enesco</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo2.png" class="logo">
+                            <div class="title"><span>Bogestra</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo3.png" class="logo">
+                            <div class="title"><span>Vestas Wind</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo4.png" class="logo">
+                            <div class="title"><span>Thyssenkrupp</span>Lorem ipsum</div>
+                        </a>
+                        <a href="#" class="customer swiper-slide">
+                            <img src="image/logo5.png" class="logo">
+                            <div class="title"><span>Infrabel</span>Lorem ipsum</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Kunden -->
+
+
+        <!-- CTA -->
+        <section class="cta py-large">
+            <div class="bg">
+                <img src="image/cta.jpg" alt="cta">
+            </div>
+            <div class="line-top"><span></span></div>
+            <div class="line-bottom"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text">
+                            <div class="heading">
+                                <h2 class="h1">
+                                    haben sie noch<br>
+                                    offene Fragen?
+                                </h2>
+                            </div>
+                            <h4>
+                                Nehmen Sie gerne Kontakt mit uns auf! Wir helfen Ihnen gerne
+                                persönlich weiter und bearbeiten Ihre Anfrage schnellstmöglich.
+                            </h4>
+                            <div class="button-group">
+                                <a href="kontakt.html" class="button button--white">Kontakt aufnehmen</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+
+
+    </main>
+
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-end flex-column-reverse flex-lg-row">
+                <div class="col-lg-12">
+                    <div class="content position-relative">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Kontakt
+                                    </div>
+                                    <address>
+                                        Rudolph Tietzsch GmbH & Co. KG<br>
+                                        Willringhauser Straße 18<br>
+                                        D - 58256 Ennepetal
+                                    </address>
+                                    <a href="" class="phone">Hotline: +49 2333 – 861 77 03</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Zentrale
+                                    </div>
+                                    <div class="links">
+                                        <a href="">FTelefon: +49 2333 – 7 59 89</a>
+                                        <a href="">Telefax: +49 2333 – 7 52 57</a>
+                                        <a href="">E-Mail: info@tietzsch.de</a>
+                                    </div>
+                                    <div class="socials">
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Produkte
+                                    </div>
+                                    <nav class="menu">
+                                        <ul>
+                                            <li>
+                                                <a href="">Spannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hochspannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Teleskop-Spannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Ex-Mess- & Prüfgeräte</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Isolations - & Widerstandsprüfgeräte</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Branchen
+                                    </div>
+                                    <nav class="menu">
+                                        <ul>
+                                            <li>
+                                                <a href="">Energieversorger</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Industrie & Handwerk</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bahntechnik</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Feuerwehr & THW</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chemie & Bergbau</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__bottom">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="copyright">
+                                        2021 Tietzsch GmbH | realisiert durch <a href="">Pechschwarz Media</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li>
+                                            <a href="impressum.html">Impressum</a>
+                                        </li>
+                                        <li>
+                                            <a href="datenschutz.html">Datenschutz</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="node_modules/jquery-circle-progress/dist/circle-progress.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

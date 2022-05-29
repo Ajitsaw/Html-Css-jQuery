@@ -1,0 +1,355 @@
+.about-info {
+    padding: 150px 0 250px;
+    @include media-breakpoint-down(lg) {
+        padding: 90px 0 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 50px;
+        .animate-box {
+            display: none;
+        }
+    }
+    .text-block {
+        .block-para {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.vision {
+    padding: 180px 0 285px;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0 170px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        width: 57%;
+        height: 100%;
+        background: $primary;
+        @include media-breakpoint-down(lg) {
+            width: 54%;
+        }
+        @include media-breakpoint-down(md) { 
+            display: none;
+        }
+    }
+    .text-block {
+        color: $white;
+        @include media-breakpoint-down(md) { 
+            color: $primary;
+            margin-top: 50px;
+        }
+    }
+    &-left {
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1.8;
+            @include media-breakpoint-down(lg) {
+                font-size: 24px;
+                line-height: 1.5;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.about-download {
+    padding: 0;
+    margin-top: -130px;
+    z-index: 9;
+    position: relative;
+    @include media-breakpoint-down(md) { 
+        margin: 0;
+    }
+    .row {
+        [class^='col-'] {
+            &:nth-child(odd) {
+                .about-download-box {
+                    color: $white;
+                    background: $primary;
+                    .button {
+                        &:after {
+                            background: $white;
+                        }
+                        &:before {
+                            background: $secondary;
+                        }
+                        span {
+                            color: $primary;
+                            &:first-child {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(even) {
+                .about-download-box {
+                    background: $light-white;
+                    color: $primary;
+                }
+            }
+        }
+    }
+    &-box {
+        padding: 35px;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        @include media-breakpoint-down(sm) { 
+            margin-bottom: 30px;
+        }
+        h3 {
+            margin-bottom: 17px;
+        }
+        h2 {
+            font-size: 30px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+            @include media-breakpoint-down(sm) {  
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.company-about {
+    padding: 150px 0 0;
+    @include media-breakpoint-down(lg) {
+        padding: 100px 0 0;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0 0;
+    }
+    &-left {
+        .company-slider {
+            &-img {
+                height: 638px;
+                @include media-breakpoint-down(lg) {
+                    height: 500px;
+                }
+                @include media-breakpoint-down(sm) {
+                    height: 400px;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-right {
+        margin-top: 70px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+    }
+}
+.company-small {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -70px;
+    position: relative;
+    z-index: 9;
+    @include media-breakpoint-down(md) {
+        margin-top: 50px;
+    }
+    &-slider {
+        width: 58%;
+        @include media-breakpoint-down(md) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .slick-list {
+            padding: 0 27.5% 0 0;
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
+        }
+        &-single {
+            margin: 0 13px;
+            transition: all .3s ease-in-out;
+            @include media-breakpoint-down(lg) {
+                margin: 0 10px;
+            }
+            &:hover {
+                .company-small-slider-single-content {
+                    &:before {
+                        background: $primary;
+                    }
+                    .slide-logo {
+                        img {
+                            width: 30px;
+                            transition: width .3s ease-in-out;
+                        }
+                    }
+                    h3, p {
+                        display: block;
+                        opacity: 1;
+                        transition: opacity 0.3s ease;
+                    }
+                }
+            }
+            &-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-flow: column;
+                text-align: center;
+                position: relative;
+                z-index: 4;
+                color: $white;
+                height: 341px;
+                padding: 30px;
+                cursor: pointer;
+                @include media-breakpoint-down(lg) {
+                    height: 280px;
+                }
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    background: rgba(32,52,63,.77);
+                }
+                .slide-logo {
+                    img {
+                        width: 120px;
+                        transition: width .3s ease-in-out;
+                        @include media-breakpoint-down(lg) {
+                            width: 90px;
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 30px;
+                    line-height: 1.2;
+                    font-weight: 700;
+                    margin: 15px 0 30px;
+                    opacity: 0;
+                    display: none;
+                    transition: opacity .3s ease-in-out;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 22px;
+                        margin: 10px 0 20px;
+                    }
+                }
+                p {
+                    display: none;
+                    opacity: 0;
+                    transition: opacity .3s ease-in-out;
+                    margin-bottom: 0;
+                }
+
+            }
+        }
+    }
+    .slick-arrow {
+        position: absolute;
+        left: -60px;
+        top: 50%;
+        transform: translate(0, -50%);
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        background: transparent;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        
+        &.slick-next {
+            @include media-breakpoint-down(md) {
+                left: auto;
+                right: -60px;
+            }
+            @include media-breakpoint-down(sm) {
+                right: -35px;
+            }
+        }
+        &.slick-prev {
+            left: -120px;
+            @include media-breakpoint-down(md) {
+                left: -60px
+            }
+            @include media-breakpoint-down(sm) {
+                left: -35px;
+            }
+        }
+    }
+}
+
+.about-successor {
+    padding: 180px 0 225px;
+    @include media-breakpoint-down(lg) {
+        padding: 120px 0 100px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 120px 0 80px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0;
+    }
+    &-block {
+        background: $primary;
+        padding: 110px 50px 120px;
+        @include media-breakpoint-down(lg) {
+            padding: 70px 50px 60px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 50px 30px;
+        }
+    }
+    .text-block {
+        h2 {
+            margin-bottom: 80px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+        .block-para {
+            margin-bottom: 60px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .animate-box {
+        &.top-position {
+            top: -62px;
+            @include media-breakpoint-down(lg) { 
+                top: -45px;
+            }
+        }
+    }
+    .button {
+        &::before {
+            background: $white;
+        }
+        span {
+            &:first-child {
+                color: $primary;
+            }
+        }
+    }
+}

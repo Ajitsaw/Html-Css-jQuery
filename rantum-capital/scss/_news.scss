@@ -1,0 +1,278 @@
+
+.news-wrap {
+    padding-top: 210px;
+    background: $anthrazit;
+    overflow: visible;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 140px;
+    }
+    
+    h4 {
+      color: $secondary;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin-bottom: 90px;
+      color: $white;
+      font-size: 60px;
+      line-height: 70px;
+      font-weight: $font-weight-semibold;
+      letter-spacing: 7.5px;
+      text-transform: uppercase;
+    }
+    .h5 {
+      margin-bottom: 100px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 30px;
+      }
+      span {
+        color: $secondary;
+      }
+    }
+
+    &_block {
+      margin-bottom: 40px;
+      font-size: 0;
+
+      @include media-breakpoint-down(sm) {
+          margin-bottom: 30px;
+      }
+
+      h4 {
+        letter-spacing: 0.9px;
+        color: $white;
+      }
+
+      .button {
+          margin-right: 30px;
+          margin-bottom: 30px;
+          padding-left: 25px;
+          padding-right: 25px;
+
+          &:last-child {
+              margin-right: 0;
+          }
+
+          @include media-breakpoint-down(sm) {
+              padding: 10px 10px;
+              font-size: 15px;
+              letter-spacing: 0;
+              margin-right: 10px;
+              margin-bottom: 10px;
+              height: 36px;
+          }
+      }
+    }
+
+    &__holder {
+      position: relative;
+      
+      [class^='col-'] {
+        margin-top: 30px;
+      }
+    }
+
+    &__item {
+      display: none;
+    }
+    
+    .news {
+      color: $white;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      border: 1px solid $white;
+
+    @include media-breakpoint-down(sm) {
+      margin: 15px 0;
+      height: auto;
+    }
+   
+    &-image {
+      position: relative;
+
+      &:before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: $anthrazit, $alpha: 0.5);
+        content: '';
+        mix-blend-mode: multiply;
+        z-index: 1;
+      }
+      .news-date {
+        position: absolute;
+        top: 13px;
+        right: 19px;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        letter-spacing: 2.25px;
+        z-index: 3;
+
+        @include media-breakpoint-down(sm) {
+          font-size: 13px;
+          line-height: 15px;
+        }
+      }
+      span {
+        background: $secondary;
+        width: auto;
+        padding: 16px 21px;
+        height: 74px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+        letter-spacing: 2.25px;
+        max-width: 255px;
+        z-index: 3;
+
+        &.reno-sand {
+          background: $reno-sand;
+        }
+        &.mandalay {
+          background: $mandalay;
+        }
+
+        @include media-breakpoint-down(md) {
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 13px;
+          line-height: 15px;
+          padding: 12px 15px;
+          width: 100%;
+          max-width: 220px;
+          height: 54px;
+        }
+      }
+      a {
+        display: flex; 
+        height: 169px;
+        position: relative;
+        overflow: hidden;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all ease-in-out 2s;
+        }
+      }
+    }
+
+    &:hover  {
+      .news-image {
+        img {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    &-content {
+      padding: 30px 50px;
+      height: 100%;
+
+      @include media-breakpoint-down(lg) {
+        padding: 15px 15px 20px;
+      }
+      @include media-breakpoint-down(md) {
+        padding: 15px 15px 20px;
+      }
+
+      .h4 {
+        flex: 1;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-weight: $font-weight-semibold;
+        letter-spacing: 0.9px;
+        min-height: 114px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-down(lg) {
+          line-height: 1.4;
+        }
+        span {
+          color: $secondary;
+        }
+        a {
+          color: $white;
+        }
+      }
+
+      .read-more {
+        font-size: 13px;
+        line-height: 15px;
+        color: $white;
+        letter-spacing: 1.56px;
+        font-weight: $font-weight-normal;
+        font-family: $font-family-worksans;
+        text-transform: uppercase;
+        display: inline-block;
+        vertical-align: top;
+        float: right;
+
+        &:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: "\f105";
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 300;
+            margin-right: 15px;
+            transition: all 0.5s ease-in-out;
+        }
+
+        &:hover {
+            text-decoration: underline;
+
+            &:before {
+                margin-right: 5px;
+            }
+        }
+
+        @media(max-width: 575px) {
+            font-size: 11px;
+            line-height: 15px;
+        }
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: $font-weight-normal;
+        letter-spacing: 0.61px;
+        margin-bottom: 66px;
+
+        @include media-breakpoint-down(md) {
+          line-height: 1.4;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    }
+
+    .home-news-button {
+      margin-top: 110px;
+      text-align: center;
+      @include media-breakpoint-down(md) {
+        margin-top: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-top: 30px;
+      }
+    }
+  }  

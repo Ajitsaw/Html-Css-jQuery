@@ -1,0 +1,173 @@
+.busch {
+    .image-block {
+        img {
+            max-height: 442px;
+            @include media-breakpoint-down(lg) {
+                max-height: 400px;
+            }
+            @include media-breakpoint-down(md) {
+                max-height: 100%;
+            }
+        }
+    }
+}
+.busch-one {
+    .image-block {
+        img {
+            max-height: 655px;
+            @include media-breakpoint-down(lg) {
+                max-height: 500px;
+            }
+            @include media-breakpoint-down(md) {
+                max-height: 100%;
+            }
+        }
+    }
+}
+
+.beruhrungswelten-busch {
+    .text-block {
+        h2 {
+            margin-bottom: 42px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .beruhrungswelten-single-text {
+        display: flex;
+    }
+    .beruhrungswelten-single-holder {
+        align-items: flex-end;
+        .f-button {
+            @media (max-width: 1700px) {
+                padding: 0 20px;
+            }
+            
+        }
+    }
+    .beruhrungswelten-price {
+        font-size: 30px;
+        font-weight: bold;
+        @media (max-width: 1610px) { 
+            font-size: 24px;
+        }
+    }
+}
+
+.podcasts {
+    .text-block {
+        h2 {
+            margin-bottom: 120px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 80px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &-holder {
+        margin-top: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: 15px;
+        }
+        [class^="col-"] {
+            margin: 15px 0;
+        }
+        i, a i {
+            color: $secondary;
+            font-size: 24px;
+        }
+    }
+    &-single {
+        box-shadow: 4px 4px 16px rgba(0,0,0,.16);
+        background-color: $white;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        &-text {
+            padding: 30px;
+            display: flex;
+            flex-flow: column;
+            height: 100%;
+            @include media-breakpoint-down(sm) {
+                padding: 30px 15px;
+            }
+            h3 {
+                margin-bottom: 18px;
+            }
+            .cat-text {
+                p {
+                    margin-bottom: 0;
+                    font-size: 13px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+.newsletter {
+    &-holder {
+        margin: 60px auto 0;
+        max-width: 546px;
+        height: 52px;
+        display: flex;
+        border-radius: 4px;
+        overflow: hidden;
+        @include media-breakpoint-down(md) {
+            margin: 50px auto 0;
+        }
+        @include media-breakpoint-down(sm) {
+            margin: 30px auto 0;
+        }
+        input[type="email"] {
+            background-color: transparent;
+            height: 100%;
+            outline: none;
+            box-shadow: none;
+            padding-left: 14px;
+            flex: 1;
+            font-size: 15px;
+            color: $secondary;
+            border: 1px solid $secondary;
+            border-right: none;
+            &::placeholder {
+                color: $secondary;
+            }
+        }
+        input[type="submit"] {
+            background-color: $secondary;
+            color: $white;
+            outline: none;
+            box-shadow: none;
+            flex: 0 0 196px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            transition: all .3s ease;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 150px;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 130px;
+            }
+            &:hover {
+                background-color: $green;
+                transition: all .3s ease;
+            }
+        }
+    }
+}

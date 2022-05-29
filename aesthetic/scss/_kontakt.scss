@@ -1,0 +1,134 @@
+/* Kontakt Banner */
+
+.kontakt-banner {
+  background-color: #f0f4f7;
+  height: 618px;
+  overflow: visible;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 100px;
+  @include media-breakpoint-down(lg) {
+    height: 500px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 30px;
+    height: 400px;
+    padding: 0 0 50px;
+  }
+  &:before {
+    content: "";
+    mix-blend-mode: soft-light;
+    background: $dark-sky;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+
+// CTA
+
+.kontakt-cta {
+  background: $secondary;
+  .cta-form {
+    padding: 0 100px;
+    @include media-breakpoint-down(lg) {
+      padding: 0 50px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0 0px;
+      margin-top: 30px;
+    }
+  }
+  h2 {
+    color: $white;
+  }
+  .button {
+    padding: 9px 55px; 
+    @include media-breakpoint-down(md) {
+      padding: 9px 40px;
+    
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 9px 30px;
+    
+    }
+  }
+}
+
+/* Kontakt Details */
+.kontakt-details {
+  padding: 70px 0 140px;
+  @include media-breakpoint-down(lg) {
+    padding: 70px 0 70px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0 50px;
+  }
+  &-holder {
+    display: flex;
+    flex-flow: row wrap;
+    address {
+      position: relative;
+      padding-left: 35px;
+      color: $secondary;
+      margin-right: 125px;
+      margin-bottom: 0px;
+      @include media-breakpoint-down(lg) {
+        margin-right: 50px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-right: 00px;
+        margin-bottom: 30px;
+        width: 100%;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15px;
+      }
+      b, strong {
+        font-weight: 500;
+      }
+      i {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        font-size: 24px;
+        color: $secondary;
+        @include media-breakpoint-down(sm) {
+          font-size: 22px;
+        }
+      }
+    }
+    a {
+      position: relative;
+      padding-left: 35px;
+      color: $secondary;
+      margin-right: 70px;
+      @include media-breakpoint-down(lg) {
+        margin-right: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &:last-child {
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+      i {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        font-size: 24px;
+        color: $secondary;
+        @include media-breakpoint-down(sm) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

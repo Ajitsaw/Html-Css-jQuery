@@ -1,0 +1,88 @@
+/* Global */
+
+$section-padding: 150px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1150px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #575756;
+$secondary: #E4003A;
+$gray: #CFCFCF;
+$gray-menu: #F0F0F0;
+$gray-menu-hover: #e8e8e8;
+$light-gray: #ECECEC;
+$dark-gray: #373737;
+$gray-bg: #f9f9f9;
+
+$body-color: $primary;
+
+$border-radius: 5px;
+
+/* Box shadow */
+$box-shadow: 4px 4px 16px rgba(0,0,0,0.16);
+
+/* Font */
+$font-family: futura-pt, sans-serif;
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 600;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 70px;
+$h2-font-size: 50px;
+$link-hover-decoration: none;
+
+/* Animation (Keyframes) */
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0.0deg);
+  }
+  10% {
+      transform: rotate(14.0deg);
+  }
+  20% {
+      transform: rotate(-8.0deg);
+  }
+  30% {
+      transform: rotate(14.0deg);
+  }
+  40% {
+      transform: rotate(-4.0deg);
+  }
+  50% {
+      transform: rotate(10.0deg);
+  }
+  60% {
+      transform: rotate(0.0deg);
+  }
+  100% {
+      transform: rotate(0.0deg);
+  }
+}
+
+// Font Face 

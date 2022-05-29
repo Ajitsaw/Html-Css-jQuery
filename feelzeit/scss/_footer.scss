@@ -1,0 +1,253 @@
+/* Footer */
+
+.newsletter {
+    &-popup {
+        display: none;
+        max-width: 486px;
+        background-color: $primary;
+        border-radius: 10px;
+        overflow: hidden;
+        position: absolute;
+        z-index: 3;
+        padding: 22px 22px 18px 22px;
+        right: 70px;
+        top: 50px;
+        @media (max-width:1800px) {
+            top: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            top: auto;
+            bottom: 210px;
+        }
+        @include media-breakpoint-down(sm) {
+            left: 15px;
+            right: 15px;
+        }
+        
+        &:after {
+            content: '';
+            background-color: $secondary;
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    &-heading {
+        color: $white;
+        margin-bottom: 15px;
+    }
+    &-close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        cursor: pointer;
+        color: $white;
+        font-size: 24px;
+        i {
+            &:before {
+                font-weight: bold !important;
+            }
+        }
+    }
+    &-form {
+        background-color: $white;
+        border-radius: 10px;
+        padding: 20px;
+        h5 {
+            font-weight: bold;
+            color: $secondary;
+            margin-bottom: 0;
+        }
+        input[type='email'] {
+            height: 35px;
+            width: 100%;
+            border: 1px solid $primary;
+            border-radius: 4px;
+            margin: 15px 0;
+            outline: none;
+            box-shadow: none;
+            padding-left: 15px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .submit {
+            display: flex;
+            position: relative;
+            font-size: 12px;
+            transition: all .3s ease;
+            &:hover {
+                color: $secondary;
+                transition: all .3s ease;
+            }
+            i {
+                color: $secondary;
+                margin-right: 10px;
+                &:before {
+                    font-weight: bold !important;
+                }
+            }
+            input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                z-index: 2;
+
+            }
+        }
+    }
+}
+
+.copyr {
+    font-size: 10px;
+    margin-top: 10px;
+    color: $white;
+    line-height: 20px;
+    a {
+        font-weight: bold;
+        color: $white;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+footer {
+    background: $white;
+    padding: 80px 0 65px;
+    border-top: 4px solid $secondary;
+    position: relative;
+    @include media-breakpoint-down(md) {
+        padding: 50px 0px;
+        border-top: 3px solid $secondary;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0px 80px;
+    }
+}
+
+.footer {
+    &-single {
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        address {
+            margin-bottom: 35px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+            a {
+                color: $secondary;
+                text-decoration: underline;
+            }
+        }
+        .feels {
+            margin-bottom: 60px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+            a {
+                display: flex;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+        a.anchor {
+            text-decoration: underline;
+            margin-top: 60px;
+            display: flex;
+            color: $secondary;
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+        }
+    }
+    &-heading {
+        font-weight: bold;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 15px;
+        }
+    }
+    &-menu {
+        ul {
+            li {
+                margin-bottom: 5px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                a {
+                    color: $primary;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    &-contact {
+        a {
+            color: $primary;
+            display: flex;
+            &:hover {
+                color: $secondary;
+            }
+
+        }
+    }
+
+    &-social {
+        margin-top: 75px;
+        margin-bottom: 45px;
+        display: flex;
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+
+        }
+        &-inner {
+            display: flex;
+        }
+        a {
+            width: 30px;
+            height: 30px;
+            background: $primary;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            border-radius: 100%;
+            &:hover {
+                background: $secondary;
+                color: #fff;
+            }
+        }
+    }
+    &-copyright {
+        p {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}
+
+
+

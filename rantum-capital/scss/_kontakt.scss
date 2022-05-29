@@ -1,0 +1,106 @@
+.kontakt-banner {
+    .text-block {
+        margin-bottom: 220px;
+        h4 {
+            max-width: 615px;
+        }
+    }
+    .contact-block {
+        position: relative;
+        z-index: 3;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+        }
+
+        address {
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 0.9px;
+            font-family: $font-family-worksans;
+            color: $white;
+            margin-left: 60px;
+            position: relative;
+            border-bottom: 2px solid $secondary;
+            padding-bottom: 10px;
+            max-width: 420px;
+
+            @include media-breakpoint-down(md) {
+                margin-left: 40px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+            }
+
+            svg {
+                position: absolute;
+                top: 5px;
+                left: -60px;
+
+                @include media-breakpoint-down(md) {
+                    left: -40px;
+                }
+            }
+
+            h4 {
+                line-height: 40px;
+                letter-spacing: 3px;
+                color: $secondary;
+                font-weight: $font-weight-semibold;
+                font-family: $font-family;
+                text-transform: uppercase;
+            }
+        }
+        a {
+            font-size: 20px;
+            line-height: 40px;
+            letter-spacing: 0.9px;
+            font-family: $font-family-worksans;
+            color: $white;
+            margin-left: 60px;
+
+            position: relative;
+
+            svg {
+                position: absolute;
+                top: 4px;
+                left: -60px;
+
+                @include media-breakpoint-down(md) {
+                    left: -40px;
+                }
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-left: 40px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.map_area {
+    background: $anthrazit;
+
+    &_block {
+        position: relative;
+        padding-bottom: 519px;
+        display: block;
+        width: 100%;
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 320px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

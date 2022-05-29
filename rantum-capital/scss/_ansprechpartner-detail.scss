@@ -1,0 +1,50 @@
+@import "variables";
+
+.ansprechpartner-block {
+    padding: 310px 0 150px;
+    background: $anthrazit url(../img/pattern4.png) center no-repeat;
+    background-size: cover;
+    color: $white;
+
+    @include media-breakpoint-down(md) {
+        padding: 140px 0 80px;
+    }
+
+    h2 {
+        margin-bottom: 50px;
+        text-transform: uppercase;
+
+        &:before {
+            display: block;
+            width: 100px;
+            height: 2px;
+            background: $secondary;
+            content: '';
+            margin: 0 0 10px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    p {
+        margin-bottom: 50px;
+        letter-spacing: 0.8px;
+    }
+    a.button {
+        margin-top: 60px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 0;
+        }
+    }
+    .image-block {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}

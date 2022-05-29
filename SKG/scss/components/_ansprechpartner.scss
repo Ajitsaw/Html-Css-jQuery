@@ -1,0 +1,58 @@
+
+//ansprechpartner-panel
+.ansprechpartner-panel{
+    background: $gray-bg;
+    .row{
+        margin-left: -15px;
+        margin-right: -15px;
+
+        [class*='col-']{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .site-heading{
+        margin-bottom: 75px;
+    }
+    &--single{
+        margin-bottom: 40px;
+
+        &--img{
+            height: 465px;
+            margin-bottom: 20px;
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        &--text{
+            h4{
+                margin-bottom: 5px;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+            a{
+                font-size: 12px;
+                color: $primary;
+                position: relative;
+                display: inline-block;
+
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: $primary;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}

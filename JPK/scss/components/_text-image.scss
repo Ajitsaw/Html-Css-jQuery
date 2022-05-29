@@ -1,0 +1,44 @@
+.text-image {
+    .image {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+            max-height: 784px;
+            object-fit: cover;
+        }
+    }
+    .text {
+        &.pad_left {
+            padding-left: 95px;
+            @include media-breakpoint-down(xxl) {
+                padding-left: 0px;
+            }
+        }
+        &.pad_right {
+            padding-right: 95px;
+            @include media-breakpoint-down(xxl) {
+                padding-right: 0px;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: 0 !important;
+        }
+    }
+    .desc {
+        font-size: 24px;
+        @include media-breakpoint-down(xl) {
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 18px;
+        }
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 14px;
+        }
+    }
+}

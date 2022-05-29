@@ -1,0 +1,132 @@
+.unternehmen {
+    .text {
+        padding: 0 100px 0 200px;
+        @include media-breakpoint-down(xl) {
+            padding: 0 100px 0 100px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 0 50px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+        h2 {
+            margin-bottom: 50px;
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 20px;
+            }
+            
+        }
+    
+        .button {
+            margin-top: 70px;
+    
+            @include media-breakpoint-down(xl) {
+                margin-top: 50px;
+            }
+    
+            @include media-breakpoint-down(lg) {
+                margin-top: 30px;
+            }
+        }
+    }
+    .image {
+        position: relative;
+        width: 100%;
+        @include media-breakpoint-down(lg) {
+            padding: 0 50px;
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+        .swiper-slide {
+            img {
+                width: 100%;
+                max-height: 593px;
+                object-fit: cover;
+            }
+        }
+        .arrow {
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+            z-index: 6;
+            display: flex;
+            font-size: 24px;
+            @include media-breakpoint-down(lg) {
+                left: auto;
+                right: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                right: 25px;
+            }
+            .left {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $secondary;
+                color: $white;
+                margin-right: 10px;
+                transition: all .3s ease;
+                @include media-breakpoint-down(lg) {
+                    margin-right: 0px;
+                }
+                &:hover {
+                    background-color: $primary;
+                    transition: all .3s ease;
+                }
+            }
+            .right {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                background-color: $secondary;
+                transition: all .3s ease;
+                @include media-breakpoint-down(lg) {
+                    margin-left: 10px;
+                }
+                &:hover {
+                    background-color: $primary;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+    .line-bottom {
+        height: 33%;
+        width: 2px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        right: 54%;
+        z-index: 9;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        span {
+            width: 129px;
+            height: 2px;
+            background-color: $secondary;
+            position: absolute;
+            top: 0;
+            right: 0;
+            &:after {
+                content: "";
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                border: 2px solid $secondary;
+                position: absolute;
+                top: -8px;
+                left: -18px;
+            }
+        }
+    }
+}
+

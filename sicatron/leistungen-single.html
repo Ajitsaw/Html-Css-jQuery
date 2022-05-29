@@ -1,0 +1,690 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sicatron</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li class="current-menu-item">
+                                <a href="leistungen.html">Leistungen<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="leistungen-single.html">
+                                        Kabelkonfektion
+                                        <span>Eine gute Verbindung schaffen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Montagearbeiten
+                                        <span>Wir montieren schnell & zuverlässig</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Individuelle Fertigung
+                                        <span>Wir planen und entwickeln mit Ihnen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Schalterkonfektion
+                                        <span>Innovation, Qualität und Flexibilität</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Planung | Musterbau
+                                        <span>Service und Engagement</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item"><a href="produkte.html">Produkte<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-category.html">
+                                        Schalttechnik
+                                        <span>Mikro- und Schnappschalter</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Folientastaturen
+                                        <span>Folientastaturen und Silikonschaltmatten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Motoren & Magnete
+                                        <span>Synchronmotoren, Hub-und Drehmagnete</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Steuern & Automatisieren
+                                        <span>Steuerungskomponenten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Sensoren
+                                        <span>Lichtschranken</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li>
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="fal fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay-logo">
+            <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="row justify-content-between flex-lg-row-reverse flex-column">
+                <div class="col-lg-3">
+                    <div class="overlay-menu">
+                        <ul>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="produkte.html" class="overlay-heading">
+                            Produkte
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="product-single.html">Schaltertechnik</a></li>
+                                <li><a href="product-single.html">Folientastaturen</a></li>
+                                <li><a href="product-single.html">Sensoren</a></li>
+                                <li><a href="product-single.html">Magnete & Motoren</a></li>
+                                <li><a href="product-single.html">Steuern & Automatisieren</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="leistungen.html" class="overlay-heading">
+                            Leistungen
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="leistungen-single.html">Kabelkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Schalterkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Montagearbeiten</a></li>
+                                <li><a href="leistungen-single.html">Individuelle Fertigung</a></li>
+                                <li><a href="leistungen-single.html">Planung & Musterbau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="banner banner-inner banner-leistungen">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white pad-left">
+                            <div class="h6 line-after text-uppercase">Nach modernsten methoden</div>
+                            <h2 class="text-uppercase">
+                                Sicatron:<br>
+                                kabelKonfektionen
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br>
+                                    nonumy eirmod tempor invidunt ut labore et dolore.
+                                </p>
+                            </div>
+                            <a href="leistungen-single.html" class="button outline primary">anfragen</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-block">
+                            <img src="img/leistungen-banner-single.png" alt="">
+                            <div class="pattern pattern-left pattern-bottom">
+                                <img src="img/pattern.png" alt="pattern">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#scroll" class="scroll-down">
+                <i class="fal fa-long-arrow-down"></i>
+            </a>
+        </section>
+       
+        <section class="content" id="scroll">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="image-block mb-100 pr-lg-4 pr-0">
+                            <img src="img/leistungen-img1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="text-block text-white text-right d-flex flex-column align-items-lg-end">
+                            <div class="h6 line-before text-uppercase">gute verbindungen</div>
+                            <h2 class="h2 text-uppercase">
+                                maßgeschneiderte<br>
+                                kabelkonfektion
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Als Systemlieferant mit einer jahrelangen Erfahrung<br>
+                                    bieten wir verschiedenen Industriebranchen ein umfang-<br>
+                                    reiches Leistungsspektrum an. Ein breit gefächerter<br>
+                                    Maschinenpark mit modernsten Produktionsanlagen<br>
+                                    sowie unsere geschulten Mitarbeiter machen es uns<br>
+                                    möglich, unseren Kunden komplexe Kabelbäume oder<br>
+                                    individuelle Einzelanfertigungen zu liefern.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vorteile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block center-block text-center text-white">
+                            <div class="h6 line-before text-uppercase">ihre vorteile</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v1.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Individuelle Fertigung
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v2.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Kostengünstige Anfertigung
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v3.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Montagepräzision
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v4.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Hochwertige Qualität
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v5.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Kontrolle & Endprüfung
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v6.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Termingerechte Lieferung
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container">
+                <div class="row align-items-start flex-lg-row flex-column-reverse">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">unser primärziel</div>
+                            <h2 class="h2 text-uppercase">
+                                ihre Zufriedenheit<br>
+                                an oberste stelle
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    In unserem Sortiment finden Sie alle Stecker sowie<br>
+                                    individuelle Kabeltypen von verschiedenen Herstellern.<br>
+                                    Die Nähe zum Kunden sowie eine exzellente Produkt-<br>
+                                    qualität zählen zu unseren Hauptkriterien bei der Arbeit.<br>
+                                    Unsere Produktion ist selbstverständlich nach der DIN EN<br>
+                                    ISO 9001: 2015 zertifiziert. Vertrauen auch Sie auf einen<br>
+                                    Fachmann, wenn es um die Beschaffung von elektro-<br>
+                                    nischen Komponenten geht.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-6">
+                        <div class="image-block mt-180 pl-lg-4 pl-0">
+                            <img src="img/leistungen-img2.png" alt="">
+                            <div class="pattern pattern-big pattern-right pattern-top">
+                                <img src="img/pattern-big.png" alt="pattern">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="leistungen-about">
+            <div class="container">
+                <div class="row align-items-center flex-lg-row flex-column-reverse">
+                    <div class="col-lg-7">
+                        <div class="leistungen-about-holder">
+                            <div class="leistungen-about-single">
+                                <div class="leistungen-about-single-left">
+                                    1
+                                </div>
+                                <div class="leistungen-about-single-right">
+                                    <h3 class="h5">
+                                        Gemeinsame Planung
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="leistungen-about-single">
+                                <div class="leistungen-about-single-left">
+                                    2
+                                </div>
+                                <div class="leistungen-about-single-right">
+                                    <h3 class="h5">
+                                        Serienlieferung
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="leistungen-about-single">
+                                <div class="leistungen-about-single-left">
+                                    3
+                                </div>
+                                <div class="leistungen-about-single-right">
+                                    <h3 class="h5">
+                                        Einzelteilbeschaffung
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="leistungen-about-single">
+                                <div class="leistungen-about-single-left">
+                                    4
+                                </div>
+                                <div class="leistungen-about-single-right">
+                                    <h3 class="h5">
+                                        Musterbau
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur
+                                        sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-block text-white text-right d-flex flex-column align-items-lg-end">
+                            <div class="h6 line-before text-uppercase">unser leistungsangebot</div>
+                            <div class="h2 text-uppercase mb-0">
+                                folgende Leistungen<br>
+                                bieten wir ihnen
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="leistungen-img">
+            <div class="leistungen-img-single">
+                <img src="img/lis-img1.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/lis-img2.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/lis-img3.png" alt="">
+            </div>
+            <div class="leistungen-img-single">
+                <img src="img/lis-img4.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Fragen und Antworten</div>
+                            <div class="h2 text-uppercase">
+                                Alles, was sie wissen müssen
+                            </div>
+                            <div class="para">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                                    <br>et dolore magna aliquyam erat, 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion text-white">
+                            
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum dolor sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Wir beraten Sie gerne</div>
+                            <h2 class="text-uppercase">
+                                Haben Sie Fragen?<br>
+                                nehmen sie Kontakt<br>
+                                zu uns auf.
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Gerne stehen wir Ihnen bei offenen Fragen zu uns<br>
+                                    und unseren Leistungen zur Verfügung, denn Ihre<br>
+                                    Wünsche sind uns wichtig!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ihr Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Ihre E-Mailadresse">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Betreff">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <span class="wpcf7-form-control-wrap checkbox-check">
+                                    <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                                        <span class="wpcf7-list-item first last">
+                                            <input type="checkbox" name="checkbox-107[]" class="eighteen" value="Ich stimme den Datenschutzbestimmungen zu.">
+                                            <span class="wpcf7-list-item-label"></span>
+                                </span>
+                                <span class="checkbox-text">Ich habe die <a href="datenschutz.html">Datenschutzbestimmungen</a> gelesen und akzeptiert.</span>
+                                </span>
+                                </span>
+                            </div>
+                            <input type="submit" class="button outline primary" value="Jetzt senden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <a href="">E-Mail: info@sicatron.de</a>
+                            <a href="">Telefon +49 (0) 2331 473329 - 0</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                SICATRON GmbH & Co. KG
+                            </div>
+                            <address>
+                                Pettenkoferstr. 15<br>
+                                58097 Hagen, Germany
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                Follow
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6">
+                        <div class="text-block">
+                            <p>
+                                2021 SICATRON GmbH  | realisiert durch <a href="">Pechschwarz Media</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-menu">
+                            <a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

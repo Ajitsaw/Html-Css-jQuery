@@ -1,0 +1,28 @@
+//content-grid
+.content-grid{
+    padding-bottom: 20px;
+
+    .text-block{
+        max-width: 640px;
+    }
+    &__right{
+        .row{
+            [class*="col-"]{
+                &:nth-child(2n + 2){
+                   padding-left: 60px;
+                }
+            }
+        }
+        &__item{
+            margin-bottom: 100px;
+            max-width: 245px;
+    
+            h4{
+                margin-bottom: 18px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

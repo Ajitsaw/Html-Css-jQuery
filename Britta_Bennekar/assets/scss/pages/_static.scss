@@ -1,0 +1,35 @@
+
+.static-block {
+    padding: 300px 0 200px;
+    @include media-breakpoint-down(lg) {
+        padding: 1500px 0 70px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 130px 0 70px;
+    }
+}
+
+.default-block {
+    h6, h5 {
+        font-weight: bold;
+        color: $secondary;
+        margin-bottom: 33px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+}
+
+.static__left {
+    .default-block {
+        max-width: 405px;
+    }
+}

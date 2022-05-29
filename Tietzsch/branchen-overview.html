@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tietzsch</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="image/logo.png"></a>
+                    <a href="index.html" class="logo-dark"><img src="image/logo-dark.png"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-overview.html">
+                                            Spannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-overview.html">
+                                            Hochspannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-overview.html">
+                                            Teleskop-Spannungsprüfer
+
+                                        </a></li>
+                                    <li><a href="produkte-overview.html">
+                                            Ex-Mess- & Prüfgeräte
+
+                                        </a></li>
+                                    <li><a href="produkte-overview.html">
+                                            Isolations- & Widerstandsprüfgeräte
+
+                                        </a></li>
+                                    <li><a href="produkte-overview.html">
+                                            Zubehör
+
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item">
+                                <a href="branchen.html">Branchen <i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="branchen-overview.html">
+                                            Energieversorger
+
+                                        </a></li>
+                                    <li><a href="branchen-overview.html">
+                                            Industrie & Handwerk
+
+                                        </a></li>
+                                    <li><a href="branchen-overview.html">
+                                            Bahn- & Verkehrstechnik
+
+                                        </a></li>
+                                    <li><a href="branchen-overview.html">
+                                            Feuerwehr & THW
+
+                                        </a></li>
+                                    <li><a href="branchen-overview.html">
+                                            Chemie & Bergbau EX
+
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">Service</a></li>
+                            <li>
+                                <a href="sicherheit.html">Sicherheit</a>
+                            </li>
+                            <li>
+                                <a href="unternehmen.html">Unternehmen</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <div class="searchBox">
+                        <i class="far fa-search"></i>
+                    </div>
+                    <div class="kart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="https://via.placeholder.com/100">
+                            <span><i class="far fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="https://via.placeholder.com/100">Deutsch</a></li>
+                            <li><a href="#"><img src="https://via.placeholder.com/100">English</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Overlay -->
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay__logo">
+            <a href="index.html" class="overlay-header">
+                <img src="image/logo-dark.png" alt="logo">
+            </a>
+        </div>
+        <nav class="overlay-menu">
+            <ul>
+                <li class="menu-item-has-children"><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="produkte-overview.html">
+                                Spannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-overview.html">
+                                Hochspannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-overview.html">
+                                Teleskop-Spannungsprüfer
+
+                            </a></li>
+                        <li><a href="produkte-overview.html">
+                                Ex-Mess- & Prüfgeräte
+
+                            </a></li>
+                        <li><a href="produkte-overview.html">
+                                Isolations- & Widerstandsprüfgeräte
+
+                            </a></li>
+                        <li><a href="produkte-overview.html">
+                                Zubehör
+
+                            </a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children">
+                    <a href="branchen.html">Branchen <i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="branchen-overview.html">
+                                Energieversorger
+
+                            </a></li>
+                        <li><a href="branchen-overview.html">
+                                Industrie & Handwerk
+
+                            </a></li>
+                        <li><a href="branchen-overview.html">
+                                Bahn- & Verkehrstechnik
+
+                            </a></li>
+                        <li><a href="branchen-overview.html">
+                                Feuerwehr & THW
+
+                            </a></li>
+                        <li><a href="branchen-overview.html">
+                                Chemie & Bergbau EX
+
+                            </a></li>
+                    </ul>
+                </li>
+                <li><a href="service.html">Service</a></li>
+                <li>
+                    <a href="sicherheit.html">Sicherheit</a>
+                </li>
+                <li>
+                    <a href="unternehmen.html">Unternehmen</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- Overlay -->
+
+    <main>
+
+        <!-- Banner -->
+        <section class="hero hero--branchen">
+            <div class="image">
+                <img src="image/branchen-overview.png" alt="banner">
+            </div>
+            <div class="text-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-6  col-lg-8">
+                            <div class="text text-white">
+                                <div class="heading mb-0">
+                                    <h1>
+                                        Energieversorger<br>
+                                        Lorem ipsum
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner -->
+
+        <!-- Product overview -->
+        <section class="branchen-overview py-large">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="branchen-overview__anchors">
+                            <a href="#cat1">Spannungsprüfer <i class="far fa-angle-down"></i></a>
+                            <a href="#cat2">TeleskopSpannungsprüfer <i class="far fa-angle-down"></i></a>
+                            <a href="#cat3">HochSpannungsprüfer <i class="far fa-angle-down"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="branchen-overview__block" id="cat1">
+                <div class="name">
+                    Spannungsprüfer
+                    <div class="line"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branchen-overview__block" id="cat2">
+                <div class="name">
+                    teleskop-Spannungsprüfer
+                    <div class="line"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="branchen-overview__block" id="cat3">
+                <div class="name">
+                    HochSpannungsprüfer
+                    <div class="line"></div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single">
+                                <div class="text">
+                                    <div class="cat">
+                                        Prüfball
+                                    </div>
+                                    <h3>SPB Analog</h3>
+                                    <p>
+                                        Robuster Spannungsprüfer
+                                        im Gummigehäuse
+                                    </p>
+                                    <div class="list">
+                                        <div class="list__single">
+                                            <b>Spannung</b>
+                                            Bis 1000V AC / DC
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Sicherheit</b>
+                                            CAT IV 1000V
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Funktionen</b>
+                                            Drehfeld / Last
+                                        </div>
+                                        <div class="list__single">
+                                            <b>Batterie</b>
+                                            Nein
+                                        </div>
+                                    </div>
+                                    <div class="price h3">
+                                        ab 147€
+                                    </div>
+                                </div>
+                                <div class="img">
+                                    <img src="image/product-over-1.png" alt="product">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product overview -->
+
+        <!-- CTA -->
+        <section class="cta py-large">
+            <div class="bg">
+                <img src="image/cta.jpg" alt="cta">
+            </div>
+            <div class="line-top"><span></span></div>
+            <div class="line-bottom"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="text">
+                            <div class="heading">
+                                <h2 class="h1">
+                                    haben sie noch<br>
+                                    offene Fragen?
+                                </h2>
+                            </div>
+                            <h4>
+                                Nehmen Sie gerne Kontakt mit uns auf! Wir helfen Ihnen gerne
+                                persönlich weiter und bearbeiten Ihre Anfrage schnellstmöglich.
+                            </h4>
+                            <div class="button-group">
+                                <a href="kontakt.html" class="button button--white">Kontakt aufnehmen</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA -->
+
+
+    </main>
+
+    <!-- Search Popup -->
+    <div class="popup-holder">
+         
+        <div class="popup">
+            <div class="popup-cross"><i class="fal fa-times"></i></div>
+            <div class="input">
+                <input type="search" name="" id="" placeholder="WAS SUCHEN SIE?">
+            </div>
+        </div>
+    </div>
+    <!-- Search Popup -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-end flex-column-reverse flex-lg-row">
+                <div class="col-lg-12">
+                    <div class="content position-relative">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Kontakt
+                                    </div>
+                                    <address>
+                                        Rudolph Tietzsch GmbH & Co. KG<br>
+                                        Willringhauser Straße 18<br>
+                                        D - 58256 Ennepetal
+                                    </address>
+                                    <a href="" class="phone">Hotline: +49 2333 – 861 77 03</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Zentrale
+                                    </div>
+                                    <div class="links">
+                                        <a href="">FTelefon: +49 2333 – 7 59 89</a>
+                                        <a href="">Telefax: +49 2333 – 7 52 57</a>
+                                        <a href="">E-Mail: info@tietzsch.de</a>
+                                    </div>
+                                    <div class="socials">
+                                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a href=""><i class="fab fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Produkte
+                                    </div>
+                                    <nav class="menu">
+                                        <ul>
+                                            <li>
+                                                <a href="">Spannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Hochspannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Teleskop-Spannungsprüfer</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Ex-Mess- & Prüfgeräte</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Isolations - & Widerstandsprüfgeräte</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="block">
+                                    <div class="small">
+                                        Branchen
+                                    </div>
+                                    <nav class="menu">
+                                        <ul>
+                                            <li>
+                                                <a href="">Energieversorger</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Industrie & Handwerk</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Bahntechnik</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Feuerwehr & THW</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Chemie & Bergbau</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer__bottom">
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    <div class="copyright">
+                                        2021 Tietzsch GmbH | realisiert durch <a href="">Pechschwarz Media</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <ul>
+                                        <li>
+                                            <a href="impressum.html">Impressum</a>
+                                        </li>
+                                        <li>
+                                            <a href="datenschutz.html">Datenschutz</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="node_modules/jquery-circle-progress/dist/circle-progress.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

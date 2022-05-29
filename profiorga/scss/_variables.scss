@@ -1,0 +1,37 @@
+/* Global */
+
+$section-padding: 200px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: ( sm: 100%, md: 100%, lg: 100%, xl: 100%);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 1200px, xl: 1400px);
+
+/* Color */
+
+$primary: #3A3A39;
+$secondary: #2B56A3;
+$blue: #145AAA;
+$gray: #EBEBEB;
+$light-gray: #F4F4F4;
+
+/* Background */
+
+$back-gray: #F4F4F4;
+$back-gray-light: #F4F4F4;
+
+/* Font */
+
+$font-family-sans-serif: 'Lato';
+$font-size-base: 1rem;
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 70px;
+$h2-font-size: 44px;
+$h3-font-size: 34px;
+$link-hover-decoration: none;

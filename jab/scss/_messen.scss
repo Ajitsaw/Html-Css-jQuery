@@ -1,0 +1,91 @@
+.messen {
+    padding: 140px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0;
+    }
+    &-holder {
+        padding: 60px 0 0;
+        @include media-breakpoint-down(lg) {
+            padding: 50px 0 0;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0px 0 0;
+        }
+    }
+    &-single {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        @media screen and (max-width: 991px) {
+            flex-flow: column-reverse;
+            align-items: flex-start;
+            background-color: $back-gray;
+            padding: 30px;
+        }
+        &-cer {
+            @media screen and (max-width: 991px) {
+                flex-flow: column;
+                align-items: flex-start;
+                .messen-single-image {
+                    width: 100%;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-text {
+            padding: 50px 45px 45px;
+            width: 80%;
+            background-color: $back-gray;
+            min-height: 350px;
+            @include media-breakpoint-down(lg) {
+                padding: 30px 60px 30px 30px;
+            }
+            @media screen and (max-width:991px) {
+                width: 100%;
+                padding: 0;
+                min-height: auto;
+            }
+            .block-para {
+                max-width: 640px;
+                @include media-breakpoint-down(lg) {
+                    max-width: 500px;
+                }
+                @media screen and (max-width:991px) {
+                    max-width: 100%;
+                }
+            }
+            h2 {
+                margin-bottom: 15px;
+            }
+            h4 {
+                margin-bottom: 30px;
+            }
+        }
+        &-image {
+            width: 355px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-down(lg) {
+                width: 325px;
+            }
+            @media screen and (max-width:991px) {
+                width: auto;
+                position: relative;
+                margin-bottom: 30px;
+            }
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

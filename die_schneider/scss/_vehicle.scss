@@ -1,0 +1,279 @@
+.car-details {
+    padding: 50px 90px;
+    position: relative;
+    z-index: 2;
+    background: $white;
+    display: flex;
+    @media screen and (max-width: 1800px) {
+        padding: 50px;
+    }
+    @media screen and (max-width: 1550px) {
+        padding: 40px;
+    }
+    @include media-breakpoint-down(md) {
+        flex-flow: column;
+        padding: 0;
+    }
+    &:before {
+        content: '';
+        background: $gray;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    &-left {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding: 50px;
+            justify-content: center;
+            background: $gray;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+            text-align: center;
+        }
+        h2 {
+            @media screen and (max-width: 1550px) {
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 24px;
+            }
+        }
+    }
+    &-right {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            padding: 50px;
+            justify-content: center;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+            flex-flow: column;
+        }
+        &-single {
+            display: flex;
+            align-items: center;
+            margin-left: 85px;
+            @media screen and (max-width: 1800px) {
+                margin-left: 60px;
+            }
+            @media screen and (max-width: 1550px) {
+                margin-left: 30px;
+            }
+            @include media-breakpoint-down(md) {
+                margin: 0 25px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin: 10px 15px !important;
+                flex-flow: column;
+                text-align: center;
+            }
+            @media screen and (max-width: 640px) {
+                flex-flow: column;
+                justify-content: center;
+                text-align: center;
+            }
+            &:first-child {
+                margin-left: 0;
+                img {
+                    @include media-breakpoint-down(lg) {
+                        width: 30px;
+                    }
+                }
+            }
+            &:last-child {
+                @include media-breakpoint-down(sm) {
+                    margin-right: 0;
+                }
+            }
+            &__image {
+                margin-right: 30px;
+                @media screen and (max-width: 1800px) {
+                    margin-right: 20px;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin-right: 20px;
+                }
+                img {
+                    @include media-breakpoint-down(lg) {
+                        width: 40px;
+                    }
+                }
+            }
+            &__text {
+                p {
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.package {
+    &-block {
+        margin-top: 100px;
+        width: 100%;
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+        .row {
+            [class^='col-'] {
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 30px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &-single {
+            background: $white;
+            border-radius: 5px;
+            padding: 60px 50px 50px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            @include media-breakpoint-down(lg) {
+                padding: 30px 30px 40px;
+            }
+            @include media-breakpoint-down(md) {
+                height: auto;
+                padding: 30px 15px 40px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: auto;
+                padding: 30px 30px 40px;
+            }
+            &__heading {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                text-align: center;
+                @include media-breakpoint-down(md) {
+                    text-align: center;
+                    align-items: center;
+                }
+                h2 {
+                    color: $secondary;
+                    margin-bottom: 10px;
+                }
+                p {}
+            }
+            h3 {
+                text-align: center;
+                color: $secondary;
+                margin-top: 45px;
+                @include media-breakpoint-down(md) {
+                    margin-top: 30px;
+                }
+            }
+            ul {
+                margin: 50px 0px;
+                @include media-breakpoint-down(lg) {
+                    margin: 30px 0;
+                }
+                @include media-breakpoint-down(md) {
+                    margin: 30px 0 0;
+                }
+                li {
+                    position: relative;
+                    margin-bottom: 25px;
+                    padding-left: 40px;
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 15px;
+                        padding-left: 30px;
+                    }
+                    &:last-child {
+                        margin: 0 0 0;
+                    }
+                    &:before {
+                        position: absolute;
+                        content: '';
+                        left: 0px;
+                        display: block;
+                        top: 4px;
+                        width: 13px;
+                        height: 19px;
+                        border: solid $secondary;
+                        border-width: 0 4px 4px 0;
+                        transform: rotate(45deg);
+                        @include media-breakpoint-down(lg) {
+                            width: 10px;
+                            height: 16px;
+                            border-width: 0 3px 3px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-condition {
+        .package-block {
+            &-single {
+                background: $primary;
+                color: $white;
+                h2 {
+                    margin-bottom: 40px;
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 30px;
+                    }
+                }
+                p {
+                    text-align: center;
+                    position: relative;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+                    &:after {
+                        content: '';
+                        width: 78px;
+                        height: 2px;
+                        background: $white;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        bottom: 0;
+                    }
+                    &:last-of-type() {
+                        padding-bottom: 0px;
+                        margin-bottom: 0px;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bizmind {
+        .package-block-single {
+            background-color: $white;
+            color: $primary;
+            p {
+                &:after {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+    &-single {
+        .package-block-single {
+            padding: 30px 20px;
+        }
+    }
+}

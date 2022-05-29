@@ -1,0 +1,121 @@
+/* Global */
+
+$section-padding: 200px 0;
+$section-padding-medium: 120px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #454545;
+$secondary: #27ACBA;
+$green: #6AE69E;
+$ed: #FF004E;
+$dark-blue: #01192B;
+$gray: #ddd;
+$light-gray: #F5F5F5;
+
+
+
+$gradient: linear-gradient(180deg, rgba(106,230,158,1) 0%, rgba(39,172,186,1) 44%);
+$button-gradient: linear-gradient(180deg, rgba(106,230,158,1) 0%, rgba(39,172,186,1) 80%);
+
+/* Box Shadow */
+$box-shadow: 4px 4px 16px rgba(0,0,0,.15);
+
+/* Font */
+
+$font-family-sans-serif: 'Karla';
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 40px;
+$h2-font-size: 40px;
+$h3-font-size: 30px;
+$h4-font-size: 20px;
+
+$link-decoration: none;
+$link-hover-decoration: none;
+
+
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-Bold.woff2') format('woff2'),
+      url('../font/Karla-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-ExtraBold.woff2') format('woff2'),
+      url('../font/Karla-ExtraBold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-Light.woff2') format('woff2'),
+      url('../font/Karla-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-Medium.woff2') format('woff2'),
+      url('../font/Karla-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-SemiBold.woff2') format('woff2'),
+      url('../font/Karla-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Karla';
+  src: url('../font/Karla-Regular.woff2') format('woff2'),
+      url('../font/Karla-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

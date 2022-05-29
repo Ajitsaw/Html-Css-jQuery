@@ -1,0 +1,113 @@
+.branchen {
+    .line-bottom {
+        height: 250px;
+        width: 2px;
+        background-color: $secondary;
+        position: absolute;
+        top: 0;
+        right: 200px;
+        z-index: 9;
+        @include media-breakpoint-down(xl) {
+            right: 100px;
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        &:after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            border: 2px solid $secondary;
+            position: absolute;
+            left: -8px;
+            bottom: -18px;
+        }
+    }
+    &__holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 -15px;
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .text {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        display: flex;
+        align-items: flex-end;
+        margin: 15px;
+        @include media-breakpoint-down(lg) {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .heading {
+            margin-bottom: 0;
+        }
+    }
+    .single {
+        height: 243px;
+        position: relative;
+        margin: 15px;
+        overflow: hidden;
+        &:hover {
+            .bg {
+                img {
+                    transform: scale(1.2);
+                    transition: all .3s ease;
+                }
+            }
+        }
+        .bg {
+            height: 100%;
+            width: 100%;
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all .3s ease;
+            }
+            
+            &::before {
+                content: '';
+                background-color: $secondary;
+                width: 100%;
+                height: 100%;
+                opacity: .9;
+                mix-blend-mode: hue;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+            }
+            &::after {
+                content: '';
+                background-color: $primary;
+                width: 100%;
+                height: 100%;
+                opacity: .5;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 3;
+            }
+        }
+        .h5 {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            color: $white;
+            text-align: center;
+            font-weight: bold;
+            z-index: 4;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@font-face {
+  font-family: 'Die-Schneiders';
+  src:  url('../fonts/');
+  src:  url('../fonts/Die-Schneiders.eot') format('embedded-opentype'),
+    url('../fonts/Die-Schneiders.ttf') format('truetype'),
+    url('../fonts/Die-Schneiders.woff') format('woff'),
+    url('../fonts/Die-Schneiders.svg#Die-Schneiders') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Die-Schneiders' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-contract {
+  &:before {
+    content: $icon-contract; 
+  }
+}
+.icon-profit-increase {
+  &:before {
+    content: $icon-profit-increase; 
+  }
+}
+.icon-fuel {
+  &:before {
+    content: $icon-fuel; 
+  }
+}
+.icon-group {
+  &:before {
+    content: $icon-group; 
+  }
+}
+.icon-voucher {
+  &:before {
+    content: $icon-voucher; 
+  }
+}
+.icon-piggy-bank {
+  &:before {
+    content: $icon-piggy-bank; 
+  }
+}
+.icon-stay {
+  &:before {
+    content: $icon-stay; 
+  }
+}
+.icon-shake-hands {
+  &:before {
+    content: $icon-shake-hands; 
+  }
+}
+.icon-steering {
+  &:before {
+    content: $icon-steering; 
+  }
+}
+.icon-diamond {
+  &:before {
+    content: $icon-diamond; 
+  }
+}
+.icon-horse {
+  &:before {
+    content: $icon-horse; 
+  }
+}
+.icon-insurance {
+  &:before {
+    content: $icon-insurance; 
+  }
+}
+.icon-plane {
+  &:before {
+    content: $icon-plane; 
+  }
+}
+.icon-special-wish {
+  &:before {
+    content: $icon-special-wish; 
+  }
+}
+.icon-chauffeur {
+  &:before {
+    content: $icon-chauffeur; 
+  }
+}
+.icon-car {
+  &:before {
+    content: $icon-car; 
+  }
+}
+.icon-keys {
+  &:before {
+    content: $icon-keys; 
+  }
+}
+.icon-race {
+  &:before {
+    content: $icon-race; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-sound-waves {
+  &:before {
+    content: $icon-sound-waves; 
+  }
+}
+

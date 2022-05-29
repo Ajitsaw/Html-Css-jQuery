@@ -1,0 +1,246 @@
+.newsletter {
+    padding: 175px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0px;
+    }
+    &-single {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+            height: auto;
+        }
+        &-icon {
+            margin-bottom: 54px;
+            flex: 1;
+            max-height: 60px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+                max-height: 100%;
+            }
+        }
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 32px;
+        }
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 33px;
+    }
+    &-form {
+        input[type='text'] {
+            border: 1px solid $primary !important;
+            margin-bottom: 40px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
+        .checkbox {
+            color: $primary;
+            margin-bottom: 64px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+            a {
+                color: $primary;
+            }
+            .wpcf7-list-item-label:before {
+                border-color: $primary !important;
+            }
+            input:checked~.wpcf7-list-item-label:after {
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+.kontakt-page-form {
+    padding: 185px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0px;
+    }
+    .accordion {
+        h2 {
+            margin-bottom: 30px;
+        }
+        .accordion-list-content {
+            padding: 0px 50px 25px;
+        }
+    }
+    .become-partner {
+        &-holder {
+            position: relative;
+            &-form {
+                padding: 100px 85px;
+                background-color: rgba(0, 144, 233, .7);
+                border-radius: 22px;
+                @include media-breakpoint-down(lg) {
+                    padding: 50px;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 50px;
+                }
+                @include media-breakpoint-down(sm) {
+                    padding: 30px;
+                }
+                h4 {
+                    margin-bottom: 50px;
+                    font-weight: bold;
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 30px;
+                    }
+                }
+                p {
+                    margin-bottom: 50px;
+                    @include media-breakpoint-down(lg) {
+                        margin-bottom: 30px;
+                    }
+                }
+                .form-group {
+                    margin: 0;
+                }
+                input[type='text'],
+                input[type='email'],
+                textarea {
+                    background-color: transparent !important;
+                    color: $white !important;
+                    margin-bottom: 30px;
+                    &::placeholder {
+                        color: $white;
+                    }
+                }
+            }
+            .default-block {
+                padding-bottom: 0;
+            }
+        }
+    }
+    .bottom-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include media-breakpoint-down(xs) {
+            flex-flow: column;
+        }
+        .checkbox {
+            margin: 0;
+        }
+        .f-button {
+            @include media-breakpoint-down(xs) {
+                margin-top: 30px
+            }
+        }
+    }
+}
+
+.accordion {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0px;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 0px;
+    }
+    .cross-icon {
+        margin-right: 20px;
+        background: $blue;
+        flex: 0 0 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        i {
+            font-size: 10px;
+            color: #25303B;
+            &:before {
+                font-weight: 900;
+            }
+        }
+    }
+    &-list {
+        overflow: hidden;
+        margin-bottom: 0px;
+        border-bottom: 1px solid $white;
+        &:last-of-type {
+            border-bottom: none;
+            .accordion-list-head {
+                border-bottom: none;
+            }
+        }
+        @include media-breakpoint-down(lg) {}
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &-head {
+            background: transparent;
+            display: flex;
+            align-items: center;
+            padding: 25px 10px 25px 0;
+            font-size: 24px;
+            color: $white;
+            font-weight: bold;
+            line-height: 32px;
+            cursor: pointer;
+            //border-bottom: 1px solid $light-gray;
+            @include media-breakpoint-down(md) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+                line-height: 24px;
+            }
+            &.active {
+                border: none;
+                .cross-icon {
+                    transform: rotate(90deg);
+                }
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 16px;
+            }
+        }
+        &-content {
+            display: none;
+            background: transparent;
+            color: $white;
+            padding: 30px 50px 45px;
+            position: relative;
+            border-bottom: 1px solid $light-gray;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 25px;
+            p {
+                font-size: 18px;
+                line-height: 25px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.kontakt-map {
+    height: 739px;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+        height: 550px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 400px;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

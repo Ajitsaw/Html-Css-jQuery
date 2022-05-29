@@ -1,0 +1,683 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sicatron</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li>
+                                <a href="leistungen.html">Leistungen<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="leistungen-single.html">
+                                        Kabelkonfektion
+                                        <span>Eine gute Verbindung schaffen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Montagearbeiten
+                                        <span>Wir montieren schnell & zuverlässig</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Individuelle Fertigung
+                                        <span>Wir planen und entwickeln mit Ihnen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Schalterkonfektion
+                                        <span>Innovation, Qualität und Flexibilität</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Planung | Musterbau
+                                        <span>Service und Engagement</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="produkte.html">Produkte<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-category.html">
+                                        Schalttechnik
+                                        <span>Mikro- und Schnappschalter</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Folientastaturen
+                                        <span>Folientastaturen und Silikonschaltmatten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Motoren & Magnete
+                                        <span>Synchronmotoren, Hub-und Drehmagnete</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Steuern & Automatisieren
+                                        <span>Steuerungskomponenten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Sensoren
+                                        <span>Lichtschranken</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li>
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="fal fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay-logo">
+            <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="row justify-content-between flex-lg-row-reverse flex-column">
+                <div class="col-lg-3">
+                    <div class="overlay-menu">
+                        <ul>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="produkte.html" class="overlay-heading">
+                            Produkte
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="product-single.html">Schaltertechnik</a></li>
+                                <li><a href="product-single.html">Folientastaturen</a></li>
+                                <li><a href="product-single.html">Sensoren</a></li>
+                                <li><a href="product-single.html">Magnete & Motoren</a></li>
+                                <li><a href="product-single.html">Steuern & Automatisieren</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="leistungen.html" class="overlay-heading">
+                            Leistungen
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="leistungen-single.html">Kabelkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Schalterkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Montagearbeiten</a></li>
+                                <li><a href="leistungen-single.html">Individuelle Fertigung</a></li>
+                                <li><a href="leistungen-single.html">Planung & Musterbau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <section class="home-video mask mask-45">
+            <div class="home-video__video">
+                <video autoplay loop playsinline>
+                    <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_1920_18MG.mp4">
+                </video>
+            </div>
+            <div class="home-video__text">
+                <div class="container">
+                    <div class="row align-items-end">
+                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
+                            <div class="text-block">
+                                <div class="h5 line-after">Für uns das Wichtigste</div>
+                                <h1>Beste Qualität
+                                    ohne Kompromisse.</h1>
+                                <a href="kontakt.html" class="button outline primary">kontakt aufnehmen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#scroll" class="scroll-down">
+                <i class="fal fa-long-arrow-down"></i>
+            </a>
+        </section>
+       
+        <section class="home-facts" id="scroll">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="fact">
+                            <div class="fact-inner">
+                                <div class="h1"><span class="odometer" data-count="3500">0</span></div>
+                                jährliche Aufträge
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="fact">
+                            <div class="fact-inner">
+                                <div class="h1"><span class="odometer" data-count="2">0</span> Mio+</div>
+                                Kabelkonfektionen im Jahr
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="fact">
+                            <div class="fact-inner">
+                                <div class="h1"><span class="odometer" data-count="3400">0</span></div>
+                                zufriedene Kunden
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                        <div class="fact">
+                            <div class="fact-inner">
+                                <div class="h1"><span class="odometer" data-count="20">0</span>+</div>
+                                Jahre Erfahrung
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="kabel">
+            <div class="container">
+                <div class="row align-items-end flex-column-reverse flex-lg-row">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Maßgeschneiderte Kabelkonfektion</div>
+                            <h2 class="text-uppercase">
+                                Kabelkonfektionen<br>
+                                nach modernsten<br>
+                                arbeitsMethoden
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Als Systemlieferant mit einer jahrelangen Erfahrung<br>
+                                    bieten wir verschiedenen Industriebranchen ein<br>
+                                    umfangreiches Leistungsspektrum an.
+                                </p>
+                            </div>
+                            <a href="leistungen.html" class="button outline primary">Unsere leistungen</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-block">
+                            <div class="image-block-single">
+                                <img src="img/Sicatron1.png" alt="">
+                            </div>
+                            <div class="image-block-single">
+                                <img src="img/Sicatron2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="innovation">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <div class="image-block">
+                            <img src="img/innovation.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-before text-uppercase">Erstklassige Qualität</div>
+                            <h3 class="h2 text-uppercase">
+                                innovativ & flexibel:<br>
+                                unsere präzisions-<br>
+                                mikroschalter
+                            </h3>
+                            <div class="para">
+                                <p>
+                                    Im breit gefächerten Produktprogramm unseres<br>
+                                    Unternehmens zählen hochwertige Mikroschalter<br>
+                                    zu den elementaren Bestandteilen.
+                                </p>
+                            </div>
+                            <a href="leistungen-single.html" class="button outline primary">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-product">
+            <div class="text-block center-block text-center text-white">
+                <div class="h6 line-before text-uppercase">unsere produkte</div>
+            </div>
+            <div class="home-product-main">
+                <div class="home-product__arrow">
+                    <div class="arrow-left">
+                        <i class="fal fa-long-arrow-left"></i>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fal fa-long-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="home-product__right">
+                    <div class="home-product__slider">
+                        <div class="slider swiper-wrapper">
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Folientastaturen
+                                    </h3>
+                                    <p>
+                                        Einen Kernpunkt unseres Produktspektrums bildet die Lieferung von Mikroschaltern. Hervorzuheben ist hierbei der Schnappschalter, der mit einer Reihe von Vorteilen überzeugen kann.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product2.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Motoren & Magnete
+                                    </h3>
+                                    <p>
+                                        Technische Anwendung finden optische Sensoren vor allem in der Automatisierungstechnik. Dort werden sie u. a. bei Erkennungs-aufgaben und Abstandsmessung eingesetzt.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product3.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Steuern & Automa
+                                    </h3>
+                                    <p>
+                                        Die LED-Arbeitsleuchten sind hochwertige, energieeffiziente Produkte, die eine hohe Beleuchtung für eine Lebensdauer von bis zu 50.000 Stunden zur Verfügung stellen. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="product-listing.html" class="button outline primary">Unsere Produkte</a>
+            </div>
+        </section>
+
+        <section class="home-customers">
+            <div class="home-customers__slider swiper-container">
+                <div class="slider swiper-wrapper">
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo1.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo2.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo3.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo4.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo5.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo4.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo6.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo7.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo8.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo9.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                </div>
+            </div>
+            <div class="home-customers__slider reversed swiper-container">
+                <div class="slider swiper-wrapper">
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo8.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo9.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo10.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo11.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo1.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo2.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo3.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo4.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo5.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                    <a href="#" class="customer swiper-slide">
+                        <img src="img/logo6.png" class="logo">
+                        <div class="title"><span>Jonas Farbwerke</span>Lorem ipsum</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="home-service">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-6">
+                        <div class="image-block">
+                            <img src="img/service-h.png" alt="">
+                            <div class="pattern pattern-right pattern-top">
+                                <img src="img/pattern.png" alt="pattern">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-before text-uppercase">Qualitätspolitik</div>
+                            <h3 class="h2 text-uppercase">
+                                klasse Service &<br>
+                                beste qualität<br>
+                                - das ist sicatron
+                            </h3>
+                            <div class="para">
+                                <p>
+                                    Im Bereich Kabelkonfektion bieten wir Ihnen von der<br>
+                                    Konzeption eines Produktes über den ersten Prototypen<br>
+                                    bis hin zur fertigen Serie die perfekte Kombination. 
+                                </p>
+                            </div>
+                            <a href="service.html" class="button outline primary">Mehr erfahren</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Wir beraten Sie gerne</div>
+                            <h2 class="text-uppercase">
+                                Haben Sie Fragen?<br>
+                                nehmen sie Kontakt<br>
+                                zu uns auf.
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Gerne stehen wir Ihnen bei offenen Fragen zu uns<br>
+                                    und unseren Leistungen zur Verfügung, denn Ihre<br>
+                                    Wünsche sind uns wichtig!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ihr Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Ihre E-Mailadresse">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Betreff">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <span class="wpcf7-form-control-wrap checkbox-check">
+                                    <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                                        <span class="wpcf7-list-item first last">
+                                            <input type="checkbox" name="checkbox-107[]" class="eighteen" value="Ich stimme den Datenschutzbestimmungen zu.">
+                                            <span class="wpcf7-list-item-label"></span>
+                                </span>
+                                <span class="checkbox-text">Ich habe die <a href="datenschutz.html">Datenschutzbestimmungen</a> gelesen und akzeptiert.</span>
+                                </span>
+                                </span>
+                            </div>
+                            <input type="submit" class="button outline primary" value="Jetzt senden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Flooting From  -->
+
+    <div class="contact-overlay">
+        <div class="contact-overlay__content">
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Sicatron.svg" alt="Logo">
+                </div>
+                <div class="title">Guten Tag!<span><img src="img/hand.svg" alt="Hand"></span></div>
+                <div class="text">Bei Fragen zu unseren Produkten oder Leistungen sprechen Sie uns an!</div>
+            </div>
+            <div class="bottom">
+                <form>
+                    <div class="title">Ihre Anfrage</div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" placeholder="Ihr Name" required>
+                        </div>
+                        <div class="col-lg-12">
+                            <input type="email" placeholder="Ihr E-Mail Adresse" required>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <textarea rows="5" placeholder="Ihre Nachricht an uns" required></textarea>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="checkbox">
+                                <span class="wpcf7-form-control-wrap checkbox-check">
+                                    <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                                        <span class="wpcf7-list-item first last">
+                                            <input type="checkbox" name="checkbox-107[]" class="eighteen" value="Ich stimme den Datenschutzbestimmungen zu.">
+                                            <span class="wpcf7-list-item-label"></span>
+                                </span>
+                                <span class="checkbox-text">Ich akzeptiere die Datenschutzbestimmungen.</span>
+                                </span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <input type="submit" class="button outline primary" value='absenden'>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact-overlay__toggle">
+            <div class="contact-overlay__toggle-icon">
+                <i class="fal fa-chevron-down"></i>
+            </div>
+            <img src="img/comment.svg" alt="Comment">
+        </div>
+    </div>
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <a href="">E-Mail: info@sicatron.de</a>
+                            <a href="">Telefon +49 (0) 2331 473329 - 0</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                SICATRON GmbH & Co. KG
+                            </div>
+                            <address>
+                                Pettenkoferstr. 15<br>
+                                58097 Hagen, Germany
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                Follow
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6">
+                        <div class="text-block">
+                            <p>
+                                2021 SICATRON GmbH  | realisiert durch <a href="">Pechschwarz Media</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-menu">
+                            <a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

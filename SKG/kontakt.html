@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SKG</title>
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                        <nav class="main-nav d-none d-lg-block">
+                            <ul>
+                                <li>
+                                    <a href="#">Anwendungsbereiche <i class="far fa-angle-down"></i></a>                                    
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Anwendungsbereiche- <br>Übersicht</a></li>
+                                        <li><a href="#">Mineralölwirtschaft & Tankstellentechnik</a></li>
+                                        <li><a href="#">Energieversorger & Tiefbau</a></li>
+                                        <li><a href="#">Brenngasversorger</a></li>
+                                        <li><a href="#">Behälter- & Bunkerabdeckungen</a></li>
+                                        <li><a href="#">Regenwasserspeicher</a></li>
+                                        <li><a href="#">Sonderbauwerke</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Produkte<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Produktübersicht</a></li>
+                                        <li><a href="#">Schachtabdeckungen mit Betonkranz</a></li>
+                                        <li><a href="#">Schachtabdeckungen ohne Betonkranz</a></li>
+                                        <li><a href="#">Fernfüllschränke</a></li>
+                                        <li><a href="#">Sonstige Stahlkonstruktionen</a></li>
+                                        <li><a href="#">Individuelle Anfertigungen</a></li>
+                                        <li><a href="#">Auftriebssicherungen</a></li>
+                                        <li><a href="#">Ersatzteile</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Leistungen<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Leistungsübersicht</a></li>
+                                        <li><a href="#">Sanierung von Schacht- abdeckungen</a></li>
+                                        <li><a href="#">Bauleistungen</a></li>
+                                        <li><a href="#">Projektberatung</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Unternehmen<i class="far fa-angle-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Über Uns</a></li>
+                                        <li><a href="#">Downloads</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Referenzen</a>
+                                </li>
+                                <li>
+                                    <a href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="lang-menu">
+                            <div class="current-lang">
+                                <img src="img/lang-german.png">
+                                <span><i class="fal fa-angle-down"></i></span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/lang-german.png">Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/lang-english.png">English
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav-toggle">
+                            <span></span>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <div class="overlay">
+        <div class="overlay__logo">
+            <a href="index.html">
+                <img src="img/cropped-logo-blue.png">
+            </a>
+        </div>
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#">Anwendungsbereiche <i class="far fa-angle-down"></i></a>                                    
+                    <ul class="sub-menu">
+                        <li><a href="#">Anwendungsbereiche- <br>Übersicht</a></li>
+                        <li><a href="#">Mineralölwirtschaft & Tankstellentechnik</a></li>
+                        <li><a href="#">Energieversorger & Tiefbau</a></li>
+                        <li><a href="#">Brenngasversorger</a></li>
+                        <li><a href="#">Behälter- & Bunkerabdeckungen</a></li>
+                        <li><a href="#">Regenwasserspeicher</a></li>
+                        <li><a href="#">Sonderbauwerke</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Produkte<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Produktübersicht</a></li>
+                        <li><a href="#">Schachtabdeckungen mit Betonkranz</a></li>
+                        <li><a href="#">Schachtabdeckungen ohne Betonkranz</a></li>
+                        <li><a href="#">Fernfüllschränke</a></li>
+                        <li><a href="#">Sonstige Stahlkonstruktionen</a></li>
+                        <li><a href="#">Individuelle Anfertigungen</a></li>
+                        <li><a href="#">Auftriebssicherungen</a></li>
+                        <li><a href="#">Ersatzteile</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Leistungen<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Leistungsübersicht</a></li>
+                        <li><a href="#">Sanierung von Schacht- abdeckungen</a></li>
+                        <li><a href="#">Bauleistungen</a></li>
+                        <li><a href="#">Projektberatung</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Unternehmen<i class="far fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Über Uns</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Referenzen</a>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- overlay -->
+
+    <section class="fullwidth-text-image fullwidth-text-image--headergap">
+        <div class="container-fluid">
+            <div class="row justify-content-between flex-column-reverse flex-lg-row">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="text-block mt-60">
+                        <div class="site-heading">
+                            <h4>Kontakt.</h4>
+                            <h1>Ihr Kontakt zur SKG Umwelttechnik.</h1>
+                        </div>
+                        <p class="short-width">Sie erreichen uns direkt per Telefon oder über eine Anfrage per Mail. Wir beraten Sie gerne und beantworten Ihnen offene Fragen. Treten Sie gerne mit uns in Verbindung!</p>
+                        <ul class="contact">
+                            <li>SKG Umwelttechnik GmbH & Co. KG<br> Schottlandstraße 6<br> D - 58675 Hemer</li>
+                        </ul>
+                        <div class="button-group">
+                            <a href="tel:02372 / 55 90 13 -0" class="button t-blue">02372 / 55 90 13 -0</a>
+                            <a href="mailto:info@skg-umwelttechnik.de" class="button t-blue">info@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-block">
+                        <img src="img/service.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- kontakt-banner -->
+
+    <section class="ansprechpartner-panel">
+        <div class="container">
+            <div class="site-heading">
+                <h4>Das SKG Team.</h4>
+                <h2>Ihre Ansprechpartner</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="ansprechpartner-panel--single">
+                        <div class="ansprechpartner-panel--single--img">
+                            <img src="img/ansprechpartner-img.png" alt="">
+                        </div>
+                        <div class="ansprechpartner-panel--single--text">
+                            <h4>Florian Kröger</h4>
+                            <p>Geschäftsführer</p>
+                            <a href="mailto:kroeger@skg-umwelttechnik.de">kroeger@skg-umwelttechnik.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-8 col-md-10 col-sm-12 text-center">
+                    <div class="text-block">
+                        <div class="h2">Haben Sie Fragen zu unseren Produkten oder Leistungen?</div>
+                        <p>Wir beantworten Ihnen gerne alle Fragen. Schreiben Sie uns eine Mail oder rufen Sie uns direkt an.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="button-group">
+                        <a href="tel:02372 / 55 90 13 -0" class="button t-white">02372 / 55 90 13 -0</a>
+                        <a href="mailto:info@skg-umwelttechnik.de" class="button t-white">info@skg-umwelttechnik.de</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <div class="h2 mb-0 footer-top-text">Wir bieten Ihnen individuelle Lösungen.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Standort
+                            </div>
+                            <div class="footer-block-address">
+                                SKG Umwelttechnik GmbH & Co. KG<br> Schottlandstraße 6 <br>58675 Heber
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <ul class="footer-block-contact-form">
+                                <li><a href="tel:+49 (0) 2372 / 55 90 13 -0">T +49 (0) 2372 / 55 90 13 -0</a></li>
+                                <li><a href="fax:+49 (0) 2372 / 55 90 13 -9">+49 (0) 2372 / 55 90 13 -9</a></li>
+                                <li><a href="mailto:info@skg-umwelttechnik.de">M info@skg-umwelttechnik.de</a></li>
+                            </ul> 
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Telefon
+                            </div>
+                            <div class="footer-block-big">
+                                <a href="tel:T +49 (0) 2372 / 55 90 13 -0">T +49 (0) 2372 / 55 90 13 -0</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontaktformular
+                            </div>
+                            <div class="footer-block-big">
+                                <a href="#">Schreiben Sie uns</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-md-left">
+                            <p class="mb-0 copy_right_text">
+                                2021 SKG Umwelttechnik GmbH | realisiert durch <a href="#">Pechschwarz Media</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <p class="footer_parivacy_policy mb-0"><a href="datenschutz.html">Datenschutz</a> | <a href="impressum.html">Impressum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer //End -->
+    
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/jquery-equal-height/js/jquery-equal-height.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

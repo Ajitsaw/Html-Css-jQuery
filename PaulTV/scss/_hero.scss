@@ -1,0 +1,176 @@
+
+
+.hero {
+    padding: 130px 0 75px;
+    @include media-breakpoint-down(lg) {
+        padding: 130px 0 70px;
+    }
+    &__left {
+        @include media-breakpoint-down(lg) {
+            position: relative;
+        }
+        .text-button {
+            position: absolute;
+            bottom: 70px;
+            @include media-breakpoint-down(lg) {
+                position: relative;
+                bottom: 0px;
+                margin-top: 30px;
+            }
+        }
+    }
+    &__right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            flex-flow: column;
+            align-items: center;
+        }
+        .device-tab {
+            margin-bottom: 100px;
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+            }
+        }
+        .long-screen {
+            margin-right: 60px;
+            @include media-breakpoint-down(xxl) {
+                margin-right: 0px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+            }
+        }
+        .price {
+            position: absolute;
+            bottom: 0px;
+            left: 130px;
+            width: 226px;
+            height: 226px;
+            border-radius: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s ease;
+            @include media-breakpoint-down(lg) {
+                left: 50px;
+                width: 200px;
+                height: 200px;
+            }
+            @include media-breakpoint-down(md) {
+                width: 180px;
+                height: 180px;
+                position: relative;
+                left: 0;
+            }
+            &:hover {
+                i {
+                    margin-left: 15px;
+                    transition: all .3s ease;
+                    @include media-breakpoint-down(md) {
+
+                    }
+                }
+            }
+            h3 {
+                color: $white;
+                margin-bottom: 15px;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 10px;
+                }
+            }
+            .xl {
+                color: $green;
+                margin-bottom: 15px;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 10px;
+                }
+            }
+            i {
+                color: $white;
+                font-size: 36px;
+                transition: all .3s ease;
+                @include media-breakpoint-down(md) {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+    .shape {
+        position: absolute;
+        right: -180px;
+        bottom: -80px;
+        z-index: -1;
+        @include media-breakpoint-down(xl) {
+            bottom: 0px;
+            right: -120px;
+        }
+        @include media-breakpoint-down(lg) {
+            bottom: 25%;
+            right: -50px;
+        }
+        @include media-breakpoint-down(md) {
+            right: -10px;
+        }
+        img {
+            @include media-breakpoint-down(xl) {
+                max-width: 900px;
+            }
+            @include media-breakpoint-down(lg) {
+                max-width: 600px;
+            }
+            @include media-breakpoint-down(md) {
+                max-width: 400px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 300px;
+            }
+        }
+    }
+    .circle {
+        position: absolute;
+    }
+    .circle--86 {
+        right: 9%;
+        top: 30%;
+        @include media-breakpoint-down(md) {
+            right: -15px;
+            top: 30%;
+        }
+    }
+    .circle--72 {
+        left: 3%;
+        top: 17%;
+        @include media-breakpoint-down(lg) {
+            left: -20px;
+            top: 17%;
+        }
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .circle--56 {
+        right: 3%;
+        top: 26%;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .circle--44 {
+        left: 56%;
+        top: 18%;
+        @include media-breakpoint-down(lg) {
+            left: 10px;
+            top: 13%;
+        }
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}

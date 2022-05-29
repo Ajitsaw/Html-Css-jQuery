@@ -1,0 +1,36 @@
+//Porduct Single Slider
+.product-single-slider{
+    background: $gray-bg;
+    padding: $section-padding-small;
+    
+    &--slide--single{
+        &--img{
+            padding-left: 100px;
+            img{
+                max-width: 100%;
+            }
+        }
+        .text-block{
+            max-width: 640px;
+            padding: 40px 0;
+        }
+
+        .bullets{
+            display: flex;
+            justify-content: center;
+            span{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: rgba($color: $menu, $alpha: 0.3);
+                box-shadow: 0 0 0 4px transparent;
+                margin: 0 10px;
+                transition: all 300ms ease-in-out;
+
+                &:hover, &.active{
+                    box-shadow: 0 0 0 4px $light-blue;
+                }
+            }
+        }
+    }
+}

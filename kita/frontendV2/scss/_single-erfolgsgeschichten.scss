@@ -1,0 +1,512 @@
+.story-content {
+    padding-top: 125px;
+    padding-bottom: 100px;
+
+    @include media-breakpoint-down(md) {
+      padding-top: 140px;
+    }
+
+    .story-content__section {
+        margin-bottom: 80px;
+        color: $menu;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+
+        &.image {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            .box-shadow {
+              box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+              border-radius: $border-radius;
+              overflow: hidden;
+            }
+            .desc {
+              font-size: 13px;
+              line-height: 24px;
+              margin-top: 25px;
+            }
+            &.image-overlay {
+                position: relative;
+                
+                &:before {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    content: '';
+                    z-index: 9;
+                    border-radius: $border-radius;
+                    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#052a3c+0,526873+100&1+0,0+100 */
+                    background: -moz-linear-gradient(left,  rgba(5,42,60,1) 0%, rgba(82,104,115,0) 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  rgba(5,42,60,1) 0%,rgba(82,104,115,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  rgba(5,42,60,1) 0%,rgba(82,104,115,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052a3c', endColorstr='#00526873',GradientType=1 ); /* IE6-9 */
+                }
+            }
+        }
+        &.infobox {
+            .infobox-single {
+                background-color: $white;
+                padding: 30px 20px;
+                box-shadow: $box-shadow;
+                border-radius: 7px;
+                height: 100%;
+                display: flex;
+                flex-flow: column;
+          
+                @include media-breakpoint-down(md) {
+                  height: auto;
+                  margin-bottom: 20px;
+                }
+                &-top {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 30px;
+                  min-height: 70px;
+                  @include media-breakpoint-down(md) {
+                    min-height: 50px;
+                  }
+                  @include media-breakpoint-down(sm) {
+                    min-height: 100%;
+                  }
+                  &-img {
+                    margin-right: 15px;
+                    flex: 0 0 60px;
+                    @include media-breakpoint-down(xl) {
+                      flex: 0 0 50px;
+                    }
+                  }
+                  .h5 {
+                    margin: 5px 0;
+                    color: $menu;
+                  }
+                }
+                .h5 {
+                  font-weight: bold;
+                }
+                p {
+                  margin-bottom: 0;
+                  font-size: 13px;
+                  line-height: 24px;
+                }
+            }
+        }
+        &.text {
+            h1 {
+                color: $primary;
+            }
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin-bottom: 30px;
+                color: $primary;
+            }
+
+            p {
+                color: $menu;
+            }
+            ul {
+                column-count: 2;
+                column-gap: 30px;
+                margin-bottom: 40px;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 20px;
+                    column-count: 1;
+                }
+        
+                li {
+                    color: $menu;
+                    padding-left: 25px;
+                    position: relative;
+        
+                    &:before {
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: $primary;
+                        content: '';
+                        position: absolute;
+                        top: 12px;
+                        left: 4px;
+                    }
+        
+                }
+            }
+        }
+        &.gallery {
+            display: flex;
+            flex-flow: row wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+            .image {
+                flex: 0 0 33.33333%;
+                width: 33.33333%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+                @include media-breakpoint-down(lg) {
+                    flex: 0 0 50%;
+                    width: 50%;
+                }
+                @include media-breakpoint-down(md) {
+                    flex: 0 0 100%;
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+                    border-radius: $border-radius;
+                }
+            }
+        }
+        &.video {
+            padding: 0 80px;
+            @include media-breakpoint-down(md) {
+                padding: 0;
+            }
+            iframe {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 10px;
+            }
+            .desc {
+                font-size: 14px;
+            }
+        }
+        &.video-gallery {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: 624px;
+            box-shadow: $box-shadow;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: $border-radius;
+            }
+            span {
+
+                svg {
+                    margin-right: 17px;
+                }
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+                padding: 10px 30px;
+                display: flex;
+                align-items: center;
+                line-height: 24px;
+                font-size: 18px;
+                z-index: 10;
+                white-space: nowrap;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                content: '';
+                z-index: 9;
+                border-radius: $border-radius;
+                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#052a3c+0,526873+100&1+0,0+100 */
+                background: -moz-linear-gradient(left,  rgba(5,42,60,1) 0%, rgba(82,104,115,0) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(left,  rgba(5,42,60,1) 0%,rgba(82,104,115,0) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to right,  rgba(5,42,60,1) 0%,rgba(82,104,115,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#052a3c', endColorstr='#00526873',GradientType=1 ); /* IE6-9 */
+            }
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+.story-footer {
+    padding: 100px 0;
+    
+    @include media-breakpoint-down(md) {
+      padding: $section-padding-small;
+    }
+    .story-footer__categories {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-size: 14px;
+        font-weight: $font-weight-normal;
+        margin-right: 15px;
+        color: $white;
+        line-height: 28px;
+        letter-spacing: 0.7px;
+  
+        @include media-breakpoint-down(md) {
+          flex: 0 0 100%;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+      }
+      span {
+        font-weight: 500;
+        display: inline-block;
+        padding: 10px 15px;
+        background: $secondary;
+        color: $white;
+        border-radius: $border-radius;
+        line-height: 1;
+        margin-left: 15px;
+        letter-spacing: 0.7px;
+  
+        @include media-breakpoint-down(md) {
+          margin-left: 8px;
+        }
+      }
+    }
+    .story-footer__share {
+      text-align: center;
+      font-weight: $font-weight-bold;
+      font-size: 16px;
+      line-height: 1;
+      
+      .p {
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 35px;
+        color: $black;
+        line-height: 28px;
+        letter-spacing: 0.7px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        font-size: 0;
+        li {
+          display: inline-block;
+          a {
+            width: 30px;
+            height: 30px;
+            background: $menu;
+            display: block;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 20px;
+            font-size: 18px;
+
+            &:hover {
+                background: $primary;
+            }
+  
+            i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: $white;
+            }
+          }
+          &:last-child {
+            a {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+ 
+
+  /* Interested Information */
+
+.story-interested-information {
+    padding: $section-padding;
+    background: $white-smoke;
+
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .story-expert_slider {
+
+        .story-expert-box {
+            margin-right: 30px;
+            width: 100%;
+            max-width: calc((100% - 30px) / 2);
+    
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+                margin-right: 10px;
+                max-width: calc((100% - 10px) / 2);
+            }
+    
+            .image {
+                border-radius: $border-radius;
+                box-shadow: $box-shadow;
+                overflow: hidden;
+                margin-bottom: 22px;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                &.margin-top {
+                    margin-top: 80px;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .title {
+                font-size: 25px;
+                font-weight: $font-weight-bold;
+                color: $menu;
+                margin-bottom: 3px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
+            }
+            .designation {
+                font-size: 20px;
+                font-weight: $font-weight-normal;
+                color: $menu;
+                margin-bottom: 30px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 15px;
+                }
+            }
+            a {
+                font-size: 13px;
+                color: $menu;
+                display: inline-block;
+                font-family: $font-family-roboto;
+                margin-right: 44px;
+    
+                svg {
+                    margin-right: 8px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    margin-right: 0;
+                    width: 100%;
+                }
+                &:hover {
+                    color: $light-delphin;
+                }
+    
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        .bullets {
+            margin-top: 30px;
+            text-align: center;
+            span {
+                display: inline-block;
+                height: 8PX;
+                width: 8px;
+                background: $gray88;
+                border-radius: 50%;
+                margin-right: 15px;
+                border:4px solid $white-smoke;
+                box-shadow: none;
+                &.active {
+                    border-color: $primary;
+                    background: $white;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    
+    
+    .text-block {
+        display: block;
+        margin-bottom: 83px;
+        color: $menu;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+    }
+    .button {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }   
+    }
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+}
+
+
+/* Testimonials Slider */
+
+.testimonials {
+    &.success-story {
+        .testimonials__slider {
+            .testimonial {
+                .name {
+                    color: $primary;
+
+                    span {
+                        color: $menu;
+                    }
+                }
+            }
+            .bullets {
+                margin-top: 30px;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    height: 8PX;
+                    width: 8px;
+                    background: $gray88;
+                    border-radius: 50%;
+                    margin-right: 15px;
+                    border: 4px solid $gray94;
+                    box-shadow: none;
+                    &.active {
+                        border-color:$primary;
+                        background: $white;
+                    }
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

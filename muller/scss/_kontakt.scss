@@ -1,0 +1,113 @@
+/* Kontakt Partner */
+
+.kontakt-partner {
+  padding: 200px 0;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .05;
+    mix-blend-mode: color-burn;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text-block {
+    .h5, h5 {
+      color: $secondary;
+      text-transform: uppercase;
+    }
+  }
+}
+
+/* Kontakt Partner Single */
+
+.kontakt-partner-cat {
+  padding: 110px 0 130px;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 35px 0;
+  }
+  .text-block {
+    @include media-breakpoint-down(md) {
+      margin: 25px 0;
+    }
+    .h5, h5 {
+      color: $secondary;
+    }
+  }
+  .anchors {
+    a {
+      color: $primary;
+      display: flex;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+/* Map */
+.map {
+  .text-block {
+    margin-bottom: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 80px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+    }
+    .h5, h5 {
+      text-transform: uppercase;
+      color: $secondary;
+    }
+  }
+  .line {
+    background-color: $secondary;
+    width: 200px;
+    height: 15px;
+    margin: 0 auto 170px;
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto 100px;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 0 auto 50px;
+      width: 100px;
+      height: 10px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 10px;
+    }
+  }
+  &-frame {
+    height: 600px;
+    @include media-breakpoint-down(lg) {
+      height: 500px;
+    }
+    @include media-breakpoint-down(md) {
+      height: 400px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: 350px;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+/* site-heading */
+.site-heading{
+    h4{
+        color: $secondary;
+        margin-bottom: 10px;
+    }
+    h2{
+        color: $body-color;
+    }
+}
+
+/* Select2 */
+
+.select2 {
+    font-size: 15px;
+    .select2-selection {
+        padding: 11px 6px;
+        height: auto;
+        border: 2px solid #454545 !important;
+        border-radius: 0;
+
+        @include media-breakpoint-down(md) {
+            padding: 8px 6px;
+        }
+        .select2-selection__rendered {
+            padding-right: 40px;
+            font-weight: $font-weight-bold;
+            color: $secondary;
+            font-size: 16px;
+        }
+        &:before {
+            content: "\f107";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+            border-left: none;
+            padding-left: 10px;
+            color: $secondary;
+            font-size: 24px;
+        }
+    }
+    .select2-selection__arrow {
+        display: none;
+    }
+    .select2-results__option--highlighted.select2-results__option--selectable, 
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: #F0F4F7 !important;
+        color: $primary !important;
+    }
+}
+
+// .select2-container--open{
+//     .select2-selection{
+//         border-bottom: none !important;
+//     }
+// }
+.select2-dropdown--above{
+    border:2px solid #454545;
+    border-bottom-color: $white;
+}
+.select2-dropdown--below{
+    border:2px solid #454545;
+}
+.select2-container {
+    font-size: 15px;
+    .select2-results__option--disabled {
+        display: none;
+    }
+    .select2-selection--single {
+        height: auto !important;
+        border: 1px solid #3B3B3B;
+    }
+}
+.download{
+    margin-bottom: 100px;
+    .select-label{
+        font-size: 16px;
+        font-weight:$font-weight-bold;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &-dropdown{
+        max-width: 355px;
+        width: 100%;
+    }
+}

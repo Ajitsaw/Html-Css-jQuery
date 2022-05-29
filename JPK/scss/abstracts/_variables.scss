@@ -1,0 +1,60 @@
+/* Global */
+
+$section-padding: 120px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #1F1F1F;
+$secondary: #93FF00;
+$gray: #EEEEEE;
+$dark-bg: #171B1C;
+$light-gray: #F5F5F5;
+$body-color: #212127;
+
+$primaryGradient: linear-gradient(146deg, rgba(31,31,31,1) 0%, rgba(54,54,54,1) 100%);
+
+
+/* Font */
+
+$font-family-sans-serif: 'Spartan';
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$xl: 80px;
+$h1-font-size: 45px;
+$h2-font-size: 45px;
+$h3-font-size: 30px;
+$h4-font-size: 25px;
+$h5-font-size: 20px;
+$h6-font-size: 18px;
+
+$link-decoration: none;
+$link-hover-decoration: none;

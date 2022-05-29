@@ -1,0 +1,405 @@
+// Unternehmen Map
+
+.unternehmen-map {
+    padding-bottom: 100px;
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 50px;
+    }
+    .text-block {
+        h2, h2 {
+            margin-bottom: 120px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 80px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+// Unternehmen Versprechen
+
+.unternehmen-versprechen {
+    &-list {
+        display: flex;
+        margin: 25px 0;
+        @include media-breakpoint-down(md) {
+            margin: 15px 0;
+        }
+        .h1 {
+            font-size: 80px;
+            color: $secondary;
+            margin-right: 50px;
+            line-height: 1;
+            @include media-breakpoint-down(lg) {
+                font-size: 50px;
+                margin-right: 30px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 30px;
+                margin-right: 20px;
+            }
+        }
+        .h4 {
+            margin-bottom: 10px;
+        }
+        p {
+            padding-right: 50px;
+            @include media-breakpoint-down(md) {
+                padding-right: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-right: 0px;
+            }
+        }
+    }
+    .text-block {
+        margin-top: 30px;
+        h2, .h2 {
+            text-transform: uppercase;
+        }
+    }
+}
+
+// Unternehmen Info 
+
+.unternehmen-info {
+    .text-block {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        h2, .h2 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+    }
+    .bottom-align {
+        margin-top: 150px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 80px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+        }
+    }
+    .image-text {
+        .text-block {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// unternehmen video
+
+.unternehmen-video {
+    height: 421px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// Unternehmen Timeline
+
+.unternehmen-timeline {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    @include media-breakpoint-down(lg) {
+        height: 600px;
+    }
+    @include media-breakpoint-down(md) {
+        height: 550px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 500px;
+    }
+    .slider-tab {
+        position: absolute;
+        bottom: 120px;
+        z-index: 9;
+        width: 100%;
+        padding-left: 270px;
+        @include media-breakpoint-down(lg) {
+            padding-left: 155px;
+            bottom: 80px;
+        }
+        @include media-breakpoint-down(md) {
+            bottom: 80px;
+            padding-left: 35px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-left: 0px;
+        }
+    }
+    .slider-list {
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        &-single {
+            position: relative;
+            padding-bottom: 45px;
+            flex: 0 0 calc(100vw/7 + 3px);
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 calc(100vw/7 + 6px);
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 calc(100vw/4 + 0px);
+            }
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 20px;
+            }
+            &.hide-tab {
+                transform: translate(-100%, 0);
+                display: none;
+                transition: transform 0.3s ease, display 1s ease .5s;
+            }
+            &:nth-child(even) {
+                padding-bottom: 80px;
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 50px;
+                }
+            }
+            h5 {
+                font-size: 22px;
+                margin-bottom: 15px;
+                font-weight: 600;
+                @include media-breakpoint-down(lg) {
+                    font-size: 18px;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 5px;
+                }
+            }
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 300;
+                max-width: 163px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 16px;
+                }
+                @include media-breakpoint-down(sm) {
+                    font-size: 14px;
+                    line-height: 22px;
+                    max-width: 130px;
+                }
+                @include media-breakpoint-down(xs) {
+                    font-size: 13px;
+                    line-height: 18px;
+                    max-width: 120px;
+                }
+            }
+            .dots {
+                width: 24px;
+                height: 24px;
+                background-color: transparent;
+                border-radius: 100%;
+                cursor: pointer;
+                bottom: 4px;
+                left: 0;
+                position: absolute;
+                border: 3px solid $secondary;
+                @include media-breakpoint-down(sm) {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            &:before {
+                content: '';
+                width: calc(100% - 19px);
+                height: 5px;
+                position: absolute;
+                left: 22px;
+                bottom: 13px;
+                background-color: $secondary;
+                @include media-breakpoint-down(sm) {
+                    height: 4px;
+                    bottom: 12px;
+                    width: calc(100% - 16px);
+                    left: 18px;
+                }
+            }
+            &.prev {
+                &:before {
+                    background: $secondary;
+                }
+                .dots {
+                    background-color: $secondary;
+                }
+            }
+            &.selected {
+                .slider-list-content {
+                    opacity: 1;
+                }
+                .dots {
+                    background-color: $secondary;
+                    animation: wave 2s infinite;
+                }
+            }
+        }
+        // .next {
+        //     .dots {
+        //         animation: wave 2s infinite;
+        //     }
+        // }
+    }
+    .slider-arrow {
+        display: flex;
+        position: absolute;
+        z-index: 3;
+        bottom: 30px;
+        width: auto;
+        right: 135px;
+        bottom: 50px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0px;
+        font-size: 30px;
+        color: $secondary;
+        @include media-breakpoint-down(lg) {
+            right: 100px;
+            font-size: 18px;
+            bottom: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            right: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            right: 30px;
+        }
+        &-left {
+            cursor: pointer;
+            &:hover {
+                color: $white;
+            }
+        }
+        &-right {
+            cursor: pointer;
+            margin-left: 30px;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .slider-content {
+        position: relative;
+        width: 100%;
+        &-single {
+            display: block;
+            opacity: 0;
+            transition: opacity 1s ease;
+            height: 100%;
+            width: 100%;
+            padding: 100px 100px 100px 270px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include media-breakpoint-down(lg) {
+                padding: 70px 70px 70px 170px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 0px;
+            }
+            &:nth-child(odd) {}
+            &:nth-child(even) {}
+            &.active {
+                opacity: 1;
+                transition: opacity 1s ease;
+                z-index: 1;
+            }
+            &-text {
+                padding: 0;
+                max-width: 715px;
+                position: relative;
+                z-index: 6;
+                @include media-breakpoint-down(md) {
+                    padding: 50px;
+                }
+                @include media-breakpoint-down(sm) {
+                    padding: 30px 15px;
+                }
+                h2 {
+                    color: $white;
+                }
+            }
+            .sliders {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                .sliders-holder {
+                    width: 100%;
+                    &-single {
+                        position: relative;
+                        z-index: 1;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            z-index: 1;
+                            height: 100%;
+                            width: 100%;
+                            background: $primary;
+                            opacity: .3;
+                        }
+                        height: 100%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Unternehmen Innovation
+
+.unternehmen-innovation {
+    .text-block {
+        h2,
+        .h2 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .image-text {
+        margin-top: -40px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 0px;
+        }
+        .image {
+            margin-bottom: 150px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 80px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

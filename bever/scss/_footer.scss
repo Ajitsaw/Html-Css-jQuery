@@ -1,0 +1,109 @@
+/* Footer */
+footer {
+    background: $dark-gray;
+    color: $white;
+    padding: 100px 0 100px;
+    @include media-breakpoint-down(lg) {
+        padding: 80px 0px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 50px;
+    }
+    .title {
+        margin-bottom: 50px;
+        font-weight: 600;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    address {
+        margin-bottom: 40px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+    .anchor {
+        margin-top: 0px;
+        display: inline-block;
+        @include media-breakpoint-down(md) {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+    .footer-nav {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                margin-bottom: 16px;
+                line-height: 1;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 8px;
+                }
+                a {
+                    color: $white;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .social {
+        margin-top: 60px;
+        display: block !important;
+        @include media-breakpoint-down(md) {
+            margin-top: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                margin-right: 8px;
+                a {
+                    display: block;
+                    height: 35px;
+                    width: 35px;
+                    background: $secondary;
+                    border-radius: 50%;
+                    position: relative;
+                    i {
+                        color: $white;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        background-color: $gray;
+                        i {
+                            color: $secondary;
+                        }
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .copyright {
+        margin-top: 20px;
+        @include media-breakpoint-down(md) {
+            margin-top: 10px;
+        }
+        a {
+            color: $white;
+        }
+    }
+}

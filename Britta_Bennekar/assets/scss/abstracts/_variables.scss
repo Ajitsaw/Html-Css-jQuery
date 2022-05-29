@@ -1,0 +1,57 @@
+/* Global */
+
+$section-padding: 120px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #232323;
+$secondary: #175850;
+$cream: #CBBAAA;
+$gray: #ECF1ED;
+$light-gray: #FBF7F4;
+$body-color: #232323;
+$gray-loader: #FDFAF6;
+$text-gray: #DED6CC;
+
+/* Font */
+
+$font-family-sans-serif: 'Hellix';
+$font-family-base: $font-family-sans-serif;
+$font-size-base: .875rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-normal: normal;
+$font-weight-bold: 700;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 120px;
+$h2-font-size: 72px;
+$h3-font-size: 50px;
+$h4-font-size: 36px;
+$h5-font-size: 32px;
+
+$link-decoration: none;
+$link-hover-decoration: none;

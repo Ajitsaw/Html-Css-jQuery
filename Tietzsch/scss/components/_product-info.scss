@@ -1,0 +1,212 @@
+.product-info {
+    .product__name {
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        left: -20px;
+        top: 276px;
+        transform: rotate(-90deg);
+        transform-origin: top center;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(xl) {
+            left: -90px;
+            top: 246px;
+        }
+        @include media-breakpoint-down(lg) {
+            transform: none;
+            top: auto;
+            left: auto;
+            margin-bottom: 30px;
+            position: relative;
+            padding: 0 80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+        .line {
+            width: 50px;
+            height: 3px;
+            background-color: $secondary;
+            position: relative;
+            left: 30px;
+        }
+    }
+    .product-images {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        .image {
+            @include media-breakpoint-down(lg) {
+                text-align: center;
+            }
+        }
+        .thumbnail {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            @include media-breakpoint-down(lg) {
+                justify-content: center;
+            }
+            .single {
+                width: 100px;
+                height: 100px;
+                cursor: pointer;
+                @include media-breakpoint-down(xxl) {
+                    width: 80px;
+                    height: 80px;
+                }
+                @include media-breakpoint-down(lg) {
+                    margin: 0 15px;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 60px;
+                    height: 60px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .info {
+        background-color: #E7E7E7;
+        padding: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        @include media-breakpoint-down(xl) {
+            flex-flow: column-reverse;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+            padding: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            
+            padding: 25px;
+            margin: 0 -25px 30px;
+
+        }
+        .left {
+            width: 45%;
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+            }
+            .description {
+                font-size: 16px;
+                line-height: 36px;
+            }
+        }
+        .right {
+            width: 45%;
+            @include media-breakpoint-down(xl) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            h6 {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .price-block {
+                display: flex;
+                align-items: center;
+                margin-bottom: 40px;
+                @media (max-width: 1700px) {
+                    flex-flow: column;
+                    align-items: flex-start;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 30px;
+                }
+                h3 {
+                    font-weight: bold;
+                    flex: 0 0 48%;
+                    letter-spacing: calc($h3-font-size * 0.001 * 50);
+                    @media (max-width: 1700px) {
+                        flex: 0 0 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+                small {
+                    font-size: 12px;
+                    span {
+                        color: $secondary;
+                        display: flex;
+                    }
+                }
+            }
+            &__inputs {
+                padding-right: 80px;
+                @media (max-width: 1700px) {
+                    padding-right: 0px;
+                }
+                .single {
+                    margin-bottom: 25px;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 20px;
+                    }
+                    label {
+                        width: 100%;
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin-bottom: 7px;
+                    }
+                    input {
+                        height: 30px;
+                        background-color: $white;
+                        font-size: 14px;
+                        padding-left: 10px;
+                        width: 100%;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            &__bottom {
+                display: flex;
+                align-items: start;
+                padding-right: 80px;
+                @media (max-width: 1700px) {
+                    padding-right: 0px;
+                }
+                @include media-breakpoint-down(md) {
+                    flex-flow: column;
+                }
+                .count {
+                    max-width: 100px;
+                    margin-right: 30px;
+                    @include media-breakpoint-down(md) {
+                        margin-right: 0px;
+                        margin-bottom: 30px;
+                    }
+                    input {
+                        width: 100%;
+                    }
+                }
+                button {
+                    background-color: $secondary;
+                    color: $white;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    border: none;
+                    padding: 17px 15px;
+                    flex: 1;
+                    transition: all .3s ease;
+                    @include media-breakpoint-down(xl) {
+                        flex: 0 0 auto;
+                    }
+                    &:hover {
+                        transition: all .3s ease;
+                        background-color: $primary;
+                    }
+                }
+
+            }
+        }
+    }
+}

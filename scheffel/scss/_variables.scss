@@ -1,0 +1,55 @@
+/* Global */
+
+$section-padding: 135px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1200px,
+  xl: 1400px
+);
+
+/* Color */
+
+$primary: #26343F;
+$secondary: #CDA16B;
+$black: #303030;
+$gray: #707070;
+$red: #F62C32;
+$light-gray: #ebebeb;
+$light-white: #F2F2F2; 
+$pink: #FF0077;
+$light-red: #AA164A;
+
+/* Background */
+$back-gray: #EFEFEF;
+$back-gray-light: #E6E6E6;
+
+/* Font */
+
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-size-base: 1rem;
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base;
+$line-height-base: 1.5;
+
+
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 70px;
+$h2-font-size: 44px;
+$h3-font-size: 34px;
+
+$link-hover-decoration: none;

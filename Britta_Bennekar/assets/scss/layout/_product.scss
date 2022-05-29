@@ -1,0 +1,159 @@
+.product {
+    display: flex;
+    padding-right: 200px;
+    align-items: flex-end;
+    @include media-breakpoint-down(xl) {
+        padding: 0 100px 0 0;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 80px;
+        flex-flow: column;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 15px;
+    }
+    &--reverse {
+
+    }
+    &__slider {
+        flex: 0 0 63%;
+        max-width: 63%;
+        overflow: hidden;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        &__single {
+            width: 100%;
+            position: relative;
+            &:after {
+                content: '';
+                height: 100%;
+                width: 45%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                opacity: .5;
+                background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+                z-index: 1;
+            }
+            img {
+                width: 100%;
+                max-height: 650px;
+                @include media-breakpoint-down(xl) {
+                    max-height: 500px;
+                }
+                @include media-breakpoint-down(lg) {
+                    max-height: 500px;
+                }
+                @include media-breakpoint-down(md) {
+                    height: 400px;
+                    max-height: fit-content;
+                    object-fit: cover;
+                }
+                @include media-breakpoint-down(sm) {
+                    height: 330px;
+                }
+            }
+        }
+    }
+    &__text {
+        flex: 0 0 37%;
+        max-width: 37%;
+        overflow: hidden;
+        padding-left: 160px;
+        @include media-breakpoint-down(xl) {
+            padding-left: 30px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding-left: 0px;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .text {
+            width: 100%;
+            h2 {
+                width: 100%;
+            }
+            .text__slide {
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+    }
+    .bullets {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        display: flex;
+        z-index: 6;
+        @include media-breakpoint-down(lg) {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            justify-content: center;
+            bottom: 20px;
+        }
+        .slide {
+            width: 40px;
+            height: 4px;
+            background: $white;
+            margin-left: 15px;
+            opacity: .35;
+            cursor: pointer;
+            @include media-breakpoint-down(md) {
+                width: 30px;
+                height: 3px;
+            }
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+    &__text {
+        h2 {
+            @include media-breakpoint-down(lg) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.reverse {
+        flex-flow: row-reverse;
+        padding: 0 0 0 200px;
+        @include media-breakpoint-down(xl) {
+            padding: 0 0px 0 100px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 0 80px;
+            flex-flow: column;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 15px;
+        }
+        .product__text {
+            padding-left: 0px;
+            padding-right: 160px;
+            @include media-breakpoint-down(xl) {
+                padding-right: 30px;
+            }
+            @include media-breakpoint-down(lg) {
+                padding-right: 0px;
+            }
+        }
+        .bullets {
+            left: 30px;
+            right: auto;
+            @include media-breakpoint-down(lg) {
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                justify-content: center;
+                bottom: 20px;
+            }
+        }
+    }
+}

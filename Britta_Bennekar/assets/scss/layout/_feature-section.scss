@@ -1,0 +1,39 @@
+.feature {
+    .single {
+        padding-left: 130px;
+        margin: 40px 0;
+        @include media-breakpoint-down(xl) {
+            padding-left: 60px;
+            margin: 30px 0;
+            
+        }
+        @include media-breakpoint-down(lg) {
+            padding-left: 50px;
+            margin: 25px 0;
+        }
+        .img {
+            margin-bottom: 50px;
+            text-align: center;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px;
+                padding-right: 50px;
+            }
+        }
+        h4 {
+            margin-bottom: 30px;
+            position: relative;
+            span {
+                position: absolute;
+                right: calc(100% + 30px);
+                @include media-breakpoint-down(xl) {
+                    right: calc(100% + 20px);
+                }
+            }
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

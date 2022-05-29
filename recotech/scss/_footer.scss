@@ -1,0 +1,188 @@
+.footer {
+    padding: 65px 0;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    &-logo {
+        padding-bottom: 60px;
+        border-bottom: 1px solid $secondary;
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-bottom: 30px;
+        }
+        img {
+            max-height: 54px;
+            width: auto;
+            @include media-breakpoint-down(xl) {
+                height: 45px;
+            }
+            @include media-breakpoint-down(md) {
+                height: 40px;
+            }
+        }
+    }
+    &-block {
+        padding-top: 35px;
+        color: $primary;
+        @include media-breakpoint-down(sm) {
+            padding-top: 30px;
+        }
+        address {
+            margin-bottom: 30px;
+        }
+        a {
+            display: flex;
+        }
+        .social {
+            display: flex;
+            margin-bottom: 30px;
+            a {
+                color: $primary;
+                display: flex;
+                margin-right: 20px;
+                font-size: 22px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+        a {
+            color: $primary;
+        }
+    }
+    .search {
+        max-width: 418px;
+        width: 100%;
+        background-color: #F7F7F7;
+        border-radius: 8px;
+        display: flex;
+        height: 52px;
+        input[type="search"] {
+            outline: none;
+            box-shadow: none;
+            width: 100%;
+            height: 100%;
+            padding-left: 30px;
+            background: transparent;
+            border: none;
+            padding-top: 5px;
+            font-size: 13px;
+            &::placeholder {
+                color: $primary;
+            }
+        }
+        &-submit {
+            flex: 0 0 62px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input {
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 2;
+            }
+        }
+    }
+    &-heading {
+        font-weight: bold;
+        margin-bottom: 70px;
+        color: $secondary;
+        font-size: 24px;
+        line-height: 30px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+    }
+    &-bottom {
+        color: $primary;
+        margin-top: 40px;
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        .text-block {
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                display: flex;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+                a {
+                    color: $primary;
+                    &:hover {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+        &-menu {
+            display: flex;
+            justify-content: flex-end;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            a {
+                color: $primary;
+                line-height: 1;
+                font-size: 13px;
+                &:hover {
+                    color: $secondary;
+                }
+                &:nth-last-child(2) {
+                    border-right: 1px solid $primary;
+                    margin-right: 7px;
+                    padding-right: 7px;
+                }
+            }
+        }
+    }
+}
+.right-block {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 30px;
+    @include media-breakpoint-down(md) {
+        padding-left: 0px;
+        align-items: flex-start;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 377px;
+        width: 1px;
+        background: $secondary;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+    .footer-heading {
+        margin-top: 30px;
+        @include media-breakpoint-down(md) {
+            margin-top: 0px;
+        }
+    }
+    
+}

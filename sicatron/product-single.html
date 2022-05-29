@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sicatron</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.svg"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li>
+                                <a href="leistungen.html">Leistungen<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="leistungen-single.html">
+                                        Kabelkonfektion
+                                        <span>Eine gute Verbindung schaffen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Montagearbeiten
+                                        <span>Wir montieren schnell & zuverlässig</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Individuelle Fertigung
+                                        <span>Wir planen und entwickeln mit Ihnen</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Schalterkonfektion
+                                        <span>Innovation, Qualität und Flexibilität</span>
+                                    </a></li>
+                                    <li><a href="leistungen-single.html">
+                                        Planung | Musterbau
+                                        <span>Service und Engagement</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li class="current-menu-item"><a href="produkte.html">Produkte<i class="fal fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-category.html">
+                                        Schalttechnik
+                                        <span>Mikro- und Schnappschalter</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Folientastaturen
+                                        <span>Folientastaturen und Silikonschaltmatten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Motoren & Magnete
+                                        <span>Synchronmotoren, Hub-und Drehmagnete</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Steuern & Automatisieren
+                                        <span>Steuerungskomponenten</span>
+                                    </a></li>
+                                    <li><a href="produkte-category.html">
+                                        Sensoren
+                                        <span>Lichtschranken</span>
+                                    </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li>
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="fal fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay-logo">
+            <img src="img/logo.svg" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="row justify-content-between flex-lg-row-reverse flex-column">
+                <div class="col-lg-3">
+                    <div class="overlay-menu">
+                        <ul>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="referenzen.html">Referenzen</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="produkte.html" class="overlay-heading">
+                            Produkte
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="product-single.html">Schaltertechnik</a></li>
+                                <li><a href="product-single.html">Folientastaturen</a></li>
+                                <li><a href="product-single.html">Sensoren</a></li>
+                                <li><a href="product-single.html">Magnete & Motoren</a></li>
+                                <li><a href="product-single.html">Steuern & Automatisieren</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="overlay-block">
+                        <a href="leistungen.html" class="overlay-heading">
+                            Leistungen
+                        </a>
+                        <div class="overlay-block-toggle">
+                            <i class="fal fa-angle-right"></i>
+                        </div>
+                        <div class="overlay-menu-small">
+                            <ul>
+                                <li><a href="leistungen-single.html">Kabelkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Schalterkonfektion</a></li>
+                                <li><a href="leistungen-single.html">Montagearbeiten</a></li>
+                                <li><a href="leistungen-single.html">Individuelle Fertigung</a></li>
+                                <li><a href="leistungen-single.html">Planung & Musterbau</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <section class="banner banner-inner banner-leistungen">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white pad-left">
+                            <div class="h6 line-after text-uppercase">präzise & zuverlässig</div>
+                            <h2 class="text-uppercase">
+                                MIKRO- und<br>
+                                schnappSCHALTER
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br>
+                                    nonumy eirmod tempor invidunt ut labore et dolore.
+                                </p>
+                            </div>
+                            <a href="#kontakt" class="button outline primary">anfragen</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="image-block">
+                            <img src="img/product-single-banner.png" alt="">
+                            <div class="pattern pattern-left pattern-bottom">
+                                <img src="img/pattern.png" alt="pattern">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#scroll" class="scroll-down">
+                <i class="fal fa-long-arrow-down"></i>
+            </a>
+        </section>
+       
+        <section class="vorteile" id="scroll">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block center-block text-center text-white">
+                            <div class="h6 line-before text-uppercase">eigenschaften</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v7.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Geringe Größe
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v8.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Lange Lebensdauer
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="vorteile-single">
+                                    <div class="vorteile-single-img">
+                                        <img src="img/v9.png" alt="">
+                                    </div>
+                                    <div class="vorteile-single-text">
+                                        <h3 class="h5">
+                                            Lötanschlüsse
+                                        </h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing 
+                                            diam nonumy eirmod tempor invidunt ut labore et dolore consetetur sadipscing lorem dolo et que.
+                                        </p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="sub-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-1.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    ULTRAMINIATUR-<br>
+                                    MIKROSCHALTER
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-2.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    Subminiatur-<br>
+                                    mikroschalter
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-3.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    MINIATUR-<br>
+                                    MIKROSCHALTER
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-4.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    positions- &<br>
+                                    grenzschalter
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-5.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    zwangsöffnende<br>
+                                    mikroschalter
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="sub-products-single">
+                            <figure>
+                                <img src="img/product-sub-6.png" alt="">
+                            </figure>
+                            <div class="sub-products-single-text">
+                                <h2 class="h5">
+                                    mikroschalter mit<br>
+                                    doppelunterbrechung 
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet, consetetur adipscing elitr, sed diam nonumy eirmod. Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos  et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata  sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-ensat">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Einsatzgebiete</div>
+                            <div class="h2 text-uppercase mb-0">
+                                hier kommen<br>
+                                mikroschalter<br>
+                                zum einsatz
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-1.png" alt="">
+                                    </div>                                          
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Haushaltstechnik</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-2.png" alt="">
+                                    </div>                                          
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Gebäudeautomation</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-3.png" alt="">
+                                    </div>                                          
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Maschinenbau</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-4.png" alt="">
+                                    </div>                                          
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Maschinenbau</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-5.png" alt="">
+                                    </div>                                          
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Automobiltechnik</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product-ensat-single">
+                                    <div class="product-ensat-single-img">
+                                        <img src="img/p-icon-6.png" alt="">
+                                    </div>                                         
+                                    <div class="product-ensat-single-text text-white">
+                                        <div class="h5">Medizintechnik</div>
+                                        <p>Lorem ipsum dolor sit amet, consetetur </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="container">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="text-block center-block text-center text-white">
+                        <div class="h6 line-before text-uppercase">Produktvideo</div>
+                    </div>
+                    <div class="video-block mask mask-50" style="background-image: url(img/product-video.png);">
+                        <a href="img/product-video.png" class="fancybox" data-fancybox="product">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta" id="kontakt">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Wir beraten Sie gerne</div>
+                            <h2 class="text-uppercase">
+                                Haben Sie Fragen?<br>
+                                nehmen sie Kontakt<br>
+                                zu uns auf.
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Gerne stehen wir Ihnen bei offenen Fragen zu uns<br>
+                                    und unseren Leistungen zur Verfügung, denn Ihre<br>
+                                    Wünsche sind uns wichtig!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="cta-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ihr Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Ihre E-Mailadresse">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Betreff">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Ihre Nachricht"></textarea>
+                            </div>
+                            
+                            <div class="checkbox">
+                                <span class="wpcf7-form-control-wrap checkbox-check">
+                                    <span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+                                        <span class="wpcf7-list-item first last">
+                                            <input type="checkbox" name="checkbox-107[]" class="eighteen" value="Ich stimme den Datenschutzbestimmungen zu.">
+                                            <span class="wpcf7-list-item-label"></span>
+                                </span>
+                                <span class="checkbox-text">Ich habe die <a href="datenschutz.html">Datenschutzbestimmungen</a> gelesen und akzeptiert.</span>
+                                </span>
+                                </span>
+                            </div>
+                            <input type="submit" class="button outline primary" value="Jetzt senden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="text-block text-white">
+                            <div class="h6 line-after text-uppercase">Fragen und Antworten</div>
+                            <div class="h2 text-uppercase">
+                                FAQ
+                            </div>
+                            <div class="para">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                                    <br>et dolore magna aliquyam erat, 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion text-white">
+                            
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum dolor sit amet, consetetur sadipscing elit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum dolor sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                <div class="accordion-list">
+                                    <div class="accordion-list-head">
+                                        <div class="cross-icon"><span></span></div>
+                                        <span>Lorem ipsum sit ameelit</span>
+                                    </div>
+                                    <div class="accordion-list-content">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <section class="home-product">
+            <div class="text-block center-block text-center text-white">
+                <div class="h6 line-before text-uppercase">unsere produkte</div>
+            </div>
+            <div class="home-product-main">
+                <div class="home-product__arrow">
+                    <div class="arrow-left">
+                        <i class="fal fa-long-arrow-left"></i>
+                    </div>
+                    <div class="arrow-right">
+                        <i class="fal fa-long-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="home-product__right">
+                    <div class="home-product__slider">
+                        <div class="slider swiper-wrapper">
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product1.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Folientastaturen
+                                    </h3>
+                                    <p>
+                                        Einen Kernpunkt unseres Produktspektrums bildet die Lieferung von Mikroschaltern. Hervorzuheben ist hierbei der Schnappschalter, der mit einer Reihe von Vorteilen überzeugen kann.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product2.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Motoren & Magnete
+                                    </h3>
+                                    <p>
+                                        Technische Anwendung finden optische Sensoren vor allem in der Automatisierungstechnik. Dort werden sie u. a. bei Erkennungs-aufgaben und Abstandsmessung eingesetzt.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="home-product__single swiper-slide">
+                                <a href="product-single.html" class="home-product__single_image">
+                                    <img src="img/product3.png" alt="">
+                                </a>
+                                <div class="home-product__single_text text-white">
+                                    <h3 class="h4 font-weight-light">
+                                        Steuern & Automa
+                                    </h3>
+                                    <p>
+                                        Die LED-Arbeitsleuchten sind hochwertige, energieeffiziente Produkte, die eine hohe Beleuchtung für eine Lebensdauer von bis zu 50.000 Stunden zur Verfügung stellen. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <a href="">E-Mail: info@sicatron.de</a>
+                            <a href="">Telefon +49 (0) 2331 473329 - 0</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                SICATRON GmbH & Co. KG
+                            </div>
+                            <address>
+                                Pettenkoferstr. 15<br>
+                                58097 Hagen, Germany
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-block text-white pl-50">
+                            <div class="footer-heading">
+                                Follow
+                            </div>
+                            <div class="social">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between align-items-center flex-lg-row flex-column-reverse">
+                    <div class="col-lg-6">
+                        <div class="text-block">
+                            <p>
+                                2021 SICATRON GmbH  | realisiert durch <a href="">Pechschwarz Media</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-bottom-menu">
+                            <a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

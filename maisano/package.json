@@ -1,0 +1,22 @@
+{
+  "name": "Aesthetic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch scss/app.scss:css/app.css & browser-sync start --server --files \"*.html, css/*.css, js/*.js\""
+  },
+  "author": "pechschwarz Media",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "counterup": "^1.0.2",
+    "flickity": "^2.2.2",
+    "gsap": "^3.7.1",
+    "jquery": "^3.6.0",
+    "select2": "^4.1.0-rc.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.8.1",
+    "waypoints": "^4.0.1"
+  }
+}

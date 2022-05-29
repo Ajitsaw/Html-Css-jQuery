@@ -1,0 +1,70 @@
+
+.text {
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .tele {
+        margin-top: 3em;
+        @include media-breakpoint-down(xl) {
+            margin-top: 2em;
+        }
+        .single {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            span {
+                flex: 0 0 45%;
+            }
+            a {
+                color: $secondary;
+                &:hover {
+                    color: $secondary;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    ul {
+        margin-top: 30px;
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                background-color: $primary;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                position: absolute;
+                left: 0;
+                top: 13px;
+            }
+        }
+    }
+    .heading {
+        border-left: 5px solid $secondary;
+        padding: 0px 0px 0px 30px;
+        margin-bottom: 60px;
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0px 0px 0px 20px;
+            border-left: 3px solid $secondary;
+        }
+        h1, h2 {
+            margin-bottom: 0 !important;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

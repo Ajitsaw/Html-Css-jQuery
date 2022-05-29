@@ -1,0 +1,48 @@
+.ildealline-info {
+    padding: 0 0 440px;
+    @include media-breakpoint-down(lg) {
+        padding: 0 0 200px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 0 50px;
+    }
+    .patterns {
+        position: absolute;
+        right: 0;
+        bottom: 400px;
+        z-index: -1;
+        @include media-breakpoint-down(lg) {
+            bottom: 100px;
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    .track-img {
+        margin-bottom: 75px;
+        width: 100%;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .video-block {
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 0px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+}

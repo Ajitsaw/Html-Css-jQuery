@@ -1,0 +1,149 @@
+.case_studie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: none !important;
+    outline: none !important;
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 80px;
+    } 
+    .banner-heading {
+        h2 {
+            margin-bottom: 100px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .block-para {
+        p {
+            font-size: 16px;
+            line-height: 30px;
+        }
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    .case_studie-rate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-inner {
+            padding: 50px 80px;
+            background: $primary;
+            width: 425px;
+            @include media-breakpoint-down(lg) {
+                padding: 40px;
+                margin-top: 30px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 30px;
+            }
+            .stars {
+                display: flex;
+                margin-bottom: 30px;
+                a {
+
+                    margin-right: 8px;
+                }
+                .selected {
+                    img {
+                        filter: brightness(1000) invert(0);
+                    }
+                }
+            }
+            p {
+                color: $white;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+            h6 {
+                margin-top: 35px;
+                color: $white;
+                font-size: 20px;
+                line-height: 24px;
+                @include media-breakpoint-down(md) {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    .case-button {
+        @include media-breakpoint-down(xs) { 
+            display: flex;
+            justify-content: flex-start;
+        }
+        a {
+            display:flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: $white;
+            span {
+                background: $red;
+                width: 57px;
+                height: 57px;
+                border-radius: 100%;
+                margin-right: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+    }
+}
+.section-container {
+    position: relative;
+    .slick-dots {
+        position: absolute;
+        right: 70px;
+        top: 50%;
+        transform: translate(0, -50%);
+        @include media-breakpoint-down(lg) {  
+            right: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            top: auto;
+            transform: none;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            margin: 0 auto;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        } 
+        li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            margin: 7px 0;
+            background-color: $white;
+            cursor: pointer;
+            overflow: hidden;
+            @include media-breakpoint-down(sm) {
+                margin: 0 5px;
+            }
+            &.slick-active {
+                background-color: $red;
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                opacity: 0;
+                border-radius: 100%;
+                text-indent: -9999px;
+            }
+        }
+    }
+}

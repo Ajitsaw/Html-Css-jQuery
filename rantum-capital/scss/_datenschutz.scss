@@ -1,0 +1,77 @@
+@import "variables";
+
+.data-protection-block {
+    padding: 224px 0 180px;
+    background: $anthrazit;
+    color: $white;
+
+    @include media-breakpoint-down(md) {
+        padding: 140px 0 80px;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 7.5px;
+        font-weight: $font-weight-semibold;
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        margin-bottom: 77px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    &_content {
+        color: $white;
+        font-family: $font-family-worksans;
+
+        h4 {
+            margin-bottom: 33px;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 32px;
+            margin-bottom: 30px;
+            letter-spacing: 0.8px;
+            font-weight: $font-weight-normal;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    &_left_content {
+        color: $white;
+        font-family: $font-family-worksans;
+
+        .content-block {
+            max-width: 405px;
+
+            h4 {
+                margin-bottom: 60px;
+    
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 30px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: 0.8px;
+                font-weight: $font-weight-normal;
+                margin-bottom: 33px;
+    
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

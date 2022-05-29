@@ -1,0 +1,76 @@
+/* Global */
+
+$section-padding: 135px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: ( sm: 100%, md: 100%, lg: 100%, xl: 100%);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 1200px, xl: 1400px);
+
+/* Color */
+
+$primary: #25303B;
+$secondary: #262525;
+$blue: #00ABCD;
+$orange: #F28E00;
+$black: #303030;
+$gray: #707070;
+$light-gray: #CBCBCB;
+$medium-gray: #E1DDDB;
+$light-white: #F2F2F2;
+
+/* Background */
+
+$back-gray: #E1DDDB;
+$back-black: #25303B;
+$back-gray-light: #E6E6E6;
+
+/* Font */
+
+$font-family-sans-serif: 'Roboto',
+sans-serif;
+$font-size-base: 1rem;
+$font-size-md: $font-size-base;
+$font-size-lg: $font-size-base;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 70px;
+$h2-font-size: 44px;
+$h3-font-size: 34px;
+$link-hover-decoration: none;
+
+/* Icons */
+
+$icomoon-font-family: "krick" !default;
+$icomoon-font-path: "fonts" !default;
+$icon-d-modeling: "\e900";
+$icon-arrow: "\e901";
+$icon-arrow2: "\e902";
+$icon-balance: "\e903";
+$icon-briefing: "\e904";
+$icon-download: "\e905";
+$icon-employee: "\e906";
+$icon-enter: "\e907";
+$icon-enter2: "\e908";
+$icon-enter3: "\e909";
+$icon-enter4: "\e90a";
+$icon-family1: "\e90b";
+$icon-fax: "\e90c";
+$icon-graduation-hat: "\e90d";
+$icon-heartbeat: "\e90e";
+$icon-idea1: "\e90f";
+$icon-idea: "\e910";
+$icon-letter: "\e911";
+$icon-letter2: "\e912";
+$icon-linkedin: "\e913";
+$icon-loca: "\e914";
+$icon-phone: "\e915";
+$icon-phone2: "\e916";
+$icon-support: "\e917";
+$icon-technical-support: "\e918";
+$icon-thumb-up: "\e919";
+$icon-twitter: "\e91a";
+$icon-xing: "\e91b";

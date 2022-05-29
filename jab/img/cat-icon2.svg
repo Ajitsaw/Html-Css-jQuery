@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.618" height="74.758" viewBox="0 0 63.618 74.758">
+  <g id="Group_6795" data-name="Group 6795" transform="translate(-45.534 -140.216)">
+    <g id="Group_6790" data-name="Group 6790">
+      <rect id="Rectangle_3506" data-name="Rectangle 3506" width="6.778" height="29.483" transform="translate(73.954 180.054)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_64673" data-name="Path 64673" d="M79.781,209.537H95.417a4.36,4.36,0,0,1,4.36,4.36v.327H54.909V213.9a4.36,4.36,0,0,1,4.36-4.36Z" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+    <g id="Group_6794" data-name="Group 6794">
+      <g id="Group_6793" data-name="Group 6793">
+        <line id="Line_209" data-name="Line 209" y2="13.684" transform="translate(62.849 142.514)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_210" data-name="Line 210" x1="8.282" transform="translate(46.284 164.6)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="Group_6791" data-name="Group 6791">
+          <path id="Path_64674" data-name="Path 64674" d="M87.377,148.674l-2.441,4.883v8.282" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <path id="Path_64675" data-name="Path 64675" d="M51.806,178.416l-5.522-2.773v-13.8l4.142-5.521H62.849l4.141,5.521H98.739A2.761,2.761,0,0,1,101.5,164.6v11.043" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_64676" data-name="Path 64676" d="M70.647,189.447H58.708a6.9,6.9,0,1,1,0-13.8H101.5a6.9,6.9,0,1,1,0,13.8H83.964" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_211" data-name="Line 211" x1="5.522" y1="20.705" transform="translate(73.892 141.134)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_64677" data-name="Path 64677" d="M56.177,156.318l.957-12.632a2.761,2.761,0,0,1,2.753-2.553H78.033" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <g id="Group_6792" data-name="Group 6792">
+          <line id="Line_212" data-name="Line 212" y1="1.952" x2="1.952" transform="translate(57.732 181.569)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_213" data-name="Line 213" y1="1.952" x2="1.952" transform="translate(66.29 181.569)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_214" data-name="Line 214" y1="1.952" x2="1.952" transform="translate(83.407 181.569)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_215" data-name="Line 215" y1="1.952" x2="1.952" transform="translate(91.965 181.569)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_216" data-name="Line 216" y1="1.952" x2="1.952" transform="translate(100.524 181.569)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+        <line id="Line_217" data-name="Line 217" y1="5.522" transform="translate(84.935 165.98)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_218" data-name="Line 218" y1="5.522" transform="translate(90.457 165.98)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <line id="Line_219" data-name="Line 219" y1="5.522" transform="translate(95.978 165.98)" fill="none" stroke="#262626" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+.static-banner {
+    height: 56vh;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 160px;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 70px;
+        height: 40vh;
+    }
+    .text {
+        color: $white;
+    } 
+    .line {
+        position: absolute;
+        right: 0;
+        top: 59%;
+        width: 37%;
+        height: 2px;
+        background-color: $secondary;
+        z-index: 6;
+        @include media-breakpoint-down(xxl) {
+            width: 25%;
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        &:after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            border: 2px solid $secondary;
+            position: absolute;
+            top: -8px;
+            left: -18px;
+        }
+        
+    }
+}
+
+.static-block {
+    padding: 100px 0 100px;
+
+    @include media-breakpoint-down(lg) {
+        padding: 100px 0 70px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 70px 0 70px;
+    }
+
+}
+
+.default-block {
+    h6,
+    h5 {
+        font-weight: bold;
+        margin-bottom: 33px;
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.static__left {
+    .default-block {
+        max-width: 405px;
+    }
+}

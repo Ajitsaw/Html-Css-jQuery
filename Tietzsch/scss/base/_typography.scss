@@ -1,0 +1,136 @@
+
+
+
+/* Headlines */
+
+h1,
+.h1 {
+    line-height: 1.2;
+    font-size: $h1-font-size;
+    font-weight: normal;
+    letter-spacing: calc($h1-font-size * 0.001 * 20);
+    @include media-breakpoint-down(lg) {
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: calc(50px * 0.001 * 20);
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 40px;
+        letter-spacing: calc(40px * 0.001 * 20);
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 32px;
+        letter-spacing: calc(32px * 0.001 * 20);
+    }
+}
+
+h2,
+.h2 {
+    line-height: 1.2;
+    font-size: $h2-font-size;
+    font-weight: normal;
+    letter-spacing: calc($h2-font-size * 0.001 * 15);
+    @include media-breakpoint-down(lg) {
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: calc(40px * 0.001 * 20);
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 32px;
+        letter-spacing: calc(32px * 0.001 * 20);
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+        letter-spacing: calc(24px * 0.001 * 20);
+    }
+}
+
+h3, .h3 {
+    line-height: 1;
+    font-size: $h3-font-size;
+    font-weight: normal;
+    @media (max-width: 1700px) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(xl) {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    @include media-breakpoint-down(lg) {
+        font-size: 24px;
+    }
+}
+
+h4, .h4 {
+    font-size: $h4-font-size;
+    line-height: 1.4;
+    font-weight: normal;
+    @include media-breakpoint-down(xl) {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+    @include media-breakpoint-down(lg) {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}
+
+h5, .h5 {
+    font-size: $h5-font-size;
+    font-weight: normal;
+    line-height: 1.5;
+    font-weight: normal;
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+    }
+}
+
+h6, .h6 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 2em;
+    @include media-breakpoint-down(xl) {
+        font-size: 18px;
+        margin-bottom: 1em;
+    }
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+    }
+}
+
+.xl {
+    font-size: 60px;
+    @include media-breakpoint-down(xl) {
+        font-size: 40px;
+    }
+    @include media-breakpoint-down(lg) {
+        font-size: 32px;
+    }
+}
+
+// Font Weight
+
+.font-weight-light {
+    font-weight: $font-weight-light;
+}
+
+.font-weight-normal {
+    font-weight: $font-weight-normal;
+}
+
+.font-weight-medium {
+    font-weight: $font-weight-medium;
+}
+
+.font-weight-bold {
+    font-weight: $font-weight-bold;
+}

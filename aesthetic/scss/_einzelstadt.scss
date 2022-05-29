@@ -1,0 +1,435 @@
+/* Einzelstadt Inhaltsverzeichnis */
+
+.einzelstadt-inhaltsverzeichnis {
+  background: $sky;
+  .ko {
+    position: absolute;
+    right: -7%;
+    bottom: -10%;
+    z-index: -1;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .text-block {
+    display: flex;
+  }
+  &__listing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 30px;
+    margin-top: 30px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 0px;
+      grid-gap: 20px;
+    }
+    &-single {
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(md) {
+        width: calc(100%/2 - 25px);
+      }
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+      span {
+        font-size: 35px;
+        line-height: 40px;
+        margin-right: 15px;
+        flex: 0 0 50px;
+        color: $secondary;
+        @include media-breakpoint-down(md) {
+          font-size: 30px;
+          flex: 0 0 40px;
+        }
+        @include media-breakpoint-down(sm) {
+        }
+      }
+    }
+  }
+}
+
+/* Einzelstadt block */
+
+.einzelstadt-block  {
+  .block-content {
+    margin-bottom: 100px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 40px;
+    } 
+    &.image {
+      height: 624px;
+      @include media-breakpoint-down(md) {
+        height: 500px;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 400px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .desc {
+        font-size: 13px;
+        line-height: 24px;
+        margin-top: 25px;
+      }
+    }
+    &.video {
+      height: 624px;
+      position: relative;
+      @include media-breakpoint-down(md) {
+        height: 500px;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 400px;
+      }
+      .block-content-cer {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 6;
+        img {
+          margin: 0 23px;
+          @include media-breakpoint-down(md) {
+            margin: 0 15px;
+            max-width: 80px;
+          }
+          @include media-breakpoint-down(sm) {
+            max-width: 50px;
+            margin: 0 7px;
+          }
+          &:last-child {
+            margin-right: 0;
+            @include media-breakpoint-down(md) {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &:before {
+        content: "";
+        background-color: $menu;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.3;
+        mix-blend-mode: multiply;
+      }
+      .video__trigger {
+        width: 60px;
+        height: 60px;
+        background: $white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 10;
+        @include media-breakpoint-down(md) {
+          height: 50px;
+          width: 50px;
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: #1e1e1e;
+          margin: 0px 0 0 3px;
+        }
+      }
+    }
+
+    &.text {
+      h1 {
+        font-size: 60px;
+        line-height: 1.15;
+        margin-bottom: 55px;
+        @include media-breakpoint-down(lg) {
+          font-size: 40px;
+          margin-bottom: 45px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+          font-size: 26px;
+        }
+      }
+      h2,
+      h3,
+      h4 {
+        margin-bottom: 60px;
+        @include media-breakpoint-down(md) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Einzelstadt Behandlungen */
+
+.einzelstadt-behandlungen {
+  padding-top: 0;
+  padding-bottom: 0;
+  .text-block {
+    margin-bottom: 0;
+  }
+  &-main {
+    display: flex;
+    margin-bottom: 0px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 0px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 0px;
+      flex-flow: column-reverse;
+      padding: 0 15px;
+    }
+  }
+  &__arrow {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    padding-top: 0px;
+    .arrow-left,
+    .arrow-right {
+      cursor: pointer;
+      color: $secondary;
+      font-size: 28px;
+      @include media-breakpoint-down(sm) {
+        font-size: 24px;
+      }
+    }
+    .arrow-left {
+      margin-right: 30px;
+      @include media-breakpoint-down(sm) {
+        margin-right: 15px;
+      }
+    }
+  }
+  &__right {
+    overflow: hidden;
+    margin-left: 130px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 100px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-left: 0px;
+    }
+  }
+  &__slider {
+    @include media-breakpoint-down(sm) {
+      margin: 0;
+    }
+    .slider {
+    }
+  }
+  .swiper-wrapper {
+    height: auto !important;
+  }
+  &__single {
+    flex: 0 0 39%;
+    width: 39%;
+    margin: 0 30px 0 0;
+    display: flex;
+    flex-flow: column;
+    align-self: stretch;
+    @include media-breakpoint-down(md) {
+      flex: 0 0 calc(60% - 30px);
+      width: calc(60% - 30px);
+    }
+    @include media-breakpoint-down(sm) {
+      flex: 100%;
+      width: 100%;
+      margin: 0;
+    }
+    &_image {
+      flex: 0 0 383px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      border-radius: 4px;
+      @include media-breakpoint-down(md) {
+        flex: 0 0 290px;
+      }
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 300px;
+      }
+
+      &:before {
+        content: "";
+        mix-blend-mode: soft-light;
+        background: #7eb6d9;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+      .play {
+        width: 52px;
+        height: 52px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff004e;
+        color: $white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-left: 2px;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 3;
+        @include media-breakpoint-down(sm) {
+          width: 45px;
+          height: 45px;
+        }
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          transition: all 0.3s ease;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+    }
+    &_text {
+      margin-top: 25px;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      align-items: flex-start;
+      .h2 {
+        margin-bottom: 25px;
+      }
+      p {
+        flex: 1;
+      }
+      .button {
+        padding: 9px 55px;
+        margin-top: 40px;
+        @include media-breakpoint-down(md) {
+          padding: 9px 40px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  &.home-product-media {
+    .home-product__single_image {
+      img {
+        transform: scale(1) !important;
+      }
+      &:before {
+        z-index: 1 !important;
+      }
+    }
+  }
+}
+
+/* Einzelstadt Facharzte */
+
+.einzelstadt-facharzte {
+  padding: 150px 0;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  [class^="col-"] {
+    @include media-breakpoint-down(md) {
+      margin: 15px 0;
+    }
+  }
+  &__text {
+    margin-bottom: 65px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
+  }
+  .swiper-container {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 30px;
+    }
+  }
+  .facharzte-bullets {
+    position: relative;
+    margin: 50px auto 0;
+    padding-bottom: 0;
+    max-width: 400px;
+    z-index: 6;
+    @include media-breakpoint-down(lg) {
+      margin: 30px auto 0;
+    }
+    .slide {
+      width: 50px;
+      height: 3px;
+      box-shadow: none;
+      border: none;
+      background: $primary;
+      opacity: 0.5;
+      border-radius: 0;
+      transition: all 0.3s ease;
+      @include media-breakpoint-down(lg) {
+        width: 30px;
+      }
+      &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+      &.active {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  .pattern {
+    position: absolute;
+    right: -3%;
+    top: -19%;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

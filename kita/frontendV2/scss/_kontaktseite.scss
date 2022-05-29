@@ -1,0 +1,393 @@
+@import "variables";
+
+/* contact page banner */
+.contact_banner_panel {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 125px 0 171px;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+        padding: 80px 0 171px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 600px;
+        min-height: 500px;
+        padding: 80px 0 80px;
+    }
+
+    .container {
+        height: 100%;
+
+        .row {
+            height: 100%;
+        }
+    }
+
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+    &::after{
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: "";
+        position: absolute;
+        background: rgb(5,42,60);
+        background: linear-gradient(90deg, rgba(5,42,60,1) 0%, rgba(0,212,255,0) 100%);
+        z-index: -1;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    // &:before {
+    //     content: "";
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 0;
+    //     position:absolute;
+    //     bottom: 0;
+    //     left:0;
+    //     border-style: solid;
+    //     border-width: 20px 0 0 300px;
+    //     border-color: transparent transparent transparent #6980fe;
+    // }
+
+    .breadcrumb-area {
+        margin-bottom: auto;
+
+        p {
+            color: $white;
+            font-size: 12px;
+            line-height: 33px;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .contact_banner_text {
+        p {
+            font-size: 25px;
+            font-weight: $font-weight-light;
+            color:$white;
+            line-height: 1;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:$white;
+            line-height: 70px;
+            margin-bottom: 0;
+            position: relative;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 28px;
+                line-height: 38px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/* contact form */
+.contact-information {
+    padding: $section-padding-medium;
+    overflow: visible;
+
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-medium;
+    }
+
+    .contact-content {
+        color: $menu;
+        margin-right: 117px;
+
+        @include media-breakpoint-down(md) {
+            margin-right: 0;
+        }
+
+        h5 {
+            font-weight: $font-weight-bold;
+            color: $primary;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 55px;
+
+            @include media-breakpoint-down(md) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .button-group {
+        .button {
+            font-family: $font-family-roboto;
+
+            &:first-child {
+
+                @media(min-width: 1595px) and (max-width: 1670px) {
+                    margin-right: 0px;
+
+                    svg {
+                        margin-right: 18px;
+                    }
+                }
+
+                @media(min-width: 1480px) and (max-width: 1510px) {
+                    margin-right: 1px;
+                }
+                
+
+            }
+        }
+    }
+    .contact-block {
+        display: block;
+        padding: 50px 30px 60px;
+        border-radius: $border-radius;
+        background: $white-smoke;
+        margin-top: -354px;
+        color: $menu;
+        box-shadow: $box-shadow;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+            padding: 50px 15px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .row {
+            margin: 0 -5px;
+            [class^="col-"] {
+                padding: 0 5px;
+            }
+        }
+
+        input, textarea {
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            border: none;
+            height: 53px;
+            font-family: $font-family-roboto;
+            font-size: 15px;
+            padding: 10px 13px;
+            line-height: 33px;
+            margin-bottom: 9px;
+        }
+        textarea {
+            height: 167px;
+            margin-bottom: 0;
+        }
+        small {
+            font-size: 12px;
+        }
+        .button {
+            font-family: $font-family-roboto;
+            font-size: 20px;
+            margin: 10px 0 15px;
+        }
+        .checkbox {
+            color: $dark-gray;
+            margin-bottom: 0;
+            padding-left: 30px;
+  
+              input[type="checkbox"] {
+                  position: absolute;
+                  opacity: 0;
+                  width: auto;
+                  top: 0;
+                  left: 0;
+  
+                  & + span {
+                      top: 5px;
+                      width: 18px;
+                      height: 18px;
+                      border-radius: 4px;
+                      background-color: #fff;
+                      border: 1px solid #3b3b3b;
+                      position: absolute;
+                      display: block;
+                      left: 0;
+                  }
+                  &:checked + span:after {
+                      position: absolute;
+                      content: "";
+                      left: 6px;
+                      display: block;
+                      top: 3px;
+                      width: 5px;
+                      height: 9px;
+                      border: solid $black;
+                      border-width: 0 2px 2px 0;
+                      transform: rotate(45deg);
+                  }
+              }
+            .checkbox-text {
+              font-size: 12px;
+  
+              a {
+                color: $primary;
+                text-decoration: none;
+  
+                &:hover {
+                    text-decoration: underline;
+                }
+              }
+            }
+        }
+        
+    }
+}
+
+/* Arrive By Car */
+.arrive-car {
+
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-medium;
+    }
+
+    .image-block {
+        padding-right: 100px;
+
+        @include media-breakpoint-down(md) {
+            padding-right: 0;
+        }
+
+        img {
+            border-radius: 4px;
+            box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+        }
+    }
+    .text-block {
+        margin-right: 200px;
+
+        @include media-breakpoint-down(lg) {
+            margin-right: 150px;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-right: 50px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            margin-right: 0;
+        }
+
+        &.pad-left {
+            padding-left: 0;
+
+            @include media-breakpoint-down(md) {
+                padding-left: 50px;
+            }
+    
+            @include media-breakpoint-down(sm) {
+                padding-left: 0;
+            }
+        }
+        h2 {
+            span {
+                color:#A4D0E5;
+            }
+        }
+        p {
+            color:$menu;
+        }
+    }   
+}
+
+/* Arrive By Public Transport */
+.arrive-transport {
+    background: $white-smoke;
+
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-medium;
+    }
+
+    .image-block {
+        padding-left: 100px;
+
+        @include media-breakpoint-down(md) {
+            padding-left: 0;
+        }
+
+        img {
+            border-radius: 4px;
+            box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    .text-block {
+        margin-right: 150px;
+
+        @include media-breakpoint-down(lg) {
+            margin-right: 0;
+        }
+        @include media-breakpoint-down(md) {
+            margin-right: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-right: 0;
+        }
+
+        &.pad-left {
+            padding-left: 200px;
+
+            @include media-breakpoint-down(lg) {
+                padding-left: 100px;
+            }
+            @include media-breakpoint-down(md) {
+                padding-left: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding-left: 0;
+            }
+        }
+        h2 {
+            span {
+                color:#A4D0E5;
+            }
+        }
+        p {
+            color:$menu;
+        }
+    }   
+}

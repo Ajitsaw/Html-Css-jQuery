@@ -1,0 +1,182 @@
+// refrenzen Banner
+.refrenzen-banner{
+    min-height: 628px;
+    margin-top: 110px;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(xxl){
+        margin-top: 100px;
+    }
+    @include media-breakpoint-down(xl){
+        margin-top: 90px;
+    }
+    @include media-breakpoint-down(lg){
+        margin-top: 90px;
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: #000000, $alpha: 0.75);
+        mix-blend-mode: multiply;
+    }
+    &-text{
+        max-width: 615px;
+
+        h1{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+    }
+}
+
+
+/* refrenzen Customers */
+.refrenzen-customers {
+    overflow: hidden;
+    background-color: $gray-bg;
+
+    .refrenzen-customers__slider {
+            margin-bottom: 40px;
+            overflow: visible;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &[dir="rtl"] {
+            .customer {
+                direction: ltr;
+            }  
+        }
+        .slider {
+            transition-timing-function: linear !important;
+        }
+            .customer {
+            flex: 0 0 20%;
+            width: 20%;
+            margin-right: 30px;
+            background: $white;
+            // box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            border-radius: $border-radius;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            color: $black;
+            @include media-breakpoint-down(xl) {
+                flex: 0 0 25%;
+                width: 25%;
+            }
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 30%;
+                width: 30%;
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 35%;
+                width: 35%;
+                margin-right: 20px;
+                padding: 15px;
+            }
+            @include media-breakpoint-down(sm) {
+                flex: 0 0 80%;
+                width: 80%;
+            }
+            .logo {
+                flex: 0 0 80px;
+                height: 80px;
+                max-width: 80px;
+                object-fit: scale-down;
+                margin-right: 25px;
+                @include media-breakpoint-down(md) {
+                margin-right: 15px;
+                }
+            }
+            .title {
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 300;
+                color:$body-color;
+                font-weight: $font-weight-normal;
+                span {
+                    display: block;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: 0px;
+                    font-size: $font-size-base;
+                }
+            }
+        }
+    }
+}
+
+//case-studies
+.case-studies{
+    .site-heading{
+        margin-bottom: 75px;
+    }
+    &__single{
+        &__img{
+            height: 191px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__text{
+            background: $gray-bg;
+            padding: 50px 20px 35px 35px;
+
+            h4{
+                margin-bottom: 15px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+            a{
+                display: inline-block;
+                font-size: 12px;
+                padding:0;
+                color: $primary;
+                position: relative;
+                margin-top: 68px;
+
+                &::before{
+                    content: "";
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $primary;
+                    bottom: 0;
+                    position: absolute;
+                    transition: all 300ms ease-in-out;
+                }
+                &:hover{
+                    // color: $secondary;
+                    &::before{
+                        // background: $secondary;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}

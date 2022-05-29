@@ -1,0 +1,98 @@
+
+@import "variables";
+
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+@import "../node_modules/bootstrap/scss/root";
+
+@import "../node_modules/bootstrap/scss/reboot";
+
+
+//// Components
+
+// Global
+@import "global";
+
+// Margin Padding
+@import "margin-padding";
+
+// bg-color
+@import "bg-color";
+
+// Circles
+@import "cricles";
+
+// Grid
+@import "grid";
+
+// Font
+@import "font";
+
+// Buttons
+@import "button";
+
+// Header
+@import "header";
+
+// Hero Section
+@import "hero";
+
+// About
+@import "about";
+
+// Benefits
+@import "benefit";
+
+// Pricing
+@import "pricing";
+
+// Text
+@import "text";
+
+// Slider
+@import "slider-center";
+
+// Image+Text
+@import "image-text";
+
+// Text+Image
+@import "text-image";
+
+// Tab
+@import "tab-section";
+
+// Video
+@import "video";
+
+// Image Grid
+@import "image-grid";
+
+// Testimonail
+@import "testimonail";
+
+// Logo Slider
+@import "logo-slider";
+
+// Accordion
+@import "accordion";
+
+// CTA
+@import "cta";
+
+// Form
+@import "form";
+
+
+// Footer
+@import "footer";
+

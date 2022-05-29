@@ -1,0 +1,163 @@
+.slide {
+    &r {
+        &-holder {
+            margin-top: 0px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+        &-tab {
+            display: flex;
+            overflow: hidden;
+            margin-right: 10px;
+            //width: calc(100% - 180px);
+            width: 100%;
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+        .slick-track {
+            @include media-breakpoint-down(lg) {
+                margin-left: 0;
+            }
+        }
+        &-single {
+            background: $primary;
+            color: $white;
+            border-radius: 0;
+            height: 69px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 25px;
+            margin-right: 5px;
+            text-align: center;
+            cursor: pointer;
+            outline: none !important;
+            border: none;
+            font-size: 15px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            text-transform: uppercase;
+            @include media-breakpoint-down(md) {
+                height: 60px !important;
+                padding: 16px 25px;
+            }
+            &:hover {
+                background: $secondary;
+                color: $white;
+            }
+            &.selected {
+                background: $secondary;
+                color: $white;
+            }
+        }
+        &-next {
+            background: $primary;
+            color: $secondary;
+            border-radius: 0;
+            height: 100%;
+            width: 110px;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: -10px 0px 20px 10px $primary;
+            z-index: 999;
+            @include media-breakpoint-down(sm) {
+                width: 60px;
+                span {
+                    display: none;
+                }
+            }
+            &.slick-disabled {
+                opacity: .8;
+            }
+        }
+        &-prev {
+            background: $white;
+            color: $secondary;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+            border-radius: 10px 10px 0 0;
+            height: 45px;
+            width: 172px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include media-breakpoint-down(sm) {
+                width: 60px;
+                span {
+                    display: none;
+                }
+            }
+            i {
+                margin-left: 15px;
+                @include media-breakpoint-down(sm) {
+                    margin-left: 0px;
+                }
+                &:before {
+                    font-weight: 900;
+                }
+            }
+            &.slick-disabled {
+                display: none !important;
+            }
+        }
+        &-content {
+            @include media-breakpoint-down(sm) {
+                margin-top: 30px;
+            }
+            &-single {
+                display: none;
+                position: relative;
+                z-index: 3;
+                align-items: flex-start;
+                justify-content: flex-end;
+                flex-flow: column;
+                padding: 50px 0;
+                min-height: 743px;
+                color: $white;
+                @include media-breakpoint-down(lg) {
+                    min-height: 600px;
+                }
+                @include media-breakpoint-down(md) {
+                    min-height: 500px;
+                }
+                @include media-breakpoint-down(sm) {
+                    padding: 70px 0px 30px;
+                    display: flex;
+                    margin: 15px 0 30px;
+                    min-height: 400px;
+                }
+                &:after {
+                    content: '';
+                    background: rgb(0,0,0);
+                    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 150%);
+                    opacity: .75;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                }
+                h2 {
+                    margin-bottom: 30px;
+                    text-transform: uppercase;
+                }
+                &.active {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

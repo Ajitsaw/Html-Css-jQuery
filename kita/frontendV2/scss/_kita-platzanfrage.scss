@@ -1,0 +1,289 @@
+@import "variables";
+
+/* Single page banner */
+.platzanfrage_banner_panel {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 125px 0 171px;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+        padding: 80px 0 171px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 600px;
+        min-height: 500px;
+        padding: 80px 0 80px;
+    }
+
+    .container {
+        height: 100%;
+
+        .row {
+            height: 100%;
+        }
+    }
+
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+    &::after{
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: "";
+        position: absolute;
+        background: rgb(5,42,60);
+        background: linear-gradient(90deg, rgba(5,42,60,1) 0%, rgba(0,212,255,0) 100%);
+        z-index: -1;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+    }
+    // &:before {
+    //     content: "";
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 0;
+    //     position:absolute;
+    //     bottom: 0;
+    //     left:0;
+    //     border-style: solid;
+    //     border-width: 20px 0 0 300px;
+    //     border-color: transparent transparent transparent #6980fe;
+    // }
+
+    .breadcrumb-area {
+        margin-bottom: auto;
+
+        p {
+            color: $white;
+            font-size: 12px;
+            line-height: 33px;
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .platzanfrage_banner_text {
+
+        .logo_area {
+            display: flex;
+            width: 149px;
+            height: 149px;
+            border-radius: 4px;
+            background: $white;
+            padding: 10px;
+            margin: 145px 0 115px;
+            box-shadow: 0px 3px 6px #00000029;
+
+            @include media-breakpoint-down(sm) {
+                width: 80px;
+                height: 80px;
+                margin: 30px 0 40px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        p {
+            font-size: 25px;
+            font-weight: $font-weight-light;
+            color:$white;
+            line-height: 1;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:$white;
+            line-height: 70px;
+            margin-bottom: 65px;
+            position: relative;
+
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 28px;
+                line-height: 38px;
+                margin-bottom: 25px;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .button-group {
+            .button:first-child {
+                margin-right: 30px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Karriere Solutions */
+
+.karriere-stell-solutions {
+    padding: $section-padding;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-medium;
+    }
+    .section_title_part {
+      h4 {
+        color: $menu;
+        line-height: 45px;
+        font-weight: $font-weight-normal;
+        
+        @include media-breakpoint-down(md) {
+            line-height: 1.4;
+        }
+      }
+    }
+}
+
+/* Kita platzanfrage */
+
+.platzanfrage-content {
+    padding: 60px 0 100px;
+    display: block;
+    color: $menu;
+    overflow: visible;
+
+    .logo_area {
+        display: flex;
+        width: 149px;
+        height: 149px;
+        border-radius: 4px;
+        background: $white;
+        padding: 10px;
+        margin: 0 0 100px;
+        box-shadow: 0px 3px 6px #00000029;
+        float: right;
+
+        @include media-breakpoint-down(sm) {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+            float: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    span {
+        color: $primary;
+    }
+
+    .query-block {
+        display: block;
+        padding: 50px 30px 60px;
+        border-radius: $border-radius;
+        background: $white-smoke;
+        margin-top: -230px;
+        margin-bottom: 70px;
+        color: $menu;
+        box-shadow: $box-shadow;
+
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+            padding: 30px 20px 30px;
+        }
+
+        &_info {
+            display: flex;
+            margin-bottom: 60px;
+
+            &_img {
+                margin-right: 40px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-right: 25px;
+                }
+
+                img {
+                    width: 106px;
+                    height: 106px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid #3B3B3B;
+
+                    @include media-breakpoint-down(sm) {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+
+            &_content {
+                p {
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-bottom: 5px;
+                }
+                h4 {
+                    font-size: 23px;
+                    line-height: 30px;
+                    margin: 0 0 5px;
+                    font-weight: $font-weight-normal;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 33px;
+            font-weight: $font-weight-normal;
+        }
+        small {
+            font-size: 12px;
+        }
+        .button {
+            font-family: $font-family-roboto;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin: 0;
+            width: 100%;
+        }
+    }
+}

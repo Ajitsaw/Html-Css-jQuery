@@ -1,0 +1,53 @@
+
+.partners {
+    &__holder {
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+      width: 100%;
+      position: relative;
+      i {
+        font-size: 22px;
+      }
+    }
+    &__left {
+      right: -30px; 
+      outline: none !important;
+      @include media-breakpoint-down(md) {
+        right: -20px; 
+      }
+    }
+    &__right {
+      left: -30px; 
+      outline: none !important;
+      @include media-breakpoint-down(md) {
+        left: -20px;
+      }
+    }
+    &__slider {
+        overflow: hidden;
+      &-single {
+        flex: 0 0 25%;
+        display: flex;
+        justify-content: center;
+        min-height: 70px;
+        align-items: center;
+        @include media-breakpoint-down(xl) {
+          flex: 0 0 33.33%;
+        }
+        @include media-breakpoint-down(lg) {
+          flex: 0 0 50%;
+        }
+        @include media-breakpoint-down(md) {
+          flex: 0 0 50%;
+          img {
+            max-height: 40px;
+          }
+        }
+        @include media-breakpoint-down(sm) {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+  

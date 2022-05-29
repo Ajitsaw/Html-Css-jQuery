@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/event1.scss"
+    ],
+    "names": [],
+    "file": "event1.css"
+}

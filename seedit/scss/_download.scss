@@ -1,0 +1,70 @@
+.download {
+  padding-top: 160px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 80px;
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 50px;
+  }
+  &__holder {
+    .col-lg-3 {
+      margin: 15px 0;
+    }
+  }
+  &-dropdown {
+    max-width: 250px;
+    display: flex;
+    height: 52px;
+    margin-bottom: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+  &__single {
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 4px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    min-height: 180px;
+    @include media-breakpoint-down(md) {
+      min-height: auto;
+    }
+    .h5 {
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      flex: 1;
+    }
+  }
+  .shape {
+    @include media-breakpoint-down(md) {
+      height: auto;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 50%;
+      
+    }
+    img {
+      object-fit: contain;
+      opacity: 1;
+    }
+  }
+}
+.text-button {
+  font-size: 13px;
+  line-height: 24px;
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+}

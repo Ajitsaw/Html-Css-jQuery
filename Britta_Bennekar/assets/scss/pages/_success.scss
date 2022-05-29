@@ -1,0 +1,47 @@
+.success-page {
+    padding: 180px 0 180px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+        padding: 150px 0 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 100px 0 50px;
+    }
+    .lotte {
+        padding: 0 100px;
+        text-align: center;
+        @include media-breakpoint-down(xl) {
+            padding: 0 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 0px;
+        }
+        lottie-player {
+            max-width: 650px;
+            margin: 0 auto;
+            @include media-breakpoint-down(lg) {
+                max-width: 500px;
+            }
+            @include media-breakpoint-down(md) {
+                max-width: 400px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 300px;
+            }
+        }
+    }
+    h1 {
+        text-align: center;
+        margin-top: -120px;
+        z-index: 3;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            margin-top: -50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 0px;
+        }
+    }
+}

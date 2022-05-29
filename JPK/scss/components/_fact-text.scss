@@ -1,0 +1,29 @@
+.fact-text {
+    .fact__holder {
+        display: flex;
+        justify-content: center;
+        .fact {
+            color: $white;
+            margin: 30px 10px 0;
+            min-width: 296px;
+            .countup {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+                border-bottom: 1px solid rgba(248,248,248,.3);
+                font-weight: bold;
+
+            }
+            &__des {
+                padding: 0 30px;
+                text-align: center;
+            }
+        }
+    }
+    .text {
+        h2 {
+            color: $secondary;
+        }
+    }
+}

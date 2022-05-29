@@ -1,0 +1,873 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bever</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        @import url("https://use.typekit.net/uwa0bee.css");
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.png"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="handlerliste.html">Händlerliste</a></li>
+                            <li>
+                                <a href="">Mediathek<i class="far fa-angle-down"></i></a></a>
+                                <ul class="sub-menu">
+                                    <li><a href="news.html">
+                                            News
+                                            <span>Bleiben Sie auf dem Laufenden</span>
+                                        </a></li>
+                                    <li><a href="download.html">
+                                            Downloads
+                                            <span>Alle Infos auf einen Blick</span>
+                                        </a></li>
+                                    <li><a href="videos.html">
+                                            Videos
+                                            <span>Bekommen Sie einen Einblick</span>
+                                        </a></li>
+                                    <li><a href="">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="service.html">service</a>
+                            </li>
+                            <li class="current-menu-item">
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="searchBox">
+                        <input class="searchInput" type="text" name="" placeholder="Search">
+                        <button class="searchButton" href="#">
+                            <img src="img/search.svg" alt="search">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="far fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay__left">
+            <nav class="main-nav">
+                <ul>
+                    <li class="menu-item-has-children"><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="unternehmen.html">Unternehmen</a></li>
+                    <li><a href="handlerliste.html">Händlerliste</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="">Mediathek<i class="far fa-angle-down"></i></a></a>
+                        <ul class="sub-menu">
+                            <li><a href="news.html">
+                                    News
+                                    <span>Bleiben Sie auf dem Laufenden</span>
+                                </a></li>
+                            <li><a href="download.html">
+                                    Downloads
+                                    <span>Alle Infos auf einen Blick</span>
+                                </a></li>
+                            <li><a href="videos.html">
+                                    Videos
+                                    <span>Bekommen Sie einen Einblick</span>
+                                </a></li>
+                            <li><a href="downloads.html">
+                                    Wissenswertes
+                                    <span>Praktische Informationen</span>
+                                </a></li>
+                            <li><a href="">
+                                    Tipps & Tricks
+                                    <span>Bedienungs- & Montageanleitungen</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay__right">
+            <div class="top">
+                <nav class="secondary-nav">
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <section class="karriere-banner" style="background-image: url(img/karrer-bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block">
+                            <div class="heading">
+                                <div class="line"></div>
+                                <div class="h3">
+                                    Produktdetails
+                                </div>
+                            </div>
+                            <h1>
+                                Einsteckschlösser<br>
+                                und Zubehör für<br>
+                                Holztüren & -Tore
+                            </h1>
+                            <div class="d-flex justify-content-start">
+                                <a href="" class="button">Zu den offenen Jobs</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karriere-info">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-11 offset-lg-1">
+                        <div class="text-block">
+                            <div class="heading">
+                                <div class="line"></div>
+                                <div class="h3">
+                                    Job mit Zukunft
+                                </div>
+                            </div>
+                            <h2>
+                                Deine<br>
+                                Karriere<br>
+                                Bei Bever
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="image-text">
+                            <div class="image">
+                                <img src="img/karrere-info1.jpg" alt="karrere-about">
+                            </div>
+                            <div class="text-block">
+                                <h4>
+                                    Hier steht eine Headline
+                                </h4>
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="image-text bottom-align reverse">
+                            <div class="image">
+                                <img src="img/karrere-info2.jpg" alt="karrere-about">
+                            </div>
+                            <div class="text-block align-self-start">
+                                <h4>
+                                    Wir sind immer auf der Suche nach motivierten Mitarbeitern
+                                </h4>
+                                <div class="text">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.<br>
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="karriere-vorteile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block">
+                            <h2>
+                                Unsere Angebote für Mitarbeiter
+                            </h2>
+                            <div class="para">
+                                <p>
+                                    Wir legen Wert darauf, dass sich der Einstieg bei uns lohnt - wir bieten attraktive und faire Rahmenbedingungen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="karriere-vorteile-holder">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits1.png" alt="benefits1">
+                                    </div>
+                                    <div class="title">
+                                        Vereinbarkeit von<br>
+                                        Familie & Beruf
+                                    </div>
+                                </div>
+                                <p>
+                                    Wir unterstützen unserer Mitarbeiter dabei Familie und Beruf problemlos unter einen Hut zu bekommen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits2.png" alt="benefits2">
+                                    </div>
+                                    <div class="title">
+                                        Leistungsorientierte<br>
+                                        Vergütung
+                                    </div>
+                                </div>
+                                <p>
+                                    Wir bieten jedem unserer Mitarbeitern eine faire Bezahlung.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits3.png" alt="benefits3">
+                                    </div>
+                                    <div class="title">
+                                        Leistungsorientierte
+                                        Vergütung
+                                    </div>
+                                </div>
+                                <p>
+                                    Wir beiten abwechslungsreiche Aufgaben und die Möglichkeit in einem spannenden und dynamischen Arbeitsumfeld Verantwortung zu übernehmen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits4.png" alt="benefits4">
+                                    </div>
+                                    <div class="title">
+                                        Abwechslungsreiche
+                                        Tätigkeiten
+                                    </div>
+                                </div>
+                                <p>
+                                    Wir beiten abwechslungsreiche Aufgaben und die Möglichkeit in einem spannenden und dynamischen Arbeitsumfeld Verantwortung zu übernehmen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits5.png" alt="benefits5">
+                                    </div>
+                                    <div class="title">
+                                        E-Bike<br>
+                                        Leasing
+                                    </div>
+                                </div>
+                                <p>
+                                    Mit dem Rad zur Arbeit?<br>
+                                    Ab 2022 können unsere Angestellten das Jobrad leasen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits6.png" alt="benefits6">
+                                    </div>
+                                    <div class="title">
+                                        Steuerfreie<br>
+                                        Sachbezüge
+                                    </div>
+                                </div>
+                                <p>
+                                    Wir belohnen gute Arbeit und bieten unseren Mitarbeitern alternativ zu abgabepflichtigen Zahlungen steuerfreie Sachbezüge an.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits7.png" alt="benefits7">
+                                    </div>
+                                    <div class="title">
+                                        Kostenfreie<br>
+                                        Parkplätz
+                                    </div>
+                                </div>
+                                <p>
+                                    Nicht nur die Anbindung über die Autobahn ist optimal, auch die Parkplatzsuche entfällt dank kostenloser Mitarbeiterparkplätze.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="karriere-vorteile-single">
+                                <div class="karriere-vorteile-single-top">
+                                    <div class="karriere-vorteile-single-top-img">
+                                        <img src="img/benefits8.png" alt="benefits8">
+                                    </div>
+                                    <div class="title">
+                                        Arbeiten in einem<br>
+                                        dynamischen Team
+                                    </div>
+                                </div>
+                                <p>
+                                    In unserem Team arbeiten wir Hand in Hand und pflegen zu jeder Zeit ein partnerschaftliches Miteinander.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karriere-testimonial">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="text-block text-center">
+                            <h2 class="text-uppercase">
+                                Das sagen unsere Mitarbeiter
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="karriere-testimonial-slider swiper-container">
+                            <div class="slider swiper-wrapper">
+                                <div class="karriere-testimonial-slider-single swiper-slide">
+                                    <div class="row align-items-center flex-column-reverse flex-lg-row">
+                                        <div class="col-lg-6">
+                                            <div class="text-block center-block text-center">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                                                </p>
+                                                <div class="font-weight-medium">
+                                                    Max Mustermann
+                                                </div>
+                                                <div>
+                                                    Produktion
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="karriere-testimonial-slider-img">
+                                                <img src="img/career-sider.jpg" alt="career">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="karriere-testimonial-slider-single swiper-slide">
+                                    <div class="row align-items-center flex-column-reverse flex-lg-row">
+                                        <div class="col-lg-6">
+                                            <div class="text-block center-block text-center">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                                                </p>
+                                                <div class="font-weight-medium">
+                                                    Lorem Ipsum
+                                                </div>
+                                                <div>
+                                                    Produktion
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="karriere-testimonial-slider-img">
+                                                <img src="img/career-sider.jpg" alt="career">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="karriere-testimonial-slider-single swiper-slide">
+                                    <div class="row align-items-center flex-column-reverse flex-lg-row">
+                                        <div class="col-lg-6">
+                                            <div class="text-block center-block text-center">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+                                                </p>
+                                                <div class="font-weight-medium">
+                                                    Max Mustermann
+                                                </div>
+                                                <div>
+                                                    Produktion
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="karriere-testimonial-slider-img">
+                                                <img src="img/career-sider.jpg" alt="career">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bullets"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-grid">
+            <div class="image-grid__grid">
+                <div class="left">
+                    <div class="image">
+                        <img src="img/k-grid1.jpg" alt="grid">
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="image">
+                        <img src="img/k-grid2.jpg" alt="grid">
+                    </div>
+                </div>
+                <div class="right_top">
+                    <div class="image">
+                        <img src="img/k-grid3.jpg" alt="grid">
+                    </div>
+                </div>
+                <div class="right_bottom">
+                    <div class="image">
+                        <img src="img/k-grid4.jpg" alt="grid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="karriere-process">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block text-center">
+                            <div class="h2">
+                                Unser Bewerbungsprozess
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="karriere-process-block">
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be1.png" alt="be1">
+                        <span>1</span>
+                    </div>
+                    <div class="title">
+                        Passenden<br>
+                        Job finden
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be2.png" alt="be2">
+                        <span>2</span>
+                    </div>
+                    <div class="title">
+                        Online<br>
+                        Bewerben
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be3.png" alt="be3">
+                        <span>3</span>
+                    </div>
+                    <div class="title">
+                        Checken deiner<br>
+                        Unterlagen 
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be4.png" alt="be4">
+                        <span>4</span>
+                    </div>
+                    <div class="title">
+                        Job-<br>
+                        Interview
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be5.png" alt="be5">
+                        <span>5</span>
+                    </div>
+                    <div class="title">
+                        Interne<br>
+                        Beratung
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be6.png" alt="be6">
+                        <span>6</span>
+                    </div>
+                    <div class="title">
+                        Vertrags-<br>
+                        Unterschrift
+                    </div>
+                </div>
+                <div class="karriere-process-block__single">
+                    <div class="karriere-process-block__single-img">
+                        <img src="img/be7.png" alt="be7">
+                        <span>7</span>
+                    </div>
+                    <div class="title">
+                        Willkommen<br>
+                        Im Team
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs-overview">
+            <div class="jobs-overview__jobs">
+                <div class="overview">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <div class="text-block">
+                                    <h2>
+                                        Offene Stellen
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>Stellenangebote</td>
+                                            <td>Anstellungsart</td>
+                                            <td>Abteilung</td>
+                                            <td>Standort</td>
+                                            <td></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="hide">
+                                                    Stellenangebote
+                                                </div>
+                                                <div class="title">
+                                                    Stelle XY<br>
+                                                    Lorem ipsum
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Anstellungsart
+                                                </div>
+                                                Teilzeit
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Abteilung
+                                                </div>
+                                                Produktion
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Standort
+                                                </div>
+                                                Schwelm
+                                            </td>
+                                            <td><a href="job-single.html" class="button">Details</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="hide">
+                                                    Stellenangebote
+                                                </div>
+                                                <div class="title">
+                                                    Stelle XY<br>
+                                                    Lorem ipsum
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Anstellungsart
+                                                </div>
+                                                Teilzeit
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Abteilung
+                                                </div>
+                                                Produktion
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Standort
+                                                </div>
+                                                Schwelm
+                                            </td>
+                                            <td><a href="job-single.html" class="button">Details</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="hide">
+                                                    Stellenangebote
+                                                </div>
+                                                <div class="title">
+                                                    Stelle XY<br>
+                                                    Lorem ipsum
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Anstellungsart
+                                                </div>
+                                                Teilzeit
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Abteilung
+                                                </div>
+                                                Produktion
+                                            </td>
+                                            <td>
+                                                <div class="hide">
+                                                    Standort
+                                                </div>
+                                                Schwelm
+                                            </td>
+                                            <td><a href="job-single.html" class="button">Details</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 text-center">
+                        <h2>
+                            Du hast Fragen zu den Jobs oder<br>
+                            möchtest eine Bewerbung senden?
+                        </h2>
+                        <p>Dann kontaktiere uns doch einfach – gemeinsam schauen wir uns Dein Anliegen an<br>
+                            und beraten dich gerne.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                        <div class="button-group">
+                            <a href="#" class="button outline white"><i class="fal fa-phone-alt"></i>+49 (0) 2336-8059-6</a>
+                            <a href="#" class="button outline white"><i class="fal fa-envelope"></i>info@bever-klophaus.de</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer //Start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Kontakt</div>
+                    <address>Bever & Klophaus GmbH
+                        <br />
+                        Rheinische Str.43
+                        <br />
+                        58332 Schwelm
+                    </address>
+                    <div class="anchor">
+                        info@bever-klophaus.de<br />
+                        Telefon: +49 (0) 2336-8059-6
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Navigation</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="bever-wiki.html">Bever Wiki</a></li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="handlerliste.html">Händlerliste</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Produkte</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="product-single.html">Einsteckschlösser Holz</a></li>
+                            <li><a href="product-single.html">Kastenschlösser</a></li>
+                            <li><a href="product-single.html">Schlösser Metall</a></li>
+                            <li><a href="product-single.html">Zubehör Tür und Schloss</a></li>
+                            <li><a href="product-single.html">Schlüssel</a></li>
+                            <li><a href="product-single.html">Rustikal-Programm</a></li>
+                            <li><a href="product-single.html">Elektrische Türöffner und Bleche</a></li>
+                            <li><a href="product-single.html">Garagentorschlüssel</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Service</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="agb.html">AGB</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <nav class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        2021 Bever & Klophaus GmbH <span>|</span> realisiert durch <a href="#">pechschwarz
+                            Media</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

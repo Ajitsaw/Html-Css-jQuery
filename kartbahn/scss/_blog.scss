@@ -1,0 +1,93 @@
+.single-news {
+    padding: 90px 0 170px;
+    @include media-breakpoint-down(lg) {
+        padding: 90px 0 90px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 90px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
+}
+.news-page-single {
+    position: relative;
+    padding: 160px 0 180px;
+    @include media-breakpoint-down(lg) {
+        padding: 100px 0;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0;
+    }
+    &::before {
+        content: "";
+        height: 1px;
+        width: calc(100% - 400px);
+        position: absolute;
+        background: $primary;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @media screen and (max-width: 1600px) {
+            width: calc(100% - 120px);
+        }
+        @include media-breakpoint-down(lg) {
+            width: calc(100% - 80px);
+        }
+        @include media-breakpoint-down(md) {
+            width: calc(100% - 50px);
+        }
+        @include media-breakpoint-down(sm) {
+            width: calc(100% - 15px);
+        }
+    }
+    .h3 {
+        margin-bottom: 45px;
+    }
+    .news-button {
+        margin-top: 235px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 150px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 100px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: 50px;
+        }
+
+    }
+}
+
+.default {
+    & > img {
+        max-height: 490px;
+        width: 100%;
+        margin-top: 65px;
+        margin-bottom: 115px;
+        box-shadow: $box-shadow;
+        @include media-breakpoint-down(md) {
+            max-height: 100%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        margin-bottom: 35px;
+    }
+}

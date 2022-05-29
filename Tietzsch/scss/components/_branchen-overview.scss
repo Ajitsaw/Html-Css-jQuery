@@ -1,0 +1,187 @@
+.branchen-overview {
+    @include media-breakpoint-down(md) {
+        padding-top: 0 !important;
+    }
+    &__anchors {
+        display: flex;
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        a {
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            margin-right: 80px;
+            @include media-breakpoint-down(xl) {
+                margin-right: 40px;
+            }
+            @include media-breakpoint-down(lg) {
+                margin-right: 20px;
+                font-size: 13px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                margin-left: 20px;
+                margin-top: 7px;
+                transition: all .3s ease;
+                @include media-breakpoint-down(xl) {
+                    margin-left: 15px;
+                    margin-top: 3px;
+                }
+            }
+            &:hover {
+                i {
+                    color: $secondary;
+                    margin-top: 10px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+    &__block {
+        position: relative;
+        padding-top: 100px;
+        @include media-breakpoint-down(xl) {
+            padding-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            &:first-child {
+                padding-top: 0px;
+            }
+        }
+        .name {
+            font-size: 22px;
+            width: auto;
+            height: auto;
+            font-weight: bold;
+            position: absolute;
+            left: 80px;
+            padding: 0;
+            top: 130px;
+            writing-mode: vertical-lr;
+            transform: scale(-1);
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            @include media-breakpoint-down(xl) {
+                left: 30px;
+                top: 85px;
+            }
+            @include media-breakpoint-down(lg) {
+                transform: none;
+                writing-mode: horizontal-tb;
+                top: auto;
+                left: auto;
+                margin-top: 30px;
+                position: relative;
+                padding: 0 80px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 0 25px;
+            }
+            .line {
+                height: 50px;
+                width: 3px;
+                background-color: $secondary;
+                position: relative;
+                margin-top: 30px;
+                @include media-breakpoint-down(lg) {
+                    width: 50px;
+                    height: 3px;
+                    margin-top: 0px;
+                    margin-left: 30px;
+                }
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .single {
+        margin-top: 30px;
+        background-color: $gray;
+        display: flex;
+        border: 3px solid $gray;
+        &:hover {
+            border: 3px solid $secondary;
+        }
+        .text {
+            padding: 100px 30px 70px 30px;
+            flex: 0 0 65%;
+            @include media-breakpoint-down(lg) {
+                padding: 70px 30px 70px 30px;
+                flex: 0 0 70%;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 50px 25px 50px 25px;
+                
+            }
+            
+            .cat {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 16px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                }
+            }
+            h3 {
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 16px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                }
+            }
+            .list {
+                &__single {
+                    display: flex;
+                    flex-flow: column;
+                    font-size: 18px;
+                    border-bottom: 1px solid $primary;
+                    padding-bottom: 10px;
+                    margin-bottom: 20px;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                    }
+                    &:last-child {
+                        border: none !important;
+                    }
+                    b {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .price {
+                font-weight: bold;
+            }
+        }
+        .img {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            flex: 1;
+            img {
+                @include media-breakpoint-down(md) {
+                    max-height: 500px;
+                }
+            }
+            
+        }
+    }
+}

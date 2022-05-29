@@ -1,0 +1,136 @@
+@import "variables";
+
+.contact-person {
+    padding: 125px 0 57px;
+    background: $gray94;
+
+    @include media-breakpoint-down(lg) {
+        padding: 133px 0 120px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 100px 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 80px 0 30px;
+    }
+
+    .breadcrumb-area {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        margin-bottom: 77px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .row {
+        @include media-breakpoint-down(sm) {
+            margin: 0 -5px;
+        }
+        [class^="col-"] {
+            @include media-breakpoint-down(sm) {
+                padding: 0 5px;
+            }
+        }
+    }
+
+    &_box {
+        display: block;
+        width: 100%;
+        margin-bottom: 93px;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 50px;
+            max-width: 100%;
+        }
+
+        .image {
+                border-radius: $border-radius;
+                box-shadow: $box-shadow;
+                overflow: hidden;
+                margin-bottom: 22px;
+    
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                &.margin-top {
+                    margin-top: 80px;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 50px;
+                    }
+                }
+            }
+            .title {
+                font-size: 25px;
+                font-weight: $font-weight-bold;
+                color: $menu;
+                margin-bottom: 3px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 18px;
+                }
+            }
+            .designation {
+                font-size: 20px;
+                font-weight: $font-weight-normal;
+                color: $menu;
+                margin-bottom: 30px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+        a {
+            font-size: 13px;
+            color: $menu;
+            display: inline-block;
+            font-family: $font-family-roboto;
+            margin-right: 44px;
+
+            svg {
+                margin-right: 8px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-right: 0;
+                width: 100%;
+            }
+            &:hover {
+                color: $light-delphin;
+
+                svg {
+                    fill: $light-delphin;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+        transform: rotateY(180deg);
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.banner-career {
+    .text-block {
+        h3 {
+            max-width: 600px !important;
+            @include media-breakpoint-down(md) {
+                max-width: 550px !important;
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 400px !important;
+            }
+        }
+    }
+}
+
+.career-cat {
+    padding: 75px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 35px 0;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-color: rgba(15, 45, 85, .7);
+    }
+    [class^='col-'] {
+        &:nth-child(1),
+        &:nth-child(4) {
+            display: flex;
+            justify-content: flex-start;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+        }
+        &:nth-child(2),
+        &:nth-child(5) {
+            display: flex;
+            justify-content: center;
+        }
+        &:nth-child(3),
+        &:nth-child(6) {
+            display: flex;
+            justify-content: flex-end;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+            }
+        }
+    }
+    &-single {
+        margin: 70px 0;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 325px;
+        @include media-breakpoint-down(lg) {
+            margin: 30px 0;
+        }
+        @include media-breakpoint-down(md) {
+            margin: 15px 0;
+        }
+        &-img {
+            margin-bottom: 40px;
+            min-height: 95px;
+            @include media-breakpoint-down(md) {
+                min-height: auto;
+                margin-bottom: 30px;
+            }
+        }
+        &-text {
+            text-align: center;
+            h2 {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}

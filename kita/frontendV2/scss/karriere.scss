@@ -1,0 +1,431 @@
+/* karriere page banner */
+.karriere_banner_panel {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 80px 0 171px;
+    z-index: 1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(sm) {
+        height: 500px;
+        padding: 80px 0 120px;
+    }
+
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+    &::after{
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        content: "";
+        position: absolute;
+        background: rgb(5,42,60);
+        background: linear-gradient(90deg, rgba(5,42,60,1) 0%, rgba(0,212,255,0) 100%);
+        z-index: -1;
+    }
+    // &:before {
+    //     content: "";
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 0;
+    //     position:absolute;
+    //     bottom: 0;
+    //     left:0;
+    //     border-style: solid;
+    //     border-width: 20px 0 0 300px;
+    //     border-color: transparent transparent transparent #6980fe;
+    // }
+
+    .karriere_banner_text {
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            color:$white;
+            line-height: 1;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+        }
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color:$white;
+            line-height: 70px;
+            margin-bottom: 65px;
+
+            @include media-breakpoint-down(md) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 28px;
+                line-height: 38px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+/* Home Solutions */
+
+.home-solutions {
+    padding: $section-padding;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .home-solutions__slider {
+        .solution {
+            flex: 0 0 70%;
+            width: 70%;
+            margin-right: 30px;
+            border-radius: $border-radius;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            padding: 269px 128px 109px;
+            color: $white;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 669px;
+            border-radius: $border-radius;
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+            overflow: hidden;
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 80%;
+                width: 80%;
+                padding: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 70%;
+                width: 70%;
+                margin-right: 15px;
+                padding: 30px;
+                min-height: 0;
+            }
+            .text {
+                flex: 0 0 100%;
+                width: 100%;
+                max-width: 600px;
+                position: relative;
+                .title {
+                    font-size: 35px;
+                    font-weight: $font-weight-bold;
+                    margin-bottom: 10px;
+                    line-height: 1.3;
+                    @include media-breakpoint-down(md) {
+                        font-size: 24px;
+                        min-height: 65px;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        min-height: 95px;
+                    }
+                    
+                }
+                .button {
+                    margin-top: 40px;
+
+                    &:hover {
+                        background: $white;
+                        color: $primary;
+                    }
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgb(5,42,60);
+                background: linear-gradient(90deg, rgba(5,42,60,1) 0%, rgba(0,212,255,0) 100%);
+            }
+        }
+        .bullets {
+            margin-top: 30px;
+            text-align: center;
+            span {
+                display: inline-block;
+                height: 8PX;
+                width: 8px;
+                background: #F0F0F0;
+                border-radius: 50%;
+                margin-right: 15px;
+                border:4px solid #fff;
+                box-shadow: none;
+                &.active {
+                    border-color:$primary;
+                    background: $white;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Home Grid */
+
+.home-grid {
+    margin: 30px 0;
+    @include media-breakpoint-down(lg) {
+      margin: 80px 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin: 50px 0;
+    }
+}
+
+
+
+/* Home Customers */
+
+.home-customers {
+    padding: $section-padding;
+    overflow: hidden;
+    @include media-breakpoint-down(md) {
+      padding: $section-padding-small;
+    }
+    &-holder {
+      background-color: $sky;
+      padding: 130px 0 100px;
+      @include media-breakpoint-down(lg) {
+        padding: 100px 0 70px;
+      }
+      @include media-breakpoint-down(lg) {
+        padding: 50px 0 30px;
+      }
+    }
+    .home-customers__slider {
+      margin-bottom: 40px;
+      overflow: visible;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 30px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-bottom: 20px;
+      }
+      .slider {
+        transition-timing-function: linear !important;
+      }
+      .customer {
+        flex: 0 0 20%;
+        width: 20%;
+        margin-right: 30px;
+        background: $white;
+        box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        border-radius: $border-radius;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        color: $black;
+        @include media-breakpoint-down(xl) {
+          flex: 0 0 25%;
+          width: 25%;
+        }
+        @include media-breakpoint-down(lg) {
+          flex: 0 0 30%;
+          width: 30%;
+        }
+        @include media-breakpoint-down(md) {
+          flex: 0 0 35%;
+          width: 35%;
+          margin-right: 20px;
+          padding: 15px;
+        }
+        @include media-breakpoint-down(sm) {
+          flex: 0 0 80%;
+          width: 80%;
+        }
+        .logo {
+          flex: 0 0 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-right: 25px;
+          @include media-breakpoint-down(md) {
+            margin-right: 15px;
+          }
+        }
+        .title {
+          font-size: 13px;
+          line-height: 24px;
+          font-weight: 300;
+          color:$primary;
+          span {
+            display: block;
+            font-weight: $font-weight-bold;
+            margin-bottom: 0px;
+            font-size: $font-size-base;
+          }
+        }
+      }
+    }
+    .home-customers__button {
+      margin-top: 80px;
+      @include media-breakpoint-down(lg) {
+        margin-top: 50px;
+      }
+      @include media-breakpoint-down(md) {
+        margin-top: 30px;
+      }
+      .button {
+        color: $body-color;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+}
+
+
+/* Ihre Karriere */ 
+.ihre__panel{
+    .image-block{
+        img{
+            border-radius: 4px;
+            box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+        }
+    }
+    .text-block{
+        margin-right: 140px;
+
+        @include media-breakpoint-down(sm) {
+            margin-right: 0;
+        }
+
+        .pad-left {
+            padding-left: 100px;
+
+            @include media-breakpoint-down(sm) {
+                padding-left: 0;
+            }
+        }
+        h2{
+            span{
+                color:#A4D0E5;
+            }
+        }
+        p{
+            color:$menu;
+        }
+    }
+    
+}
+
+
+/* Ihre Karriere */ 
+.wir_legan_panel{
+    background: $sky;
+    .wir_legan_slide {
+        
+
+        .image-block {
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 0;
+            }
+            img{
+                border-radius: 4px;
+                box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+            }
+        }
+    }
+
+    .text-block{
+        margin-right: 40px;
+
+        .pad-left {
+            padding-left: 80px;
+
+            @include media-breakpoint-down(sm) {
+                padding-left: 0;
+            }
+        }
+
+        h2{
+            span{
+                color:#A4D0E5;
+            }
+        }
+        p{
+            color:$menu;
+        }
+    }
+    .bullets {
+        margin-top: 30px;
+        text-align: center;
+        justify-content:flex-start;
+        span {
+            display: inline-block;
+            height: 2PX;
+            width: 20px;
+            background: #515150;
+            border-radius:0;
+            margin-right: 15px;
+            border:none;
+            box-shadow: none;
+            &.active {
+                //border-color:$primary;
+                background: $primary;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    .bottom_curve {
+        width: calc(100% + 1.3px);
+        height: 48px;
+        fill: $white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+        pointer-events: none;
+
+        @include media-breakpoint-down(sm) {
+            height: 24px;
+        }
+    }
+}

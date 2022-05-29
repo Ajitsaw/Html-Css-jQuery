@@ -1,0 +1,268 @@
+
+
+
+// Custom Margin & Paddings
+
+
+// Large Margin
+
+.mt-large {
+    margin-top: 130px !important;
+    @include media-breakpoint-down(xl) {
+        margin-top: 100px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 70px !important;
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 50px !important;
+    }
+}
+.mb-large {
+    margin-bottom: 130px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 100px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 70px !important;
+    }
+    @include media-breakpoint-down(md) {
+        margin-bottom: 50px !important;
+    }
+}
+.my-large {
+    margin: 130px 0 !important;
+    @include media-breakpoint-down(xl) {
+        margin: 100px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin: 70px 0 !important;
+    }
+    @include media-breakpoint-down(md) {
+        margin: 50px 0 !important;
+    }
+}
+
+
+// Medium Margin
+
+.mt-medium {
+    margin-top: 100px !important;
+    @include media-breakpoint-down(xl) {
+        margin-top: 70px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 50px !important;
+    }
+}
+.mb-medium {
+    margin-bottom: 100px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 70px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 50px !important;
+    }
+}
+.my-medium {
+    margin: 100px 0 !important;
+    @include media-breakpoint-down(xl) {
+        margin: 70px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin: 50px 0 !important;
+    }
+}
+
+
+// Small Margin
+
+.mt-small {
+    margin-top: 50px !important;
+    @include media-breakpoint-down(xl) {
+        margin-top: 40px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 30px !important;
+    }
+}
+.mb-small {
+    margin-bottom: 50px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 40px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 30px !important;
+    }
+}
+.my-small {
+    margin: 50px 0 !important;
+    @include media-breakpoint-down(xl) {
+        margin: 40px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin: 30px 0 !important;
+    }
+}
+
+.mt-75 {
+    margin-top: 75px !important;
+    @include media-breakpoint-down(xl) {
+        margin-top: 50px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 30px !important;
+    }
+}
+.mb-75 {
+    margin-bottom: 75px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 50px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 30px !important;
+    }
+}
+
+.mt-65 {
+    margin-top: 65px !important;
+    @include media-breakpoint-down(xl) {
+        margin-top: 50px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-top: 30px !important;
+    }
+}
+.mb-65 {
+    margin-bottom: 65px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 50px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 30px !important;
+    }
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 40px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 30px !important;
+    }
+}
+
+.mb-40 {
+    margin-bottom: 40px !important;
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 30px !important;
+    }
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+// Large Padding
+
+.pt-large {
+    padding-top: 130px !important;
+    @include media-breakpoint-down(xl) {
+        padding-top: 100px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-top: 70px !important;
+    }
+    @include media-breakpoint-down(md) {
+        padding-top: 50px !important;
+    }
+}
+.pb-large {
+    padding-bottom: 150px !important;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 100px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 70px !important;
+    }
+    @include media-breakpoint-down(md) {
+        padding-bottom: 50px !important;
+    }
+}
+.py-large {
+    padding: 130px 0 !important;
+    @include media-breakpoint-down(xl) {
+        padding: 100px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 70px 0 !important;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 !important;
+    }
+}
+
+
+// Medium Padding
+
+.pt-medium {
+    padding-top: 100px !important;
+    @include media-breakpoint-down(xl) {
+        padding-top: 70px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-top: 50px !important;
+    }
+}
+.pb-medium {
+    padding-bottom: 100px !important;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 70px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 50px !important;
+    }
+}
+.py-medium {
+    padding: 100px 0 !important;
+    @include media-breakpoint-down(xl) {
+        padding: 70px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0 !important;
+    }
+}
+
+
+// Small Padding
+
+.pt-small {
+    padding-top: 50px !important;
+    @include media-breakpoint-down(xl) {
+        padding-top: 40px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-top: 30px !important;
+    }
+}
+.pb-small {
+    padding-bottom: 50px !important;
+    @include media-breakpoint-down(xl) {
+        padding-bottom: 40px !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding-bottom: 30px !important;
+    }
+}
+.py-small {
+    padding: 50px 0 !important;
+    @include media-breakpoint-down(xl) {
+        padding: 40px 0 !important;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 30px 0 !important;
+    }
+}
+
+

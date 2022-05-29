@@ -1,0 +1,539 @@
+/* Uber Facts */
+
+.uber-facts {
+  padding: $section-padding;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .fact {
+    text-align: center;
+    font-size: 18px;
+    color: $primary;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      margin: 15px 0px;
+    }
+    .fact-inner {
+      text-align: left;
+      @include media-breakpoint-down(md) {
+        text-align: center;
+      }
+    }
+    .h1 {
+      color: $secondary;
+      display: block;
+      margin-bottom: 0px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-down(md) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* Uber About */
+
+.uber-about {
+  overflow: visible;
+  padding: 45px 0 150px;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .image-block {
+    position: relative;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    .uber-about-cer {
+      display: flex;
+      align-items: flex-start;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 6;
+      img {
+        margin: 0 23px;
+        @include media-breakpoint-down(md) {
+          margin: 0 15px;
+          max-width: 80px;
+        }
+        @include media-breakpoint-down(sm) {
+          max-width: 50px;
+          margin: 0 7px;
+        }
+        &:last-child {
+          margin-right: 0;
+          @include media-breakpoint-down(md) {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+    & > img {
+      border-radius: 4px;
+    }
+    .pattern {
+      position: absolute;
+      right: -15.5%;
+      top: -12%;
+      z-index: -1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &:before {
+      content: "";
+      mix-blend-mode: soft-light;
+      background: #7eb6d9;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
+/* Uber Facharzte */
+
+.uber-facharzte {
+  padding: 150px 0;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  [class^="col-"] {
+    @include media-breakpoint-down(md) {
+      margin: 15px 0;
+    }
+  }
+  &__text {
+    margin-bottom: 65px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 10px;
+    }
+  }
+  .swiper-container {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 30px;
+    }
+  }
+  .facharzte-bullets {
+    position: relative;
+    margin: 50px auto 0;
+    padding-bottom: 0;
+    max-width: 400px;
+    z-index: 6;
+    @include media-breakpoint-down(lg) {
+      margin: 30px auto 0;
+    }
+    .slide {
+      width: 50px;
+      height: 3px;
+      box-shadow: none;
+      border: none;
+      background: $primary;
+      opacity: 0.5;
+      border-radius: 0;
+      transition: all 0.3s ease;
+      @include media-breakpoint-down(lg) {
+        width: 30px;
+      }
+      &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+      &.active {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  .pattern {
+    position: absolute;
+    right: -3%;
+    top: -19%;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+/* Uber Service */
+
+.uber-service {
+  overflow: visible;
+  .text-block {
+    margin-top: 270px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 150px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 0px;
+    }
+  }
+  .image-block {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    & > img {
+      border-radius: 4px;
+    }
+    .pattern {
+      position: absolute;
+      right: -8.5%;
+      bottom: -21%;
+      z-index: -1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &:before {
+      content: "";
+      mix-blend-mode: soft-light;
+      background: #7eb6d9;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
+/* Uber Customers */
+
+.uber-customers {
+  padding: $section-padding;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  &-holder {
+    background-color: $sky;
+    padding: 130px 0 100px;
+    @include media-breakpoint-down(lg) {
+      padding: 100px 0 70px;
+    }
+    @include media-breakpoint-down(lg) {
+      padding: 50px 0 30px;
+    }
+  }
+  .uber-customers__slider {
+    margin-bottom: 40px;
+    overflow: visible;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 30px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+    .slider {
+      transition-timing-function: linear !important;
+    }
+    .customer {
+      flex: 0 0 20%;
+      width: 20%;
+      margin-right: 30px;
+      background: $white;
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      padding: 20px;
+      border-radius: $border-radius;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      color: $black;
+      @include media-breakpoint-down(xl) {
+        flex: 0 0 35%;
+        width: 35%;
+      }
+      @include media-breakpoint-down(lg) {
+        flex: 0 0 40%;
+        width: 40%;
+      }
+      @include media-breakpoint-down(md) {
+        flex: 0 0 60%;
+        width: 60%;
+        margin-right: 20px;
+        padding: 15px;
+      }
+      @include media-breakpoint-down(sm) {
+        flex: 0 0 80%;
+        width: 80%;
+      }
+      .logo {
+        flex: 0 0 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 25px;
+        @include media-breakpoint-down(md) {
+          margin-right: 15px;
+        }
+      }
+      .title {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+        span {
+          display: block;
+          font-weight: $font-weight-bold;
+          margin-bottom: 0px;
+          font-size: $font-size-base;
+        }
+      }
+    }
+  }
+  .uber-customers__button {
+    margin-top: 80px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+    .button {
+      color: $body-color;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+
+/* Uber Kompetente */
+
+.uber-kompetente {
+  &__holder {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    position: relative;
+    padding-left: 130px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    @include media-breakpoint-down(lg) {
+      height: 700px;
+    }
+    @include media-breakpoint-down(md) {
+      height: auto;
+      padding: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 50px 15px;
+    }
+    &:before {
+      content: "";
+      mix-blend-mode: soft-light;
+      background: $dark-sky;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
+/* Uber Vorteile */
+
+.uber-vorteile {
+  background: $sky;
+  .text-block {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+  }
+  &-holder {
+    [class^="col-"] {
+      margin: 15px 0;
+    }
+  }
+  &-single {
+    background-color: $white;
+    padding: 45px 20px 25px;
+    box-shadow: $box-shadow;
+    border-radius: 7px;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    @include media-breakpoint-down(xl) {
+      padding: 30px 20px 25px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 30px 15px 25px;
+    }
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
+    &-top {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 30px;
+      min-height: 70px;
+      @include media-breakpoint-down(md) {
+        min-height: 50px;
+      }
+      @include media-breakpoint-down(sm) {
+        min-height: 100%;
+      }
+      &-img {
+        margin-right: 15px;
+        flex: 0 0 60px;
+        @include media-breakpoint-down(xl) {
+          flex: 0 0 50px;
+        }
+      }
+      .h4 {
+        margin-bottom: 5px;
+      }
+    }
+    .h5 {
+      font-weight: bold;
+    }
+    p {
+      margin-bottom: 0;
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+}
+
+/* Uber Spezialisiert */
+.uber-spezialisiert {
+  .image-block {
+    margin-right: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-right: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-right: 0px;
+    }
+    &:before {
+      content: "";
+      mix-blend-mode: soft-light;
+      background: $dark-sky;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+    img {
+      max-height: 680px;
+      @include media-breakpoint-down(md) {
+        max-height: 100%;
+      }
+    }
+    .pattern {
+      position: absolute;
+      right: -22.5%;
+      top: -9%;
+      z-index: -1;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+  }
+  .text-block {
+    margin-top: 270px;
+    @include media-breakpoint-down(lg) {
+      margin-top: 150px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 0px;
+    }
+
+    ul {
+      li {
+        padding: 20px 0;
+        border-bottom: 1px solid $secondary;
+        margin-bottom: 0;
+        @include media-breakpoint-down(md) {
+          padding: 15px 0;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+
+/* Uber Grid */
+
+.uber-grid {
+  .grid-img-single {
+    position: relative;
+    &:before {
+      content: "";
+      mix-blend-mode: soft-light;
+      background: $dark-sky;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+}
+
+
+/* Uber Image banner */
+
+.uber-image {
+  position: relative;
+  height: 572px;
+  margin-bottom: 50px;
+  @include media-breakpoint-down(lg) {
+    height: 500px;
+  }
+  @include media-breakpoint-down(md) {
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 400px;
+  }
+  &:before {
+    content: "";
+    mix-blend-mode: soft-light;
+    background: $dark-sky;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+}

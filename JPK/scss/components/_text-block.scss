@@ -1,0 +1,18 @@
+.text-block {
+    width: 100%;
+    .text {
+        &.pad_left {
+            padding-left: 100px;
+            @include media-breakpoint-down(xxl) {
+                padding-left: 0px;
+            }
+        }
+        &.pad_right {
+            padding-right: 100px;
+            @include media-breakpoint-down(xxl) {
+                padding-right: 0px;
+            }
+        }
+    }
+
+}

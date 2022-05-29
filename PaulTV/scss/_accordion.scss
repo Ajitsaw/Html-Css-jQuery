@@ -1,0 +1,65 @@
+
+
+.faq {
+    z-index: 4;
+    .circle--74 {
+        right: 3%;
+        top: 17%;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+    .circle--142 {
+        right: -2%;
+        top: -11%;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+    }
+    .faq__accordion {
+        .accordion {
+            border-bottom: solid 1px $primary;
+            .acc-title {
+                position: relative;
+                color: $primary;
+                cursor: pointer;
+                padding: 12px 0;
+                span {
+                    position: absolute;
+                    display: block;
+                    height: 3px;
+                    width: 12px;
+                    background: $secondary;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 0.3s ease;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 3px;
+                        height: 12px;
+                        background: $secondary;
+                    }
+                }
+                &.open {
+                    span {
+                        transform: translateY(-50%) rotateZ(180deg);
+                        &:after {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+            .acc-content {
+                display: none;
+                .inner {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}

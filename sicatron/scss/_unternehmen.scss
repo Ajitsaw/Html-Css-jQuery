@@ -1,0 +1,72 @@
+
+.qualitat {
+    &-image {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 150px 0;
+        @include media-breakpoint-down(md) {
+            padding: 100px 0 100px 30px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 100px 15px 100px;
+        }
+    }
+}
+
+.qualitatspolitik {
+    .image-block {
+        margin-right: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-right: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-right: 0px;
+        }
+        img {
+            max-height: 680px;
+            @include media-breakpoint-down(lg) {
+                max-height: 550px;
+                
+            }
+            @include media-breakpoint-down(md) {
+                max-height: 100%;
+            }
+        }
+    }
+    .text-block {
+        ul {
+            li {
+                border-bottom: 1px solid $secondary;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                padding-left: 0;
+                &:before {
+                    display: none;
+                }
+                &:after {
+                    content: '...';
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+.image-bg {
+    height: 570px;
+    @include media-breakpoint-down(lg) {
+        height: 500px;
+    }
+    @include media-breakpoint-down(md) {
+        height: 450px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 350px;
+    }
+}
+

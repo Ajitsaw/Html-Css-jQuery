@@ -1,0 +1,250 @@
+/* Global */
+
+$section-padding: 150px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #166E9E;
+$secondary: #D3BF87;
+$gray: #EDEDED;
+$light-gray: #FAFAFA;
+$gray44: #707070;
+$gray94: #f0f0f0;
+$gray91: #E8E8E8;
+$menu: #515150;
+$menu-background: rgba(255,255,255,0.65);
+$sky: #f8f8f8;
+$dark-gray: #3b3b3b;
+$white-smoke: #f8f8f8;
+$gray88: #e0e0e0;
+$charcoal: #454545;
+$light-delphin: #a4d0e5;
+
+$border-radius: 3px;
+
+/* Box shadow */
+$box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+$box-shadow-small: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+/* Font */
+
+$font-family: 'Interstate';
+$font-family-roboto: 'Roboto';
+$font-size-base: 1.25rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 60px;
+$h2-font-size: 35px;
+$h3-font-size: 25px;
+$link-hover-decoration: none;
+
+/* Animation (Keyframes) */
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0.0deg);
+  }
+  10% {
+      transform: rotate(14.0deg);
+  }
+  20% {
+      transform: rotate(-8.0deg);
+  }
+  30% {
+      transform: rotate(14.0deg);
+  }
+  40% {
+      transform: rotate(-4.0deg);
+  }
+  50% {
+      transform: rotate(10.0deg);
+  }
+  60% {
+      transform: rotate(0.0deg);
+  }
+  100% {
+      transform: rotate(0.0deg);
+  }
+}
+
+// Font Face 
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Black.woff2') format('woff2'),
+        url('../font/Overpass-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-ExtraBold.woff2') format('woff2'),
+        url('../font/Overpass-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-ExtraLight.woff2') format('woff2'),
+        url('../font/Overpass-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Bold.woff2') format('woff2'),
+        url('../font/Overpass-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Italic.woff2') format('woff2'),
+        url('../font/Overpass-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Light.woff2') format('woff2'),
+        url('../font/Overpass-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Regular.woff2') format('woff2'),
+        url('../font/Overpass-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-Thin.woff2') format('woff2'),
+        url('../font/Overpass-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Overpass';
+    src: url('../font/Overpass-SemiBold.woff2') format('woff2'),
+        url('../font/Overpass-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Bold.woff2') format('woff2'),
+        url('../font/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Regular.woff2') format('woff2'),
+        url('../font/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Black.woff2') format('woff2'),
+        url('../font/Roboto-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Thin.woff2') format('woff2'),
+        url('../font/Roboto-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Medium.woff2') format('woff2'),
+        url('../font/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto-Light.woff2') format('woff2'),
+        url('../font/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('../font/Interstate-Regular.woff2') format('woff2'),
+        url('../font/Interstate-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('../font/Interstate-Light.woff2') format('woff2'),
+        url('../font/Interstate-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Interstate';
+    src: url('../font/Interstate-Bold.woff2') format('woff2'),
+        url('../font/Interstate-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

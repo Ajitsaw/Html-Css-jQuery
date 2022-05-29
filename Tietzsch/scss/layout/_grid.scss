@@ -1,0 +1,21 @@
+/* Container */
+
+.container {
+    padding: 0 200px;
+    @include media-breakpoint-down(xl) {
+        padding: 0 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 25px;
+    }
+}
+
+/* Container Fluid */
+
+.container-fluid {
+    padding: 0;
+    width: 100%;
+}

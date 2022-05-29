@@ -1,0 +1,19 @@
+// Font Face
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../font/Hellix-Regular.woff2') format('woff2'),
+        url('../font/Hellix-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('../font/Hellix-Bold.woff2') format('woff2'),
+        url('../font/Hellix-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

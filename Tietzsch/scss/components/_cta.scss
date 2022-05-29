@@ -1,0 +1,132 @@
+.cta {
+    @include media-breakpoint-down(lg) {
+        padding: 100px 0 !important;
+    }
+    .bg {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: $primary;
+            mix-blend-mode: multiply;
+            opacity: .5;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .text {
+        h2 {
+            color: $white;
+            margin-bottom: 50px;
+
+            @include media-breakpoint-down(xl) {
+                margin-bottom: 20px;
+            }
+        }
+
+        h4 {
+            color: $white;
+        }
+
+        .button {
+            margin-top: 70px;
+
+            @include media-breakpoint-down(xl) {
+                margin-top: 50px;
+            }
+
+            @include media-breakpoint-down(lg) {
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    .line-top {
+        position: absolute;
+        right: 200px;
+        top: 180px;
+        width: 32%;
+        height: 2px;
+        background-color: $secondary;
+        z-index: 6;
+        @include media-breakpoint-down(xxl) {
+            width: 25%;
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        &:before {
+            content: '';
+            width: 2px;
+            background-color: $secondary;
+            height: 180px;
+            position: absolute;
+            right: 0;
+            bottom: 100%;
+        }
+
+        span {
+            height: 180px;
+            width: 2px;
+            background-color: $secondary;
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            &:after {
+                content: "";
+                width: 18px;
+                height: 18px;
+                border-radius: 100%;
+                border: 2px solid $secondary;
+                position: absolute;
+                left: -8px;
+                bottom: -18px;
+            }
+        }
+    }
+
+    .line-bottom {
+        height: 218px;
+        width: 2px;
+        background-color: $secondary;
+        position: absolute;
+        bottom: 0;
+        right: 25%;
+        z-index: 9;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        &:after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            border: 2px solid $secondary;
+            position: absolute;
+            left: -8px;
+            top: -18px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.about {
+    padding: 240px 0;
+    @include media-breakpoint-down(xl) {
+        padding: 150px 0;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 50px 0;
+    }
+    .image {
+        position: relative;
+        height: 655px;
+        @include media-breakpoint-down(xl) {
+            height: 600px;
+        }
+        @include media-breakpoint-down(lg) {
+            height: auto;
+            margin-bottom: 50px;
+        }
+        & > img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .brush1 {
+            position: absolute;
+            top: -70px;
+            right: -110px;
+            z-index: -1;
+            @media (max-width: 1600px) {
+                top: -40px;
+                right: -70px;
+            }
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+            img {
+                max-width: 357px;
+                @media (max-width: 1600px) {
+                    max-width: 200px;
+                    
+                }
+            }
+        }
+        .brush2 {
+            position: absolute;
+            bottom: -90px;
+            left: -150px;
+            z-index: -1;
+            @media (max-width: 1600px) {
+                bottom: -80px;
+                left: -90px;
+            }
+            @include media-breakpoint-down(lg) {
+                bottom: -50px;
+            }
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+            img {
+                max-width: 248px;
+                @media (max-width: 1600px) {
+                    max-width: 160px;
+                }
+            }
+        }
+    }
+    h2 {
+        @include media-breakpoint-down(lg) {
+            br {
+                display: none;
+            }
+        }
+    }
+}

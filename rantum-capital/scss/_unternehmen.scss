@@ -1,0 +1,174 @@
+.usnternehmen-industry {
+    background: $anthrazit;
+  
+    .text-block {
+      h4 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: $font-weight-semibold;
+        color: $secondary;
+      }
+      h2{
+        color: $white;
+        line-height: 50px;
+        margin-bottom: 50px;
+        letter-spacing: 3.6px;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+    
+        @include media-breakpoint-down(lg) {
+          line-height: 1.1;
+        }
+      }
+      p{
+        font-size: 14px;
+        color: $white;
+        font-family: $font-family-worksans;
+        margin-bottom: 50px;
+        line-height: 28px;
+        letter-spacing: 0.7px;
+        max-width: 486px;
+        @include media-breakpoint-down(lg) {
+          line-height: 1.6;
+          max-width: 100%;
+        }
+      }
+      .button {
+        margin: 0;
+      }
+    }
+  
+    .image-block {
+      margin-top: 308px;
+  
+      @include media-breakpoint-down(lg) {
+        margin-top: 0;
+      }
+    }
+}
+
+.unternehmen-quote {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: $anthrazit;
+    color: $white;
+
+    .quote {
+        text-align: center;
+
+        &_icon {
+            display: inline-block;
+            vertical-align: top;
+            margin: 30px 0 70px;
+
+            @include media-breakpoint-down(md) {
+                margin: 0 0 20px;
+            }
+
+            svg {
+                @include media-breakpoint-down(md) {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+
+        &_content {
+            display: block;
+            max-width: 1206px;
+            margin: 0 auto 58px;
+
+            @include media-breakpoint-down(md) {
+                margin: 0 0 30px;
+            }
+
+            h2 {
+                font-weight: $font-weight-semibold;
+                letter-spacing: 3.6;
+                line-height: 50px;
+
+                @include media-breakpoint-down(lg) {
+                    font-size: 30px;
+                    line-height: 1.2;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                    margin-bottom: 30px;
+                }
+                @include media-breakpoint-down(xs) {
+                    font-size: 22px;
+                }
+
+                &:after {
+                    display: block;
+                    width: 100%;
+                    max-width: 384px;
+                    height: 2px;
+                    background: $white;
+                    margin: 70px auto 0;
+                    content: '';
+
+                    @include media-breakpoint-down(md) {
+                        margin: 30px auto 0;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: 14px;
+            line-height: 16px;
+            max-width: 360px;
+            margin: 0 auto;
+            letter-spacing: 0.7px;
+            font-family: $font-family-worksans;
+        }
+    }
+}
+
+.sustainability {
+  padding: $section-padding;
+
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small
+  }
+
+  .text-block {
+    h4 {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: $font-weight-semibold;
+      color: $secondary;
+    }
+    h2{
+      color: $anthrazit;
+      line-height: 50px;
+      margin-bottom: 50px;
+      letter-spacing: 3.6px;
+      font-weight: $font-weight-semibold;
+      text-transform: uppercase;
+      max-width: 618px;
+  
+      @include media-breakpoint-down(lg) {
+        line-height: 1.1;
+      }
+    }
+    p{
+      font-size: 14px;
+      color: $anthrazit;
+      font-family: $font-family-worksans;
+      margin-bottom: 50px;
+      line-height: 28px;
+      letter-spacing: 0.7px;
+      max-width: 1131px;
+      @include media-breakpoint-down(lg) {
+        line-height: 1.6;
+        max-width: 100%;
+      }
+    }
+    .button {
+      margin: 0;
+    }
+  }
+}

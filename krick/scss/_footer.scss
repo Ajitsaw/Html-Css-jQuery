@@ -1,0 +1,161 @@
+/* Footer */
+
+footer {
+    background: $primary;
+    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+        .col {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    .footer-content {
+        padding: 100px 0 50px;
+        @include media-breakpoint-down(lg) {
+            padding: 80px 0 50px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 50px 0 50px;
+        }
+        &__address {
+            margin-top: 60px;
+            @include media-breakpoint-down(md) {
+                margin-top: 30px;
+            }
+            a {
+                color: $white;
+                width: 100%;
+                margin-bottom: 30px;
+                display: flex;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 20px;
+                }
+            }
+            p,
+            address {
+                margin-bottom: 30px;
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &-bottom {
+            padding-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include media-breakpoint-down(xs) {
+                flex-flow: column;
+                padding-bottom: 15px;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 12px;
+                color: $white;
+                @include media-breakpoint-down(xs) {
+                    margin-bottom: 15px;
+                }
+            }
+            .psm {
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                color: $white;
+                strong,
+                b {
+                    font-weight: bold;
+                }
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+    h5 {
+        text-transform: uppercase;
+        color: $white;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 35px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+    .footer-logo {
+        img {
+            width: auto;
+            @include media-breakpoint-down(md) {
+                width: 100px;
+            }
+        }
+    }
+    .footer-nav {
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: column;
+            @include media-breakpoint-down(md) {
+                margin-top: 0px;
+            }
+            li {
+                margin-right: 0px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+                width: 100%;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 10px;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 10px;
+                    margin-top: 0px;
+                }
+                a {
+                    color: $white;
+                    font-size: 18px;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .footer-social {
+        ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-flow: column;
+            margin-top: 0px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 0px;
+            }
+            @include media-breakpoint-down(md) {
+                flex-flow: row;
+                margin-top: 20px;
+            }
+            li {
+                margin-left: 0px;
+                margin: 5px 0;
+                @include media-breakpoint-down(md) {
+                    margin-left: 0;
+                    margin-right: 0px;
+                }
+                a {
+                    color: $blue;
+                    font-size: 42px;
+                    position: relative;
+                    line-height: 1;
+                    @include media-breakpoint-down(lg) {}
+                    &:hover {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,597 @@
+/* Leistungen About */
+
+.leistungen-about {
+  overflow: visible;
+  padding: 100px 0 145px;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .text-block {
+    margin-left: 130px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0px;
+    }
+  }
+  .image-block {
+    position: relative;
+    margin-right: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-right: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      margin-right: 0px;
+      padding: 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 0px;
+    }
+    & > img {
+      max-height: 500px;
+      @include media-breakpoint-down(md) {
+        max-height: auto;
+      }
+    }
+    
+    &:before {
+      content: "";
+      background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.3;
+      mix-blend-mode: multiply;
+    }
+  }
+  .pattern {
+    position: absolute;
+    right: -10px;
+    bottom: 11%;
+    z-index: 2;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+
+/* leistungen Kompetenzen */
+
+.leistungen-kompetenzen {
+  background-color: $light-gray;
+  @include media-breakpoint-down(sm) {
+
+  }
+  .pattern {
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: 0;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  &-top {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+    }
+    .text {
+      padding-right: 130px;
+      @include media-breakpoint-down(lg) {
+        padding-right: 30px;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__arrow {
+    display: flex;
+    font-size: 26px;
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      justify-content: flex-end;
+      margin-top: 30px;
+      font-size: 20px;
+    }
+    .arrow-left {
+      margin-right: 50px;
+      @include media-breakpoint-down(lg) {
+        margin-right: 30px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__right {
+    overflow: hidden;
+  }
+  &__slider {
+    
+  }
+  &__single {
+    flex: 0 0 40%;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    padding: 40px 40px 50px 30px;
+    margin: 15px 50px 15px 0;
+    @include media-breakpoint-down(lg) {
+      margin: 15px 30px 15px 0;
+    }
+    @include media-breakpoint-down(md) {
+      flex: 0 0 70%;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 30px;
+      flex: 0 0 80%;
+    }
+    @include media-breakpoint-down(xs) {
+      flex: 0 0 100%;
+    }
+    &_image {
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      img {
+        max-width: 50px;
+      }
+    }
+    &_text {
+      .h4 {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 30px;
+        }
+      }
+      p {
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300;
+      }
+    }
+  }
+
+}
+
+/* leistungen facts */
+
+.leistungen-facts {
+  background: #f0f0f0;
+  &:before {
+    content: '';
+    background: $primary;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 44%;
+    height: 100%;
+    z-index: 0;
+    @include media-breakpoint-down(lg) {
+      width: 46%;
+    }
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+  .text-block {
+    color: $white;
+    @include media-breakpoint-down(md) {
+      color: $primary;
+    }
+  }
+  &-holder {
+    margin-left: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    @media (max-width: 1700px) {
+      margin-left: 0px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+    .leistungen-facts-single {
+      margin: 35px 50px 35px 0;
+      min-width: 280px;
+      @media (max-width: 1850px) {
+        margin: 35px 30px 35px 0;
+        min-width: 260px;
+      }
+      @include media-breakpoint-down(lg) {
+        margin: 15px 30px 15px 0;
+      }
+      @include media-breakpoint-down(md) {
+        min-width: 300px;
+      }
+      .h1 {
+        color: $secondary;
+        margin-bottom: 5px;
+      }
+      .h4 {
+
+      }
+    }
+  }
+}
+
+/* leistungen Grid */
+
+.leistungen-grid {
+  margin: 0;
+  padding: 145px 0;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .pattern {
+    position: absolute;
+    left: -10px;
+    bottom: 10.5%;
+    z-index: 2;
+    transform: rotateX(180deg);
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+/* Faq */
+
+.leistungen-faq {
+  padding: 170px 0 120px;
+  @include media-breakpoint-down(lg) {
+    padding: 80px 0 60px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 50px 0;
+  }
+  .text-block {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+    }
+    .h2 {
+      text-transform: uppercase;
+    }
+  }
+  .accordion {
+    width: 100%;
+    text-align: left;
+    .cross-icon {
+      position: absolute;
+      right: 0;
+      left: auto;
+      top: 26px;
+      margin-right: 0px;
+      width: 12px;
+      height: 12px;
+      i {
+        color: $secondary;
+        &:before {
+          font-weight: 900;
+        }
+      }
+      span {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:before {
+          content: "";
+          width: 12px;
+          height: 2px;
+          background-color: $primary;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: 50%;
+          transform: translate(0, -50%);
+         
+        }
+        &:after {
+          content: "";
+          width: 2px;
+          height: 12px;
+          background-color: $primary;
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, 0);
+          right: 0;
+          top: 0px;
+        }
+      }
+    }
+    &-list {
+      overflow: hidden;
+      margin-bottom: 0px;
+      border-bottom: 1px solid $primary;
+      position: relative;
+      @include media-breakpoint-down(lg) {
+      }
+      &:last-child {
+        margin-bottom: 0;
+        //border-bottom: none;
+        .accordion-list-head,
+        .accordion-list-content {
+          border-color: transparent;
+        }
+      }
+      &-head {
+        display: flex;
+        align-items: center;
+        padding: 16px 20px 16px 0;
+        cursor: pointer;
+        color: $primary;
+        &.active {
+          border-bottom: none;
+          color: $primary;
+          .cross-icon {
+            //transform: rotate(180deg);
+            span {
+              &:after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      &-content {
+        display: none;
+        padding: 15px 20px 30px 00px;
+        position: relative;
+        color: $primary;
+        @include media-breakpoint-down(sm) {
+          padding: 0px 0px 30px 0px;
+        }
+        p:last-child {
+          margin-bottom: 0;
+        }
+        img,
+        video,
+        iframe {
+          max-width: 600px;
+          margin-top: 30px;
+          @include media-breakpoint-down(sm) {
+            max-width: 100%;
+          }
+        }
+        a {
+          text-decoration: underline;
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* Leistungen Details One */
+
+.leistungen-details-one {
+  overflow: visible;
+  padding: 100px 0 145px;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .text-block {
+    margin-right: 130px;
+    @include media-breakpoint-down(lg) {
+      margin-right: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right: 0px;
+    }
+  }
+  .image-block {
+    position: relative;
+    margin-left: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      margin-left: 0px;
+      padding: 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 0px;
+    }
+    & > img {
+      max-height: 500px;
+      @include media-breakpoint-down(md) {
+        max-height: auto;
+      }
+    }
+    .pattern {
+      position: absolute;
+      right: -3%;
+      bottom: -10%;
+      z-index: 2;
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+    &:before {
+      content: "";
+      background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.3;
+      mix-blend-mode: multiply;
+    }
+  }
+}
+
+/* Leistungen Details Two */
+
+.leistungen-details-two {
+  overflow: visible;
+  padding: 100px 0 145px;
+  @include media-breakpoint-down(lg) {
+    padding: $section-padding-medium;
+  }
+  @include media-breakpoint-down(md) {
+    padding: $section-padding-small;
+  }
+  .text-block {
+    margin-left: 130px;
+    @include media-breakpoint-down(lg) {
+      margin-left: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-left: 0px;
+    }
+  }
+  .image-block {
+    position: relative;
+    margin-right: 100px;
+    @include media-breakpoint-down(lg) {
+      margin-right: 50px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 30px;
+      margin-right: 0px;
+      padding: 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 0 0px;
+    }
+    & > img {
+      max-height: 500px;
+      @include media-breakpoint-down(md) {
+        max-height: auto;
+      }
+    }
+    
+    &:before {
+      content: "";
+      background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.3;
+      mix-blend-mode: multiply;
+    }
+  }
+  .pattern {
+    position: absolute;
+    right: -10px;
+    bottom: 11%;
+    z-index: 2;
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+/* Leistungen Anwendungs */
+
+.leistungen-anwendungs {
+  background: $light-gray;
+  .h2, h2 {
+    text-transform: uppercase;
+  }
+  &-block {
+    ul {
+      display: flex;
+      flex-flow: row wrap;
+      @include media-breakpoint-down(md) {
+        margin-top: 30px;
+      }
+      li {
+        width: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: $primary;
+        padding-left: 20px;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+          font-size: 18px;
+        }
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+          margin-bottom: 20px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        &:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $secondary;
+          border-radius: 100%;
+          position: absolute;
+          left: 0;
+          top: 11px;
+          @include media-breakpoint-down(lg) {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Leistungen Versprechen */
+
+.leistungen-versprechen {
+  background-color: $primary;
+  color: $white;
+  .h2 {
+    text-transform: uppercase;
+  }
+  &-holder {
+    margin-top: 70px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 30px;
+      .col {
+        flex: 0 0 100%;
+        @include media-breakpoint-down(sm) {
+          margin-top: 30px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  &-single {
+    color: $white;
+    text-align: center;
+    .image {
+      margin-bottom: 30px;
+      height: 80px;
+      @include media-breakpoint-down(sm) {
+        height: auto;
+      }
+    }
+  }
+} 

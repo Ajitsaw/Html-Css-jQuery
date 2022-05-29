@@ -1,0 +1,313 @@
+.erfolgs-banner {
+    padding: 0;
+    background-color: $midnight;
+    min-height: 100vh;
+  
+    &__holder {
+        width: 100%;
+        position: absolute;
+        top:50%;
+        -webkit-transform:translateY(-50%);
+        -ms-transform:translateY(-50%);
+        -moz-transform:translateY(-50%);
+        transform:translateY(-50%);
+        z-index: 9;
+        &__title{
+            max-width:880px;
+            margin: 0 auto;
+            h1 {
+                color: $white;
+                text-align: left;
+                margin-bottom: 0;
+            } 
+        } 
+    }
+    .bullets {
+        position: absolute;
+        z-index: 11;
+        left: 0;
+        right: 0;
+        bottom: 120px;
+
+        @include media-breakpoint-down(xs){
+            bottom: 60px;
+        }
+
+        span {
+            border: 2px solid $white;
+            background: transparent;
+            box-shadow: none;
+
+            &.active {
+                border-color: $secondary;
+                background: $secondary;
+            }
+        }
+    }
+    .scroll {
+        position: absolute;
+        left: 0;
+        right: 0;
+        max-width: 30px;
+        margin: 0 auto;
+        color: #fff;
+        bottom: 70px;
+        z-index: 999;
+        font-size: 20px;
+        text-align: center;
+        @include media-breakpoint-down(xs){
+            bottom: 20px;
+        }
+    }
+
+    &__slider {
+        height: 100%;
+        position: absolute !important;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+  
+        &:before {
+            width: 50%;
+            height: 100%;
+            backdrop-filter: blur(7px);
+            content: '';
+            z-index: 9;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+  
+        &-single {
+            mix-blend-mode: lighten;
+            img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+                mix-blend-mode: difference;
+                opacity: 0.85;
+            }
+            &.swiper-slide-active {
+                opacity: 1 !important;
+            }
+            .heading {
+                position: relative;
+                display: flex;
+                align-items: flex-start;
+
+                img {
+                    filter: brightness(0) invert(1);
+                    margin-left: 50px;
+                    margin-top: 120px;
+                    @include media-breakpoint-down(lg) {
+                        margin-top: 70px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .erfolgsbanner-button{
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        z-index:11;
+        width:20px;
+        @include media-breakpoint-down(sm){
+          display: none;
+        }
+    
+        &:hover{
+          -webkit-transform: scale(1.4) translateY(-50%);
+          -moz-transform: scale(1.4) translateY(-50%);
+          -ms-transform: scale(1.4) translateY(-50%);
+          transform: scale(1.4) translateY(-50%);
+          svg{
+            path{
+                stroke: $denim;
+            }
+          }
+        }
+        &-prev{
+          left: 10%;
+          @include media-breakpoint-down(md){
+            left: 40px;
+          }
+        }
+        &-next{
+          right: 10%;
+          @include media-breakpoint-down(md){
+            right: 40px;
+          }
+        }
+      }
+}
+
+
+
+//erfolgs-ruhr
+.erfolgs-ruhr{
+    .text-block{
+        h5{
+            color: $primary;
+        }
+        p{
+            max-width: 451px;
+        }
+    }
+    .image-block{
+        margin-top: 50px;
+        @include media-breakpoint-down(sm) {
+            margin-top: 0;
+        }
+    }
+}
+  
+//erfolgs-unser
+.erfolgs-unser{
+    &-image{
+        height: 100%;
+        @include media-breakpoint-down(md) {
+            height: auto;
+            margin-bottom:0;
+        }
+        img{
+            object-position: center;
+            @include media-breakpoint-down(lg) {
+                max-height: 100% !important;
+            }
+        }
+    }
+    &-textblock{
+        background: $limerick;
+        padding: 110px 200px 110px 140px;
+        height: 100%;
+        @include media-breakpoint-down(xl) {
+            padding: 80px 120px 80px 80px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 60px 80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 50px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 30px 15px;
+        }
+        h5{
+            color: $white;
+        }
+        h2{
+            max-width: 485px;
+            color: $white;
+        }
+        p{
+            color: $white;
+            max-width: 451px;
+        }
+    }
+}
+
+//erfolgs-dasziel
+.erfolgs-dasziel{
+    &-image{
+        height: 100%;
+        max-width: 1070px;
+        float: right;
+        @include media-breakpoint-down(md){
+            height: auto;
+            max-width: 100%;
+        }
+        img{
+            object-position: center;
+            @include media-breakpoint-down(md){
+                max-height: inherit;
+            }
+        }
+    }
+    &-textblock{
+        padding: 10px 80px 10px 200px;
+        height: 100%;
+        @include media-breakpoint-down(xl){
+            padding:10px 40px 10px 120px;
+        }
+        @include media-breakpoint-down(lg){
+            padding:10px 30px 10px 80px;
+        }
+        @include media-breakpoint-down(md){
+            padding:0 50px;
+        }
+        @include media-breakpoint-down(sm){
+            padding:0;
+        }
+        h5{
+            color: $limerick;
+        }
+        h2{
+            max-width: 485px;
+            color: $midnight;
+        }
+        p{
+            color: $midnight;
+            max-width: 451px;
+        }
+    }
+}
+  
+
+.erfolgs-ziele{
+    padding-bottom: 60px;
+    h2{
+        margin-bottom: 90px;
+        @include media-breakpoint-down(xl){
+            margin-bottom: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 50px;
+        }
+    }
+    &__single{
+        margin-bottom: 90px;
+        @include media-breakpoint-down(xl){
+            margin-bottom: 70px;
+        }
+        @include media-breakpoint-down(lg){
+            margin-bottom: 50px;
+        }
+        
+        h3{
+            font-size:29px;
+            line-height: 39px;
+            max-width: 350px;
+            letter-spacing: 3.48px;
+            color: $limerick;
+            text-transform: uppercase;
+
+            @include media-breakpoint-down(xl){
+                letter-spacing: 3px;
+                font-size:25px;
+                line-height: 35px;
+            }
+            @include media-breakpoint-down(lg){
+                letter-spacing: 2.48px;
+            }
+            @include media-breakpoint-down(md){
+                letter-spacing: 1.5px;
+                font-size: 20px;
+                line-height: 34px;
+            }
+            @include media-breakpoint-down(sm){
+                letter-spacing: 1.5px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

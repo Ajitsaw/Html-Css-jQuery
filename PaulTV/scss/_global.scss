@@ -1,0 +1,43 @@
+
+
+/* Body */
+
+body {
+    transition: all 0.3s ease;
+    position: relative;
+    color: $primary;
+    overflow-x: hidden;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 400;
+    font-family: $font-family-base;
+    @include media-breakpoint-down(xl) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &.menu-open {
+        overflow: hidden;
+    }
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.swiper-container {
+    overflow: hidden;
+}

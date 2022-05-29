@@ -1,0 +1,117 @@
+
+/* Select2 */
+
+.select2 {
+    .select2-selection {
+        padding: 11px 6px;
+        height: auto;
+        @include media-breakpoint-down(md) {
+            padding: 8px 6px;
+        }
+        .select2-selection__rendered {
+            padding-right: 10px !important;
+            padding-left: 0  !important;
+            color: $primary !important;
+            font-size: 22px !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            @media (max-width: 1850px) {
+              font-size: 20px !important;
+            }
+            @media (max-width: 1600px) {
+              font-size: 18px !important;
+            }
+            @include media-breakpoint-down(xl) {
+                font-size: 16px !important;
+            }
+        }
+        &:before {
+            content: "\f107";
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 400;
+            position: absolute;
+            top: -3px;
+            right: 0px;
+            border-left: none;
+            padding-left: 10px;
+            color: $secondary;
+            font-size: 22px;
+        }
+    }
+    .select2-selection__arrow {
+        display: none;
+    }
+    .select2-results__option--highlighted.select2-results__option--selectable, 
+    .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+      background-color: #F0F4F7 !important;
+      color: $primary !important;
+    }
+    
+  }
+  
+  .select2-container {
+    font-size: 15px;
+    @include media-breakpoint-down(lg) {
+        max-width: 300px;
+    }
+    .select2-results__option--disabled {
+        display: none;
+    }
+    .select2-selection--single {
+      height: auto !important;
+      border: none !important;
+      border-radius: 0 !important;
+      border-bottom: 2px solid $primary !important;
+      padding: 0;
+      background: transparent !important;
+      padding-bottom: 5px !important;
+    }
+  }
+  
+  .select2-container--default .select2-results>.select2-results__options {
+    max-height: 500px !important;
+    overflow-y: auto;
+  }
+  .select2-container--default .select2-results__option--selected {
+    background-color: $primary !important;
+  }
+  
+  .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $secondary !important;
+    color: $white !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .select2-results__option {
+    background-color: $primary !important;
+    padding: 20px 25px !important;
+    color: $white !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    @include media-breakpoint-down(xl) {
+        padding: 15px !important;
+    }
+    &:last-child {
+        &:after {
+            display: none;
+        }
+    }
+    &:after {
+        content: '';
+        height: 1px;
+        width: calc(100% - 50px);
+        position: absolute;
+        background: #fff;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0;
+        @include media-breakpoint-down(xl) {
+            width: calc(100% - 30px);
+        }
+    }
+  }

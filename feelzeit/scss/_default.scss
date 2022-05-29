@@ -1,0 +1,125 @@
+.defaults {
+    padding: 130px 0;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text-block {
+        h1 {
+            margin-bottom: 55px;
+            text-transform: none;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(sm) { 
+                margin-bottom: 30px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.default-block {
+    display: flex;
+    flex-flow: column;
+    line-height: 1.2;
+    @include media-breakpoint-down(sm) {
+        line-height: 1;
+    }
+    h2 {
+        margin-bottom: 30px;
+        position: relative;
+    }
+    h3 {
+        margin: 0px 0 50px;
+        font-weight: bold;
+        @include media-breakpoint-down(lg) {
+            margin: 0px 0 35px;
+        }
+        @include media-breakpoint-down(md) {
+            margin: 0px 0 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin: 0px 0 20px;
+        }
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    h5 {
+        margin: 0px 0 40px;
+        font-weight: bold;
+        @include media-breakpoint-down(lg) {
+            margin: 0px 0 35px;
+        }
+        @include media-breakpoint-down(md) {
+            margin: 0px 0 35px;
+        }
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+    p {
+        margin-bottom: 35px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 20px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    img,
+    video {
+        width: 100%;
+        max-height: 375px;
+        @include media-breakpoint-down(sm) {
+            margin: 30px 0;
+        }
+    }
+    ul {
+        margin: 30px 0px 0;
+        ul {
+            margin: 20px 0;
+        }
+        li {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 40px;
+            font-size: 20px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 15px;
+                padding-left: 30px;
+                font-size: 18px;
+            }
+            @include media-breakpoint-down(sm) {
+                margin-left: 5px;
+            }
+            &:last-child {
+                margin: 0 0 0;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0px;
+                display: block;
+                top: 4px;
+                width: 13px;
+                height: 19px;
+                border: solid $secondary;
+                border-width: 0 4px 4px 0;
+                transform: rotate(45deg);
+                @include media-breakpoint-down(lg) {
+                    width: 10px;
+                    height: 16px;
+                    border-width: 0 3px 3px 0;
+                }
+            }
+        }
+    }
+}

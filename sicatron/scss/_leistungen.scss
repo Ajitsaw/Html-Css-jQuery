@@ -1,0 +1,232 @@
+.leistungen-single {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+        height: auto;
+        padding: 100px 0;
+    }
+    @include media-breakpoint-down(sm) {
+        height: auto;
+        padding: 50px 0;
+    }
+    &:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 150%);
+        opacity: .75;
+    }
+    .text-block {
+
+    }
+    .button {
+        &:hover {
+            border-color: $white;
+            background-color: transparent;
+        }
+    }
+    &.reverse {
+        .text-block {
+            text-align: right;
+            @include media-breakpoint-down(sm) {
+                text-align: left;
+            }
+        }
+        &:before { 
+            transform: scaleX(-1);
+            @include media-breakpoint-down(sm) {
+                transform: none;
+            }
+        }
+    }
+}
+
+.content {
+    .image-block {
+        max-height: 535px;
+        @include media-breakpoint-down(lg) {
+            max-height: 500px;
+        }
+        @include media-breakpoint-down(md) {
+            max-height: 100%;
+            height: auto;
+        }
+    }
+}
+
+.text-block.text-right {
+    @include media-breakpoint-down(md) {
+        text-align: left !important;
+    }
+}
+
+
+.vorteile {
+    padding: 100px 0 50px;
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 50px;
+    }
+    &-single {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 50px 0;
+        @include media-breakpoint-down(sm) {
+            margin: 15px 0;
+        }
+        &-img {
+            margin-bottom: 30px;
+        }
+        &-text {
+            color: $white;
+            text-align: center;
+            padding: 0 20px;
+            .h5 {
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 13px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.leistungen-about {
+    padding: 50px 0;
+    @include media-breakpoint-down(lg) {
+        padding: 30px 0;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 35px 0;
+    }
+    .text-block {
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    &-holder {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    &-single {
+        width: calc(50% - 50px);
+        margin: 50px 0;
+        display: flex;
+        @include media-breakpoint-down(lg) {
+            width: calc(50% - 30px);
+        }
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            margin: 15px 0;
+        }
+        &-left {
+            font-size: 60px;
+            color: $secondary;
+            margin-right: 40px;
+            margin-top: 0px;
+            @include media-breakpoint-down(lg) {
+                font-size: 40px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 36px;
+                margin-right: 30px;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 30px;
+                margin-right: 15px;
+            }
+            @include media-breakpoint-down(xs) {
+                font-size: 26px;
+            }
+        }
+        &-right {
+            color: $white;
+            margin-top: 50px;
+            @include media-breakpoint-down(md) {
+                margin-top: 0px;
+            }
+            .h5 {
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+        
+    }
+}
+
+
+.leistungen-img {
+    display: grid;
+    grid-template-columns: 25% 25% 26% 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    @include media-breakpoint-down(md) {
+        display: flex;
+        grid-gap: 15px;
+        flex-flow: column;
+    }
+    &-single {
+        height: 100%;
+        @include media-breakpoint-down(md) {
+            max-height: 450px;
+            height: auto;
+        }
+        @include media-breakpoint-down(sm) {
+            max-height: 100%;
+        }
+        &:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            max-height: 621px;
+            @include media-breakpoint-down(md) {
+                max-height: 450px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-height: 100%;
+            }
+
+        }
+        &:nth-child(2) {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            max-height: 621px;
+            @include media-breakpoint-down(md) {
+                max-height: 450px;
+            }
+            @include media-breakpoint-down(sm) {
+                max-height: 100%;
+            }
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.faq {
+    .text-block {
+        margin-bottom: 60px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+}

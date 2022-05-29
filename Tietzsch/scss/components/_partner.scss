@@ -1,0 +1,70 @@
+.partner {
+    .line {
+        height: 2px;
+        width: 50%;
+        background-color: $secondary;
+        position: absolute;
+        top: 30px;
+        right: 0%;
+        z-index: 9;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        &:after {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            border: 2px solid $secondary;
+            position: absolute;
+            top: -8px;
+            left: -18px;
+        }
+    }
+    .single {
+        margin: 15px 0;
+        position: relative;
+        .img {
+            height: 228px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 1.8;
+            .name {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-weight: bold;
+                margin-bottom: 0px;
+            }
+            .sub {
+
+            }
+        }
+    }
+    &.partner--var {
+        
+        .single {
+            .img {
+                height: 243px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                margin: 0 0 20px 20px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+        
+    }
+}

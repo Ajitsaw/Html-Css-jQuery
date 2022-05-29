@@ -1,0 +1,189 @@
+.footer {
+    padding: 30px 0 40px;
+    position: relative;
+    background: $white-smoke;
+
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
+    &-logo {
+        margin-bottom: 65px;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 35px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+        img {
+            max-height: 90px;
+            @include media-breakpoint-down(xl) {
+                height: 70px;
+            }
+            @include media-breakpoint-down(md) {
+                height: 70px;
+            }
+        }
+    }
+    &-main {
+        position: relative;
+    }
+    &-block {
+        font-size: 14px;
+        line-height: 28px;
+        padding-top: 40px;
+        font-weight: $font-weight-normal;
+
+        @include media-breakpoint-down(sm) {
+            padding-top: 30px;
+        }
+        &-address {
+            margin: 55px 0 30px;
+            color:$midnight;
+            max-width: 166px;
+            @include media-breakpoint-down(sm) {
+                margin-top: 0;
+            }
+        }
+        a {
+            display: flex;
+            color:$white;
+            margin-bottom: 10px;;
+            line-height: 22px;
+            
+
+            &:hover {
+                color: $denim;
+            }
+        }
+        
+        .icons {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 70px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+                justify-content: flex-start;
+            }
+            a {
+                margin-left: 12px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                img {
+                    @include media-breakpoint-down(lg) {
+                        width: 45px;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        width: 35px;
+                    }
+                }
+            }
+        }
+        .newsletter {
+            text-decoration: underline;
+        }
+        a {
+            color: $midnight;
+            font-family: $font-family;
+            letter-spacing: 0;
+            font-size: 14px;
+        }
+    }
+    &-heading {
+        font-size: 20px;
+        margin-bottom: 25px;
+        color: $midnight;
+        font-weight: $font-weight-semibold;
+        
+        @include media-breakpoint-down(lg) {
+            font-size: 18px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 20px;
+        }
+        &-right {
+            text-align: right;
+            @include media-breakpoint-down(md) {
+                text-align: left;
+            }
+        }
+    }
+    &-bottom {
+        color: $white;
+        margin-top: 50px;
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+        }        
+        p{
+            color: $midnight;
+        }
+
+        &-menu {
+            display: flex;
+            justify-content: flex-end;
+            @include media-breakpoint-down(md) {
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            a {
+                color: $white;
+                line-height: 1;
+                font-family: $font-family;
+                font-size: 14px;
+
+                &:hover {
+                    color: $secondary;
+                }
+                &:nth-last-child(2) {
+                    border-right: 1px solid $white;
+                    margin-right: 7px;
+                    padding-right: 7px;
+                }
+            }
+        }
+        &-rightimg{
+            max-width: 410px;
+            @include media-breakpoint-down(md){
+                margin-top: 30px;
+            }
+            img{
+                max-width: 100%;
+                mix-blend-mode: darken;
+            }
+        }
+            
+    }
+}
+.pl-50 {
+    padding-left: 50px;
+    position: relative;
+    @include media-breakpoint-down(md) {
+        padding-left: 0px;
+    }    
+}
+
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+    a {
+        color: $white;
+        display: flex;
+        margin-right: 15px;
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        border-radius:50%;
+        background:$denim;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            color: $white;
+        }
+    }
+}

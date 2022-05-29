@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IAT</title>
+
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/plugin.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+</head>
+
+<body>
+    <div class="loader">
+        <span class="loader-inner"></span>
+    </div>
+    <header>
+        <div class="header-main">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                        <a href="index.html" class="logo">
+                            <img src="img/site-logo.png">
+                        </a>
+                    </div>
+                    <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                        <nav class="main-nav d-none d-lg-block">
+                            <ul>
+                                <li>
+                                    <a href="events.html">Events</a>
+                                </li>
+                                <li>
+                                    <a href="erfolgsfeschichtem.html">ERFOLGSGESCHICHTEN <i class="fal fa-angle-down"></i></a>
+
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Logistik</a></li>
+                                        <li><a href="#">Pflege</a></li>
+                                        <li><a href="#">Produktion</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="themen.html">Themen</a>
+                                </li>
+                                <li>
+                                    <a href="uber-uns.html">ÜBER UNS</a>
+                                </li>
+                                <li>
+                                    <a href="kontak.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="nav-search">
+                            <a>
+                                <svg id="Component_335_2" data-name="Component 335 – 2" xmlns="http://www.w3.org/2000/svg" width="34.01" height="34" viewBox="0 0 34.01 34">
+                                    <path id="Path_118265" data-name="Path 118265" d="M32.871,46.759a13.806,13.806,0,0,0,8.561-2.965l9.2,9.2,2.354-2.354-9.2-9.2a13.88,13.88,0,1,0-10.915,5.319Zm0-24.428A10.549,10.549,0,1,1,22.323,32.879,10.549,10.549,0,0,1,32.871,22.331Z" transform="translate(-18.981 -18.999)" fill="#f8f8f8"/>
+                                </svg>                                                                   
+                            </a>
+                        </div>
+                        <div class="nav-toggle">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-search">
+            <div class="container">
+                <div class="header-search__form">
+                    <input placeholder="SUCHEN..." type="text" name="" id="">
+                    <button type="button" class="noborder denim solid button search_btn">
+                        <span>JETZT SUCHEN</span>
+                        <svg id="Component_335_2" data-name="Component 335 – 2" xmlns="http://www.w3.org/2000/svg" width="34.01" height="34" viewBox="0 0 34.01 34">
+                            <path id="Path_118265" data-name="Path 118265" d="M32.871,46.759a13.806,13.806,0,0,0,8.561-2.965l9.2,9.2,2.354-2.354-9.2-9.2a13.88,13.88,0,1,0-10.915,5.319Zm0-24.428A10.549,10.549,0,1,1,22.323,32.879,10.549,10.549,0,0,1,32.871,22.331Z" transform="translate(-18.981 -18.999)" fill="#f8f8f8"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="search__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <path id="Icon_material-close" data-name="Icon material-close" d="M28.5,9.615,26.385,7.5,18,15.885,9.615,7.5,7.5,9.615,15.885,18,7.5,26.385,9.615,28.5,18,20.115,26.385,28.5,28.5,26.385,20.115,18Z" transform="translate(-7.5 -7.5)" fill="#f8f8f8"/>
+                </svg>                  
+            </a>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__logo">
+            <a href="index.html">
+                <img src="img/site-logo.png">
+            </a>
+        </div>
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="events.html">Events</a>
+                </li>
+                <li>
+                    <a href="erfolgsfeschichtem.html">ERFOLGSGESCHICHTEN</a>
+                </li>
+                <li>
+                    <a href="themen.html">Themen</a>
+                </li>
+                <li>
+                    <a href="uber-uns.html">ÜBER UNS</a>
+                </li>
+                <li>
+                    <a href="kontak.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <a href="#scroll-up" class="scroll-up">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25.243" height="24" viewBox="0 0 25.243 24">
+            <g id="Icon_feather-arrow-down" data-name="Icon feather-arrow-down" transform="translate(23.121 22.5) rotate(180)">
+              <path id="Path_118268" data-name="Path 118268" d="M18,7.5v21" transform="translate(-7.5 -7.5)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+              <path id="Path_118269" data-name="Path 118269" d="M28.5,18,18,28.5,7.5,18" transform="translate(-7.5 -7.5)" fill="none" stroke="#f8f8f8" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+            </g>
+        </svg>          
+    </a>
+
+    <main id="scroll-up">
+        <section class="common-banner eventone-banner">
+            <div class="image">
+                <img src="img/event-one-banner.png" alt="kontakt">
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-block text-white">
+                            <div class="heading">
+                                <h1>ERFOLGSGESCHICHTEN: PRODUKTION</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="scroll" href="#scroll">
+                <i class="fal fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <section id="scroll" class="eventone-about pb-0">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-10 offset-lg-2">
+                        <div class="text-block">
+                            <h5 class="mb-4">Lassen Sie sich inspirieren</h5>
+                            <h2 class="text-uppercase">Partner, die mit uns<br> Erfolge verbuchen konnten.</h2>
+                            <p>Digitalisierung eröffnet Chancen für neue Geschäftsmodelle, Wege der Arbeitsorganisation und Kompetenzentwicklung. Gerade in der aktuellen Situation vermittelt sie wichtige Perspektiven einer schnellen Anpassung und langfristigen Sicherung wirtschaftlicher Aktivität. Eine zentrale Herausforderung ist es dabei, digitale Innovationen für mehr Wettbewerbsfähigkeit und Beschäftigung auch sozial innovativ und nachhaltig zu gestalten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="eventsone-veran">
+            <div class="container">
+                <div class="eventsone-veran-holder">
+                    <div class="eventsone__list">
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">22. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events13.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Bäckerei Müller</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">20. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events14.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Brennerei Holsten</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">12. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events15.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Schreinerei Meyer</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">22. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events13.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Bäckerei Müller</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">20. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events14.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Brennerei Holsten</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">12. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events15.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Schreinerei Meyer</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">22. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events13.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Bäckerei Müller</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">20. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events14.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Brennerei Holsten</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="eventsone__list__single">
+                            <div class="eventsone__list__single__date">
+                                <h5 class="text-uppercase">12. NOVEMBER 2021</h5>
+                            </div>
+                            <div class="eventsone__list__single__image">
+                                <img src="img/instigate-events15.png" alt="">
+                            </div>
+                            <div class="eventsone__list__single__content">
+                                <h3>Schreinerei Meyer</h3>
+                                <a href="#" class="button outline white">Jetzt Teilnehmen</a>
+                            </div>
+                            <div class="eventsone__list__single__blur">
+                                <img src="img/instigate-events1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="load" class="container text-center">
+                <a href="#" id="loadMore" class="button denim outline">Mehr Laden</a>
+            </div>
+        </section>
+        <!-- //End home-unser -->
+
+        <section class="cta" style="background-image: url(img/cta-image.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 offset-lg-1">
+                        <div class="text-block">
+                            <h5>Jetzt Chancen nutzen.</h5>
+                            <h2 class="text-uppercase">DIGITAL WERDEN. MIT CHANGE RUHR.</h2>
+                            <p>Das Projekt Ch@nge Ruhr unterstützt KMU bei der Gestaltung des digitalen Wandels. Mit dem Format der #Lernreisen bieten wir Praktiker:innen aus KMU die Möglichkeit, Anregungen für die eigene betriebliche Praxis zu sammeln.</p>
+                            <p>Melden Sie sich jetzt an, damit auch Sie digital erfolgreich durchstarten.</p>
+                        </div>
+                        <div class="newsletter__box">
+                            <input type="text" name="" placeholder="Ihre E-Mail">
+                            <button class="button white denim noboder">Newsletter Abonnieren</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- Footer //Start -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-block-address">
+                                Institut Arbeit und Technik Munscheidstraße 14 45886 Gelsenkirchen
+                            </div>
+                            <ul class="footer-block-contact-form">
+                                <li><a href="tel:+49 (02 09) 17 07 – 0">Tel: +49 (02 09) 17 07 – 0</a></li>
+                                <li><a href="fax:(02 09) 17 07 – 110">Fax: (02 09) 17 07 – 110</a></li>
+                                <li><a href="mailto:kontakt@change-ruhr.com">Mail: kontakt@change-ruhr.com</a></li>
+                            </ul>                                    
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Sitemap
+                            </div>
+                            <ul>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Erfolgsgeschichten</a></li>
+                                <li><a href="#">Themen</a></li>
+                                <li><a href="#">Über Uns</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Förderer
+                            </div>
+                            <ul>
+                                <li><a href="#">Institut Arbeit und Technik</a></li>
+                                <li><a href="#">Institut Arbeit und Qualifikation</a></li>
+                                <li><a href="#">Ruhr-Universität Bochum</a></li>
+                                <li><a href="#">Sozialforschungsstelle</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-block">
+                            <div class="footer-heading">
+                                Kontakt
+                            </div>
+                            <ul>
+                                <li><a href="datenschutz.html">Datenschutz</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                            </ul>                                    
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6">
+                        <div class="text-md-left">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <p class="mb-0">
+                                2021 Institut Arbeit und Technik  | realisiert durch Pechschwarz Media
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto">
+                        <div class="footer-bottom-rightimg">
+                            <img src="img/AK_MAGS_Frder_Farbig_RGB-neu.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/gsap/dist/ScrollTrigger.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src='node_modules/lightbox2/dist/js/lightbox.min.js'></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,608 @@
+/* Global */
+
+$section-padding: 150px 0;
+$section-padding-medium: 70px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+$blue-Charcoal: #1E2832;
+$midnight: #252F38;
+$menu: #252F38;
+$limerick: #93C01F;
+$primary: #93C01F;
+$denim: #1d70bf;
+$secondary: #1d70bf;
+$charcoal:#454545;
+
+$gray: #EDEDED;
+$light-gray: #FAFAFA;
+$gray44: #707070;
+$gray94: #f0f0f0;
+$gray91: #E8E8E8;
+$gray14: #242424;
+$menu: #515150;
+$menu-background: rgba(255,255,255,0.65);
+$sky: #f8f8f8;
+$dark-gray: #3b3b3b;
+$white-smoke: #f8f8f8;
+$gray88: #e0e0e0;
+
+$border-radius: 3px;
+
+/* Box shadow */
+$box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+$box-shadow-small: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+/* Font */
+
+$font-family: 'Red Hat Text';
+$font-family-worksans: 'Work Sans';
+$font-size-base: 1.25rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 70px;
+$h2-font-size: 45px;
+$h3-font-size: 25px;
+$link-hover-decoration: none;
+
+/* Animation (Keyframes) */
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0.0deg);
+  }
+  10% {
+      transform: rotate(14.0deg);
+  }
+  20% {
+      transform: rotate(-8.0deg);
+  }
+  30% {
+      transform: rotate(14.0deg);
+  }
+  40% {
+      transform: rotate(-4.0deg);
+  }
+  50% {
+      transform: rotate(10.0deg);
+  }
+  60% {
+      transform: rotate(0.0deg);
+  }
+  100% {
+      transform: rotate(0.0deg);
+  }
+}
+
+// Font Face 
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('../font/WorkSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Black.woff2') format('woff2'),
+        url('../font/WorkSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Bold.woff2') format('woff2'),
+        url('../font/WorkSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-BoldItalic.woff2') format('woff2'),
+        url('../font/WorkSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraLight.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Light.woff2') format('woff2'),
+        url('../font/WorkSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Italic.woff2') format('woff2'),
+        url('../font/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Medium.woff2') format('woff2'),
+        url('../font/WorkSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('../font/WorkSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-LightItalic.woff2') format('woff2'),
+        url('../font/WorkSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Regular.woff2') format('woff2'),
+        url('../font/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Bold.woff2') format('woff2'),
+        url('../font/RedHatText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../font/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Thin.woff2') format('woff2'),
+        url('../font/WorkSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ThinItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Italic.woff2') format('woff2'),
+        url('../font/RedHatText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-BoldItalic.woff2') format('woff2'),
+        url('../font/RedHatText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/WorkSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/RedHatText-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-MediumItalic.woff2') format('woff2'),
+        url('../font/RedHatText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Medium.woff2') format('woff2'),
+        url('../font/RedHatText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-LightItalic.woff2') format('woff2'),
+        url('../font/RedHatText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-SemiBold.woff2') format('woff2'),
+        url('../font/RedHatText-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Light.woff2') format('woff2'),
+        url('../font/RedHatText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Regular.woff2') format('woff2'),
+        url('../font/RedHatText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-BlackItalic.woff2') format('woff2'),
+        url('../font/WorkSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Black.woff2') format('woff2'),
+        url('../font/WorkSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Bold.woff2') format('woff2'),
+        url('../font/WorkSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraBold.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-BoldItalic.woff2') format('woff2'),
+        url('../font/WorkSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraLight.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Light.woff2') format('woff2'),
+        url('../font/WorkSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Italic.woff2') format('woff2'),
+        url('../font/WorkSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Medium.woff2') format('woff2'),
+        url('../font/WorkSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-MediumItalic.woff2') format('woff2'),
+        url('../font/WorkSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-LightItalic.woff2') format('woff2'),
+        url('../font/WorkSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Regular.woff2') format('woff2'),
+        url('../font/WorkSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Bold.woff2') format('woff2'),
+        url('../font/RedHatText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-SemiBold.woff2') format('woff2'),
+        url('../font/WorkSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-Thin.woff2') format('woff2'),
+        url('../font/WorkSans-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('../font/WorkSans-ThinItalic.woff2') format('woff2'),
+        url('../font/WorkSans-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Italic.woff2') format('woff2'),
+        url('../font/RedHatText-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-BoldItalic.woff2') format('woff2'),
+        url('../font/RedHatText-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('WorkSans-SemiBoldItalic.woff2') format('woff2'),
+        url('WorkSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-SemiBoldItalic.woff2') format('woff2'),
+        url('../font/RedHatText-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-MediumItalic.woff2') format('woff2'),
+        url('../font/RedHatText-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Medium.woff2') format('woff2'),
+        url('../font/RedHatText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-LightItalic.woff2') format('woff2'),
+        url('../font/RedHatText-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-SemiBold.woff2') format('woff2'),
+        url('../font/RedHatText-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Light.woff2') format('woff2'),
+        url('../font/RedHatText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Hat Text';
+    src: url('../font/RedHatText-Regular.woff2') format('woff2'),
+        url('../font/RedHatText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

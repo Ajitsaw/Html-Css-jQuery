@@ -1,0 +1,27 @@
+.text-blocks {
+    .single {
+        color: $white;
+        border-bottom: 1px solid $white;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+        h4 {
+            margin-bottom: 25px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

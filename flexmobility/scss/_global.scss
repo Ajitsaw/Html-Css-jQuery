@@ -1,0 +1,848 @@
+/* Body */
+
+body {
+    transition: all 0.3s ease;
+    position: relative;
+    color: $primary;
+    overflow-x: hidden;
+    padding-top: 0;
+    word-break: break-word;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {}
+    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(xs) {}
+    &.menu-open {
+        overflow: hidden;
+    }
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    word-break: break-word;
+    font-family: 'Montserrat';
+}
+
+
+/* Grid */
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+}
+
+.container {
+    padding: 0 140px;
+    @media screen and (max-width: 1600px) {
+        padding: 0 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0 15px;
+    }
+}
+
+.container-fluid {
+    padding: 0 !important;
+    @include media-breakpoint-down(sm) {
+        padding: 0 15px !important;
+    }
+}
+
+.pad-left {
+    padding-left: 140px;
+    @media screen and (max-width: 1600px) {
+        padding: 0 0 0 100px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 0 0 80px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 0 0 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
+}
+
+.pad-right {
+    padding-right: 140px;
+    @media screen and (max-width: 1600px) {
+        padding: 0 100px 0 0;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 0 80px 0 0px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 0 50px 0 0px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 0;
+    }
+}
+
+
+/* section */
+
+section {
+    z-index: 2;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+}
+
+
+/* Button */
+
+.f-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 201px;
+    height: 59px;
+    color: $secondary;
+    background-color: transparent;
+    border: 1px solid $secondary;
+    border-radius: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    font-weight: 400;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        width: 170px;
+        height: 55px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        width: 150px;
+        height: 45px;
+        border-radius: 8px;
+    }
+    &:hover {
+        background-color: $secondary;
+        color: $white;
+    }
+    &-big {
+        width: 247px;
+        @include media-breakpoint-down(lg) {
+            width: 210px;
+        }
+    }
+    &-fill {
+        background-color: $secondary;
+        color: $white;
+        &:hover {
+            background-color: transparent;
+            color: $secondary;
+        }
+    }
+    &-black {
+        width: 107px;
+        background-color: $primary;
+        border: 1px solid $primary;
+        color: $white;
+        @include media-breakpoint-down(lg) {
+            width: 90px;
+        }
+        &:hover {
+            background-color: transparent;
+            color: $primary;
+        }
+        &-border {
+            background-color: transparent;
+            border: 1px solid $primary;
+            color: $primary;
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
+    &-white {
+        &-border {
+            background-color: transparent;
+            border: 1px solid $white;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color: $secondary;
+            }
+        }
+        &-filled {
+            background-color: rgba(255, 255, 255, .6);
+            color: $secondary;
+            &:hover {
+                background-color: $white;
+                color: $secondary;
+            }
+        }
+        &-blue {
+            background-color: $secondary;
+            color: $white;
+            &:hover {
+                background-color: transparent;
+                color: $white;
+            }
+        }
+    }
+}
+
+.text-button {
+    color: $secondary;
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    &:hover {
+        color: $primary;
+    }
+}
+
+
+/* Headlines */
+
+h1,
+.h1 {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 50px;
+    @include media-breakpoint-down(lg) {
+        font-size: 40px;
+        line-height: 1.3;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(xs) {
+        font-size: 26px;
+    }
+}
+
+h2,
+.h2 {
+    line-height: 1.5;
+    font-size: 40px;
+    font-weight: 700;
+    @include media-breakpoint-down(lg) {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+    }
+    @include media-breakpoint-down(xs) {
+        font-size: 26px;
+    }
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 300;
+    @include media-breakpoint-down(lg) {
+        font-size: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+        font-size: 22px;
+    }
+}
+
+h4 {
+    font-size: 25px;
+    line-height: 1.2;
+    font-weight: 400;
+    @include media-breakpoint-down(lg) {
+        font-size: 20px;
+    }
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    @include media-breakpoint-down(lg) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+h6 {
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    line-height: 35px;
+    @include media-breakpoint-down(lg) {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    @include media-breakpoint-down(sm) {
+        br {
+            display: none;
+        }
+    }
+}
+
+
+/* Default style */
+
+.vh-100 {
+    height: 100vh;
+    @include media-breakpoint-down(lg) {
+        height: auto !important;
+    }
+}
+
+.vh-50 {
+    height: 50vh;
+    @include media-breakpoint-down(md) {
+        height: auto !important;
+    }
+}
+
+.gutters-sm {
+    margin: 0 !important;
+    [class^='col-'] {
+        padding: 0 !important;
+    }
+    @include media-breakpoint-down(md) {
+        margin: 0 -15px !important;
+        [class^='col-'] {
+            padding: 0 15px !important;
+        }
+    }
+}
+
+.block-para {
+    margin-bottom: 70px;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 40px;
+    }
+    p {
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.text-block {
+    h2 {
+        margin-bottom: 10px;
+    }
+    h3 {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+    }
+    h5 {
+        margin-bottom: 10px;
+    }
+    &:nth-last-child() {
+        margin-bottom: 0;
+    }
+    ul {
+        margin: 30px 0px;
+        @include media-breakpoint-down(md) {
+            margin: 30px 0 0;
+        }
+        li {
+            position: relative;
+            margin-bottom: 0px;
+            padding-left: 30px;
+            font-weight: bold;
+            &:last-child {
+                margin: 0 0 0;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0px;
+                display: block;
+                top: 4px;
+                width: 11px;
+                height: 19px;
+                border: solid $secondary;
+                border-width: 0 4px 4px 0;
+                transform: rotate(45deg);
+                @include media-breakpoint-down(lg) {
+                    width: 10px;
+                    height: 16px;
+                    border-width: 0 3px 3px 0;
+                }
+            }
+        }
+    }
+    .buttons {
+        display: flex;
+        .f-button {
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    &_button {
+        @include media-breakpoint-down(sm) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.center-block {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.image-block {
+    max-height: 609px;
+    position: relative;
+    @include media-breakpoint-down(lg) {
+        max-height: 500px;
+    }
+    @include media-breakpoint-down(md) {
+        max-height: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.default-list {
+    margin-bottom: 30px;
+    a {
+        display: block;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+.default-block {
+    display: flex;
+    flex-flow: column;
+    .text-button {
+        margin-bottom: 80px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+    }
+    h1 {
+        margin-bottom: 80px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
+    h2 {
+        margin-bottom: 30px;
+        position: relative;
+    }
+    h4 {
+        margin: 10px 0 35px;
+        font-weight: 700;
+        @include media-breakpoint-down(lg) {
+            margin: 10px 0 30px;
+        }
+        @include media-breakpoint-down(md) {
+            margin: 10px 0 25px;
+        }
+    }
+    h6 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 35px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 25px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+        b {
+            margin-bottom: 15px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 5px
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    img,
+    video {
+        width: 100%;
+        margin-bottom: 35px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 25px;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+    }
+    ul {
+        li {
+            font-size: 18px;
+            margin: 0px 0 30px;
+            position: relative;
+            padding-left: 30px;
+            @include media-breakpoint-down(lg) {
+                margin: 00px 0px 20px;
+            }
+            &:last-child {
+                margin: 0px 0 0;
+            }
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0px;
+                display: block;
+                top: 4px;
+                width: 8px;
+                height: 13px;
+                border: solid $primary;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+.arrow {
+    position: absolute;
+    z-index: 9;
+    transform: translate(0px, 0px);
+    transition: all .3s ease;
+    &:hover {
+        transform: translate(0px, 25px);
+        transition: all .3s ease;
+    }
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.back-gray {
+    background-color: $light-gray;
+}
+
+.back-white {
+    background-color: $white;
+}
+
+.back-black {
+    background-color: $primary;
+}
+
+.back-blue {
+    background-color: $secondary !important;
+}
+
+.text-blue {
+    color: $secondary;
+}
+
+.text-red {
+    color: #ff0000;
+}
+
+.back-after-before {
+    &:before {
+        content: '';
+        background-color: $white;
+        width: 23%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}
+
+.box-shadow {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.border-radius {
+    border-radius: 13px;
+}
+
+.circle-box {
+    position: absolute;
+}
+
+.top {
+    top: 0;
+    &-5 {
+        top: -5px;
+    }
+    &-10 {
+        top: -10px;
+    }
+    &-20 {
+        top: -20px;
+    }
+    &-25 {
+        top: -25px;
+    }
+    &-35 {
+        top: -35px;
+    }
+    &-40 {
+        top: -40px;
+    }
+    &-50 {
+        top: -50px;
+    }
+    &-65 {
+        top: -65px;
+    }
+}
+
+.mt-75 {
+    margin-top: 75px;
+    @include media-breakpoint-down(lg) {
+        margin-top: 50px;
+    }
+    @include media-breakpoint-down(md) {
+        margin-top: 30px;
+    }
+}
+
+.left {
+    left: 0;
+    &-5 {
+        left: -5px;
+    }
+    &-10 {
+        left: -10px;
+    }
+    &-20 {
+        left: -20px;
+    }
+    &-30 {
+        left: -30px;
+    }
+    &-35 {
+        left: -35px;
+    }
+    &-40 {
+        left: -40px;
+    }
+    &-50 {
+        left: -50px;
+    }
+    &-55 {
+        left: -55px;
+    }
+    &-70 {
+        left: -70px;
+    }
+    &15 {
+        left: 15px;
+    }
+}
+
+.bottom {
+    bottom: 0;
+    &-20 {
+        bottom: 20px
+    }
+    &10 {
+        bottom: 10px
+    }
+    &90 {
+        bottom: 90px;
+    }
+    &-110 {
+        bottom: -110px;
+    }
+}
+
+.right {
+    right: 0;
+    &-22 {
+        right: 22px;
+        @include media-breakpoint-down(md) {
+            right: 0px;
+        }
+    }
+    &10 {
+        right: 10px;
+    }
+}
+
+.z-index-1 {
+    z-index: -1;
+}
+
+.blue-light {
+    &-21 {
+        background-color: rgba(0, 144, 223, .21);
+        border-radius: 100%;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+    &-12 {
+        background-color: rgba(0, 144, 223, .12);
+        border-radius: 100%;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}
+
+.blue {
+    &-21 {
+        background-color: rgba(0, 118, 225, .21);
+        border-radius: 100%;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}
+
+.light-blue {
+    &-43 {
+        background-color: rgba(159, 207, 250, .43);
+        border-radius: 100%;
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+}
+
+.size {
+    &-46 {
+        width: 46px;
+        height: 46px;
+    }
+    &-61 {
+        width: 61px;
+        height: 61px;
+    }
+    &-68 {
+        width: 68px;
+        height: 68px;
+    }
+    &-89 {
+        width: 89px;
+        height: 89px;
+    }
+    &-136 {
+        width: 136px;
+        height: 136px;
+    }
+    &-228 {
+        width: 228px;
+        height: 228px;
+    }
+    &-146 {
+        width: 146px;
+        height: 146px;
+    }
+    &-110 {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.tag {
+    position: absolute;
+    top: 173px;
+    right: 0;
+    z-index: 6;
+    @include media-breakpoint-down(sm) {
+        top: 86px;
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.no-shadow {
+    box-shadow: none;
+    background-color: transparent;
+}

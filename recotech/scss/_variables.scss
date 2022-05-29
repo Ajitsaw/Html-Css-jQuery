@@ -1,0 +1,124 @@
+/* Global */
+
+$section-padding: 120px 0 120px;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #1E1E1E;
+$secondary: #3CDC82;
+$red: #DC3C3C;
+$grey: #F0F0F0;
+$light-grey: #f7f7f7;
+$dark-grey: #787878;
+$white: #fff;
+
+$body-color: $primary;
+
+$border-radius: 5px;
+
+/* Box shadow */
+$box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.16);
+
+/* Font */
+
+$font-family: 'Rubik';
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$line-height-base: 1.5;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 60px;
+$h2-font-size: 45px;
+$h3-font-size: 30px;
+$link-hover-decoration: none;
+
+/* Animation (Keyframes) */
+
+@keyframes wave-animation {
+  0% {
+      transform: rotate(0.0deg);
+  }
+  10% {
+      transform: rotate(14.0deg);
+  }
+  20% {
+      transform: rotate(-8.0deg);
+  }
+  30% {
+      transform: rotate(14.0deg);
+  }
+  40% {
+      transform: rotate(-4.0deg);
+  }
+  50% {
+      transform: rotate(10.0deg);
+  }
+  60% {
+      transform: rotate(0.0deg);
+  }
+  100% {
+      transform: rotate(0.0deg);
+  }
+}
+
+// Font Face 
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Bold.woff2') format('woff2'),
+        url('../font/Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Light.woff2') format('woff2'),
+        url('../font/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Regular.woff2') format('woff2'),
+        url('../font/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../font/Rubik-Medium.woff2') format('woff2'),
+        url('../font/Rubik-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

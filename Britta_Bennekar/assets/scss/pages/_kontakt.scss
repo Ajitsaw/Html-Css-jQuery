@@ -1,0 +1,52 @@
+.hero-kontakt {
+    padding: 320px 0 70px;
+    @include media-breakpoint-down(xl) {
+        padding: 200px 0 50px;
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 130px 0 50px;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 130px 0 0px;
+    }
+    h5 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        @include media-breakpoint-down(xl) {
+            font-size: 20px;
+        }
+        @include media-breakpoint-down(lg) {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+    h1 {
+        a {
+            color: $secondary;
+            padding-bottom: 20px;
+            position: relative;
+            @include media-breakpoint-down(lg) {
+                padding-bottom: 10px;
+            }
+            &:after {
+                content: '';
+                width: 0;
+                height: 7px;
+                background-color: $secondary;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all .3s ease;
+                @include media-breakpoint-down(lg) {
+                    height: 4px;
+                }
+            }
+            &:hover {
+               &::after {
+                   width: 100%;
+                   transition: all .3s ease;
+               }
+            }
+        }
+    }
+}

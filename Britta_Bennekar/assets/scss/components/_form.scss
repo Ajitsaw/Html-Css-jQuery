@@ -1,0 +1,116 @@
+.form-group {
+    margin-bottom: 15px;
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $primary;
+        padding: 20px 0;
+        outline: none;
+        box-shadow: none;
+        color: $text-gray;
+        font-weight: 700;
+        font-size: 16px;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            padding: 15px 0;
+        }
+        &::placeholder {
+            color: $text-gray;
+        }
+    }
+    select {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAABHNCSVQICAgIfAhkiAAAAQVJREFUOE/t0z0OgjAUB/D/K3FykMnETUbjoDdAT6A3Um8EJ1BvwCBxrBvGRR2cDNQWxPDR1tFFJgKvv7y+D4LlSfhxSJRtVYgQbD7wRidTONmheE2EVQFhM/DG6z9Ur0DCf1GjK+fukz0Waebsm+39lpEaD4elfifrhnTmhwhEE9ngGxM073vjqLygDbrweJqRkDNGroyPJBTfQOgVh+uYCWog8hjulH8EdjpMB+kQBszyyTZhKbCsTrYDBJXr5JkoRJXjsyI6DIL2MtNFcWuEIOG/a1JD1O/arrUxw2ZVMikjWkv7FdMgrYxK3YgZECOkbYAFsUIlJjsXqHfZsWV1WJvVewG1j9OWeBTzKAAAAABJRU5ErkJggg==');
+        background-position: 100% center;
+        color: $text-gray;
+        border: none;
+        border-bottom: 1px solid $primary;
+        padding: 20px 0;
+        outline: none;
+        box-shadow: none;
+        font-weight: 700;
+        font-size: 16px;
+        appearance: none;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            padding: 15px 0;
+        }
+    }
+    textarea {
+        width: 100%;
+        height: 305px;
+        @include media-breakpoint-down(lg) {
+            height: 130px;
+        }
+    }
+    
+}
+
+/* Checkbox */
+
+.checkbox {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    margin: 30px 0 30px; 
+    font-weight: 700;
+    font-size: 13px;
+    input {
+        opacity: 0;
+        position: absolute;
+        &:checked + div:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+        }
+    }
+    div {
+        display: block;
+        width: 17px;
+        height: 17px;
+        border: solid 1px $primary;
+        border-radius: 0px;
+        margin-right: 15px;
+        position: relative;
+    }
+    a {
+        color: $secondary;
+        margin: 0 5px;
+    }
+    span {
+  
+    }
+  }
+
+
+
+
+/* Response */
+
+.response {
+    border-radius: 6px;
+    display: block;
+    margin-top: 10px;
+    padding: 12px;
+    line-height: 1;
+    display: none;
+    width: 100%;
+    flex: 0 0 100%;
+    font-size: 12px;
+  }
+  
+  .response.error {
+    color: #721c24;
+    background-color: #f8d7da;
+  }
+  
+  .response.success {
+    color: #155724;
+    background-color: #d4edda;
+  }
+  

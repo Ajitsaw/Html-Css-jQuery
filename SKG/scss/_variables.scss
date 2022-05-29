@@ -1,0 +1,84 @@
+/* Global */
+
+$section-padding: 120px 0;
+$section-padding-medium: 100px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #264078;
+$secondary: #3CB1E6;
+
+$light-blue:#6EB0E3;
+
+$body-color: #282828;
+$border-color:#2C2C2C;
+
+$light-gray: #FAFAFA;
+$gray44: #707070;
+$gray94: #f0f0f0;
+$gray91: #E8E8E8;
+$gray14: #242424;
+$menu: #55514F;
+$sky: #f8f8f8;
+$dark-gray: #3b3b3b;
+$white-smoke: #ECECEC;
+$gray88: #e0e0e0;
+$charcoal: #454545;
+$anthrazit: #1D1F24;
+$lang-gray: #c8c8c8;
+
+$gray-bg: #EBEBEB;
+
+
+/* Font */
+
+$font-family-sans-serif: 'Open Sans';
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 90px;
+$h2-font-size: 45px;
+$h3-font-size: 38px;
+
+$link-decoration: none;
+$link-hover-decoration: none;
+
+/* Box Shadow */
+$box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
+$box-shadow-small: 0px 3px 6px rgba(0, 0, 0, 0.15);
+
+
+
+

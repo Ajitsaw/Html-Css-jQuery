@@ -1,0 +1,117 @@
+/* Footer */
+
+footer {
+    background:$primary;
+    padding: 80px 0 0px;
+    position: relative;
+    color: $white;
+    text-align: center;
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 0px;
+    }
+    .footer-logo {
+        margin-bottom: 75px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 50px;
+        }
+    }
+    .side-menu-social {
+        justify-content: center;
+        margin-bottom: 65px;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 50px;
+        }
+    }
+    .footer-menu {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $red;
+        padding-bottom: 45px;
+        @media (max-width: 1600px) {
+            padding-bottom: 30px;
+        }
+        ul {
+            display: flex;
+            @include media-breakpoint-down(md) {
+                flex-flow: column;
+            }
+        }
+        li {
+            padding: 0 20px;
+            line-height: 1;
+            @media (max-width: 1820px) {
+                padding: 0 15px;
+            }
+            @media (max-width: 1600px) {
+                padding: 0 9px;
+            }
+            @include media-breakpoint-down(md) {
+                margin: 15px 0;
+            }
+            a {
+                color: $white;
+                font-weight: 400;
+                font-size: 18px;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+    .footer-menu-bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        ul {
+            display: flex;
+        }
+        li {
+            padding: 0 23px;
+            line-height: 1;
+            a {
+                color: $white;
+                font-weight: 400;
+                font-size: 18px;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+    .bottom-footer {
+        margin-top: 100px;
+        position: relative;
+        @include media-breakpoint-down(md) {
+            margin-top: 50px;
+        }
+        .text-block {
+            p {
+                font-size: 14px;
+                font-weight: normal;
+                margin-bottom: 28px;
+            }
+        }
+        .bottom-footer-company {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: #fff;
+            color: $primary;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            padding: 0 25px;
+            font-weight: 300;
+            @include media-breakpoint-down(md) {
+                position: relative;
+                justify-content: center;
+            }
+            a {
+                margin-left: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}

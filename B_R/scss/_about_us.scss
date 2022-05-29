@@ -1,0 +1,93 @@
+.about {
+    .banner-box-caption {
+        padding: 70px 45px;
+        @include media-breakpoint-down(lg) {
+            padding: 40px 30px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 30px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 30px 15px;
+        }
+        .block-para {
+            margin-bottom: 0;
+            p {
+                margin-bottom: 0;
+            }
+        }
+        img {
+            width: 250px;
+        }
+    }
+}
+.about-block {
+    padding: 180px 0;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .block-para {
+        margin-bottom: 0;
+    }
+}
+
+.facts {
+    background: $back-gray;
+    padding: 110px 0 50px;
+    @include media-breakpoint-down(lg) { 
+        padding: 80px 0 0px;
+    }
+    @include media-breakpoint-down(md) { 
+        padding: 50px 0 0px;
+    }
+    h2 {
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) { 
+            margin-bottom: 80px;
+        }
+        @include media-breakpoint-down(md) { 
+            margin-bottom: 50px;
+        }
+    }
+    &-box {
+        &-single {
+            margin-bottom: 135px;
+            @include media-breakpoint-down(lg) { 
+                margin-bottom: 80px;
+            }
+            @include media-breakpoint-down(md) { 
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(sm) { 
+                text-align: left;
+            }
+            h3 {
+                margin-bottom: 30px;
+                @include media-breakpoint-down(lg) { 
+                    margin-bottom: 20px;
+                }
+                @include media-breakpoint-down(md) { 
+                    margin-bottom: 15px;
+                }
+            }
+            h4 {
+                font-size: 25px;
+                line-height: 50px;
+                margin-bottom: 40px;
+                @include media-breakpoint-down(lg) { 
+                    margin-bottom: 30px;
+                    font-size: 22px;
+                    line-height: 30px;
+                }
+                @include media-breakpoint-down(md) { 
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}

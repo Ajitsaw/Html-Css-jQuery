@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  @include media-breakpoint-down(xl) {
+    font-size: 18px;
+  }
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+  }
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+main {
+  overflow: hidden;
+}
+
+.z-index-2 {
+  z-index: 2 !important;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+[role="button"] {
+    outline: none !important;
+}

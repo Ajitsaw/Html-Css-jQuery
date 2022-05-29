@@ -1,0 +1,95 @@
+
+
+.benefit {
+    &__slider {
+        margin: 0 -15px;
+        position: relative;
+        height: 700px;
+        @media (max-width: 1750px) {
+            height: 750px;
+        }
+        @media (max-width: 1650px) {
+            height: 800px;
+        }
+        @include media-breakpoint-down(xl) {
+            height: 700px;
+        }
+        @include media-breakpoint-down(lg) {
+            height: 600px;
+        }
+        @media (max-width: 991px) {
+            height: auto;
+            
+        }
+        @include media-breakpoint-down(md) {
+            margin: 0 0px;
+        }
+        &_arrow {
+            &_left {   
+                color: $secondary;
+                position: absolute;
+                left: -50px;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 16px;
+                @include media-breakpoint-down(xl) {
+                    left: -30px;
+                }
+                @include media-breakpoint-down(md) {
+                    left: 0;
+                }
+            }
+            &_right {
+                color: $secondary;
+                position: absolute;
+                right: -50px;
+                top: 50%;
+                transform: translate(0, -50%);
+                font-size: 16px;
+                @include media-breakpoint-down(xl) {
+                    right: -30px;
+                }
+                @include media-breakpoint-down(md) {
+                    right: 0;
+                }
+            }
+        }
+        .slider {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            padding: 0 15px 30px;
+            z-index: 1;
+            @include media-breakpoint-down(md) {
+                padding: 30px;
+            }
+        }
+        &_slide {
+            box-shadow: $box-shadow;
+            border-radius: 20px;
+            background-color: $white;
+            margin-top: 30px;
+            margin-right: 30px;
+            padding: 30px 25px 25px;
+            height: calc((100% - 60px) / 2) !important;
+            @media (max-width: 991px) {
+                height: auto !important;
+            }
+            &_top {
+                margin-bottom: 35px;
+                display: flex;
+                align-items: center;
+                .icon {
+                    margin-right: 30px;
+                }
+            }
+            &_text {
+
+            }
+        }
+        
+    }
+}

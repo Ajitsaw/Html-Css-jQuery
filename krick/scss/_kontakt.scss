@@ -1,0 +1,85 @@
+.kontakt-info {
+    .text-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 50px;
+        @media screen and (max-width: 991px) {
+            flex-flow: column;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        h4 {
+            flex: 0 0 25%;
+            @include media-breakpoint-down(lg) {
+                flex: 0 0 28%;
+            }
+            @media screen and (max-width: 991px) {
+                flex: auto;
+            }
+        }
+        a {
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 991px) {
+                flex: auto !important;
+                width: 100% !important;
+                margin-top: 20px;
+            }
+            &:hover {
+                color: $orange;
+                i {
+                    color: $orange;
+                }
+            }
+            &.kontakt-info-address {
+                width: 25%;
+                @include media-breakpoint-down(lg) {
+                    flex: 0 0 22%;
+                }
+            }
+            &.kontakt-info-tel {
+                flex: 0 0 22%;
+            }
+            i {
+                font-size: 24px;
+                margin-right: 25px;
+                color: $blue;
+            }
+        }
+    }
+}
+
+.kontakt-page-form {
+    background: linear-gradient(to bottom, rgba(0, 171, 205, 1) 0%, rgba(37, 48, 59, 1) 100%);
+    .accordion {
+        h2 {
+            margin-bottom: 30px;
+        }
+        .accordion-list-content {
+            padding: 0px 50px 25px;
+        }
+    }
+}
+
+.kontakt-map {
+    height: 570px;
+    width: 100%;
+    @include media-breakpoint-down(lg) {
+        height: 400px;
+    }
+    @include media-breakpoint-down(sm) {
+        height: 320px;
+    }
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}

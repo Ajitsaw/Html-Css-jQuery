@@ -1,0 +1,62 @@
+/* Banner */
+.banner-box-caption {
+    background: $primary;
+    padding: 45px 40px 30px 40px;
+    max-width: 677px;
+    position: absolute;
+    left: 140px;
+    bottom: -130px;
+    z-index: 999;
+    @include media-breakpoint-down(lg) {
+        position: relative;
+        bottom: auto;
+        left: 80px;
+        margin-top: 50px;
+        display: flex;
+        max-width: 500px;
+        z-index: 1;
+    }
+    @include media-breakpoint-down(md) {
+        left: 50px;
+    }
+    @include media-breakpoint-down(sm) {
+        left: 15px;
+        max-width: calc(100% - 30px);
+        padding: 30px 15px;
+    }
+    .block-para {
+        margin-bottom:40px;
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 30px;
+            @include media-breakpoint-down(sm) {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    
+}
+
+
+
+.branchen-about {
+    background: $back-gray;
+    .block-para {
+        margin-bottom: 0;
+    }
+}
+
+.branchen-menu-box {
+    padding: 120px 0 100px;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .button {
+        margin: 0 auto;
+    }
+}

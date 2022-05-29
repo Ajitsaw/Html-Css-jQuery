@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bever</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <style>
+        @import url("https://use.typekit.net/uwa0bee.css");
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto">
+                    <a href="index.html" class="logo"><img src="img/logo.png"></a>
+                </div>
+                <div class="col-xl-auto col-lg-auto col-md-auto col-sm-auto col-auto d-flex align-items-center">
+                    <nav class="main-nav d-none d-lg-block">
+                        <ul>
+                            <li><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                    <li><a href="produkte-single.html">
+                                            Lorem Ipsum
+                                            <span>Lorem Ipsum</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li class="current-menu-item"><a href="handlerliste.html">Händlerliste</a></li>
+                            <li>
+                                <a href="">Mediathek<i class="far fa-angle-down"></i></a></a>
+                                <ul class="sub-menu">
+                                    <li><a href="news.html">
+                                            News
+                                            <span>Bleiben Sie auf dem Laufenden</span>
+                                        </a></li>
+                                    <li><a href="download.html">
+                                            Downloads
+                                            <span>Alle Infos auf einen Blick</span>
+                                        </a></li>
+                                    <li><a href="videos.html">
+                                            Videos
+                                            <span>Bekommen Sie einen Einblick</span>
+                                        </a></li>
+                                    <li><a href="downloads.html">
+                                            Wissenswertes
+                                            <span>Praktische Informationen</span>
+                                        </a></li>
+                                    <li><a href="">
+                                            Tipps & Tricks
+                                            <span>Bedienungs- & Montageanleitungen</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="service.html">Services</a>
+                            </li>
+                            <li>
+                                <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html">Kontakt</a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    <div class="searchBox">
+                        <input class="searchInput" type="text" name="" placeholder="Search">
+                        <button class="searchButton" href="#">
+                            <img src="img/search.svg" alt="search">
+                            <i class="fal fa-times"></i>
+                        </button>
+                    </div>
+                    <nav class="lang-menu">
+                        <div class="current-lang">
+                            <img src="http://www.placehold.it/100x100">
+                            <span><i class="far fa-angle-down"></i></span>
+                        </div>
+                        <ul>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                            <li><a href="#"><img src="http://www.placehold.it/100x100">Deutsch</a></li>
+                        </ul>
+                    </nav>
+                    <div class="nav-toggle">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="overlay">
+        <div class="overlay__close">
+            <i class="fal fa-times"></i>
+        </div>
+        <div class="overlay__left">
+            <nav class="main-nav">
+                <ul>
+                    <li class="menu-item-has-children"><a href="produkte.html">Produkte<i class="far fa-angle-down"></i></a>
+                        <ul class="sub-menu">
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                            <li><a href="produkte-single.html">
+                                    Lorem Ipsum
+                                    <span>Lorem Ipsum</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="unternehmen.html">Unternehmen</a></li>
+                    <li><a href="handlerliste.html">Händlerliste</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="">Mediathek<i class="far fa-angle-down"></i></a></a>
+                        <ul class="sub-menu">
+                            <li><a href="news.html">
+                                    News
+                                    <span>Bleiben Sie auf dem Laufenden</span>
+                                </a></li>
+                            <li><a href="download.html">
+                                    Downloads
+                                    <span>Alle Infos auf einen Blick</span>
+                                </a></li>
+                            <li><a href="videos.html">
+                                    Videos
+                                    <span>Bekommen Sie einen Einblick</span>
+                                </a></li>
+                            <li><a href="downloads.html">
+                                    Wissenswertes
+                                    <span>Praktische Informationen</span>
+                                </a></li>
+                            <li><a href="">
+                                    Tipps & Tricks
+                                    <span>Bedienungs- & Montageanleitungen</span>
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="karriere.html">Karriere<span class="counter">6</span></a>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay__right">
+            <div class="top">
+                <nav class="secondary-nav">
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <section class="common-banner" style="background-image: url(img/handlersan-bg.jpg);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-block">
+                            <div class="heading">
+                                <div class="line"></div>
+                                <div class="h3">
+                                    Suchen Sie Händler in unserer
+                                </div>
+                            </div>
+                            <h1>
+                                Händlerliste
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="vertri">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-elements">
+                            <div class="search-box">
+                                <div class="search-box-input">
+                                    <input type="text" placeholder="Händlername / Stadt / PLZ">
+                                </div>
+                                <div class="search-box-submit">
+                                    <i class="fal fa-search"></i>
+                                    <input type="submit" value="">
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-elements">
+                            <div class="select-box">
+                                <select>
+                                        <option value="" disabled selected>nach Händlername filtern</option>
+                                        <option value="">Hebetechnik</option>
+                                        <option value="">Kompressoren</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="form-elements">
+                            <div class="select-box">
+                                <select>
+                                        <option value="" disabled selected>nach PLZ filtern</option>
+                                        <option value="">Country 1</option>
+                                        <option value="">Country 2</option>
+                                    </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="vertri-holder">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="vertri-holder-single">
+                                        <div class="vertri-holder-single-head back-black">
+                                            Firmenname XY
+                                        </div>
+                                        <div class="vertri-holder-single-text">
+                                            <div class="vertri-holder-single-text-left">
+                                                <p>Ansprechpartner XY
+                                                    <br>
+                                                    Straße |PLZ Ort | Land
+                                                </p>
+                                            </div>
+                                            <div class="vertri-holder-single-text-right">
+                                                <p><img src="img/call.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/fax.svg" alt=""> 01234 567</p>
+                                                <p><img src="img/mail.svg" alt=""> max@mustermann.de</p>
+                                                <p><img src="img/web.svg" alt=""> www.musterdomain.de</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="handlerliste-info pt-0">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-lg-4">
+                        <div class="text-block">
+                            <div class="heading">
+                                <div class="line"></div>
+                                <div class="h4">
+                                    Bever-Produkt-Händler?
+                                </div>
+                            </div>
+                            <h2>
+                                Melden Sie<br>
+                                Sich ganz<br>
+                                einfach an
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="image-text bottom-align">
+                            <div class="image">
+                                <img src="img/handlersan-info1.jpg" alt="handlersan-info">
+                            </div>
+                            <div class="text-block">
+                                <h4>
+                                    Sie sind Händler von Bever-Produkten?
+                                </h4>
+                                <div class="text">
+                                    <p>
+                                        Dann registrieren Sie sich gleich in unserer Datenbank.<br>
+                                        Kostenlos und umkompliziert.
+                                    </p>
+                                    <p>
+                                        <i>Ihre Vorteile?</i><br>
+                                        Bei Suchanfragen werden Sie direkt von Endkunden gefunden.
+                                    </p>
+                                </div>
+                                <a href="" class="button register">Jetzt registrieren</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="register-block">
+        <div class="register-block-inner">
+            <div class="pop-close">
+                <i class="fal fa-times"></i>
+            </div>
+            <div class="h4">
+                Für die Händlerdatenbank registrieren
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="companyname" placeholder="*Firmenname">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="contactperson" placeholder="*Ansprechpartner">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" name="street" placeholder="*Straße">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" name="postcode" placeholder="*PLZ">
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <input type="text" name="city" placeholder="*Stadt">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="telephone" placeholder="*Telefon">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="fax" placeholder="Fax">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="email" name="email" placeholder="*E-Mail">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="homepage" placeholder="Homepage">
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span></span>
+                            Ich habe die <a href="">Datenschutzerklärung</a> zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.<br>
+                            Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an info@bever-klophaus.de widerrufen.
+                        </label>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        
+                        <!-- <input type="hidden" name="rec-email" value="<?php the_field("application_email"); ?>">
+                        <input type="hidden" name="form-action" value="career">
+                        <input type="hidden" name="job" value="<?php the_title(); ?>"> -->
+                        <button type="submit" class="button">Jetzt registrieren</button>
+                        <!-- <div class="response success"><?php pll_e("Your request has been sent."); ?></div>
+                        <div class="response error"><?php pll_e("Your request could not be sent."); ?></div> -->
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer //Start -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Kontakt</div>
+                    <address>Bever & Klophaus GmbH
+                        <br />
+                        Rheinische Str.43
+                        <br />
+                        58332 Schwelm
+                    </address>
+                    <div class="anchor">
+                        info@bever-klophaus.de<br />
+                        Telefon: +49 (0) 2336-8059-6
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Navigation</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="bever-wiki.html">Bever Wiki</a></li>
+                            <li><a href="unternehmen.html">Unternehmen</a></li>
+                            <li><a href="handlerliste.html">Händlerliste</a></li>
+                            <li><a href="mediathek.html">Mediathek</a></li>
+                            <li><a href="karriere.html">Karriere</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Produkte</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="product-single.html">Einsteckschlösser Holz</a></li>
+                            <li><a href="product-single.html">Kastenschlösser</a></li>
+                            <li><a href="product-single.html">Schlösser Metall</a></li>
+                            <li><a href="product-single.html">Zubehör Tür und Schloss</a></li>
+                            <li><a href="product-single.html">Schlüssel</a></li>
+                            <li><a href="product-single.html">Rustikal-Programm</a></li>
+                            <li><a href="product-single.html">Elektrische Türöffner und Bleche</a></li>
+                            <li><a href="product-single.html">Garagentorschlüssel</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12">
+                    <div class="title">Service</div>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="kontakt.html">Kontakt</a></li>
+                            <li><a href="impressum.html">Impressum</a></li>
+                            <li><a href="datenschutz.html">Datenschutz</a></li>
+                            <li><a href="agb.html">AGB</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <nav class="social">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="copyright">
+                        2021 Bever & Klophaus GmbH <span>|</span> realisiert durch <a href="#">pechschwarz
+                            Media</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer //End -->
+    <!-- Footer //End -->
+
+
+    <!-- partial -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="node_modules/gsap/dist/gsap.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.min.js"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="node_modules/counterup/jquery.counterup.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+.service-post {
+    .col-lg-6 {
+        margin: 15px 0;
+    }
+    .single {
+        position: relative;
+        height: 423px;
+        display: flex;
+        @include media-breakpoint-down(lg) {
+            height: auto;
+            flex-flow: column;
+        }
+        &:hover  {
+            .content {
+                &:after {
+                    background: $primary;
+                    transition: all .3s ease;
+                }
+                h4 {
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                    transition: margin .3s ease;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 22px;
+                    }
+                    span {
+                        &::before {
+                            display: none;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+                p {
+                    display: block;
+                    transition: all .3s ease;
+                }
+                .text-button  {
+                    display: flex;
+                    transition: all .3s ease;
+                }
+            }
+        }
+        .img {
+            height: 100%;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content {
+            position: absolute;
+            bottom: 0;
+            padding: 50px;
+            width: 100%;
+            height: 100%;
+            z-index: 6;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            @include media-breakpoint-down(xl) {
+                padding: 30px;
+            }
+            @include media-breakpoint-down(lg) {
+                position: relative;
+                background-color: $gray;
+                
+            }
+            @include media-breakpoint-down(md) {
+                padding: 30px 15px;
+            }
+            &:after {
+                content: '';
+                background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                mix-blend-mode: multiply;
+                opacity: .75;
+                z-index: -1;
+                transition: all .3s ease;
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+            h4 {
+                color: $white;
+                font-weight: bold;
+                position: relative;
+                transition: margin .3s ease;
+                display: flex;
+                align-items: center;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 30px;
+                    color: $primary;
+                }
+                span {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    margin-left: 24px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        width: 3px;
+                        height: 20px;
+                        background: $white;
+                        transition: all .3s ease;
+                        @include media-breakpoint-down(lg) {
+                            display: none;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        height: 3px;
+                        width: 20px;
+                        background: $white;
+                        left: -11px;
+                        transition: all .3s ease;
+                        @include media-breakpoint-down(lg) {
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+            p {
+                font-size: 15px;
+                color: $white;
+                display: none;
+                transition: all .3s ease;
+                @include media-breakpoint-down(lg) {
+                    display: block;
+                    color: $primary;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 14px;
+                }
+            }
+            .text-button  {
+                display: none;
+                justify-content: flex-end;
+                margin-top: 20px;
+                transition: all .3s ease;
+                @include media-breakpoint-down(xl) {
+                    margin-top: 0px;
+                }
+                @include media-breakpoint-down(lg) {
+                    display: flex;
+                    margin-top: 20px;
+                    color: $primary !important;
+                }
+            }
+        }
+        .table {
+            display: none;
+        }
+    }
+}

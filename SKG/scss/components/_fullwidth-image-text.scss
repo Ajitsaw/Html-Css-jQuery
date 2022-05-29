@@ -1,0 +1,86 @@
+.fullwidth-image-text{
+    &--gray{
+        background: $gray-bg;
+    }
+    .text-block{
+        max-width: 840px;
+        width: 100%;
+        padding-left: 110px;
+        padding-right: 200px;
+        @include media-breakpoint-down(xl) {
+            padding-right:  120px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding-right:  80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding-right:  50px;
+        }
+        @include media-breakpoint-down(sm) {
+            padding-right: 0;
+        }
+
+        ul{
+            max-width: 520px;
+            width: 100%;
+
+            li{
+                padding: 20px 0;
+                border-bottom: 1px solid rgba($color: $menu, $alpha: 0.25);
+                margin-bottom: 0;
+                padding-left: 46px;
+                font-weight: $font-weight-bold;
+                
+                &:last-child{
+                    border-bottom: 0;
+                }
+                &:before{
+                    transform: rotate(0);
+                    border: none;
+                    width: 23px;
+                    height: 27px;
+                    background: url(../img/list-icon.png);
+                    left: 0;
+                    background-repeat: no-repeat;
+                    background-size: 23px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &.contact{
+                li{
+                    &:before{
+                        border: none;
+                        width: 16px;
+                        height: 27px;
+                        background: url(../img/map-pin.png);
+                        left: 0;
+                        background-size: 16px;
+                        background-repeat: no-repeat;
+                        top: 25px;
+                        transform: rotate(0) translateY(0);
+                    }
+                }
+            }
+        }
+        .button-group{
+            .button{
+                &:first-child{
+                    margin-right: 30px;
+                }
+                &:last-child{
+                    margin-top: 20px;
+                }
+            }
+        }
+        &.mt-100{
+            margin-top: 100px;
+        }
+        &.mt-60{
+            margin-top: 60px;
+        }
+        &.mb-50{
+            margin-bottom: 50px;
+        }
+    }
+}

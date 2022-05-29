@@ -1,0 +1,56 @@
+.testimonail {
+    color: $cream;
+    &-arrow {
+        justify-content: center;
+        margin-top: 30px;
+        font-size: 24px;
+        display: none;
+        @include media-breakpoint-down(lg) {
+            display: flex;
+        }
+        &__left {
+            margin-right: 20px;
+        }
+    }
+    &__slider {
+        .single {
+            flex: 0 0 46%;
+            max-width: 46%;
+            margin: 0 50px;
+            opacity: .15;
+            transition: all .3s ease;
+            @include media-breakpoint-down(lg) {
+                margin: 0 15px;
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+            @include media-breakpoint-down(md) {
+                flex: 0 0 95%;
+                max-width: 95%;
+            }
+            &.swiper-slide-active {
+                opacity: 1;
+                transition: all .3s ease;
+            }
+            h3, .h3 {
+                margin-bottom: 90px;
+                @include media-breakpoint-down(xl) {
+                    margin-bottom: 50px;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 30px;
+                }
+            }
+            .icon {
+                margin-bottom: 30px;
+            }
+            p {
+                font-size: 18px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 16px;
+                }
+            }
+        }
+        
+    }
+}

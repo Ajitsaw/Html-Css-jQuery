@@ -1,0 +1,344 @@
+/* Footer */
+
+footer {
+    background: $primary;
+    .footer-content {
+        padding: 240px 0 145px;
+        color: $white;
+        @include media-breakpoint-down(lg) {
+            padding: $section-padding-medium;
+        }
+        @include media-breakpoint-down(md) {
+            padding: $section-padding-small;
+        }
+        .text-block {
+            h2 {
+                margin-bottom: 30px;
+                @include media-breakpoint-down(md) {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &-form {
+            br {
+                display: none !important;
+            }
+            .ajax-loader {
+                display: none;
+            }
+        }
+    }
+}
+
+
+/* Form */
+
+.form-group {
+    margin: 0 -15px;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        margin: 0;
+        flex-flow: column;
+    }
+    br {
+        display: none;
+    }
+    .ajax-loader {
+        display: none;
+    }
+    &-left {
+        width: calc(50% - 15px);
+        margin: 0 15px;
+        display: flex;
+        flex-flow: column;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin: 0 0px 20px;
+        }
+        input {
+            height: 68px;
+            width: 100%;
+            background: transparent !important;
+            border: 1px solid $white !important;
+            margin-bottom: 20px;
+            font-size: 17px;
+            padding-left: 25px;
+            color: $white !important;
+            border-radius: 0;
+            outline: none !important;
+            @include media-breakpoint-down(lg) {
+                height: 55px;
+                font-size: 16px;
+                padding-left: 15px;
+            }
+            @include media-breakpoint-down(sm) {
+                height: 50px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &-right {
+        width: calc(50% - 15px);
+        margin: 0 15px;
+        display: flex;
+        align-items: flex-start;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            margin: 0;
+        }
+        textarea {
+            height: 245px;
+            width: 100%;
+            background: transparent !important;
+            border: 1px solid $white !important;
+            color: $white !important;
+            outline: none !important;
+            margin-bottom: 0px;
+            border-radius: 0;
+            padding: 25px 20px;
+            @include media-breakpoint-down(lg) {
+                height: 205px;
+                padding: 15px;
+            }
+            @include media-breakpoint-down(xs) {
+                height: 130px;
+            }
+        }
+    }
+    .submit-form {
+        position: absolute;
+        right: -18px;
+        bottom: -36px;
+        z-index: 9;
+        display: flex;
+        @include media-breakpoint-down(lg) {
+            right: -15px;
+            bottom: -30px;
+        }
+        @include media-breakpoint-down(sm) {
+            right: 0px;
+            bottom: 0px;
+        }
+        input {
+            width: 72px;
+            height: 72px;
+            background-color: $red;
+            background-image: url(../img/right-arrow.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            border: none;
+            box-shadow: none;
+            transition: all .3s ease;
+            &:hover,
+            &:focus {
+                background-image: url(../img/right-arrow-red.png);
+                transition: all .3s ease;
+                background-color: $white;
+                outline: none;
+                box-shadow: none;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 60px;
+                height: 60px;
+            }
+            @include media-breakpoint-down(sm) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 0;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 32px;
+    font-family: $font-family-light;
+    color: $white;
+    user-select: none;
+    display: inline-block;
+    width: 100%;
+    br {
+        display: none;
+    }
+    .wpcf7-form-control-wrap {
+        position: static;
+    }
+    span.wpcf7-list-item {
+        display: inline-block;
+        margin: 0;
+    }
+    a {
+        color: $white;
+    }
+    .ajax-loader {
+        display: none !important;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        height: 100%;
+        width: 138px;
+        z-index: 999;
+        cursor: pointer;
+        &:checked {
+            &~.wpcf7-list-item-label {
+                background-color: transparent;
+            }
+            &~.wpcf7-list-item-label:after {
+                position: absolute;
+                content: '';
+                left: 6px;
+                display: block;
+                top: 9px;
+                width: 5px;
+                height: 10px;
+                border: solid $white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    .wpcf7-list-item-label {
+        padding-left: 30px;
+        cursor: pointer;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 0;
+            height: 18px;
+            width: 18px;
+            background-color: transparent;
+            border: 1px solid $white;
+        }
+        &:after {
+            display: none;
+        }
+    }
+}
+
+
+/* PSM Footer */
+
+.psm-footer {
+    padding: 0;
+    position: relative;
+    &-content {
+        border-top: 1px solid $white;
+        padding: 100px 0 90px;
+        @include media-breakpoint-down(lg) {
+            padding: 50px 0;
+        }
+        &-left {
+            p,
+            address {
+                color: $white;
+                font-size: 18px;
+                margin-bottom: 45px;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 30px;
+                    font-size: 16px;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 15px;
+                }
+            }
+            address {
+                font-family: $font-family-light;
+            }
+            .psm-footer-contact {
+                display: flex;
+                flex-flow: column;
+                a {
+                    font-family: $font-family-light;
+                    font-size: 18px;
+                    color: $white;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+    .footer-nav {
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            li {
+                display: inline-block;
+                margin-bottom: 50px;
+                margin-right: 0;
+                width: 50%;
+                margin-bottom: 20px;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 15px;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+                @include media-breakpoint-down(xs) {
+                    margin-right: 20px;
+                }
+                a {
+                    color: $white;
+                    font-family: $font-family-light;
+                    font-size: 18px;
+                    @include media-breakpoint-down(lg) {
+                        font-size: 16px;
+                    }
+                    &:hover {
+                        color: $red;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.psm {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    @include media-breakpoint-down(lg) {
+        font-size: 14px;
+    }
+    strong {
+        margin: 0 5px;
+        font-weight: 700;
+        color: #FF0077;
+    }
+    b {
+        font-weight: 700;
+    }
+}
