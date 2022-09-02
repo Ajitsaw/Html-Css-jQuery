@@ -1,0 +1,14 @@
+.benefit-section{
+    padding-bottom: 180px;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 20px;
+    }
+    
+    &-right{
+        margin-bottom: 60px;
+
+        h4{
+            margin-bottom: 20px;
+        }
+    }
+}

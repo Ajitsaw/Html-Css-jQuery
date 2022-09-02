@@ -1,0 +1,33 @@
+.carrer-section{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    &::before{
+        background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.77) 23%, rgba(0,0,0,0) 100%);
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.77) 23%,rgba(0,0,0,0) 100%);
+        background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.77) 23%,rgba(0,0,0,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+        content: "";
+        width: 65%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        -webkit-mix-blend-mode: multiply;
+        mix-blend-mode: multiply;
+        opacity: 0.6;
+        z-index: -1;
+    }
+
+    .text-block{
+        max-width: 615px;
+        .h1{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+    }
+}
+

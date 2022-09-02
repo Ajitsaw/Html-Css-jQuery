@@ -1,0 +1,93 @@
+.counter{
+    &__inner{
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .fact{
+        position: relative;
+        padding:  0 110px;
+        @media (max-width:1750px) {
+            padding: 0 80px;
+        }
+        @include media-breakpoint-down (xl){
+            padding: 10px 60px;
+        }
+        @include media-breakpoint-down (lg){
+            padding: 10px 30px;
+        }
+        @media (max-width:1024px) {
+            text-align: center;
+            padding: 10px;
+        }
+        @include media-breakpoint-down(md){
+            margin-bottom: 30px;
+        }
+
+        &-inner{
+            .countup{
+                font-size: 90px;
+                line-height: 1;
+                font-weight: $font-weight-bold;
+                color: $body-color;
+                letter-spacing: 4.5px;
+                @media (max-width:1750px) {
+                    font-size: 80px;
+                }
+                @include media-breakpoint-down (xl){
+                    letter-spacing: 3.5px;
+                    font-size: 60px;
+                }
+                @media (max-width:1024px) {
+                    font-size: 45px;
+                    letter-spacing: 2px;
+                }
+            }
+            h5{
+                font-weight: $font-weight-normal;
+                letter-spacing: 1.28px;
+                font-size: 16px;
+                margin-top: 10px;
+                padding-left: 5px;
+                @media (max-width:1024px) {
+                    font-size: 14px;
+                    letter-spacing: 0.8px;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        &:after{
+            content: "";
+            right: -5px;
+            width: 10px;
+            height: calc(100% - 12px);
+            background: #0047CC;
+            position: absolute;
+            bottom: 0;
+            transform: skewX(-10deg);
+            @media (max-width:1024px) {
+                width: 6px;
+                right: -10px;
+            }
+            @include media-breakpoint-down(md){
+                right: 0;
+                bottom: -20px;
+                top: auto;
+                width: 50%;
+                height: 3px;
+                left: 0;
+                margin: 0 auto;
+            }
+        }        
+    }
+    [class*="col-"]{
+        &:last-child{
+            .fact{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

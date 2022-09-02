@@ -1,0 +1,127 @@
+/* Global */
+
+$section-padding: 120px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #B61F29;
+$secondary: #454545;
+
+$light-grey: #f0f0f0;
+$dark-grey: #707070;
+
+$body-color: $secondary;
+
+$border-radius: 5px;
+
+/* Font */
+
+$font-family-sans-serif: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$headings-font-family: Cambria, Georgia, serif;
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1.2;
+$headings-margin-bottom: 0;
+$h1-font-size: 42px;
+$h2-font-size: 36px;
+$h3-font-size: 32px;
+$h5-font-size: 20px;
+
+$link-decoration: none;
+$link-hover-decoration: none;
+
+/* Animation (Keyframes) */
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg);
+    }
+    10% {
+        transform: rotate(14.0deg);
+    }
+    20% {
+        transform: rotate(-8.0deg);
+    }
+    30% {
+        transform: rotate(14.0deg);
+    }
+    40% {
+        transform: rotate(-4.0deg);
+    }
+    50% {
+        transform: rotate(10.0deg);
+    }
+    60% {
+        transform: rotate(0.0deg);
+    }
+    100% {
+        transform: rotate(0.0deg);
+    }
+}
+
+@keyframes file-success {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    50% {
+        width: 44px;
+        flex: 0 0 44px;
+        margin-left: 10px;
+    }
+    100% {
+        opacity: 1;
+        width: 44px;
+        flex: 0 0 44px;
+        margin-left: 10px;
+    }
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter-Bold.woff2') format('woff2'),
+      url('../font/Inter-Bold.woff') format('woff'),
+      url('../font/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../font/Inter-Regular.woff2') format('woff2'),
+      url('../font/Inter-Regular.woff') format('woff'),
+      url('../font/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,67 @@
+.service-section{
+    .image-block{
+        &::before{
+            background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.77) 23%, rgba(0,0,0,0) 100%);
+            background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.77) 23%,rgba(0,0,0,0) 100%);
+            background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.77) 23%,rgba(0,0,0,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+            content: "";
+            width: 45%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            -webkit-mix-blend-mode: multiply;
+            mix-blend-mode: multiply;
+            opacity: 0.6;
+        }
+    }
+    .text-block{
+        max-width: 744px;
+
+        ul{
+            li{
+                font-size: 35px;
+                line-height: 45px;
+                letter-spacing: 1.75px;
+                font-weight: $font-weight-bold;
+                color: $listcolor;
+                padding-left: 20px;
+                @include media-breakpoint-down(xl){
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 25px;
+                    line-height: 35px;
+                    letter-spacing: 1px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 1px;
+                }
+
+                &:before{
+                    content: "";
+                    border: none;
+                    width: 6px;
+                    height: 30px;
+                    top: 7px;
+                    transform: skewX(-10deg);
+                    background: $primary;
+
+                    @include media-breakpoint-down(lg){
+                        width: 4px;
+                        height: 26px;
+                    }
+                    @include media-breakpoint-down(md){
+                        width: 4px;
+                        height: 20px;
+                    }
+                }
+
+            }
+        }
+    }
+}

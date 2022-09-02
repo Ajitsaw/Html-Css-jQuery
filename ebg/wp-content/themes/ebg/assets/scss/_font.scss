@@ -1,0 +1,92 @@
+@import "variables";
+
+/* Button */
+
+.button {
+    padding: 10px 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    i {
+        margin-right: 8px;
+    }
+    &.outline {
+        &.primary {
+            border: solid 1px $primary;
+            background: transparent;
+            color: $white;
+            &:hover {
+                background: $primary;
+            }
+        }
+        &.white {
+            border: solid 1px $white;
+            background: transparent;
+            color: $white;
+            &:hover {
+                background: $white;
+                color: $body-color;
+            }
+        }
+    }
+    &.filled {
+        border: none;
+        &.primary {
+            background: $primary;
+            color: $white;
+        }
+        &.white {
+            background: $white;
+            color: $primary;
+        }
+    }
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+/* Button Group */
+
+.button-group {
+    .button {
+        @include media-breakpoint-down(lg) {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* Headlines */
+
+h1 {
+    @include media-breakpoint-down(md) {
+        font-size: 28px;
+    }
+    span {
+        display: block;
+        font-weight: $font-weight-normal;
+        font-family: $font-family-sans-serif;
+    }
+}
+
+h2 {
+    margin-bottom: 50px;
+    @include media-breakpoint-down(md) {
+        font-size: 26px;
+    }
+}
+
+h3 {
+    @include media-breakpoint-down(md) {
+        font-size: 24px;
+    }
+}
+
+h5 {
+    margin-bottom: 20px;
+    @include media-breakpoint-down(md) {
+        font-size: 18px;
+    }
+}

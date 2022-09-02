@@ -1,0 +1,173 @@
+.history{
+    &-inner{
+        display: block;
+    }
+    &-left{
+        position: relative;
+        @include media-breakpoint-down(lg){
+            margin-top: 80px;
+            margin-bottom: 120px;
+        }
+        @include media-breakpoint-down(md){
+            margin-top: 60px;
+            margin-bottom: 100px;
+        }
+        @include media-breakpoint-down(sm){
+            margin-top: 55px;
+            margin-bottom: 100px;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            border: 2px solid $body-color;
+            left: 0;
+            right: -120px;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+            @include media-breakpoint-down(xl){
+                width: 400px;
+                height: 400px;
+                right: 0;
+            }
+            @include media-breakpoint-down(lg){
+                width: 480px;
+                height: 480px;
+            }
+            @include media-breakpoint-down(md){
+                width: 400px;
+                height: 400px;
+            }
+            @include media-breakpoint-down(sm){
+                width: 270px;
+                height: 270px;
+            }
+        }
+        .hisotry_year{
+            @include media-breakpoint-down(lg){
+                margin-left: -30%;
+            }
+            @include media-breakpoint-down(md){
+                margin-left: -30%;
+            }
+            @include media-breakpoint-down(sm){
+                margin-left: -25%;
+            }
+            div{
+                font-size: 270px;
+                line-height: 1;
+                font-weight: $font-weight-bold;
+                color: $body-color;
+                @media (max-width:1750px) {
+                    font-size: 220px;
+                }
+                @include media-breakpoint-down(xl){
+                    font-size: 175px;
+                }
+                @include media-breakpoint-down(lg){
+                    font-size: 180px;
+                }
+                @include media-breakpoint-down(md){
+                    font-size: 150px;
+                }
+                @include media-breakpoint-down(sm){
+                    font-size: 110px;
+                }
+            }
+        }
+        &-slider{
+            height: 320px;
+            @include media-breakpoint-down(md){
+                height: 200px;
+            }
+            @include media-breakpoint-down(sm){
+                height: 160px;
+            }
+        
+            &-single{
+                display: flex;
+                align-items: center;
+                @include media-breakpoint-down(lg){
+                    justify-content: center;
+                }
+            }
+        }
+        
+    }
+
+    &-right{
+        .h5{
+            font-size: 17px;
+            letter-spacing: 1.7px;
+            color: $secondary;
+            margin-bottom: 20px;
+        }
+        h4{
+            color: $body-color;
+            margin-bottom: 30px;
+        }
+        p{
+            @media (max-width:1750px) {
+                font-size: 16px;
+                line-height: 32px;
+            }
+            @include media-breakpoint-down(xl){
+                font-size: 15px;
+                line-height: 32px;
+            }
+            @include media-breakpoint-down(lg){
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+        &-slider{
+            height: 840px;
+        }
+        &-slider-single{
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid rgba($color: $listcolor, $alpha: 0.5);
+            &:last-child{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.roundbox{
+    width: 620px;
+    height: 620px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: absolute;
+    top: 50%;
+    right: -120px;
+    left: 0;
+    transform: translateY(-50%);
+    @include media-breakpoint-down(xl){
+        width: 450px;
+        height: 450px;
+        right: 0;
+    }
+    @include media-breakpoint-down(lg){
+        width: 540px;
+        height: 540px;
+    }
+    @include media-breakpoint-down(md){
+        width: 450px;
+        height: 450px;
+    }
+    @include media-breakpoint-down(sm){
+        width: 304px;
+        height: 304px;
+    }
+}
+
+

@@ -1,0 +1,51 @@
+.download-list{
+    &-single{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 0;
+        border-bottom: 1px solid rgba($color: $secondary, $alpha: 0.5);
+        align-items: center;
+        &-title{
+            font-weight: $font-weight-bold;
+            line-height: 1.4;
+            flex: 0  0 30%;
+            padding-right: 15px;
+            @include media-breakpoint-down(lg){
+                flex:0 0 100%;
+                margin-bottom: 15px;
+            }
+
+            .single-image {
+                margin-right: 30px;
+            }
+
+        }
+        &-desc{
+            flex: 0  0 50%;
+            font-size: 14px;
+            font-weight: $font-weight-light;
+            padding-right: 15px;
+            line-height: 1.4;
+            color: $secondary;
+            @include media-breakpoint-down(xl){
+                flex: 0  0 40%;
+            }
+            @include media-breakpoint-down(lg){
+                margin-bottom: 15px;
+                flex:0 0 100%;
+            }
+        }
+        &-button{
+            flex: 0 0 auto;
+            font-weight: $font-weight-light;
+            color: $primary;
+            svg{
+                margin-right: 20px;
+            }
+            @include media-breakpoint-down(lg){
+                flex:0 0 100%;
+            }
+        }
+    }
+}

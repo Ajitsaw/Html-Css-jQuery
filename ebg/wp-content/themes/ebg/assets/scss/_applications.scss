@@ -1,0 +1,177 @@
+@import "variables";
+
+/* Applications Overview */
+
+.applications-overview {
+    padding: $section-padding;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    h1 {
+        font-size: 36px;
+        @include media-breakpoint-down(md) {
+            font-size: 26px;
+        }
+    }
+    .applications-overview__overview {
+        margin-top: 60px;
+        @include media-breakpoint-down(md) {
+            margin-top: 40px;
+        }
+        .application {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            padding: 50px;
+            height: 450px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-end;
+            border-radius: $border-radius;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.15);
+            @include media-breakpoint-down(md) {
+                padding: 30px;
+                margin-bottom: 15px;
+                height: 350px;
+            }
+            .text {
+                color: $white;
+                width: 70%;
+                @include media-breakpoint-only(lg) {
+                    width: 100%;
+                }
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+                .title {
+                    font-size: $font-size-md;
+                    font-weight: $font-weight-bold;
+                    position: relative;
+                    margin-bottom: 20px;
+                }
+                .desc {
+                    position: relative;
+                    font-size: 14px;
+                    margin-bottom: 50px;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: 30px;
+                    }
+                }
+                a {
+                    position: relative;
+                    font-size: 16px;
+                }
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $black;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+/* Sector Areas */
+
+.sector-areas {
+    padding: $section-padding;
+    background: $light-grey;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .areas {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        li {
+            flex: 0 0 50%;
+            width: 50%;
+            position: relative;
+            padding-left: 30px;
+            font-size: 14px;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 100%;
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            span {
+                display: block;
+                font-weight: $font-weight-bold;
+            }
+            &:before {
+                content: "\f105";
+                font-family: "Font Awesome 5 Pro";
+                height: 20px;
+                width: 20px;
+                background: $primary;
+                color: $white;
+                display: block;
+                font-size: 16px;
+                text-align: center;
+                line-height: 20px;
+                position: absolute;
+                left: 0;
+                top: -2px;
+            }
+        }
+    }
+}
+
+/* Sector Video */
+
+.sector-video {
+    padding: $section-padding;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .sector-video__video {
+        position: relative;
+        margin-top: 50px;
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        .trigger {
+            width: 60px;
+            height: 60px;
+            background: $primary;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            z-index: 10;
+            @include media-breakpoint-down(md) {
+                height: 50px;
+                width: 50px;
+            }
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+            }
+        }
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}

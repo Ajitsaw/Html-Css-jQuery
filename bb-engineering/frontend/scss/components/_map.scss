@@ -1,0 +1,92 @@
+.map {
+    .map-textholder {
+        margin-bottom: 104px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.map-holder { 
+    position:relative;
+
+    .fullmap {
+        height:617px;
+
+        @include media-breakpoint-down(sm){
+            height:387px;
+        }
+
+
+        iframe {
+            width:100%;
+            height:100%;
+            border: none !important;
+        }
+        small{
+            display: none;
+        }
+    }
+
+    .map-content {
+        position: absolute;
+        right: 131px;
+        top: -125px;
+        z-index: 2;
+        width: 355px;
+        height: 298px;
+
+        @include media-breakpoint-down(lg){
+            right: 23px;
+        }
+
+        @include media-breakpoint-down(md){
+            position: static;
+            width:100%;
+         }
+
+        &:before {
+            content: "";
+            width: 85%;
+            height: 65%;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            filter: blur(30px);
+            background-color: rgba(0, 0, 0, 0.15);
+            z-index: -11;
+            border-radius: 35px;
+        }
+
+        .map-content--inner {
+            position:relative;
+            padding: 0px 50px;
+            background:$white;
+            height:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+
+
+        }
+
+
+        p {
+            margin-bottom: 54px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        h4 {
+            color:$primary;
+            margin-bottom: 52px;
+        }
+
+    }
+}

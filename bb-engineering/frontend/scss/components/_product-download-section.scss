@@ -1,0 +1,32 @@
+.download-section{
+    .download-white-box{
+        background: $white;
+        padding: 68px 54px 50px 54px;
+        @include media-breakpoint-down(lg){
+            padding: 40px 30px;
+        }
+        @include media-breakpoint-down(md){
+            padding: 30px 20px;
+        }
+        h4{
+            margin-bottom: 20px;
+        }
+        &-btn{
+            div{
+                
+                &:last-child{
+                    a{
+                        margin-top: 30px;
+                    }
+                }
+                a{
+                    min-width: 340px;
+
+                    @include media-breakpoint-down (md){
+                        min-width:280px;
+                    }
+                }
+            }
+        }
+    }
+}

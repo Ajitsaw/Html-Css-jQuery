@@ -1,0 +1,13 @@
+.image-text{
+    &--dark{
+        background: $gray-bg;
+    }
+    .text-block{
+        ul{
+            max-width: 615px;
+            &.ul_small{
+                max-width: 520px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/*
+Theme Name: EBG
+Theme URI: http://ebg.dev-psm.de/
+Author: pechschwarz Media
+Author URI: https://pechschwarzmedia.de/
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+Text Domain: EBG
+*/
+
+
+footer .footer__top {
+	position: relative;
+	margin-top: 50px;
+}
+
+/* 
+footer .footer__top::before {
+	content: "";
+	background-color: green;
+	position: absolute;
+	top: -75px;
+	width: 100vw;
+	height: 50px;
+} */
+
+.button-apply {
+	background-color: #B61F29;
+	color: #fff;
+	border-radius: 0px;
+	border: 1px solid transparent;
+	padding: 10px 10px;
+}
+
+.button-apply:hover {
+	background-color: transparent;
+	border: 1px solid #B61F29;
+	color: #B61F29;
+}
+
+.news-btn {
+	color: #454545 !important;
+}
+
+.news-btn:hover {
+	color: #fff !important;
+}

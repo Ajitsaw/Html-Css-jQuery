@@ -1,0 +1,27 @@
+.text-text{
+    padding-bottom: 150px;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 60px;
+        padding-top: 110px;
+    }
+
+    .text-block{
+        &-left{
+            p{
+                font-size: 16px;
+                letter-spacing: 1.28px;
+            }
+        }
+        &-right{
+            width: 745px;
+            @media (max-width:1915px) {
+                width: 100%;
+            }
+        }
+    }
+    &--left-right{
+        .heading_bottom_text{
+            margin-bottom: 50px;
+        }
+    }
+}

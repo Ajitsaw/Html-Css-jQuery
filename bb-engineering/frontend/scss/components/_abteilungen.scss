@@ -1,0 +1,53 @@
+.abteilungen {}
+
+.abteilungen-grid {
+
+    .box-holder {
+        background:$white;
+        padding: 48px 50px;
+        position: relative;
+        margin-bottom: 25px;
+
+       
+
+        @media(max-width:1600px){
+            padding: 30px 23px;
+        }
+
+        &:after {
+            content: "";
+            width: 80%;
+            height: 65%;
+            bottom: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            filter: blur(30px);
+            background-color: rgba(0, 0, 0, 0.23);
+            z-index: -1;
+            border-radius: 35px;
+        }
+
+        h4 {
+            color:$primary;
+            margin-bottom:23px;
+
+            @include media-breakpoint-down(xxl){
+                margin-bottom: 32px;
+            }
+        }
+        .address {
+            font-weight:$font-weight-bold;
+            color:$listcolor;
+            line-height: 26px;
+            margin-bottom: 21px;
+        }
+        a {
+            display: block;
+            font-size: 17px;
+            color: $secondary;
+            line-height: 35px;
+        }
+    }
+}

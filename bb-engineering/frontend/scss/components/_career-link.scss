@@ -1,0 +1,62 @@
+.career-link{
+    .row{
+        @media (min-width:1119px){
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+        [class*="col-"]{
+            @media (min-width:1119px){
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    &-box{
+        margin-bottom: 30px;
+        &-img{
+            margin-bottom: 60px;
+            height: 463px;
+
+            @include media-breakpoint-down(lg){
+                margin-bottom: 30px;
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-text{
+            .h2{
+                color: $body-color;
+            }
+            .text{
+                max-width: 615px;
+            }
+            a{
+                font-size: 20px;
+                color: $listcolor;
+                font-weight: $font-weight-medium;
+                letter-spacing: 0.8px;
+                margin-top: 100px;
+                display: inline-block;
+                @include media-breakpoint-down(lg){
+                    margin-top: 20px;
+                }
+                i{
+                    transition: all 300ms ease-in-out;
+                    margin-left: 10px;
+                }                
+            }
+        }
+        &:hover{
+            a{
+                color: $primary;
+                i{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}

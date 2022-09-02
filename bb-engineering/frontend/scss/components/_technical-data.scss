@@ -1,0 +1,38 @@
+.technical-data{
+    
+    &-head{
+        &-row{
+            background: $primary;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            &-left{
+                padding: 15px;
+                color: $white;
+                font-weight: $font-weight-bold;
+                width: 35%;
+            }
+        }        
+    }
+    &-body{
+        &-row{
+            background: $white-smoke;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            align-self: center;
+
+            &-left{
+                padding: 15px;
+                color: $secondary;
+                font-weight: $font-weight-bold;
+                width: 35%;
+            }
+            &-right{
+                padding: 15px;
+                color: $secondary;
+                flex: 1 0 0%;
+            }
+        }        
+    }
+}

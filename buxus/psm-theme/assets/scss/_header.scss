@@ -1,0 +1,94 @@
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 0px 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 0px 0px;
+    .header-left {
+        display: flex;
+        .logo {
+            width: auto;
+            margin-right: 0px;
+            @include media-breakpoint-down(lg) {
+                width: 200px;
+            }
+            @media screen and (max-width:991px) {}
+            @include media-breakpoint-down(sm) {
+                width: 150px;
+            }
+            @include media-breakpoint-down(xs) {
+                width: 120px;
+            }
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    .header-right {
+        padding-top: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.language {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 25px;
+    @include media-breakpoint-down(sm) {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    i {
+        color: $white;
+        &::before {
+            font-weight: 900;
+        }
+    }
+    &-box {
+        position: absolute;
+        right: 00px;
+        top: 70px;
+        width: 160px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        background: #fff;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+        display: none;
+        @include media-breakpoint-down(sm) {
+            top: 40px;
+        }
+        section {
+            padding: 0;
+        }
+        li {
+            margin-left: 30px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            justify-content: flex-end;
+            a {
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                flex-flow: row-reverse;
+                img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &-open {}
+}

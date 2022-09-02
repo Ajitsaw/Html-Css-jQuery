@@ -1,0 +1,62 @@
+/* Global */
+
+$section-padding: 250px 0;
+$section-padding-medium: 120px 0;
+$section-padding-small: 80px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 100%,
+  xl: 100%
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 800px,
+  lg: 1120px,
+  xl: 1480px,
+  xxl: 1600px
+);
+
+/* Color */
+
+$primary: #0047CC;
+$secondary: #454545;
+$white-smoke: #F0F0F0;
+$body-color: #2E2E2D;
+$gray-bg: #f0f0f0;
+$body-bg: #f8f8f8;
+$eclipse: #3B3B3B;
+$fainsboro: #E0E0E0;
+$black: #000;
+
+$listcolor: #212127;
+
+/* Font */
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1.125rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 90px;
+$h2-font-size: 45px;
+$h3-font-size: 38px;
+
+$link-decoration: none;
+$link-hover-decoration: none;

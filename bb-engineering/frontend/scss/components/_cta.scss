@@ -1,0 +1,60 @@
+.cta{
+    padding: 100px 0;
+    background: #e0e0e0;
+    
+    @include media-breakpoint-down(lg){
+        padding: 80px 0;
+    }
+
+    &-inner{
+        max-width: 1260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-block{
+        max-width: 1131px;
+
+        h3{
+            font-weight: $font-weight-normal;
+        }
+        h2{
+            font-weight: $font-weight-normal;
+            font-size: 35px;
+            line-height: 45px;
+            letter-spacing: 1.75px;
+            color: $body-color;
+            margin-bottom: 30px;
+            @include media-breakpoint-down(xl) {
+                font-size: 30px;
+            }
+            @include media-breakpoint-down(lg) {
+                font-size: 28px;
+                line-height: 1.3;
+                letter-spacing: 1px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 24px;
+                line-height: 1.4;
+            }
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+        }
+        a{
+            font-size: 20px;
+            color: $listcolor;
+            font-weight: $font-weight-medium;
+            letter-spacing: 0.8px;
+            i{
+                transition: all 300ms ease-in-out;
+                margin-left: 10px;
+            }
+            &:hover{
+                color: $primary;
+                i{
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
