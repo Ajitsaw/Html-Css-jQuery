@@ -1,0 +1,23 @@
+.image-form {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        h2 {
+            margin-bottom: 50px;
+            @include media-breakpoint-down(lg) {
+                margin-top: 30px;
+            }
+        }
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        img {
+        }
+    }
+}

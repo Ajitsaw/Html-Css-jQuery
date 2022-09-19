@@ -1,0 +1,36 @@
+.review {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        .quote {
+            margin-bottom: 30px;
+            color: $orange;
+            font-size: 24px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
+        h6 {
+            @include media-breakpoint-down(md) {
+                margin-bottom: 10px;
+            }
+        }
+        h3 {
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .image {
+        width: 100%;
+    }
+}

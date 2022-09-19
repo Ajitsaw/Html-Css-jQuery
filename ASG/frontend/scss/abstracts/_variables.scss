@@ -1,0 +1,67 @@
+/* Global */
+$section-padding-x: 300px 0;
+$section-padding-large: 150px 0;
+$section-padding: 120px 0;
+$section-padding-medium: 80px 0;
+$section-padding-small: 50px 0;
+
+$enable-smooth-scroll: false;
+
+/* Grid */
+
+$container-max-widths: (
+    sm: 100%,
+    md: 100%,
+    lg: 100%,
+    xl: 100%,
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 800px,
+    lg: 1200px,
+    xl: 1400px,
+    xxl: 1600px,
+);
+
+/* Color */
+
+$primary: #1a1a1a;
+$orange: #ef210f;
+
+$black1: #141111;
+$black2: #191919;
+$black3: #1a1a1a;
+
+$gray: #FCFCFC;
+$light-gray: #f6f6f6;
+
+
+/* Font */
+
+$font-family-sans-serif: 'Urbane';
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$font-size-md: $font-size-base * 1.2;
+$font-size-lg: $font-size-base * 1.5;
+$font-weight-light: 300;
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-bold: bold;
+
+$headings-font-weight: $font-weight-bold;
+$headings-line-height: 1;
+$headings-margin-bottom: 0;
+$h1-font-size: 60px;
+$h2-font-size: 48px;
+$h3-font-size: 34px;
+$h4-font-size: 27px;
+$h5-font-size: 20px;
+$h6-font-size: 14px;
+
+$body-font: 16px;
+
+
+$link-decoration: none;
+$link-hover-decoration: none;

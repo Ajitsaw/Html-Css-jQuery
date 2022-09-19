@@ -1,0 +1,80 @@
+.contact-box {
+    position: fixed;
+    z-index: 3333;
+    bottom: 0;
+    right: 200px;
+    background-color: $white;
+    border-radius: 20px 20px 0 0;
+    max-width: 406px;
+    padding: 70px;
+    text-align: left;
+    transform: translate(0, 110%);
+    transition: all 0.5s ease;
+    @include media-breakpoint-down(xl) {
+        right: 100px;
+        padding: 50px;
+    }
+    @include media-breakpoint-down(lg) {
+        right: 50px;
+        padding: 50px 30px;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+    }
+    @include media-breakpoint-down(lg) {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    &.open {
+        transform: translate(0, 0%);
+        transition: all 0.5s ease;
+    }
+    .cross {
+        position: absolute;
+        cursor: pointer;
+        top: 30px;
+        right: 50px;
+        font-size: 26px;
+        @include media-breakpoint-down(lg) {
+            right: 30px;
+            font-size: 20px;
+        }
+    }
+    .list {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        a {
+            display: block;
+        }
+    }
+    .image__holder {
+        margin-bottom: 20px;
+        .img {
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin-bottom: 20px;
+            @include media-breakpoint-down(lg) {
+                margin: 0 auto 20px;
+                width: 100px;
+                height: 100px;
+            }
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .green {
+        color: $primary;
+        margin-bottom: 30px;
+    }
+}

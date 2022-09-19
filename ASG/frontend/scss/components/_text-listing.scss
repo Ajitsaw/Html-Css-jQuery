@@ -1,0 +1,74 @@
+.text-listing {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .listing {
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        .single {
+            color: $white;
+            display: flex;
+            padding-left: 80px;
+            margin-bottom: 70px;
+            @include media-breakpoint-down(xl) {
+                padding-left: 30px;
+                margin-bottom: 50px;
+            }
+            @include media-breakpoint-down(lg) {
+                padding-left: 0px;
+                padding-right: 30px;
+                margin-bottom: 30px;
+            }
+            @include media-breakpoint-down(md) {
+                padding-right: 0px;
+                margin-bottom: 20px;
+
+            }
+            .h3 {
+                margin-right: 30px;
+                color: $orange;
+                min-width: 25px;
+                text-align: right;
+                @include media-breakpoint-down(lg) {
+                    min-width: 20px;
+                margin-right: 20px;
+
+                }
+            }
+            .text {
+                margin-top: 15px;
+                @include media-breakpoint-down(lg) {
+                    margin-top: 5px;
+                }
+                b {
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    display: flex;
+                }
+            }
+        }
+        .col-lg-6 {
+            &:nth-last-of-type(2) {
+                .single {
+                    margin-bottom: 0;
+                    @include media-breakpoint-down(md) {
+                        margin-bottom: inherit;
+                    }
+                }
+            }
+            &:last-child {
+                .single {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

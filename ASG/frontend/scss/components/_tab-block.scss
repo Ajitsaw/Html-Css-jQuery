@@ -1,0 +1,145 @@
+.tab-block {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        img {
+            max-height: 906px;
+        }
+    }
+    .tab-nav {
+        display: flex;
+        flex-flow: column;
+        position: relative;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+            border: none;
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 30px;
+        }
+        .item,
+        a {
+            position: relative;
+            cursor: pointer;
+            padding: 15px 0 15px 30px;
+            margin-bottom: 0px;
+            z-index: 3;
+            font-size: 15px;
+            font-weight: $font-weight-light;
+            @include media-breakpoint-down(lg) {
+                padding: 0 0 0px 0px;
+                margin: 10px 7px 10px 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            h3,
+            h4 {
+                font-weight: bold;
+                @include media-breakpoint-down(lg) {
+                    font-size: 18px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 16px;
+                }
+                @media (max-width: 374px) {
+                    font-size: 13px;
+                }
+            }
+            p {
+                margin: 20px 0 0;
+                display: none;
+                transition: all 0.3s ease;
+            }
+            &:after {
+                content: "";
+                background: transparent;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: -3px;
+                width: 3px;
+                transition: all 0.3s ease;
+                @include media-breakpoint-down(lg) {
+                    width: 0;
+                    left: 0;
+                    height: 2px;
+                    bottom: -5px;
+                    top: auto;
+                }
+            }
+            &:hover {
+                &:after {
+                    background: $primary;
+                    height: 100%;
+                    @include media-breakpoint-down(lg) {
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+            }
+            &.active {
+                font-weight: $font-weight-bold;
+                &:after {
+                    background: $primary;
+                    height: 100%;
+                    @include media-breakpoint-down(lg) {
+                        height: 2px;
+                        width: 100%;
+                    }
+                }
+                p {
+                    display: block;
+                    transition: all 0.3s ease;
+                    @include media-breakpoint-down(lg) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .tab-content {
+        .single__download {
+            a {
+                display: block;
+                margin-bottom: 30px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        & > .single {
+            display: none;
+            transition: all 0.3s ease;
+
+            &.active {
+                display: block;
+                transition: all 0.3s ease;
+            }
+            .text {
+                margin-bottom: 100px;
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 50px;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 30px;
+                }
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+            .image {
+                img,
+                video {
+                    width: 100%;
+                    max-height: 750px;
+                }
+            }
+        }
+    }
+}

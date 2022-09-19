@@ -1,0 +1,72 @@
+body {
+    background-color: $primary;
+    font-size: $body-font;
+    font-weight: $font-weight-light;
+    @include media-breakpoint-down(md) {
+        letter-spacing: normal;
+    }
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus {
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+}
+
+.z-index-2 {
+    z-index: 2 !important;
+}
+
+.border-none {
+    border: none !important;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+[role="button"] {
+    outline: none !important;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.border-radius-none {
+    border-radius: 0 !important;
+    img {
+        border-radius: 0 !important;
+    }
+}
+
+[data-aos][data-aos][data-aos-duration="400"],
+body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 0.4s;
+    @include media-breakpoint-down(md) {
+        transition-duration: 1s !important;
+    }
+}

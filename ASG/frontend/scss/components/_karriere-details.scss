@@ -1,0 +1,32 @@
+.karriere-details {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .col-xxl-5 {
+        &:last-child {
+            .content {
+                @include media-breakpoint-down(lg) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .content {
+        margin-bottom: 30px;
+        h3 {
+            position: relative;
+            margin-bottom: 30px;
+            span {
+                position: absolute;
+                left: -145px;
+                @include media-breakpoint-down(xl) {
+                    left: -125px;
+                }
+            }
+        }
+    }
+}

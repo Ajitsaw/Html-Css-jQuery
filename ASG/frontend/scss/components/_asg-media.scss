@@ -1,0 +1,53 @@
+.asg-media {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    &__grid {
+        padding: 65px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+        @include media-breakpoint-down(lg) {
+            gap: 16px;
+            padding: 50px 0;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 30px 0;
+        }
+        @include media-breakpoint-down(sm) {
+            display: flex;
+            flex-flow: column;
+        }
+        .image {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+
+            &:first-child {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            &:last-child {
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+            img {
+                width: 100%;
+                @include media-breakpoint-down(md) {
+                    height: 300px;
+                    object-fit: cover;
+                }
+                @include media-breakpoint-down(sm) {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

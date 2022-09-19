@@ -1,0 +1,111 @@
+.hero-mediathek {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    padding-top: 100px;
+    @include media-breakpoint-down(lg) {
+        height: auto;
+        padding: 150px 0px 80px;
+        margin-top: 0px;
+        display: flex;
+    }
+    @include media-breakpoint-down(md) {
+        padding: 100px 0px 50px;
+    }
+    .image {
+        width: 100%;
+        img {
+            max-height: 551px;
+        }
+    }
+    .text {
+        display: flex;
+        flex-flow: column;
+        color: $white;
+        .h1,
+        h1 {
+            color: $white;
+        }
+        b {
+            font-weight: 500;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+    }
+    .container {
+        z-index: 2;
+        position: relative;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 30px;
+        @include media-breakpoint-down(lg) {
+            display: flex;
+            justify-content: flex-start;
+        }
+        a {
+            font-size: 18px;
+            margin-left: 0px;
+            margin-right: 30px;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-down(lg) {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+            &:hover {
+                color: $orange;
+            }
+        }
+    }
+
+    .scroll {
+        position: absolute;
+        right: 100px;
+        bottom: 50px;
+        z-index: 3;
+        display: flex;
+        flex-flow: column;
+        color: $white;
+        font-size: 16px;
+        margin-bottom: 20px;
+        transition: all 0.3s ease;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        span {
+            position: absolute;
+            transform: rotate(-90deg);
+            font-weight: 500;
+            bottom: 55px;
+            left: 3px;
+            @include media-breakpoint-down(md) {
+                left: -6px;
+                bottom: 35px;
+            }
+        }
+        img {
+            transform: rotate(90deg);
+            position: relative;
+            transition: all 0.3s ease;
+            top: 0px;
+            left: 5px;
+            max-height: 18px;
+        }
+        &:hover {
+            img {
+                transition: all 0.3s ease;
+                top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.breadcumb {
+    background-color: $light-gray;
+    padding: 15px 0;
+    margin-top: 0px;
+    &__content {
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(xxl) {
+            justify-content: flex-end;
+        }
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        p {
+            margin-bottom: 0;
+            align-items: center;
+            font-weight: $font-weight-medium;
+        }
+        .text-button {
+            margin-left: 20px;
+        }
+    }
+    &__holder {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        @include media-breakpoint-down(sm) {
+            flex-flow: row wrap;
+        }
+        .fa-home-alt {
+            opacity: 0.73 !important;
+        }
+        a {
+            color: $primary;
+            font-weight: 300;
+            i {
+                margin-right: 10px;
+            }
+            &:hover {
+                color: $primary;
+            }
+        }
+        span {
+            margin: 0px 10px;
+            font-size: 10px;
+        }
+        b {
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.text {
+    p {
+        font-weight: $font-weight-light;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h1,
+    .h1,
+    h2,
+    .h2 {
+        margin-bottom: 36px;
+    }
+    h6,
+    .h6 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: $font-weight-light;
+        &.text-normal {
+            text-transform: none;
+        }
+    }
+    .button-holder {
+        margin-top: 64px;
+        @include media-breakpoint-down(xl) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        .button-holder__center {
+            justify-content: center;
+        }
+    }
+    .list {
+        margin-top: 60px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        .single {
+            margin-bottom: 15px;
+            @include media-breakpoint-down(lg) {
+                margin: 30px 0 0;
+            }
+        }
+    }
+    &.ul-tick {
+        ul {
+            li {
+                padding-left: 30px;
+                &:before {
+                    content: "\f00c";
+                }
+            }
+        }
+    }
+    ul {
+        padding-left: 0;
+        margin-top: 75px;
+        margin-bottom: 0;
+        list-style: none;
+        @include media-breakpoint-down(xl) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        li {
+            position: relative;
+            font-weight: 300;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: "-";
+                font-weight: 300;
+                position: absolute;
+                left: 0;
+                color: $primary;
+            }
+        }
+    }
+}

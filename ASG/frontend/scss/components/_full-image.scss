@@ -1,0 +1,94 @@
+.full-image {
+    padding: $section-padding;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+        height: auto;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    &.reverse {
+        .bg {
+            &:after {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    270deg,
+                    rgba(20, 17, 17, 0) 0%,
+                    rgba(20, 17, 17, 1) 80%
+                );
+            }
+        }
+    }
+    &.height-auto {
+        height: 100%;
+        min-height: 602px;
+        @include media-breakpoint-down(lg) {
+            min-height: auto;
+        }
+        .text {
+            p {
+                max-width: 100%;
+            }
+        }
+        .bg {
+            &:after {
+                @include media-breakpoint-down(lg) {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+    .bg {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        &:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                rgba(20, 17, 17, 0) 0%,
+                rgba(20, 17, 17, 1) 80%
+            );
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            opacity: 0.7;
+            mix-blend-mode: multiply;
+            @include media-breakpoint-down(lg) {
+                background: linear-gradient(
+                    280deg,
+                    rgba(20, 17, 17, 0) 0%,
+                    rgba(20, 17, 17, 1) 80%
+                );
+                opacity: 0.4;
+            }
+        }
+    }
+    .text {
+        p {
+            max-width: 408px;
+        }
+    }
+}

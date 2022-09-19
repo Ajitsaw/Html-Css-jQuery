@@ -1,0 +1,89 @@
+.video-tab {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        img {
+            max-height: 906px;
+        }
+    }
+    .tab-nav {
+        display: flex;
+        flex-flow: row wrap;
+        position: relative;
+
+        .item,
+        a {
+            position: relative;
+            padding: 0 0 5px 0px;
+            z-index: 3;
+            font-size: 20px;
+            font-weight: $font-weight-bold;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            @include media-breakpoint-down(lg) {
+                font-size: 18px;
+            }
+            @include media-breakpoint-down(md) {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            &:after {
+                content: "";
+                display: none;
+                width: 100%;
+                height: 4px;
+                background-color: $primary;
+                position: absolute;
+                left: 0;
+                bottom: -1px;
+                opacity: 0;
+                transition: all 0.3s ease;
+                @include media-breakpoint-down(md) {
+                    height: 2px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+            &.active {
+                &:after {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+        a {
+            cursor: pointer;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    .tab-content {
+        .single {
+            position: relative;
+            display: none;
+            transition: all 0.3s ease;
+            &.active {
+                display: block;
+                transition: all 0.3s ease;
+            }
+            img,
+            video {
+                width: 100%;
+                max-height: 562px;
+                border-radius: 10px;
+                object-fit: cover;
+                @include media-breakpoint-down(lg) {
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.image-text-big {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .container-fluid {
+        @include media-breakpoint-down(lg) {
+            padding: 0 80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+    }
+    .image {
+        width: 100%;
+        img {
+            width: 100%;
+            max-height: 655px;
+            object-fit: cover;
+        }
+    }
+    .text {
+        max-width: 552px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin-left: 50px;
+        @include media-breakpoint-down(xl) {
+            margin-left: 0;
+        }
+        @include media-breakpoint-down(lg) {
+            max-width: 100%;
+            padding: 0;
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+        }
+        h2 {
+            margin-bottom: 50px;
+            @include media-breakpoint-down(md) {
+                margin-bottom: 30px;
+            }
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        p {
+            max-width: 408px;
+        }
+    }
+}

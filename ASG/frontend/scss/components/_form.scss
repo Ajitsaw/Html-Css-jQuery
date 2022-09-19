@@ -1,0 +1,129 @@
+.form-group {
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $white;
+        color: $white;
+        background-color: transparent;
+        padding: 10px 15px 15px;
+        outline: none;
+        box-shadow: none;
+        font-size: 15px;
+        border-radius: 0;
+        font-weight: $font-weight-light;
+        @include media-breakpoint-down(md) {
+            font-size: 14px;
+            padding: 15px 0;
+        }
+        &::placeholder {
+            color: $white;
+            opacity: 1;
+        }
+    }
+    textarea {
+        height: 55px;
+    }
+    select {
+        appearance: none;
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAHCAYAAAA4R3wZAAAABHNCSVQICAgIfAhkiAAAAF5JREFUGFdjlJBQamBkZKhnIAH8/8/QxAhSLyGh2M3IyFhCpN6O58/vVYI1kqAZrAmkHq6RCM0TgJoKYRahaMSjGUUTho04nI2hCadGkIS4uGILE9N/pufPH1RhCzQAc5oh2w8fxQYAAAAASUVORK5CYII=");
+        background-position: 100% 18px;
+        background-repeat: no-repeat;
+        filter: brightness(0) invert(1);
+    }
+}
+
+form {
+    button {
+        margin-top: 65px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+    }
+}
+
+/* Checkbox */
+
+.checkbox {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    margin: 20px 0 0px;
+    font-weight: 500;
+    font-size: 14px;
+    padding-left: 30px;
+    color: $white;
+    @include media-breakpoint-down(lg) {
+        margin: 20px 0 0px;
+    }
+    input {
+        opacity: 0;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        left: 0;
+        top: 0px;
+        z-index: 6;
+        &:checked + div:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 12px;
+            color: $white;
+        }
+    }
+    div {
+        display: block;
+        width: 16px;
+        height: 16px;
+        border: solid 1px $white;
+        border-radius: 0px;
+        margin-right: 0px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        cursor: pointer;
+    }
+    a {
+        margin: 0 5px;
+        color: $white;
+        &:hover {
+            color: $orange;
+        }
+    }
+    span {
+    }
+}
+
+/* Response */
+
+.response {
+    border-radius: 6px;
+    display: block;
+    margin-top: 10px;
+    padding: 12px;
+    line-height: 1;
+    display: none;
+    width: 100%;
+    flex: 0 0 100%;
+    font-size: 12px;
+}
+
+.response.error {
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.response.success {
+    color: #155724;
+    background-color: #d4edda;
+}
