@@ -1,0 +1,52 @@
+.image-text {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        padding: 30px 230px 0 130px;
+        @include media-breakpoint-down(xxl) {
+            padding: 0 150px 50px 0;
+        }
+        @include media-breakpoint-down(xl) {
+            padding: 0 110px 50px 0;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+            padding: 0 80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        padding-right: 90px;
+        @include media-breakpoint-down(lg) {
+            padding: 0 80px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 0 25px;
+        }
+        img {
+            max-height: 600px;
+            width: 100%;
+        }
+        .img {
+            position: absolute;
+            top: 0px;
+            left: 70px;
+            @include media-breakpoint-down(md) {
+                left: 30px;
+            }
+            img {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}

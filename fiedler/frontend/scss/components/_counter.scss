@@ -1,0 +1,58 @@
+.counter {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
+    &__group {
+        display: flex;
+        @include media-breakpoint-down(lg) {
+            flex-flow: column;
+        }
+        .single {
+            width: 33%;
+            display: flex;
+            border-right: 1px solid $dark-gray;
+            padding: 0 100px;
+            @include media-breakpoint-down(xl) {
+                padding: 0 60px;
+            }
+            @include media-breakpoint-down(lg) {
+                width: 100%;
+                max-width: 100%;
+                padding: 25px 0;
+                border-right: none;
+                border-bottom: 1px solid $dark-gray;
+                align-items: center;
+            }
+            &:first-child {
+                padding-top: 0;
+                padding-left: 0;
+                width: 25%;
+                @include media-breakpoint-down(xl) {
+                    width: 30%;
+                }
+                @include media-breakpoint-down(lg) {
+                    width: 100%;
+                }
+            }
+            &:last-child {
+                border-right: none;
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+            .h1 {
+                margin-right: 15px;
+                line-height: 1;
+            }
+        }
+    }
+}

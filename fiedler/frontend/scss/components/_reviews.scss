@@ -1,0 +1,52 @@
+.reviews {
+    padding: $section-padding-large;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        padding-left: 0px;
+        padding-right: 90px;
+        @include media-breakpoint-down(lg) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        img {
+            max-height: 600px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text {
+        padding-top: 100px;
+        @include media-breakpoint-down(lg) {
+            padding-top: 0;
+            margin-top: 30px;
+        }
+        .author {
+            margin-top: 100px;
+            @include media-breakpoint-down(xl) {
+                margin-top: 50px;
+            }
+            @include media-breakpoint-down(lg) {
+                margin-top: 30px;
+            }
+            p {
+                color: $dark-gray;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &.reverse {
+        .image {
+            padding-left: 90px;
+            padding-right: 0;
+            @include media-breakpoint-down(lg) {
+                padding-left: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.video-block {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        margin-bottom: 70px;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        p {
+            max-width: 590px;
+        }
+    }
+    .image {
+        width: 100%;
+        position: relative;
+        img {
+            width: 100%;
+            min-height: 300px;
+            object-fit: cover;
+        }
+        .play {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+    video {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+        height: auto;
+    }
+}

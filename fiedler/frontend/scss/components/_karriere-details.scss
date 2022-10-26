@@ -1,0 +1,189 @@
+.karriere-details {
+    padding: $section-padding;
+    margin-top: 110px;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+        margin-top: 71px;
+    }
+    .text {
+        margin-bottom: 30px;
+        h1 {
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+    }
+    &__thumbnail {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 40px;
+        }
+        .thumbnail {
+            margin-top: 50px;
+            width: 120px;
+            color: $primary;
+            display: flex;
+            flex-flow: column;
+            @include media-breakpoint-down(lg) {
+                margin-top: 30px;
+            }
+            .col-lg-8 {
+                img {
+                    max-height: 554px;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    @include media-breakpoint-down(lg) {
+                        max-height: 500px;
+                        border-radius: 10px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        max-height: auto;
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .img {
+                height: 120px;
+                width: 100%;
+                margin-bottom: 20px;
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 20px;
+                    @include media-breakpoint-down(lg) {
+                        border-radius: 10px;
+                    }
+                    @include media-breakpoint-down(md) {
+                        border-radius: 5px;
+                    }
+                }
+            }
+            i {
+                font-size: 30px;
+                margin-top: 5px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 30px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 24px;
+                }
+            }
+        }
+        .desc {
+            font-size: 12px;
+            margin-top: 15px;
+            color: $blue;
+        }
+        .col-lg-8 {
+            @include media-breakpoint-down(xl) {
+                order: -2;
+            }
+        }
+    }
+    h3 {
+        font-weight: normal;
+    }
+    h4 {
+        position: relative;
+        margin-bottom: 30px;
+        span {
+            position: absolute;
+            left: -160px;
+            font-family: "General Sans";
+        }
+    }
+    .col-lg-8 {
+        &:last-child {
+            .content {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .content {
+        margin-bottom: 75px;
+        @include media-breakpoint-down(xl) {
+            margin-bottom: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-bottom: 40px;
+        }
+        h2,
+        p {
+            max-width: 1200px;
+        }
+        ul {
+            li {
+            }
+        }
+    }
+}
+
+.karriere-form {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+    }
+    h6 {
+        color: #a3a09e;
+        font-weight: $font-weight-normal;
+    }
+    h2 {
+        margin-bottom: 50px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 30px;
+        }
+    }
+    a {
+        &:hover {
+            color: $blue;
+        }
+    }
+    h4 {
+        margin-top: 30px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+    }
+    p {
+        margin-bottom: 5px;
+        margin-top: 40px;
+        display: flex;
+        @include media-breakpoint-down(lg) {
+            margin-top: 20px;
+        }
+    }
+    .submit {
+        i {
+            margin: 0 0 0 15px;
+        }
+        input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+}

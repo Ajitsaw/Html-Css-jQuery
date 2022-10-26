@@ -1,0 +1,51 @@
+.block {
+    padding: 60px 0 65px;
+    @include media-breakpoint-down(lg) {
+        padding: 70px 0 70px;
+    }
+    &.block--kontakt {
+        .head {
+            .text {
+                p {
+                    max-width: 626px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .head {
+        .text {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            p {
+                max-width: 862px;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .text {
+        .text-green {
+            br {
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+            b {
+                font-size: 25px;
+                letter-spacing: calc(25px * 0.001 * 140);
+                text-decoration: underline;
+                @include media-breakpoint-down(xl) {
+                    font-size: 22px;
+                    letter-spacing: calc(22px * 0.001 * 100);
+                }
+                @include media-breakpoint-down(lg) {
+                    font-size: 20px;
+                    letter-spacing: calc(20px * 0.001 * 50);
+                }
+            }
+        }
+    }
+}

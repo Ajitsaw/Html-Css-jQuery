@@ -1,0 +1,104 @@
+.text {
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    h1,
+    .h1,
+    h2,
+    .h2 {
+        margin-bottom: 30px;
+    }
+    h6,
+    .h6 {
+        margin-bottom: 20px;
+        font-weight: $font-weight-medium;
+        color: $dark-gray;
+        &.text-normal {
+            text-transform: none;
+        }
+    }
+    .button-holder {
+        margin-top: 64px;
+        @include media-breakpoint-down(xl) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        .button-holder__center {
+            justify-content: center;
+        }
+    }
+    .list {
+        margin-top: 60px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 30px;
+        }
+        .single {
+            margin-bottom: 15px;
+            @include media-breakpoint-down(lg) {
+                margin: 30px 0 0;
+            }
+        }
+    }
+    .ticks {
+        .single {
+            display: flex;
+            margin-bottom: 50px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .h6 {
+                color: $primary;
+                margin-bottom: 10px;
+            }
+            .text {
+                padding: 0;
+                margin-top: 0;
+            }
+            .icons {
+                margin-right: 15px;
+                color: $dark-gray;
+                font-size: 22px;
+                @include media-breakpoint-down(lg) {
+                    font-size: 20px;
+                }
+                @include media-breakpoint-down(md) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    ul {
+        padding-left: 0;
+        margin-top: 0px;
+        margin-bottom: 0;
+        list-style: none;
+        li {
+            position: relative;
+            font-weight: normal;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:before {
+                content: ".";
+                position: absolute;
+                left: 0;
+                line-height: 0;
+                font-size: 40px;
+                color: $primary;
+                @include media-breakpoint-down(lg) {
+                    font-size: 30px;
+                    line-height: .3;
+                }
+            }
+        }
+    }
+}

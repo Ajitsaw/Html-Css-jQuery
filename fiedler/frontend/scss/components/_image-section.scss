@@ -1,0 +1,6 @@
+.image-section {
+    padding: $section-padding-medium;
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+}

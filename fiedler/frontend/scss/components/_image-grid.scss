@@ -1,0 +1,44 @@
+.image-grid {
+    padding: 30px 0;
+    .image-grid__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px 30px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "left left center right_top"
+            "left left center right_bottom";
+        width: 100%;
+        height: 100%;
+        max-height: 768px;
+        @include media-breakpoint-down(lg) {
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 15px;
+            grid-template-areas: "left center" "right_top right_bottom";
+        }
+        .image {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .left {
+            grid-area: left;
+        }
+        .center {
+            grid-area: center;
+        }
+        .right_top {
+            grid-area: right_top;
+        }
+        .right_bottom {
+            grid-area: right_bottom;
+        }
+    }
+}

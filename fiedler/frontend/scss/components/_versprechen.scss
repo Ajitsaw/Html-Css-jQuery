@@ -1,0 +1,39 @@
+.versprechen {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    h2 {
+        font-weight: $font-weight-medium;
+        margin-bottom: 65px;
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
+    .single {
+        text-align: center;
+        .icon {
+            margin-bottom: 30px;
+            @include media-breakpoint-down(lg) {
+                min-height: auto !important;
+            }
+        }
+        h4 {
+            font-weight: $font-weight-medium;
+        }
+    }
+    .col-auto {
+        @include media-breakpoint-down(lg) {
+            flex: 0 0 100%;
+            width: 100%;
+            margin-bottom: 50px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.image-slider {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        padding-left: calc(15vw - 30px);
+        padding-bottom: 130px;
+        @include media-breakpoint-down(lg) {
+            padding-left: 0;
+            padding-bottom: 00px;
+        }
+        .swiper-slide {
+            width: 70vw;
+            margin: 0 15px;
+            opacity: 0.39;
+            @include media-breakpoint-down(lg) {
+                width: 100vw;
+                margin: 0;
+                opacity: 1;
+            }
+            &.swiper-slide-active {
+                opacity: 1;
+            }
+            img {
+                height: 720px;
+                width: 100%;
+                object-fit: cover;
+                @include media-breakpoint-down(xl) {
+                    height: 600px;
+                }
+                @include media-breakpoint-down(lg) {
+                    height: 500px;
+                }
+                @include media-breakpoint-down(md) {
+                    height: 400px;
+                }
+            }
+        }
+    }
+    .content {
+        background-color: $white;
+        max-width: 850px;
+        padding: 50px 200px 50px 70px;
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        z-index: 9;
+        @include media-breakpoint-down(xl) {
+            max-width: 700px;
+            padding: 50px 80px 50px 70px;
+        }
+        @include media-breakpoint-down(lg) {
+            padding: 30px 80px;
+            max-width: 100%;
+            bottom: auto;
+            position: relative;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 25px;
+        }
+        .slider {
+            max-width: 545px;
+            .swiper-slide {
+                width: 100%;
+                transition: all 0.3s ease;
+                h4 {
+                    margin-bottom: 30px;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .control {
+            position: absolute;
+            right: 100%;
+            top: calC(50% + 39px);
+            transform: translate(0, -50%);
+            display: flex;
+            @include media-breakpoint-down(xl) {
+                top: calc(50% + 38px);
+            }
+            @include media-breakpoint-down(lg) {
+                top: auto;
+                bottom: 100%;
+                right: 80px;
+            }
+            @include media-breakpoint-down(md) {
+                right: 25px;
+            }
+            .arrow {
+                width: 48px;
+                height: 48px;
+                font-size: 24px;
+                background-color: $dark-gray;
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include media-breakpoint-down(md) {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+                &.left {
+                    border-right: 1px solid #eae9e9;
+                }
+                &:hover {
+                    background-color: #eae9e9;
+                }
+            }
+        }
+    }
+    &.mb-medium {
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+    }
+}

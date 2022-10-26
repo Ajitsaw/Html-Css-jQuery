@@ -1,0 +1,18 @@
+.faq {
+    padding: $section-padding-large;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        margin-bottom: 100px;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 50px;
+        }
+        h2 {
+            margin-bottom: 0;
+        }
+    }
+}

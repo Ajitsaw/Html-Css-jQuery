@@ -1,0 +1,90 @@
+.cta {
+    padding: $section-padding-large;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .bg {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        .image {
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            mix-blend-mode: multiply;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(
+                280deg,
+                rgba(255, 255, 255, 1) 50%,
+                rgba(54, 54, 54, 1) 100%
+            );
+            position: absolute;
+            left: 0;
+            top: 0;
+            @include media-breakpoint-down(md) {
+                background: linear-gradient(
+                    280deg,
+                    rgba(255, 255, 255, 1) 20%,
+                    rgba(54, 54, 54, 1) 100%
+                );
+            }
+        }
+    }
+    .text {
+        color: $white;
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+    .button-holder {
+        margin-top: 60px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 50px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: 30px;
+            flex-flow: column;
+            align-items: center !important;
+        }
+        .button {
+            align-items: center;
+            flex-flow: row;
+            margin-right: 30px;
+            @include media-breakpoint-down(md) {
+                margin-right: 0px;
+                margin-top: 20px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

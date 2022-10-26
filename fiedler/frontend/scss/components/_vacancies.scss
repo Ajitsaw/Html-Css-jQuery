@@ -1,0 +1,54 @@
+.vacancies {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .text {
+        h2 {
+            margin-bottom: 85px;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__holder {
+        .single {
+            padding: 50px 0;
+            border-bottom: 1px solid rgba(47, 47, 47, 0.2);
+            display: flex;
+            @include media-breakpoint-down(lg) {
+                padding: 30px 0;
+            }
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+            }
+            .icon {
+                flex: 0 0 40px;
+                height: 40px;
+                border: 1px solid #191919;
+                margin-right: 50px;
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include media-breakpoint-down(sm) {
+                    display: none;
+                }
+            }
+            .text {
+                h4 {
+                    margin-bottom: 15px;
+                }
+                p {
+                    color: $dark-gray;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

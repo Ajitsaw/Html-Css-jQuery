@@ -1,0 +1,14 @@
+.image-block {
+    padding: $section-padding;
+    @include media-breakpoint-down(lg) {
+        padding: $section-padding-medium;
+    }
+    @include media-breakpoint-down(md) {
+        padding: $section-padding-small;
+    }
+    .image {
+        img {
+            max-height: 764px;
+        }
+    }
+}
